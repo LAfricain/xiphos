@@ -1636,7 +1636,7 @@ GTKChapDisp::RenderOneChapter(SWModule &imodule,
 			*(tag_color + 15) = '-';		// for use in link data
 
 			swbuf.appendFormatted("<span class=\"bookmarkref\">"
-					      "<a href=\"passagestudy.jsp?action=showBookmark&"
+					      "<a href=\"passagestudy.jsp?action=showBookmarkSource&"
 					      "module=%s&passage=%s&value=%s\">&nbsp;"
 					      "<small><sup>*b</sup></small></a></span>",
 					      settings.MainWindowModule,

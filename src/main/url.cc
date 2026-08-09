@@ -1057,7 +1057,7 @@ gint main_url_handler(const gchar *url, gboolean clicked)
 			}
 		}
 
-		else if (!strcmp(action, "showBookmark")) {
+		else if (!strcmp(action, "showBookmarkSource")) {
 			if (HAS_URL_PARAM(passage) && HAS_URL_PARAM(svalue)) {
 				// need localized key, not the osisref that we've got.
 				ModMap::iterator it = backend->get_mgr()->Modules.find(module);
