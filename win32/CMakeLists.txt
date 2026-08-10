@@ -90,48 +90,22 @@ if (WIN32)
 
 
   # install gtk stuff
-  if (GTK2)
-    # gtk+-2.0 binaries
-    install(FILES
-      ${SYS_ROOT_BIN}/libglade-2.0-0.dll
-      ${SYS_ROOT_BIN}/libgailutil-18.dll
-      ${SYS_ROOT_BIN}/libgdk-win32-2.0-0.dll
-      ${SYS_ROOT_BIN}/libgtk-win32-2.0-0.dll
-      ${SYS_ROOT_BIN}/libjavascriptcoregtk-1.0-0.dll
-      ${SYS_ROOT_BIN}/libwebkitgtk-1.0-0.dll
-      DESTINATION ${CMAKE_INSTALL_BINDIR}
-      COMPONENT binaries
-      )
-    # gtk+-2.0 libraries
-    install(DIRECTORY
-      ${SYS_ROOT_LIB}/gtk-2.0
-      DESTINATION ${CMAKE_INSTALL_LIBDIR}
-      COMPONENT binaries
-      )
-    # gtk+-2.0 shared files
-    install(DIRECTORY
-      ${SYS_ROOT_SHARE}/webkitgtk-1.0
-      DESTINATION ${CMAKE_INSTALL_DATADIR}
-      COMPONENT data
-      )
-  else (GTK2)
-    # gtk+-3.0 binaries
-    install(FILES
-      ${SYS_ROOT_BIN}/libgailutil-3-0.dll
-      ${SYS_ROOT_BIN}/libgtk-3-0.dll
-      ${SYS_ROOT_BIN}/libjavascriptcoregtk-3.0-0.dll
-      ${SYS_ROOT_BIN}/libwebkitgtk-3.0-0.dll
-      ${SYS_ROOT_BIN}/libepoxy-0.dll
-      DESTINATION ${CMAKE_INSTALL_BINDIR}
-      COMPONENT binaries
-      )
-    # gtk+-3.0 shared files
-    install(DIRECTORY
-      ${SYS_ROOT_SHARE}/webkitgtk-3.0
-      DESTINATION ${CMAKE_INSTALL_DATADIR}
-      COMPONENT data
-      )
-  endif (GTK2)
+  # gtk+-3.0 binaries
+  install(FILES
+    ${SYS_ROOT_BIN}/libgailutil-3-0.dll
+    ${SYS_ROOT_BIN}/libgtk-3-0.dll
+    ${SYS_ROOT_BIN}/libjavascriptcoregtk-3.0-0.dll
+    ${SYS_ROOT_BIN}/libwebkitgtk-3.0-0.dll
+    ${SYS_ROOT_BIN}/libepoxy-0.dll
+    DESTINATION ${CMAKE_INSTALL_BINDIR}
+    COMPONENT binaries
+    )
+  # gtk+-3.0 shared files
+  install(DIRECTORY
+    ${SYS_ROOT_SHARE}/webkitgtk-3.0
+    DESTINATION ${CMAKE_INSTALL_DATADIR}
+    COMPONENT data
+    )
 
   # install required deps binaries
   # bin: Evolving versions

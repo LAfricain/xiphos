@@ -20,7 +20,6 @@
 # manage CMAKE options
 
 # set CMake options that the user can optionally select ON or OFF
-option (GTK2          "Force UI build with Gtk2 instead of Gtk3."              OFF)
 option (GTKHTML       "Force gtkhtml editor instead of webkit editor."         OFF)
 option (GTKTVEDITOR   "Use GtkTextView editor (replaces gtkhtml and webkit)."  OFF)
 option (WEBKIT1       "Force webkit1 instead of webkit2. (Gtk3 only)"          OFF)
@@ -40,10 +39,6 @@ option (POSTINST      "Enable post-install tasks."                             O
 set (HELPDIR ${CMAKE_INSTALL_DATADIR}/help
   CACHE STRING "user documentation [default: ${CMAKE_INSTALL_DATADIR}/help]")
 
-# Gtk2 implies WebKit1 only
-if(GTK2)
-  set(WEBKIT1 ON)
-endif(GTK2)
 
 
 # do not strip if not in Release mode

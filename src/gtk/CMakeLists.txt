@@ -225,17 +225,6 @@ if(WK_FOUND)
     )
 endif()
 
-if(GTK2 AND Unix-print_FOUND)
-  # add gtk+-unix-print-2.0
-  target_include_directories(xiphos
-    PRIVATE
-    PkgConfig::Unix-print
-    )
-  target_link_libraries(xiphos
-    PRIVATE
-    PkgConfig::Unix-print
-    )
-endif()
 
 if (WIN32)
   # add X11/keysymdefs.h

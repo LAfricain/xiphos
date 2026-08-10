@@ -102,73 +102,49 @@ pkg_check_modules(Gnome REQUIRED IMPORTED_TARGET
   )
 
 # Gtk dependencies
-if (GTK2)
-  if (GTKHTML)
-    # Gtk+-2.0 + GtkHtml editor
-    pkg_check_modules(Gtk REQUIRED IMPORTED_TARGET
-      "gtk+-2.0>=2.14"
-      "libglade-2.0"
-      "webkit-1.0"
-      "gtkhtml-editor-3.14"
-      "libgtkhtml-3.14>=3.23"
-      )
-  else (GTKHTML)
-    # Gtk+-2.0 + Webkit-editor
-    pkg_check_modules(Gtk REQUIRED IMPORTED_TARGET
-      "gtk+-2.0>=2.24"
-      "libglade-2.0"
-      "webkit-1.0"
-      )
-  endif (GTKHTML)
-  # Gtk2+-2.0 optional module
-  pkg_check_modules(Unix-print IMPORTED_TARGET
-    "gtk+-unix-print-2.0"
+if (WEBKIT1 AND GTKHTML)
+  # Gtk+-3.0 + Webkit1 + GtkHtml-editor
+  pkg_check_modules(Gtk REQUIRED IMPORTED_TARGET
+    "gtk+-3.0"
+    "webkitgtk-3.0"
+    "gtkhtml-editor-4.0"
+    "libgtkhtml-4.0"
     )
-else (GTK2)
-  if (WEBKIT1 AND GTKHTML)
-    # Gtk+-3.0 + Webkit1 + GtkHtml-editor
-    pkg_check_modules(Gtk REQUIRED IMPORTED_TARGET
-      "gtk+-3.0"
-      "webkitgtk-3.0"
-      "gtkhtml-editor-4.0"
-      "libgtkhtml-4.0"
-      )
+endif()
+if (WEBKIT1 AND NOT GTKHTML)
+  # Gtk+-3.0 + Webkit1 + Webkit-editor
+  pkg_check_modules(Gtk REQUIRED IMPORTED_TARGET
+    "gtk+-3.0"
+    "webkitgtk-3.0"
+    )
+endif()
+if (NOT WEBKIT1 AND GTKHTML)
+  # Gtk+-3.0 + Webkit2 + GtkHtml-editor
+  pkg_check_modules(Gtk REQUIRED IMPORTED_TARGET
+    "gtk+-3.0"
+    "gtkhtml-editor-4.0"
+    "libgtkhtml-4.0"
+    )
+  pkg_check_modules(WK IMPORTED_TARGET "webkit2gtk-4.1")
+  if(NOT WK_FOUND)
+    pkg_check_modules(WK REQUIRED IMPORTED_TARGET "webkit2gtk-4.0")
   endif()
-  if (WEBKIT1 AND NOT GTKHTML)
-    # Gtk+-3.0 + Webkit1 + Webkit-editor
-    pkg_check_modules(Gtk REQUIRED IMPORTED_TARGET
-      "gtk+-3.0"
-      "webkitgtk-3.0"
-      )
-  endif()
-  if (NOT WEBKIT1 AND GTKHTML)
-    # Gtk+-3.0 + Webkit2 + GtkHtml-editor
-    pkg_check_modules(Gtk REQUIRED IMPORTED_TARGET
-      "gtk+-3.0"
-      "gtkhtml-editor-4.0"
-      "libgtkhtml-4.0"
-      )
-    pkg_check_modules(WK IMPORTED_TARGET "webkit2gtk-4.1")
-    if(NOT WK_FOUND)
-      pkg_check_modules(WK REQUIRED IMPORTED_TARGET "webkit2gtk-4.0")
-    endif()
-  endif()
-  if (NOT WEBKIT1 AND NOT GTKHTML)
-    # Gtk+-3.0 + WebKit2, no GtkHtml-editor or Webkit-editor features enabled
+endif()
+if (NOT WEBKIT1 AND NOT GTKHTML)
+  # Gtk+-3.0 + WebKit2, no GtkHtml-editor or Webkit-editor features enabled
 
-    # Note: Without WEBKIT1, GTKHTML, or GTKTVEDITOR, Xiphos builds as a
-    # pure WebKit2 app — functional, but without the notes/journal editor.
-    if (NOT WEBKIT1 AND NOT GTKHTML AND NOT GTKTVEDITOR)
-        message(WARNING "No editor flag set (WEBKIT1, GTKHTML, GTKTVEDITOR) — notes/journal editor will be unavailable")
-    endif()
-    
-    pkg_check_modules(Gtk REQUIRED IMPORTED_TARGET "gtk+-3.0")
-    pkg_check_modules(WK IMPORTED_TARGET "webkit2gtk-4.1")
-    if(NOT WK_FOUND)
-      pkg_check_modules(WK REQUIRED IMPORTED_TARGET "webkit2gtk-4.0")
-    endif()
+  # Note: Without WEBKIT1, GTKHTML, or GTKTVEDITOR, Xiphos builds as a
+  # pure WebKit2 app — functional, but without the notes/journal editor.
+  if (NOT WEBKIT1 AND NOT GTKHTML AND NOT GTKTVEDITOR)
+      message(WARNING "No editor flag set (WEBKIT1, GTKHTML, GTKTVEDITOR) — notes/journal editor will be unavailable")
   endif()
-endif (GTK2)
+  
+  pkg_check_modules(Gtk REQUIRED IMPORTED_TARGET "gtk+-3.0")
+  pkg_check_modules(WK IMPORTED_TARGET "webkit2gtk-4.1")
+  if(NOT WK_FOUND)
+    pkg_check_modules(WK REQUIRED IMPORTED_TARGET "webkit2gtk-4.0")
+  endif()
+endif()
 
 
 # find threads
