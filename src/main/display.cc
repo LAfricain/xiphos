@@ -1492,11 +1492,17 @@ static void build_tag_color_map(VerseKey *vk)
 									for (long v = vk2.getVerse() + 1; v <= end_verse; ++v) {
 										gchar *ref3 = g_strdup_printf("%s.%d.%ld",
 											vk2.getOSISBookName(), vk2.getChapter(), v);
-										if (!g_hash_table_contains(tag_color_map, ref3))
-											g_hash_table_insert(tag_color_map,
-												ref3, g_strdup(effective));
-										else
-											g_free(ref3);
+
+										element = (gchar *)g_hash_table_lookup(tag_color_map, ref3);
+										str = g_strconcat((element ? element : ""),
+												  effective,
+												  "-",
+												  tc_fg,
+												  "-",
+												  (escaped_label ? escaped_label : ""),
+												  "@:@:@",
+												  NULL);
+										g_hash_table_insert(tag_color_map, ref3, str);
 									}
 								}
 							}
@@ -1623,7 +1629,7 @@ GTKChapDisp::RenderOneChapter(SWModule &imodule,
 			// from tag_color+16 onward, it's bookmark reference data.
 			// this content was encoded when created, so we're safe pasting it in.
 			// format has bg+fg+label formatted as "#123456-#9ABCDE-LabelData".
-			//                                      0      7       FLabelData
+			//                                      0......78......FLabelData
 
 			*(tag_color + 7)  = '\0';		// terminate color strings
 			*(tag_color + 15) = '\0';
@@ -1634,14 +1640,6 @@ GTKChapDisp::RenderOneChapter(SWModule &imodule,
 
 			*(tag_color + 7)  = '-';		// restore format
 			*(tag_color + 15) = '-';		// for use in link data
-
-			swbuf.appendFormatted("<span class=\"bookmarkref\">"
-					      "<a href=\"passagestudy.jsp?action=showBookmarkSource&"
-					      "module=%s&passage=%s&value=%s\">&nbsp;"
-					      "<small><sup>*b</sup></small></a></span>",
-					      settings.MainWindowModule,
-					      (char *)key->getShortText(),
-					      tag_color);	// includes all data, bg+fg+label
 		}
 
 		// generate the verse number with color and decoration.
@@ -1657,10 +1655,19 @@ GTKChapDisp::RenderOneChapter(SWModule &imodule,
 				      PRETTYPRINT(num));
 		g_free(num);
 
+		if (tag_color) {
+			swbuf.appendFormatted("<span class=\"bookmarkref\">"
+					      "<a href=\"passagestudy.jsp?action=showBookmarkSource&"
+					      "module=%s&passage=%s&value=%s\">"
+					      "<small><sup>*b</sup></small></a></span>&nbsp;",
+					      settings.MainWindowModule,
+					      (char *)key->getShortText(),
+					      tag_color);	// includes all data, bg+fg+label
+		}
+
 		// insert the user annotation reference
 		if ((e = markedCacheCheck((thisChapter * 1000) + k))) {
-			gchar *escaped_value = g_uri_escape_string(
-				e->annotation->str, NULL, TRUE);
+			gchar *escaped_value = g_uri_escape_string(e->annotation->str, NULL, TRUE);
 			swbuf.appendFormatted("<span class=\"annotation\">"
 					      "<a href=\"passagestudy.jsp?action=showUserNote&"
 					      "module=%s&passage=%s&value=%s\"><small>"

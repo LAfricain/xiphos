@@ -721,6 +721,14 @@ G_MODULE_EXPORT void on_edit_item_activate(GtkMenuItem *menuitem,
 		if (gui_gs_dialog(info) == GS_OK) {
 			BOOKMARK_DATA *data = g_new0(BOOKMARK_DATA, 1);
 			data->caption     = g_strdup(info->text1);
+
+			if (data->caption && strstr(data->caption, "@:@:@")) {
+				gui_generic_warning_modal(_("Bookmark labels may not contain \"@:@:@\"."));
+				g_free(data->caption);
+				g_free(data);
+				return;
+			}
+
 			data->key         = g_strdup(info->text2);
 			data->module      = g_strdup(info->text3);
 			data->module_desc = g_strdup(main_get_module_description(info->text3));

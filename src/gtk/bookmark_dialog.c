@@ -110,8 +110,15 @@ static void add_bookmark_button(void)
 
 	data = g_new0(BOOKMARK_DATA, 1);
 	data->caption = g_strdup((gchar *)gtk_entry_get_text(GTK_ENTRY(entry_label)));
-	data->key = g_strdup((gchar *)gtk_entry_get_text(GTK_ENTRY(entry_key)));
 
+	if (data->caption && strstr(data->caption, "@:@:@")) {
+		gui_generic_warning_modal(_("Bookmark labels may not contain \"@:@:@\"."));
+		g_free(data->caption);
+		g_free(data);
+		return;
+	}
+
+	data->key = g_strdup((gchar *)gtk_entry_get_text(GTK_ENTRY(entry_key)));
 
 	module_from_entry = gtk_entry_get_text(GTK_ENTRY(entry_module));
 	if (module_from_entry && strlen(module_from_entry) > 0) {
@@ -142,7 +149,6 @@ static void add_bookmark_button(void)
 	gui_add_item_to_tree(&iter, &selected, data);
 	bookmarks_changed = TRUE;
 	gui_save_bookmarks(NULL, NULL);
-
 }
 
 /******************************************************************************

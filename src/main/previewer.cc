@@ -198,7 +198,7 @@ void main_information_viewer(const gchar *mod_name,
 			     s = t + 5, t = strstr(s, "@:@:@")) {
 				*t = '\0';
 				// #xxxxxx-#yyyyyy-LabelData
-				// 0      7       F
+				// 0......78......F
 				*(s + 7)  = '\0';	// separate colors from words.
 				*(s + 15) = '\0';
 				g_string_printf(tmp_str,
