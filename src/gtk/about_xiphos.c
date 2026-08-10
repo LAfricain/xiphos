@@ -48,6 +48,7 @@ static const gchar *authors[] = {
     "Christopher Bayliss",
     "Greg Hellings",
     "Nicholas Walkewicz",
+    "Cyrille Mattiuzzo",
     NULL};
 
 static const gchar *documenters[] = {
@@ -60,7 +61,7 @@ static const gchar *documenters[] = {
     NULL};
 
 static gchar *translators =
-    "Jan Paul Schmidt\nJorge Chacon\nDominique Corbex\nCyrille Mattiuzzo\nZdenko Podobný\nPavlo Bohmat\nMartin Zibricky\nAri Constancio\nGertjan Francke\nEicke Godehardt\nAndy Piper\nThomas Abthorpe\nEeli Kaikkonen\nAntoine Đỗ\nGiải Ngố";
+    "Jan Paul Schmidt\nJorge Chacon\nDominique Corbex\nCyrille Mattiuzzo\nZdenko Podobný\nPavlo Bohmat\nMartin Zibricky\nAri Constancio\nGertjan Francke\nEicke Godehardt\nAndy Piper\nThomas Abthorpe\nEeli Kaikkonen\nAntoine Đỗ\nGiải Ngố\nCyrille Mattiuzzo";
 
 /******************************************************************************
  * Name
