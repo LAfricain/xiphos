@@ -1637,9 +1637,6 @@ GTKChapDisp::RenderOneChapter(SWModule &imodule,
 			swbuf.appendFormatted("&nbsp;<span class=\"tagcolor\" style=\"background-color: %s; "
 					      "color: %s; \">",
 					      tag_color, tag_color + 8);
-
-			*(tag_color + 7)  = '-';		// restore format
-			*(tag_color + 15) = '-';		// for use in link data
 		}
 
 		// generate the verse number with color and decoration.
@@ -1651,11 +1648,14 @@ GTKChapDisp::RenderOneChapter(SWModule &imodule,
 				      (thisChapter * 1000) + key->getVerse(),
 				      (char *)key->getText(),
 				      settings.verse_num_font_size + settings.base_font_size,
-				      settings.bible_verse_num_color,
+				      (tag_color ? (tag_color + 8) : settings.bible_verse_num_color),
 				      PRETTYPRINT(num));
 		g_free(num);
 
 		if (tag_color) {
+			*(tag_color + 7)  = '-';		// restore format
+			*(tag_color + 15) = '-';		// for use in link data
+
 			swbuf.appendFormatted("<span class=\"bookmarkref\">"
 					      "<a href=\"passagestudy.jsp?action=showBookmarkSource&"
 					      "module=%s&passage=%s&value=%s\">"
