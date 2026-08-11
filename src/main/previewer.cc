@@ -186,7 +186,7 @@ void main_information_viewer(const gchar *mod_name,
 		str = g_string_append(str, tmp_str->str);
 		str = g_string_append(str, morph_text);
 	} else {
-		if (*type != 'b')
+		if (!type || (*type != 'b'))
 			str = g_string_append(str, text);
 		else {
 			gchar *s, *t;
