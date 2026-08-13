@@ -325,7 +325,10 @@ static void on_entry_activate(GtkEntry *entry, gpointer user_data)
 
 	navbar_parallel.valid_key = TRUE;
 	main_navbar_versekey_set(navbar_parallel, settings.cvparallel);
-	main_update_parallel_page_detached();
+	if (settings.dockedInt)
+		main_update_parallel_page();
+	else
+		main_update_parallel_page_detached();
 	if (sync_on) {
 		const gchar *main_window_url =
 		    g_strdup_printf("sword:///%s%s",
