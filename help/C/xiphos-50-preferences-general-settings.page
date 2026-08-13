@@ -8,6 +8,7 @@
 
     <revision pkgversion="4.1.0" date="2018-04-24" status="draft"/>
     <revision pkgversion="4.1.0" date="2018-05-29" status="candidate"/>
+    <revision pkgversion="4.5.0" date="2026-08-10" status="draft"/>
 
     <title type='link' role="trail"></title>
     <title type='text'>Xiphos</title>
@@ -44,13 +45,16 @@
   required, so that the locale can be initialized.</p>
 
   <p>If you enable <gui>Default Dictionary</gui>, then that named dictionary
-  (see <gui>Special</gui> below) module will always be used when
-  double-clicking a word anywhere in <app>Xiphos</app>.</p>
+  (chosen on the <gui>Special</gui> tab, see
+  <link xref="xiphos-53-preferences-modules#xiphos-modules-special"/>) module
+  will always be used when double-clicking a word anywhere in <app>Xiphos</app>.</p>
 
   <p>Certain dictionary-style modules are <gui>Daily Devotionals</gui> whose
   keys are numerically in the form "Month.Day".  If you have such a module
-  installed and it has been selected as your preferred devotional, then you
-  can ask that <app>Xiphos</app> display today's selection during startup.</p>
+  installed and it has been selected as your preferred devotional (also on the
+  <gui>Special</gui> tab), then you can ask that <app>Xiphos</app> display
+  today's selection during startup, and it also populates the
+  <link xref="xiphos-11-interface#xiphos-devotional">Devotional tab</link>.</p>
 
   <p>If you enable <gui>Resize images</gui>, <app>Xiphos</app> will
   automatically resize image content in commentaries, general books, and
@@ -69,5 +73,15 @@
 
   <p>Verse number display can be offset in several ways provided by the
   checkboxes.</p>
+
+   <!-- TODO: confirm exact menu wording/label for the whole-book rendering
+    toggle against source (added by commit 943842c4, #1350, fix #612). -->
+    <section id="xiphos-bible-whole-book">
+      <title>Viewing A Whole Book</title>
+      <p>Normally the <gui>Bible Text Pane</gui> shows one chapter at a time.
+      For continuous reading, or for searching visually through a book  enable
+      <gui>Display Whole Bible books</gui>, which renders every chapter of the current
+      book in the pane at once. Unselect the option again to return to normal chapter-at-a-time display.</p>
+    </section>
 
 </page>

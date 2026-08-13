@@ -9,6 +9,7 @@
 
     <revision pkgversion="4.1.0" date="2018-04-24" status="draft"/>
     <revision pkgversion="4.1.0" date="2018-05-29" status="candidate"/>
+    <revision pkgversion="4.5.0" date="2026-08-10" status="draft"/>
 
     <title type='link' role="trail"></title>
     <title type='text'>Xiphos</title>
@@ -86,8 +87,13 @@
     <p>While still in the module manager, create indexes for all of the modules
     you just installed. Then close the module manager and open <guiseq><gui>Edit
     </gui><gui>	Preferences</gui></guiseq> and go to <guiseq><gui>Modules</gui>
-    <gui>Misc</gui></guiseq>. Set your Hebrew and Greek lexicons according to
-    what you installed.
+    <gui>Special</gui></guiseq> (see
+    <link xref="xiphos-53-preferences-modules#xiphos-modules-special"/>). Set
+    your Hebrew and Greek lexicons according to what you installed, and while
+    there, also set <gui>Default Hebrew Old Testament Morphology</gui> and
+    <gui>Default Greek New Testament Morphology</gui> so that morphological
+    codes resolve to their meaning even in modules without their own
+    morphology dictionary link.
     Close preferences and open the KJV module. Turn on the module options
     <guiseq><gui>Right Click</gui><gui>Module Options</gui><gui>Show Strongs
     </gui></guiseq> and <guiseq><gui>Right Click</gui><gui>Module Options

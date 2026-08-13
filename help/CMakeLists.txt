@@ -46,6 +46,7 @@ if (HELP)
     xiphos-40-personal-commentary.page
     xiphos-41-studypad.page
     xiphos-42-journals.page
+    xiphos-43-bookmarks.page
     xiphos-50-preferences-general-settings.page
     xiphos-51-preferences-biblesync.page
     xiphos-52-preferences-fonts-colors.page
@@ -56,10 +57,12 @@ if (HELP)
 
   # list of figures
   list (APPEND help_figures
+    figures/bookmarks.png
     figures/first_start.png
     figures/interface_biblepane-options.png
     figures/interface_biblepane.png
     figures/interface_commentarypane.png
+    figures/interface_devotional.png
     figures/interface_dictionary.png
     figures/interface_menubar.png
     figures/interface_menubar-view.png

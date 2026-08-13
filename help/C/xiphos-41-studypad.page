@@ -8,6 +8,7 @@
 
     <revision pkgversion="4.1.0" date="2018-04-24" status="draft"/>
     <revision pkgversion="4.1.0" date="2018-05-29" status="candidate"/>
+    <revision pkgversion="4.5.0" date="2026-08-10" status="draft"/>
 
     <title type='link' role="trail"></title>
     <title type='text'>Xiphos</title>
@@ -50,19 +51,13 @@
   <p> Toolbar 1</p>
   <list>
     <item>
-      <p>Font Size and Environment</p>
-    </item>
-    <item>
-      <p>Font Type</p>
+      <p>Font Size and Level</p>
     </item>
     <item>
       <p>Bold, Italics, Underscored, Crossed Out</p>
     </item>
     <item>
-      <p>Left, Centre and Right  Bound</p>
-    </item>
-    <item>
-      <p>Shift Paragraph Right or Left</p>
+      <p>Font Type</p>
     </item>
     <item>
       <p>Colour Selector</p>
@@ -72,20 +67,20 @@
   <p> Toolbar 2</p>
   <list>
     <item>
-      <p>New, Save, Delete and Print</p>
+      <p>New, Open, Save, Undo and Redo</p>
     </item>
     <item>
-      <p>Cut, Copy, Paste and Undo</p>
+      <p>Cut, Copy, Paste</p>
     </item>
     <item>
       <p>Find and 'Find and Replace'</p>
     </item>
     <item>
-      <p>Spellcheck</p>
+      <p>Left, Centre and Right  Bound</p>
+    </item>
+    <item>
+      <p>Shift Paragraph Right or Left</p>
     </item>
   </list>
-
-  <p>In order for spellcheck to be available, one of the languages under
-  <guiseq><gui>Edit</gui><gui>Current languages</gui></guiseq> must be set.</p>
 
 </page>

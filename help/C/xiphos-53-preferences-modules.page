@@ -8,6 +8,7 @@
 
     <revision pkgversion="4.1.0" date="2018-04-24" status="draft"/>
     <revision pkgversion="4.1.0" date="2018-05-29" status="candidate"/>
+    <revision pkgversion="4.5.0" date="2026-08-10" status="draft"/>
 
     <title type='link' role="trail"></title>
     <title type='text'>Xiphos</title>
@@ -36,9 +37,70 @@
 
   <title>Module Settings</title>
 
-  <media style="image" mime="image/png"
-	 src="figures/preferences_modules-parallel.png" />
+  <section id="xiphos-modules-parallel">
+    <title>Parallel</title>
 
-  <media style="image" mime="image/png"
-	 src="figures/preferences_modules-misc.png" />
+    <media style="image" mime="image/png"
+	   src="figures/preferences_modules-parallel.png" />
+    <p>The <gui>Parallel</gui> tab lets you create sets of Bible books
+    that you want to view side by side.</p>
+    <media style="image" mime="image/png"
+	   src="figures/preferences_modules-misc.png" />
+  </section>
+
+  <section id="xiphos-modules-special">
+    <title>Special</title>
+
+    <p>The <gui>Special</gui> tab gathers the default modules <app>Xiphos</app>
+    falls back on for particular kinds of lookups, so you do not have to
+    choose a source module every time:</p>
+
+    <list>
+	<item>
+	<p><gui>Daily Devotional</gui> - the Daily Devotional module used to
+	populate the <link xref="xiphos-11-interface#xiphos-devotional">Devotional
+	tab</link>.</p>
+      </item>
+	<item>
+	<p><gui>Hebrew Lexicon</gui> - the module
+	consulted when you hover over a Strong number, so that
+	Hebrew strong codes are shown.</p>
+      </item>
+	<item>
+	<p><gui>Greek Lexicon</gui> - the module
+	consulted when you hover over a Strong number, so that
+	Greek strong codes are shown.</p>
+      </item>
+
+
+      <item>
+	<p><gui>Hebrew Morphology Lexicon</gui> - the module
+	consulted when you hover over an Old Testament in Hebrew morphology tag, so that
+	Hebrew morphological codes resolve to their meaning even in Bible
+	modules that do not carry their own morphology dictionary link.</p>
+      </item>
+	  <item>
+	<p><gui>OT Greek Morphology Lexicon</gui> - the equivalent
+	setting for Old Testament morphology tags, resolving Greek
+	morphological codes (parts of speech, tense, case, etc.).</p>
+      </item>
+      <item>
+	<p><gui>NT Greek Morphology Lexicon</gui> - the equivalent
+	setting for New Testament morphology tags, resolving Greek
+	morphological codes (parts of speech, tense, case, etc.).</p>
+      </item>
+	 <item>
+	<p><gui>Default Dictionary</gui> - the dictionary module used when you
+	double-click a word anywhere in <app>Xiphos</app>, if the <gui>Default
+	Dictionary</gui> option is enabled in
+	<link xref="xiphos-50-preferences-general-settings"/>.</p>
+      </item>
+    </list>
+
+    <p>These selectors are populated from whatever suitable dictionary and
+    devotional modules you already have installed; install one first from the
+    Module Manager if the list is empty. See also
+    <link xref="xiphos-33-original-language"/> for setting these up as part of
+    original-language study.</p>
+  </section>
 </page>
