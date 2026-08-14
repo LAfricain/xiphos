@@ -1436,6 +1436,17 @@ static void build_tag_color_map(VerseKey *vk)
 					is_scripture_key = FALSE;
 			}
 			if (effective && is_scripture_key) {
+				// footnote elimination, like "Song.2.4#n17".
+				// remove thml (#) and osis (!) subverse indicators.
+				// must do this before Sword parse gets hold of it.
+				gchar *punc;
+				while ((punc = strpbrk(node_key, "#!"))) {
+					*(punc++) = ' ';
+					while ((punc = strpbrk(punc, "n0123456789"))) {
+						*(punc++) = ' ';
+					}
+				}
+
 				GList *verses = backend->parse_verse_list(
 					settings.MainWindowModule, node_key,
 					(char *)settings.currentverse);
