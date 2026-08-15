@@ -948,8 +948,35 @@ GList *BackEnd::parse_verse_list(const char *module_name, const char *list, char
 	 * reference from the input. */
 	for (int i = 0; i < count; i++) {
 		SWKey *elem = vs.getElement(i);
-		if (elem && !elem->popError())
-			retlist = g_list_append(retlist, strdup((char *)elem->getText()));
+		if (!elem || elem->popError())
+			continue;
+
+		/* If this element is a hyphenated range (e.g. "Jer 3:6-11"),
+		 * elem->getText() only gives the START of the range -- Sword
+		 * does not auto-expand it into individual verses here. Empirically,
+		 * for a VerseKey list element, getUpperBound() (and getLowerBound(),
+		 * which mirrors it) return the END of the range when there is one,
+		 * and are otherwise equal to the element itself for a plain single
+		 * verse. So: if the upper bound differs from the element's own
+		 * value, walk every verse from the element (start) through the
+		 * upper bound (end) and add each individually -- restoring the
+		 * full-range expansion behaviour this used to have before this
+		 * function was switched to indexed access. */
+		VerseKey *velem = dynamic_cast<VerseKey *>(elem);
+		if (velem) {
+			VerseKey &bound = velem->getUpperBound();
+			if (bound.compare(*velem) != 0) {
+				VerseKey walker(*velem);
+				int guard = 0;
+				while ((walker.compare(bound) <= 0) && !walker.popError() && (guard++ < 2000)) {
+					retlist = g_list_append(retlist, strdup((char *)walker.getText()));
+					walker.increment(1);
+				}
+				continue;
+			}
+		}
+
+		retlist = g_list_append(retlist, strdup((char *)elem->getText()));
 	}
 	return retlist;
 }
