@@ -98,6 +98,7 @@ ui/editor_note.xml
 ui/editor_studypad.xml
 ui/export-dialog.glade
 [type: gettext/glade]ui/export-dialog.gtkbuilder
+[type: gettext/glade]ui/folder.gtkbuilder
 [type: gettext/glade]ui/gtk2_webedit.ui
 [type: gettext/glade]ui/gtk_webedit.ui
 ui/markverse.glade
@@ -116,5 +117,6 @@ ui/xi-export-bookmarks.glade
 ui/xi-menus.glade
 [type: gettext/glade]ui/xi-menus.gtkbuilder
 [type: gettext/glade]ui/xi-menus-popup.gtkbuilder
+
 ## application files
 desktop/xiphos.desktop.in

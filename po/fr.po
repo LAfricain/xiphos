@@ -26,8 +26,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xiphos 4.0.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-06 20:40+0200\n"
-"PO-Revision-Date: 2026-08-06 20:56+0200\n"
+"POT-Creation-Date: 2026-08-15 15:34+0200\n"
+"PO-Revision-Date: 2026-08-15 15:38+0200\n"
 "Last-Translator: Cyrille <lafricain79@gmail.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -278,7 +278,7 @@ msgstr "Bible"
 msgid "Commentary"
 msgstr "Commentaire"
 
-#: ../src/gtk/about_modules.c:476 ../src/gtk/main_window.c:1235
+#: ../src/gtk/about_modules.c:476 ../src/gtk/main_window.c:1238
 #: ../ui/prefs.glade.h:150 ../ui/prefs.gtkbuilder.h:145
 msgid "Dictionary"
 msgstr "Dictionnaire"
@@ -492,11 +492,11 @@ msgstr "Voir le TRANSLATION-HOWTO dans les sources de Xiphos"
 msgid "Xiphos development"
 msgstr "SIte de développement de Xiphos"
 
-#: ../src/gtk/about_xiphos.c:131
+#: ../src/gtk/about_xiphos.c:132
 msgid "Copyright © 2000-2026 Xiphos Development Team"
 msgstr "Copyright © 2000-2026 Équipe de développement Xiphos"
 
-#: ../src/gtk/about_xiphos.c:133
+#: ../src/gtk/about_xiphos.c:134
 msgid ""
 "\n"
 "Powered by The SWORD Project.\n"
@@ -509,21 +509,25 @@ msgstr ""
 "les autres personnes qui font vivre le Projet SWORD."
 
 #. Cette ligne est commune, on la sort du #ifdef
-#: ../src/gtk/bookmark_dialog.c:79 ../src/gtk/bookmark_dialog.c:214
+#: ../src/gtk/bookmark_dialog.c:79 ../src/gtk/bookmark_dialog.c:220
 #: ../src/gtk/bookmarks_menu.c:84 ../src/gtk/bookmarks_menu.c:660
-#: ../src/gtk/bookmarks_menu.c:1101
+#: ../src/gtk/bookmarks_menu.c:1109
 msgid "Add color"
 msgstr "Ajouter une couleur"
 
 #. colorbtn clicked — enable "No color"
-#: ../src/gtk/bookmark_dialog.c:79 ../src/gtk/bookmark_dialog.c:224
+#: ../src/gtk/bookmark_dialog.c:79 ../src/gtk/bookmark_dialog.c:230
 #: ../src/gtk/bookmarks_menu.c:77 ../src/gtk/bookmarks_menu.c:82
 #: ../src/gtk/bookmarks_menu.c:84 ../src/gtk/bookmarks_menu.c:672
-#: ../src/gtk/bookmarks_menu.c:1112
+#: ../src/gtk/bookmarks_menu.c:1120 ../ui/folder.gtkbuilder.h:5
 msgid "No color"
 msgstr "Pas de couleur"
 
-#: ../src/gtk/bookmark_dialog.c:210
+#: ../src/gtk/bookmark_dialog.c:115 ../src/gtk/bookmarks_menu.c:726
+msgid "Bookmark labels may not contain \"@:@:@\"."
+msgstr "Les étiquettes des signets ne doivent pas contenir \"@:@:@\"."
+
+#: ../src/gtk/bookmark_dialog.c:216
 msgid "New Tag"
 msgstr "Nouvelle étiquette"
 
@@ -570,7 +574,7 @@ msgstr "Éditer l’étiquette"
 msgid "Edit"
 msgstr "Édition"
 
-#: ../src/gtk/bookmarks_menu.c:711 ../src/gtk/bookmarks_menu.c:976
+#: ../src/gtk/bookmarks_menu.c:711 ../src/gtk/bookmarks_menu.c:984
 #: ../src/gtk/bookmarks_treeview.c:139 ../ui/editor_studypad.xml.h:15
 #: ../ui/xi-menus.glade.h:60 ../ui/xi-menus-popup.gtkbuilder.h:45
 msgid "Bookmark"
@@ -580,41 +584,41 @@ msgstr "Signet"
 msgid "Bookmark name: "
 msgstr "Nom du signet : "
 
-#: ../src/gtk/bookmarks_menu.c:717 ../src/gtk/bookmarks_menu.c:984
+#: ../src/gtk/bookmarks_menu.c:717 ../src/gtk/bookmarks_menu.c:992
 msgid "Verse: "
 msgstr "Verset : "
 
-#: ../src/gtk/bookmarks_menu.c:718 ../src/gtk/bookmarks_menu.c:985
+#: ../src/gtk/bookmarks_menu.c:718 ../src/gtk/bookmarks_menu.c:993
 msgid "Module: "
 msgstr "Module : "
 
-#: ../src/gtk/bookmarks_menu.c:816
+#: ../src/gtk/bookmarks_menu.c:824
 msgid "Remove the selected folder"
 msgstr "Supprimer le dossier sélectionné"
 
-#: ../src/gtk/bookmarks_menu.c:817
+#: ../src/gtk/bookmarks_menu.c:825
 msgid "(and all its contents)?"
 msgstr "(et tout son contenu) ?"
 
-#: ../src/gtk/bookmarks_menu.c:821
+#: ../src/gtk/bookmarks_menu.c:829
 msgid "Remove the selected bookmark"
 msgstr "Supprimer le signet sélectionné"
 
-#: ../src/gtk/bookmarks_menu.c:977
+#: ../src/gtk/bookmarks_menu.c:985
 msgid "Add"
 msgstr "Ajouter"
 
-#: ../src/gtk/bookmarks_menu.c:983
+#: ../src/gtk/bookmarks_menu.c:991
 msgid "Label: "
 msgstr "Étiquette : "
 
-#: ../src/gtk/bookmarks_menu.c:1099 ../ui/bookmarks.glade.h:4
+#: ../src/gtk/bookmarks_menu.c:1107 ../ui/bookmarks.glade.h:4
 #: ../ui/bookmarks.gtkbuilder.h:4 ../ui/xi-menus.glade.h:123
 #: ../ui/xi-menus-popup.gtkbuilder.h:5
 msgid "New Folder"
 msgstr "Nouveau dossier"
 
-#: ../src/gtk/bookmarks_menu.c:1223
+#: ../src/gtk/bookmarks_menu.c:1231
 msgid "Choose folder color"
 msgstr "Choisir une couleur de dossier"
 
@@ -696,10 +700,6 @@ msgid "Go forward in history"
 msgstr "Avancer dans l'historique"
 
 #: ../src/gtk/dictlex.c:627
-msgid "Date MM.DD"
-msgstr "Date MM.DD"
-
-#: ../src/gtk/dictlex.c:637
 msgid "Click to choose a date"
 msgstr "Cliquer pour choisir une date"
 
@@ -834,15 +834,15 @@ msgstr "BibleSync : La navigation courante a été envoyée."
 msgid "BibleSync: Not speaking."
 msgstr "BibleSync : Ne transmet pas."
 
-#: ../src/gtk/main_window.c:1052
+#: ../src/gtk/main_window.c:1055
 msgid "Xiphos - Bible Study Software"
 msgstr "Xiphos - Logiciel d’étude biblique"
 
-#: ../src/gtk/main_window.c:1116
+#: ../src/gtk/main_window.c:1119
 msgid "Open a new tab"
 msgstr "Ouvre un nouvel onglet"
 
-#: ../src/gtk/main_window.c:1171 ../src/gtk/sidebar.c:606
+#: ../src/gtk/main_window.c:1174 ../src/gtk/sidebar.c:606
 #: ../src/gtk/sidebar.c:641 ../src/main/sidebar.cc:654
 #: ../src/main/sidebar.cc:1318 ../src/main/sidebar.cc:1319
 #: ../src/main/sidebar.cc:1320
@@ -850,20 +850,20 @@ msgid "Standard View"
 msgstr "Affichage standard"
 
 # Je traduis seulement commentaire pour des raisons d'affichage. Mais cela donne très bien.
-#: ../src/gtk/main_window.c:1211
+#: ../src/gtk/main_window.c:1214
 msgid "Commentary View"
 msgstr "Commentaire"
 
 # Je traduis juste livre car sinon la ligne est trop grand mais cela donne très bien dans l'affichage.
-#: ../src/gtk/main_window.c:1219
+#: ../src/gtk/main_window.c:1222
 msgid "Book View"
 msgstr "Livre"
 
-#: ../src/gtk/main_window.c:1244
+#: ../src/gtk/main_window.c:1247
 msgid "Devotional"
 msgstr "Calendrier"
 
-#: ../src/gtk/main_window.c:1258
+#: ../src/gtk/main_window.c:1261
 msgid "Welcome to Xiphos"
 msgstr "Bienvenue dans Xiphos"
 
@@ -1502,22 +1502,22 @@ msgstr "Aller à la première sous-section"
 
 #: ../src/gtk/navbar_versekey_dialog.c:910
 #: ../src/gtk/navbar_versekey_editor.c:939
-#: ../src/gtk/navbar_versekey_parallel.c:957
+#: ../src/gtk/navbar_versekey_parallel.c:960
 msgid "Synchronize this window's scrolling with the main window"
 msgstr "Synchronise le défilement de cette fenêtre avec la fenêtre principale"
 
-#: ../src/gtk/navbar_versekey_parallel.c:822
-#: ../src/gtk/navbar_versekey_parallel.c:1026
+#: ../src/gtk/navbar_versekey_parallel.c:825
 #: ../src/gtk/navbar_versekey_parallel.c:1029
+#: ../src/gtk/navbar_versekey_parallel.c:1032
 #, c-format
 msgid "Set: %s"
 msgstr "Groupe : %s"
 
-#: ../src/gtk/navbar_versekey_parallel.c:881
+#: ../src/gtk/navbar_versekey_parallel.c:884
 msgid "Manage..."
 msgstr "Gérer…"
 
-#: ../src/gtk/navbar_versekey_parallel.c:1033
+#: ../src/gtk/navbar_versekey_parallel.c:1040
 msgid "Switch parallel module set"
 msgstr "Bascule entre groupe de modules parallèles"
 
@@ -2183,7 +2183,7 @@ msgstr ""
 "<br/><br/><center><i>Ce module n’a aucun contenu à cette référence.</i></"
 "center>"
 
-#: ../src/main/display.cc:271
+#: ../src/main/display.cc:267
 #, c-format
 msgid ""
 "Improperly encoded personal annotation label:\n"
@@ -2192,7 +2192,7 @@ msgstr ""
 "Ce nom d’annotation personnelle est improprement formé :\n"
 "’%s’"
 
-#: ../src/main/display.cc:1307 ../src/main/display.cc:1566
+#: ../src/main/display.cc:1303 ../src/main/display.cc:1587
 #: ../ui/export-dialog.glade.h:14 ../ui/export-dialog.gtkbuilder.h:14
 msgid "Chapter"
 msgstr "Chapitre"
@@ -2201,23 +2201,23 @@ msgstr "Chapitre"
 msgid "Xiphos does not understand more than one argument."
 msgstr "Xiphos n’accepte pas plus d’un argument."
 
-#: ../src/main/main.c:312
+#: ../src/main/main.c:341
 msgid "Initiating HTML"
 msgstr "Initialisation HTML"
 
-#: ../src/main/main.c:317
+#: ../src/main/main.c:346
 msgid "Building Interface"
 msgstr "Construction de l’interface"
 
-#: ../src/main/main.c:320
+#: ../src/main/main.c:349
 msgid "Starting Sword"
 msgstr "Démarrage de Sword"
 
-#: ../src/main/main.c:323
+#: ../src/main/main.c:352
 msgid "Loading Settings"
 msgstr "Chargement des préférences"
 
-#: ../src/main/main.c:326
+#: ../src/main/main.c:355
 msgid "Displaying Xiphos"
 msgstr "Affichage de Xiphos"
 
@@ -2231,19 +2231,19 @@ msgid "Footnote"
 msgstr "Note de bas de page"
 
 #: ../src/main/module_dialogs.cc:246 ../src/main/module_dialogs.cc:349
-#: ../src/main/previewer.cc:159
+#: ../src/main/previewer.cc:158
 msgid "Cross Reference"
 msgstr "Référence croisée"
 
 #: ../src/main/module_dialogs.cc:252 ../src/main/module_dialogs.cc:266
 #: ../src/main/module_dialogs.cc:354 ../src/main/module_dialogs.cc:366
-#: ../src/main/previewer.cc:164 ../src/main/previewer.cc:184
+#: ../src/main/previewer.cc:161 ../src/main/previewer.cc:179
 msgid "Strongs"
 msgstr "Strongs"
 
 #: ../src/main/module_dialogs.cc:258 ../src/main/module_dialogs.cc:277
 #: ../src/main/module_dialogs.cc:359 ../src/main/module_dialogs.cc:376
-#: ../src/main/previewer.cc:169 ../src/main/previewer.cc:190
+#: ../src/main/previewer.cc:164 ../src/main/previewer.cc:185
 msgid "Morphology"
 msgstr "Étiquette morphologique"
 
@@ -2576,9 +2576,13 @@ msgstr ""
 msgid "BookChapter"
 msgstr "LivreChapitre"
 
-#: ../src/main/previewer.cc:154
+#: ../src/main/previewer.cc:152
 msgid "User Annotation"
 msgstr "Annotation par l’utilisateur"
+
+#: ../src/main/previewer.cc:155
+msgid "Bookmark List"
+msgstr "Liste des Signets"
 
 #: ../src/main/search_dialog.cc:117 ../ui/search-dialog.glade.h:39
 #: ../ui/search-dialog.gtkbuilder.h:39
@@ -2873,13 +2877,13 @@ msgstr "Qu’est-ce que l’Évangile ?"
 msgid "1 Cor 15:1-4"
 msgstr "1 Cor 15:1-4"
 
-#: ../src/main/xml.c:295 ../src/main/xml.c:441 ../src/main/xml.c:1596
+#: ../src/main/xml.c:295 ../src/main/xml.c:441 ../src/main/xml.c:1599
 #, c-format
 msgid "Document not parsed successfully. \n"
 msgstr "Erreur de lecture du document. \n"
 
 #: ../src/main/xml.c:301 ../src/main/xml.c:447 ../src/main/xml.c:467
-#: ../src/main/xml.c:1124 ../src/main/xml.c:1454 ../src/main/xml.c:1679
+#: ../src/main/xml.c:1127 ../src/main/xml.c:1457 ../src/main/xml.c:1682
 #, c-format
 msgid "empty document \n"
 msgstr "document vide \n"
@@ -3014,12 +3018,12 @@ msgstr "Mt - Ap"
 msgid "Sample Module List"
 msgstr "Exemple de liste de modules"
 
-#: ../src/main/xml.c:1130 ../src/main/xml.c:1460
+#: ../src/main/xml.c:1133 ../src/main/xml.c:1463
 #, c-format
 msgid "wrong type, root node != %s\n"
 msgstr "erreur de type, root node != %s\n"
 
-#: ../src/main/xml.c:1641
+#: ../src/main/xml.c:1644
 #, c-format
 msgid ""
 "Save of settings failed! stat %d, size %d\n"
@@ -3028,7 +3032,7 @@ msgstr ""
 "La sauvegarde de la configuration a échouée ! stat %d, taille %d\n"
 "%s"
 
-#: ../src/main/xml.c:1643
+#: ../src/main/xml.c:1646
 msgid "Attempting to revert to previous save."
 msgstr "Tentative de retour à la sauvegarde précédente."
 
@@ -3328,6 +3332,26 @@ msgstr "Indique si les numéros de versets doivent apparaître dans le texte."
 #: ../ui/export-dialog.gtkbuilder.h:32
 msgid "Include version"
 msgstr "Nom de la version de la Bible"
+
+#: ../ui/folder.gtkbuilder.h:1
+msgid "Folder"
+msgstr "Dossier"
+
+#: ../ui/folder.gtkbuilder.h:2
+msgid "Name:"
+msgstr "Nom :"
+
+#: ../ui/folder.gtkbuilder.h:3
+msgid "Tag color:"
+msgstr "Couleur de l’étiquette :"
+
+#: ../ui/folder.gtkbuilder.h:4
+msgid "Choose a highlight color for this tag group"
+msgstr "Choisis une couleur de surlignement pour ce groupe d’étiquettes"
+
+#: ../ui/folder.gtkbuilder.h:6
+msgid "Remove tag color from this folder"
+msgstr "Supprime le la couleur de l’étiquette de ce dossier"
 
 #: ../ui/gtk2_webedit.ui.h:1 ../ui/gtk_webedit.ui.h:1
 msgid "About Studypad"
@@ -5825,6 +5849,9 @@ msgstr "Éditer cet élément"
 #: ../ui/xi-menus-popup.gtkbuilder.h:20
 msgid "Popup menu for cross-references"
 msgstr "Menu contextuel pour les références croisées"
+
+#~ msgid "Date MM.DD"
+#~ msgstr "Date MM.DD"
 
 #~ msgid "-2"
 #~ msgstr "-2"
