@@ -24,9 +24,6 @@
 #endif
 
 #include <gtk/gtk.h>
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #include "xiphos_html/xiphos_html.h"
 
@@ -1232,36 +1229,21 @@ GtkWidget *create_results_menu_advsearch(void)
 {
 	GtkWidget *menu;
 	gchar *glade_file;
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
 	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-#else
-	GladeXML *gxml;
-	glade_file = gui_general_user_file("xi-menus.glade", FALSE);
-#endif
 	g_return_val_if_fail((glade_file != NULL), NULL);
 
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "menu_verselist_advsearch", NULL);
-#endif
 
 	g_free(glade_file);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_verselist_advsearch");
-#ifdef USE_GTKBUILDER
 	/* connect signals and data */
 	gtk_builder_connect_signals(gxml, NULL);
 /*gtk_builder_connect_signals_full
 	   (gxml, (GtkBuilderConnectFunc)gui_glade_signal_connect_func, NULL); */
-#else
-	/* connect signals and data */
-	glade_xml_signal_autoconnect_full(gxml, (GladeXMLConnectFunc)gui_glade_signal_connect_func,
-					  NULL);
-#endif
 
 	return menu;
 }
@@ -1573,31 +1555,6 @@ void _on_dialog2_response(GtkDialog *dialog, gint response_id,
  *   void
  */
 
-#ifndef USE_GTKBUILDER
-static void _create_mod_sel_dialog(void)
-{
-	gchar *glade_file;
-	GladeXML *gxml2;
-
-	glade_file = gui_general_user_file("search-dialog.glade", FALSE);
-	g_return_if_fail(glade_file != NULL);
-	XI_message(("%s", glade_file));
-
-	gxml2 = glade_xml_new(glade_file, "dialog2", NULL);
-	search1.mod_sel_dialog = glade_xml_get_widget(gxml2, "dialog2");
-
-	g_signal_connect((gpointer)search1.mod_sel_dialog, "response",
-			 G_CALLBACK(_on_dialog2_response), NULL);
-
-	search1.mod_sel_dlg_treeview =
-	    glade_xml_get_widget(gxml2, "treeview8");
-
-	_setup_treeview2(search1.mod_sel_dlg_treeview);
-	gtk_widget_hide(search1.mod_sel_dialog);
-
-	g_free(glade_file);
-}
-#endif
 
 /******************************************************************************
  * Name
@@ -1618,9 +1575,6 @@ static void _create_mod_sel_dialog(void)
 void
 on_toolbutton12_clicked(GtkToolButton *toolbutton, gpointer user_data)
 {
-#ifndef USE_GTKBUILDER
-	_create_mod_sel_dialog();
-#endif
 	gtk_widget_show(search1.mod_sel_dialog);
 }
 
@@ -1717,11 +1671,7 @@ void _on_dialog_response(GtkDialog *dialog, gint response_id,
 static void _create_search_dialog(void)
 {
 	gchar *glade_file;
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
-#else
-	GladeXML *gxml;
-#endif
 	GtkWidget *toolbutton1;
 	GtkWidget *toolbutton2;
 	GtkWidget *toolbutton3;
@@ -1744,12 +1694,8 @@ static void _create_search_dialog(void)
 	XI_message(("%s", glade_file));
 
 /* build the widget */
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "dialog", NULL);
-#endif
 	g_return_if_fail(gxml != NULL);
 
 	/* lookup the root widget */
@@ -1917,13 +1863,10 @@ static void _create_search_dialog(void)
 			 G_CALLBACK(range_text_changed), NULL);
 
 	search1.progressbar = UI_GET_ITEM(gxml, "progressbar1");
-#ifdef USE_GTKBUILDER
 	gtk_progress_bar_set_show_text(GTK_PROGRESS_BAR(search1.progressbar), TRUE);
-#endif
 	search1.label_mod_select = UI_GET_ITEM(gxml, "label5");
 	search1.listview_results = UI_GET_ITEM(gxml, "treeview9");
 
-#ifdef USE_GTKBUILDER
 	/* setup module select dialog */
 	search1.mod_sel_dialog = UI_GET_ITEM(gxml, "dialog2");
 	g_signal_connect((gpointer)search1.mod_sel_dialog, "response",
@@ -1931,7 +1874,6 @@ static void _create_search_dialog(void)
 	search1.mod_sel_dlg_treeview = UI_GET_ITEM(gxml, "treeview8");
 	_setup_treeview2(search1.mod_sel_dlg_treeview);
 	gtk_widget_hide(search1.mod_sel_dialog);
-#endif
 
 	_setup_listviews(search1.listview_results,
 			 (GCallback)_selection_finds_list_changed);
@@ -1943,11 +1885,7 @@ static void _create_search_dialog(void)
 			 "button_press_event",
 			 G_CALLBACK(on_treeview_button_press_event_advsearch), NULL);
 
-#ifdef USE_GTKBUILDER
 	_add_html_widget(GTK_WIDGET(gtk_builder_get_object(gxml, "vbox12")));
-#else
-	_add_html_widget(glade_xml_get_widget(gxml, "vbox12"));
-#endif
 
 	g_signal_connect((gpointer)search1.dialog,
 			 "configure_event",

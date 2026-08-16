@@ -30,9 +30,6 @@
 
 #include <gtk/gtk.h>
 #include <gtk/gtk.h>
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #include "gui/bibletext.h"
 #include "gui/dialog.h"
@@ -3211,21 +3208,13 @@ void ps_button_cut(GtkButton *button, gpointer user_data)
  */
 void ps_button_add(GtkButton *button, gpointer user_data)
 {
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
-#else
-	GladeXML *gxml;
-#endif
 	gchar *glade_file =
 	    gui_general_user_file("selector-prefs" UI_SUFFIX, FALSE);
 	g_return_if_fail(glade_file != NULL);
 
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "mod_sel_dialog", NULL);
-#endif
 	parallel_select.mod_sel_dialog =
 	    UI_GET_ITEM(gxml, "mod_sel_dialog");
 	parallel_select.mod_sel_close =
@@ -3481,11 +3470,7 @@ void gui_prefs_goto_parallel_page(void)
 
 static void create_preferences_dialog(void)
 {
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
-#else
-	GladeXML *gxml;
-#endif
 	GtkWidget *treeview;
 	GtkTreeModel *model;
 	GObject *selection;
@@ -3496,12 +3481,8 @@ static void create_preferences_dialog(void)
 	g_return_if_fail(glade_file != NULL);
 
 /* build the widget */
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, NULL, NULL);
-#endif
 	g_free(glade_file);
 	g_return_if_fail(gxml != NULL);
 
@@ -3680,13 +3661,8 @@ static void create_preferences_dialog(void)
 	selection =
 	    G_OBJECT(gtk_tree_view_get_selection(GTK_TREE_VIEW(treeview)));
 /* connect signals and data */
-#ifdef USE_GTKBUILDER
 	gtk_builder_connect_signals_full(gxml, (GtkBuilderConnectFunc)gui_glade_signal_connect_func,
 					 NULL);
-#else
-	glade_xml_signal_autoconnect_full(gxml, (GladeXMLConnectFunc)gui_glade_signal_connect_func,
-					  NULL);
-#endif
 
 	g_signal_connect(selection, "changed",
 			 G_CALLBACK(tree_selection_changed), model);

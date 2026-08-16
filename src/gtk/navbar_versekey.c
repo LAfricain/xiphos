@@ -24,9 +24,6 @@
 #endif
 
 #include <gtk/gtk.h>
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #include "editor/slib-editor.h"
 
@@ -729,11 +726,7 @@ static void _connect_signals(NAVBAR_VERSEKEY navbar)
 GtkWidget *gui_navbar_versekey_new(void)
 {
 
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
-#else
-	GladeXML *gxml;
-#endif
 #if GTK_CHECK_VERSION(3, 4, 0)
 	GtkWidget *eventbox;
 #endif
@@ -744,12 +737,8 @@ GtkWidget *gui_navbar_versekey_new(void)
 	XI_message(("%s", glade_file));
 
 /* build the widget */
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "navbar", NULL);
-#endif
 	navbar_versekey.dialog = FALSE;
 	navbar_versekey.module_name =
 	    g_string_new(settings.MainWindowModule);

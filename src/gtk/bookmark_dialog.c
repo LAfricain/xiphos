@@ -24,9 +24,6 @@
 #endif
 
 #include <gtk/gtk.h>
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #include "gui/bookmark_dialog.h"
 #include "gui/bookmarks_menu.h"
@@ -175,12 +172,8 @@ static void add_folder_button(void)
 	gchar *glade_file = gui_general_user_file("folder" UI_SUFFIX, TRUE);
 	if (!glade_file) return;
 
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	GladeXML *gxml = glade_xml_new(glade_file, NULL, NULL);
-#endif
 	g_free(glade_file);
 
 	GtkWidget *entry  = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_entry_name"));
@@ -188,24 +181,10 @@ static void add_folder_button(void)
 	GtkWidget *colorbtn = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_color_button"));
 	GtkWidget *clearbtn = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_clear_color"));
 
-#ifdef USE_GTKBUILDER
 	if (!dialog || !entry || !colorbtn || !clearbtn) {
 		g_object_unref(gxml);
 		return;
 	}
-#else
-	if (!dialog || !entry || !colorbtn || !clearbtn) return;
-
-	/* Détruire les boutons inactifs de Glade et ajouter les vrais boutons GTK2 */
-	GtkWidget *btn_ok = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_ok"));
-	GtkWidget *btn_cancel = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_cancel"));
-	if (btn_ok) gtk_widget_destroy(btn_ok);
-	if (btn_cancel) gtk_widget_destroy(btn_cancel);
-
-	gtk_dialog_add_button(GTK_DIALOG(dialog), GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL);
-	gtk_dialog_add_button(GTK_DIALOG(dialog), GTK_STOCK_OK, GTK_RESPONSE_OK);
-	gtk_dialog_set_default_response(GTK_DIALOG(dialog), GTK_RESPONSE_OK);
-#endif
 
 	gtk_window_set_title(GTK_WINDOW(dialog), _("New Tag"));
 	gtk_entry_set_text(GTK_ENTRY(entry), "");
@@ -222,7 +201,7 @@ static void add_folder_button(void)
 		gchar *color = NULL;
 
 		if (g_strcmp0(gtk_button_get_label(GTK_BUTTON(clearbtn)), _("No color")) == 0) {
-#if defined(USE_GTKBUILDER) && GTK_CHECK_VERSION(3, 4, 0)
+#if GTK_CHECK_VERSION(3, 4, 0)
 			GdkRGBA rgba;
 			gtk_color_chooser_get_rgba(GTK_COLOR_CHOOSER(colorbtn), &rgba);
 			if (rgba.red < 0.99 || rgba.green < 0.99 || rgba.blue < 0.99)
@@ -231,7 +210,7 @@ static void add_folder_button(void)
 					(guint)(rgba.green * 255),
 					(guint)(rgba.blue  * 255));
 #else
-			/* API de récupération de couleur pour GTK2 */
+			/* Fallback for GTK3 older than 3.4 (no GtkColorChooser API yet) */
 			GdkColor gdk_color;
 			gtk_color_button_get_color(GTK_COLOR_BUTTON(colorbtn), &gdk_color);
 			if (gdk_color.red < 65000 || gdk_color.green < 65000 || gdk_color.blue < 65000)
@@ -258,9 +237,7 @@ static void add_folder_button(void)
 		gtk_tree_path_free(path);
 	}
 	gtk_widget_destroy(dialog);
-#ifdef USE_GTKBUILDER
 	g_object_unref(gxml);
-#endif
 }
 
 /******************************************************************************
@@ -482,23 +459,15 @@ static void setup_treeview(void)
 static GtkWidget *_create_bookmark_dialog(gchar *label,
 					  gchar *module, gchar *key)
 {
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
-#else
-	GladeXML *gxml;
-#endif
 	gchar *glade_file =
 	    gui_general_user_file("bookmarks" UI_SUFFIX, TRUE);
 	g_return_val_if_fail(glade_file != NULL, NULL);
 	XI_message(("%s", glade_file));
 
 /* build the widget */
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, NULL, NULL);
-#endif
 	g_free(glade_file);
 	g_return_val_if_fail(gxml != NULL, NULL);
 
@@ -549,11 +518,7 @@ static GtkWidget *_create_bookmark_dialog(gchar *label,
 
 static GtkWidget *_create_mark_verse_dialog(gchar *module, gchar *key)
 {
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
-#else
-	GladeXML *gxml;
-#endif
 	GtkWidget *sw;
 	gchar osisreference[100];
 	gchar *old_note = NULL;
@@ -569,12 +534,8 @@ static GtkWidget *_create_mark_verse_dialog(gchar *module, gchar *key)
 	note = NULL;
 
 /* build the widget */
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, NULL, NULL);
-#endif
 	g_free(glade_file);
 	g_return_val_if_fail(gxml != NULL, NULL);
 

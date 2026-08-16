@@ -33,9 +33,6 @@
 
 #include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #include "gui/mod_mgr.h"
 #include "gui/dialog.h"
@@ -176,11 +173,7 @@ static gboolean first_time_user = FALSE;
 static gboolean working = FALSE;
 static gboolean is_running = FALSE;
 
-#ifdef USE_GTKBUILDER
 GtkBuilder *gxml;
-#else
-GladeXML *gxml;
-#endif
 
 static void load_module_tree(GtkTreeView *treeview, gboolean install);
 static void set_controls_to_last_use(void);
@@ -3520,13 +3513,9 @@ static GtkWidget *create_module_manager_dialog(gboolean first_run)
 	g_return_val_if_fail((glade_file != NULL), NULL);
 	XI_message(("%s", glade_file));
 
-#ifdef USE_GTKBUILDER
 	gchar *ids[] = {"dialog", NULL};
 	gxml = gtk_builder_new();
 	gtk_builder_add_objects_from_file(gxml, glade_file, ids, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "dialog", NULL);
-#endif
 	g_free(glade_file);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
@@ -3559,9 +3548,7 @@ static GtkWidget *create_module_manager_dialog(gboolean first_run)
 
 	/* progress bars */
 	progressbar_refresh = UI_GET_ITEM(gxml, "progressbar1");
-#ifdef USE_GTKBUILDER
 	gtk_progress_bar_set_show_text(GTK_PROGRESS_BAR(progressbar_refresh), TRUE);
-#endif
 
 	/* treeviews */
 	treeview1 = UI_GET_ITEM(gxml, "treeview1");
