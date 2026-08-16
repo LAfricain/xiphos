@@ -825,14 +825,7 @@ static GtkWidget *editor_new(const gchar *title, EDITOR *e)
 
 	buttons_state.nochange = 1;
 
-	gbuilder_file = gui_general_user_file(
-#ifdef USE_GTK_3
-	    "gtk_webedit.ui"
-#else
-	    "gtk2_webedit.ui"
-#endif
-	    ,
-	    FALSE);
+	gbuilder_file = gui_general_user_file("gtk_webedit.ui", FALSE);
 	builder = gtk_builder_new();
 
 	if (!gtk_builder_add_from_file(builder, gbuilder_file, &error)) {

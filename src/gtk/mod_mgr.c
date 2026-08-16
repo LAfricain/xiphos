@@ -73,7 +73,7 @@
 #define GTK_RESPONSE_SOURCES 307
 #define GTK_RESPONSE_INTRO 308
 #define GTK_RESPONSE_OBSOLETE 309
-/* see these codes' use in ui/module-manager.glade. */
+/* see these codes' use in ui/module-manager.gtkbuilder. */
 
 /* activity codes */
 enum {
