@@ -1473,52 +1473,12 @@ static void build_tag_color_map(VerseKey *vk)
 								 NULL);
 					// insertion may supercede previous instance, freeing it.
 					// ownership of newly-allocated str is given to the map.
+					// (parse_verse_list() itself now expands hyphenated
+					// ranges like "15:1-4" into one list element per verse,
+					// so no further manual range expansion is needed here
+					// -- doing so used to double up entries for every verse
+					// after the first one in a range.)
 					g_hash_table_insert(tag_color_map, ref2, str);
-
-					/* Sword's verse-list parser resolves a hyphenated
-					 * shorthand range like "15:1-4" to only its START
-					 * verse, silently dropping the rest. Detect that
-					 * shorthand form in the raw key text (":<verse>-
-					 * <digits>" with nothing but a separator or
-					 * end-of-string after the digits -- i.e. not a
-					 * second, fully qualified reference like
-					 * "15:3-1 Cor 15:4", which Sword already handles
-					 * correctly on its own) and manually add the
-					 * remaining verses of the range. */
-					gchar *prefix = g_strdup_printf(":%d-", vk2.getVerse());
-					const gchar *hit = strstr(node_key, prefix);
-					g_free(prefix);
-					if (hit) {
-						const gchar *colon_pos = strchr(hit, ':');
-						const gchar *dash_pos = strchr(hit, '-');
-						if (colon_pos && dash_pos && (dash_pos > colon_pos)) {
-							const gchar *after_dash = dash_pos + 1;
-							gchar *endptr = NULL;
-							long end_verse = strtol(after_dash, &endptr, 10);
-							if (endptr != after_dash && end_verse > vk2.getVerse()) {
-								const gchar *q = endptr;
-								while (*q == ' ')
-									++q;
-								if (!*q || *q == ';' || *q == ',') {
-									for (long v = vk2.getVerse() + 1; v <= end_verse; ++v) {
-										gchar *ref3 = g_strdup_printf("%s.%d.%ld",
-											vk2.getOSISBookName(), vk2.getChapter(), v);
-
-										element = (gchar *)g_hash_table_lookup(tag_color_map, ref3);
-										str = g_strconcat((element ? element : ""),
-												  effective,
-												  "-",
-												  tc_fg,
-												  "-",
-												  (escaped_label ? escaped_label : ""),
-												  "@:@:@",
-												  NULL);
-										g_hash_table_insert(tag_color_map, ref3, str);
-									}
-								}
-							}
-						}
-					}
 				}
 				for (GList *l = verses; l; l = l->next)
 					g_free(l->data);
