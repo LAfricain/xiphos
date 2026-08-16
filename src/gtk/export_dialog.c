@@ -24,9 +24,6 @@
 #endif
 
 #include <gtk/gtk.h>
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 #include <glib/gstdio.h>
 
 #include "gui/export_dialog.h"
@@ -133,22 +130,10 @@ static void on_filechooserdialog_response(GtkDialog *fdialog,
 
 void _get_export_filename(void)
 {
-#ifndef USE_GTKBUILDER
-	gchar *glade_file;
-	GladeXML *gxml;
-#endif
 	GtkWidget *fdialog;
 	filename = NULL;
 
-#ifndef USE_GTKBUILDER
-	glade_file =
-	    gui_general_user_file("export-dialog" UI_SUFFIX, FALSE);
-	g_return_if_fail(glade_file != NULL);
-	XI_message(("%s", glade_file));
-#endif
-
 /* build the widget */
-#ifdef USE_GTKBUILDER
 	fdialog = gtk_file_chooser_dialog_new("Save Export File",
 					      NULL,
 					      GTK_FILE_CHOOSER_ACTION_SAVE,
@@ -163,19 +148,12 @@ void _get_export_filename(void)
 					      GTK_RESPONSE_ACCEPT,
 #endif
 					      NULL);
-#else
-	gxml = glade_xml_new(glade_file, "filechooserdialog1", NULL);
-
-	fdialog = glade_xml_get_widget(gxml, "filechooserdialog1");
-#endif
 	g_signal_connect(fdialog,
 			 "response",
 			 G_CALLBACK(on_filechooserdialog_response),
 			 (GtkFileChooser *)fdialog);
 
-#ifdef USE_GTKBUILDER
 	gtk_dialog_run(GTK_DIALOG(fdialog));
-#endif
 }
 
 static void _save_state_buttons(void)
@@ -498,11 +476,7 @@ static void _load_data(gchar *filename)
 
 void gui_export_dialog(void)
 {
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
-#else
-	GladeXML *gxml;
-#endif
 	gint dist_license, curVerse;
 	gdouble max;
 	char *ref;
@@ -516,12 +490,8 @@ void gui_export_dialog(void)
 	    _check_for_distribution_license(settings.MainWindowModule);
 
 /* build the widget */
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "dialog_export_passage", NULL);
-#endif
 
 	dialog = UI_GET_ITEM(gxml, "dialog_export_passage");
 

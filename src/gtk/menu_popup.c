@@ -25,9 +25,6 @@
 
 #include <gtk/gtk.h>
 
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #include <glib.h>
 #include <glib/gstdio.h>
@@ -1651,11 +1648,7 @@ G_MODULE_EXPORT void on_mark_verse_activate(GtkMenuItem *menuitem,
  *   GtkWidget*
  */
 
-#ifdef USE_GTKBUILDER
 G_MODULE_EXPORT void _add_and_check_global_opts(GtkBuilder *gxml,
-#else
-G_MODULE_EXPORT void _add_and_check_global_opts(GladeXML *gxml,
-#endif
 						const gchar *mod_name,
 						GtkWidget *submenu,
 						DIALOG_DATA *d)
@@ -1995,29 +1988,17 @@ static GtkWidget *_create_popup_menu(XiphosHtml *html, const gchar *mod_name,
 				     DIALOG_DATA *d)
 {
 	gchar *glade_file;
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
-#else
-	GladeXML *gxml;
-#endif
 	const gchar *mname = (is_dialog ? d->mod_name : mod_name);
 	XI_message(("_create_popup_menu mod_name:%s", mod_name));
 	if (!mname || !*mname)
 		return NULL;
 
-#ifdef USE_GTKBUILDER
 	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-#else
-	glade_file = gui_general_user_file("xi-menus.glade", FALSE);
-#endif
 	g_return_val_if_fail((glade_file != NULL), NULL);
 
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "menu_popup", NULL);
-#endif
 	g_free(glade_file);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
@@ -2120,18 +2101,12 @@ static GtkWidget *_create_popup_menu(XiphosHtml *html, const gchar *mod_name,
 	gui_add_mods_2_gtk_menu(DICT_DESC_LIST, lookup_sub,
 				(GCallback)_lookup_selection);
 
-	/* = glade_xml_get_widget (gxml, ""); */
 	_add_and_check_global_opts(gxml,
 				   (char *)(is_dialog ? d->mod_name : mod_name), mod_opt_sub, d);
 /* connect signals and data */
-#ifdef USE_GTKBUILDER
 	gtk_builder_connect_signals(gxml, html);
 /*gtk_builder_connect_signals_full
 	   (gxml, (GtkBuilderConnectFunc)gui_glade_signal_connect_func, html); */
-#else
-	glade_xml_signal_autoconnect_full(gxml, (GladeXMLConnectFunc)gui_glade_signal_connect_func,
-					  html);
-#endif
 
 	return menu;
 }

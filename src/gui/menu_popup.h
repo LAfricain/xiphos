@@ -26,9 +26,6 @@
 extern "C" {
 #endif
 
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #include "main/module_dialogs.h"
 
@@ -128,17 +125,10 @@ void on_read_selection_aloud_activate(GtkMenuItem *menuitem,
 void on_mark_verse_activate(GtkMenuItem *menuitem,
 			    gpointer user_data);
 
-#ifdef USE_GTKBUILDER
 void _add_and_check_global_opts(GtkBuilder *gxml,
 				const gchar *mod_name,
 				GtkWidget *submenu,
 				DIALOG_DATA *d);
-#else
-void _add_and_check_global_opts(GladeXML *gxml,
-				const gchar *mod_name,
-				GtkWidget *submenu,
-				DIALOG_DATA *d);
-#endif
 
 #ifdef __cplusplus
 }

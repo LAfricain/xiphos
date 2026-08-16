@@ -25,9 +25,6 @@
 
 #include <gtk/gtk.h>
 #include <libxml/parser.h>
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #include "gui/export_bookmarks.h"
 #include "gui/xiphos.h"
@@ -686,7 +683,7 @@ void gui_export_bookmarks_dialog(gint export_type, GList *verses)
 
 	builder = gtk_builder_new();
 	gbuilder_file =
-	    gui_general_user_file("xi-export-bookmarks.glade", FALSE);
+	    gui_general_user_file("xi-export-bookmarks" UI_SUFFIX, FALSE);
 	gtk_builder_add_from_file(builder, gbuilder_file, NULL);
 
 	dialog =

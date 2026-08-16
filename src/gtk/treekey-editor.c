@@ -23,9 +23,6 @@
 #include <config.h>
 #endif
 
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #ifdef USE_WEBKIT_EDITOR
 #include "editor/webkit_editor.h"
@@ -316,35 +313,20 @@ GtkWidget *create_edit_tree_menu(EDITOR *editor)
 {
 	GtkWidget *menu;
 	gchar *glade_file;
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
 	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-#else
-	GladeXML *gxml;
-	glade_file = gui_general_user_file("xi-menus.glade", FALSE);
-#endif
 	g_return_val_if_fail((glade_file != NULL), NULL);
 
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "menu_edit_tree", NULL);
-#endif
 
 	g_free(glade_file);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_edit_tree");
-#ifdef USE_GTKBUILDER
 	gtk_builder_connect_signals(gxml, editor);
 /* gtk_builder_connect_signals_full
 	   (gxml, (GtkBuilderConnectFunc)gui_glade_signal_connect_func, editor); */
-#else
-	/* connect signals and data */
-	glade_xml_signal_autoconnect_full(gxml, (GladeXMLConnectFunc)gui_glade_signal_connect_func,
-					  editor);
-#endif
 	return menu;
 }
 

@@ -26,9 +26,6 @@
 #include <gtk/gtk.h>
 #include <glib/gstdio.h>
 #include <libxml/parser.h>
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #include <math.h>
 #include <ctype.h>
@@ -616,38 +613,21 @@ G_MODULE_EXPORT void on_edit_item_activate(GtkMenuItem *menuitem,
 		/* --- Folder: use the dedicated folder dialog --- */
 		gchar *glade_file = gui_general_user_file("folder" UI_SUFFIX, TRUE);
 		if (!glade_file) goto cleanup;
-#ifdef USE_GTKBUILDER
 		GtkBuilder *gxml = gtk_builder_new();
 		gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-		GladeXML *gxml = glade_xml_new(glade_file, NULL, NULL);
-#endif
 		GtkWidget *dialog  = GTK_WIDGET(UI_GET_ITEM(gxml, "dialog_folder"));
 		GtkWidget *entry   = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_entry_name"));
 		GtkWidget *colorbtn = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_color_button"));
 		GtkWidget *clearbtn = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_clear_color"));
 
-#ifdef USE_GTKBUILDER
 		if (!dialog || !entry || !colorbtn || !clearbtn) {
 			g_object_unref(gxml); goto cleanup;
 		}
-#else
-		if (!dialog || !entry || !colorbtn || !clearbtn) goto cleanup;
-
-		GtkWidget *btn_ok = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_ok"));
-		GtkWidget *btn_cancel = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_cancel"));
-		if (btn_ok) gtk_widget_destroy(btn_ok);
-		if (btn_cancel) gtk_widget_destroy(btn_cancel);
-
-		gtk_dialog_add_button(GTK_DIALOG(dialog), GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL);
-		gtk_dialog_add_button(GTK_DIALOG(dialog), GTK_STOCK_OK, GTK_RESPONSE_OK);
-		gtk_dialog_set_default_response(GTK_DIALOG(dialog), GTK_RESPONSE_OK);
-#endif
 		gtk_window_set_title(GTK_WINDOW(dialog), _("Edit Tag"));
 		gtk_entry_set_text(GTK_ENTRY(entry), caption ? caption : "");
 
 		if (current_color && *current_color) {
-#if defined(USE_GTKBUILDER) && GTK_CHECK_VERSION(3, 4, 0)
+#if GTK_CHECK_VERSION(3, 4, 0)
 			GdkRGBA rgba;
 			if (gdk_rgba_parse(&rgba, current_color))
 				gtk_color_chooser_set_rgba(GTK_COLOR_CHOOSER(colorbtn), &rgba);
@@ -670,7 +650,7 @@ G_MODULE_EXPORT void on_edit_item_activate(GtkMenuItem *menuitem,
 			gchar *new_color = NULL;
 			gchar *new_caption;
 			if (g_strcmp0(gtk_button_get_label(GTK_BUTTON(clearbtn)), _("No color")) == 0) {
-#if defined(USE_GTKBUILDER) && GTK_CHECK_VERSION(3, 4, 0)
+#if GTK_CHECK_VERSION(3, 4, 0)
 				GdkRGBA rgba;
 				gtk_color_chooser_get_rgba(GTK_COLOR_CHOOSER(colorbtn), &rgba);
 				if (rgba.red < 0.99 || rgba.green < 0.99 || rgba.blue < 0.99)
@@ -700,9 +680,7 @@ G_MODULE_EXPORT void on_edit_item_activate(GtkMenuItem *menuitem,
 // 			g_free(new_color);
 		}
 		gtk_widget_destroy(dialog);
-#ifdef USE_GTKBUILDER
 		g_object_unref(gxml);
-#endif
 	} else {
 		/* --- Leaf bookmark: generic dialog --- */
 		GS_DIALOG *info = gui_new_dialog();
@@ -1072,12 +1050,8 @@ G_MODULE_EXPORT void on_new_folder_activate(GtkMenuItem *menuitem,
 
 	gchar *glade_file = gui_general_user_file("folder" UI_SUFFIX, TRUE);
 	g_return_if_fail(glade_file != NULL);
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	GladeXML *gxml = glade_xml_new(glade_file, NULL, NULL);
-#endif
 	g_free(glade_file);
 
 	GtkWidget *dialog     = GTK_WIDGET(UI_GET_ITEM(gxml, "dialog_folder"));
@@ -1085,24 +1059,11 @@ G_MODULE_EXPORT void on_new_folder_activate(GtkMenuItem *menuitem,
 	GtkWidget *colorbtn   = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_color_button"));
 	GtkWidget *clearbtn   = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_clear_color"));
 
-#ifdef USE_GTKBUILDER
 	if (!dialog || !entry || !colorbtn || !clearbtn) {
 		g_printerr("ERROR: dialog_folder widgets not found\n");
 		g_object_unref(gxml);
 		return;
 	}
-#else
-	if (!dialog || !entry || !colorbtn || !clearbtn) return;
-
-	GtkWidget *btn_ok = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_ok"));
-	GtkWidget *btn_cancel = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_cancel"));
-	if (btn_ok) gtk_widget_destroy(btn_ok);
-	if (btn_cancel) gtk_widget_destroy(btn_cancel);
-
-	gtk_dialog_add_button(GTK_DIALOG(dialog), GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL);
-	gtk_dialog_add_button(GTK_DIALOG(dialog), GTK_STOCK_OK, GTK_RESPONSE_OK);
-	gtk_dialog_set_default_response(GTK_DIALOG(dialog), GTK_RESPONSE_OK);
-#endif
 
 	gtk_window_set_title(GTK_WINDOW(dialog), _("New Folder"));
 	gtk_entry_set_text(GTK_ENTRY(entry), "");
@@ -1118,7 +1079,7 @@ G_MODULE_EXPORT void on_new_folder_activate(GtkMenuItem *menuitem,
 		gchar *color = NULL;
 
 		if (g_strcmp0(gtk_button_get_label(GTK_BUTTON(clearbtn)), _("No color")) == 0) {
-#if defined(USE_GTKBUILDER) && GTK_CHECK_VERSION(3, 4, 0)
+#if GTK_CHECK_VERSION(3, 4, 0)
 			GdkRGBA rgba;
 			gtk_color_chooser_get_rgba(GTK_COLOR_CHOOSER(colorbtn), &rgba);
 			if (rgba.red < 0.99 || rgba.green < 0.99 || rgba.blue < 0.99)
@@ -1148,9 +1109,7 @@ G_MODULE_EXPORT void on_new_folder_activate(GtkMenuItem *menuitem,
 		gui_save_bookmarks(NULL, NULL);
 	}
 	gtk_widget_destroy(dialog);
-#ifdef USE_GTKBUILDER
 	g_object_unref(gxml);
-#endif
 }
 
 /******************************************************************************
@@ -1262,21 +1221,12 @@ G_MODULE_EXPORT void on_set_tag_color_activate(GtkMenuItem *menuitem,
 void gui_create_bookmark_menu(void)
 {
 	gchar *glade_file;
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
 	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-#else
-	GladeXML *gxml;
-	glade_file = gui_general_user_file("xi-menus.glade", FALSE);
-#endif
 	g_return_if_fail((glade_file != NULL));
 
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "menu_bookmark", NULL);
-#endif
 	g_free(glade_file);
 	g_return_if_fail((gxml != NULL));
 
@@ -1313,12 +1263,7 @@ void gui_create_bookmark_menu(void)
 	gtk_widget_set_sensitive(menu.remove, TRUE);
 	gtk_widget_hide(menu.remove);
 /* connect signals and data */
-#ifdef USE_GTKBUILDER
 	gtk_builder_connect_signals(gxml, NULL);
 /*gtk_builder_connect_signals_full
 	   (gxml, (GtkBuilderConnectFunc)gui_glade_signal_connect_func, NULL); */
-#else
-	glade_xml_signal_autoconnect_full(gxml, (GladeXMLConnectFunc)gui_glade_signal_connect_func,
-					  NULL);
-#endif
 }

@@ -47,10 +47,8 @@ else ()
 endif ()
 
 # Gtk
-if (NOT GTK2)
-  set (USE_GTK_3 ON)
-  set (USE_GTKBUILDER ON)
-endif ()
+set (USE_GTK_3 ON)
+set (USE_GTKBUILDER ON)
 
 # select WebkitGtk
 if (NOT WEBKIT1)

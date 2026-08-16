@@ -17,47 +17,25 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 #
 # install ui files
-if (NOT GTK2)
-  # Gtk3 only stuff
-  install (FILES
-    bookmarks.gtkbuilder
-    folder.gtkbuilder
-    editor_link_dialog.gtkbuilder
-    export-dialog.gtkbuilder
-    markverse.gtkbuilder
-    module-manager.gtkbuilder
-    navbar_versekey.gtkbuilder
-    prefs.gtkbuilder
-    search-dialog.gtkbuilder
-    selector-prefs.gtkbuilder
-    xi-menus.gtkbuilder
-    xi-menus-popup.gtkbuilder
-    xi-splash.gtkbuilder
-    gtk_webedit.ui
-    DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME}
-    COMPONENT data
-    )
-else  (NOT GTK2)
-  # Gtk2 only stuff
-  install (FILES
-    bookmarks.glade
-    folder.glade
-    editor_link_dialog.glade
-    export-dialog.glade
-    markverse.glade
-    module-manager.glade
-    navbar_versekey.glade
-    prefs.glade
-    search-dialog.glade
-    selector-prefs.glade
-    xi-export-bookmarks.glade
-    xi-menus.glade
-    gtk2_webedit.ui
-    gtk_webedit.ui
-    DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME}
-    COMPONENT data
-    )
-endif (NOT GTK2)
+install (FILES
+  bookmarks.gtkbuilder
+  folder.gtkbuilder
+  editor_link_dialog.gtkbuilder
+  export-dialog.gtkbuilder
+  markverse.gtkbuilder
+  module-manager.gtkbuilder
+  navbar_versekey.gtkbuilder
+  prefs.gtkbuilder
+  search-dialog.gtkbuilder
+  selector-prefs.gtkbuilder
+  xi-export-bookmarks.gtkbuilder
+  xi-menus.gtkbuilder
+  xi-menus-popup.gtkbuilder
+  xi-splash.gtkbuilder
+  gtk_webedit.ui
+  DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME}
+  COMPONENT data
+  )
 # common stuff
 install (FILES
   editor_note.xml

@@ -29,11 +29,7 @@ message(STATUS "  Build type                   ${CMAKE_BUILD_TYPE}")
 message(STATUS "  Install prefix               ${CMAKE_INSTALL_PREFIX}")
 
 # Options
-if (GTK2)
-  message(STATUS "  Gtk version                  Gtk+-2.0")
-else ()
-  message(STATUS "  Gtk version                  Gtk+-3.0")
-endif ()
+message(STATUS "  Gtk version                  Gtk+-3.0")
 
 if (WEBKIT1)
   message(STATUS "  WebKitGTK                    WebKit1")

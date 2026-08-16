@@ -26,10 +26,6 @@
 #include <gtk/gtk.h>
 #include <unistd.h>
 
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
-
 #ifdef USE_WEBKIT_EDITOR
 #include "editor/webkit_editor.h"
 #include "editor/editor.h"
@@ -965,21 +961,13 @@ on_sidebar_showhide_activate(GtkMenuItem *menuitem, gpointer user_data)
 
 GtkWidget *gui_create_main_menu(void)
 {
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
-#else
-	GladeXML *gxml;
-#endif
 	gchar *glade_file =
 	    gui_general_user_file("xi-menus" UI_SUFFIX, FALSE);
 	g_return_val_if_fail(glade_file != NULL, NULL);
 
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "menu_main", NULL);
-#endif
 	g_free(glade_file);
 	g_return_val_if_fail(gxml != NULL, NULL);
 
@@ -1031,14 +1019,9 @@ GtkWidget *gui_create_main_menu(void)
 				       settings.annotate_highlight);
 
 /* connect signals and data */
-#ifdef USE_GTKBUILDER
 	gtk_builder_connect_signals(gxml, NULL);
 /*gtk_builder_connect_signals_full
 	   (gxml, (GtkBuilderConnectFunc)gui_glade_signal_connect_func, NULL); */
-#else
-	glade_xml_signal_autoconnect_full(gxml, (GladeXMLConnectFunc)gui_glade_signal_connect_func,
-					  NULL);
-#endif
 	//set up global function to handle all link buttons
 	//      gtk_link_button_set_uri_hook (link_uri_hook, NULL, NULL);
 

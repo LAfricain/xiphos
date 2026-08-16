@@ -24,9 +24,6 @@
 #endif
 
 #include <gtk/gtk.h>
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #include "gui/navbar_versekey_dialog.h"
 #include "gui/bibletext_dialog.h"
@@ -869,11 +866,7 @@ static void _connect_signals(NAVBAR_VERSEKEY navbar, DIALOG_DATA *dialog)
 
 GtkWidget *gui_navbar_versekey_dialog_new(DIALOG_DATA *dialog)
 {
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
-#else
-	GladeXML *gxml;
-#endif
 #if GTK_CHECK_VERSION(3, 4, 0)
 	GtkWidget *eventbox;
 #endif
@@ -884,12 +877,8 @@ GtkWidget *gui_navbar_versekey_dialog_new(DIALOG_DATA *dialog)
 	XI_message(("%s", glade_file));
 
 /* build the widget */
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "navbar", NULL);
-#endif
 	dialog->navbar.dialog = TRUE;
 	dialog->navbar.module_name =
 	    g_string_new(settings.MainWindowModule);

@@ -24,9 +24,6 @@
 #endif
 
 #include <gtk/gtk.h>
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #include "gui/navbar_versekey_parallel.h"
 #include "gui/utilities.h"
@@ -917,11 +914,7 @@ static void on_parallel_sets_button_clicked(GtkWidget *widget,
 GtkWidget *gui_navbar_versekey_parallel_new(void)
 {
 	gchar *glade_file;
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
-#else
-	GladeXML *gxml;
-#endif
 #if GTK_CHECK_VERSION(3, 4, 0)
 	GtkWidget *eventbox;
 #endif
@@ -932,12 +925,8 @@ GtkWidget *gui_navbar_versekey_parallel_new(void)
 	XI_message(("%s", glade_file));
 
 /* build the widget */
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "navbar", NULL);
-#endif
 	navbar_parallel.dialog = TRUE;
 	navbar_parallel.module_name =
 	    g_string_new(settings.MainWindowModule);
@@ -961,14 +950,6 @@ GtkWidget *gui_navbar_versekey_parallel_new(void)
 	gtk_widget_hide(navbar_parallel.button_history_back);
 	gtk_widget_hide(navbar_parallel.button_history_next);
 	gtk_widget_hide(navbar_parallel.button_history_menu);
-	/*
-	navbar_parallel.button_book_up = glade_xml_get_widget(gxml, "button_book2");
-	navbar_parallel.button_book_down = glade_xml_get_widget(gxml, "button_book1");
-	navbar_parallel.button_chapter_up = glade_xml_get_widget(gxml, "button_chapter2");
-	navbar_parallel.button_chapter_down = glade_xml_get_widget(gxml, "button_chapter1");
-	navbar_parallel.button_verse_up = glade_xml_get_widget(gxml, "button_verse2");
-	navbar_parallel.button_verse_down = glade_xml_get_widget(gxml, "button_verse1");
-*/
 	navbar_parallel.button_book_up = UI_GET_ITEM(gxml, "eventbox9");
 	navbar_parallel.button_book_down = UI_GET_ITEM(gxml, "eventbox6");
 	navbar_parallel.button_chapter_up = UI_GET_ITEM(gxml, "eventbox8");

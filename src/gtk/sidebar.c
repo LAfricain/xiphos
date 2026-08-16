@@ -23,9 +23,6 @@
 #include <config.h>
 #endif
 
-#ifndef USE_GTKBUILDER
-#include <glade/glade-xml.h>
-#endif
 
 #ifdef USE_WEBKIT_EDITOR
 #include "editor/webkit_editor.h"
@@ -1097,36 +1094,21 @@ GtkWidget *create_results_menu(void)
 {
 	GtkWidget *menu;
 	gchar *glade_file;
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
 	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-#else
-	GladeXML *gxml;
-	glade_file = gui_general_user_file("xi-menus.glade", FALSE);
-#endif
 	g_return_val_if_fail((glade_file != NULL), NULL);
 
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "menu_verselist", NULL);
-#endif
 
 	g_free(glade_file);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_verselist");
-#ifdef USE_GTKBUILDER
 	/* connect signals and data */
 	gtk_builder_connect_signals(gxml, NULL);
 /*gtk_builder_connect_signals_full
 	   (gxml, (GtkBuilderConnectFunc)gui_glade_signal_connect_func, NULL); */
-#else
-	/* connect signals and data */
-	glade_xml_signal_autoconnect_full(gxml, (GladeXMLConnectFunc)gui_glade_signal_connect_func,
-					  NULL);
-#endif
 
 	return menu;
 }
@@ -1149,32 +1131,18 @@ GtkWidget *create_results_menu(void)
 static GtkWidget *create_menu_modules(void)
 {
 	gchar *glade_file;
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
 	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-#else
-	GladeXML *gxml;
-	glade_file = gui_general_user_file("xi-menus.glade", FALSE);
-#endif
 	g_return_val_if_fail((glade_file != NULL), NULL);
 
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "menu_modules", NULL);
-#endif
 	g_free(glade_file);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	GtkWidget *menu = UI_GET_ITEM(gxml, "menu_modules");
-#ifdef USE_GTKBUILDER
 	GtkWidget *fav_item = UI_GET_ITEM(gxml, "toggle_favorite1");
 	GtkWidget *hide_item = UI_GET_ITEM(gxml, "hide_module1");
-#else
-	GtkWidget *fav_item = UI_GET_ITEM(gxml, "toggle_favorite");
-	GtkWidget *hide_item = UI_GET_ITEM(gxml, "hide_module");
-#endif
 	if (fav_item)
 		gtk_menu_item_set_label(GTK_MENU_ITEM(fav_item),
 					module_is_favorite(buf_module)
@@ -1185,14 +1153,9 @@ static GtkWidget *create_menu_modules(void)
 					module_is_hidden(buf_module)
 					    ? _("Show this module")
 					    : _("Hide this module"));
-#ifdef USE_GTKBUILDER
 	gtk_builder_connect_signals(gxml, NULL);
 /*gtk_builder_connect_signals_full
 	   (gxml, (GtkBuilderConnectFunc)gui_glade_signal_connect_func, NULL); */
-#else
-	glade_xml_signal_autoconnect_full(gxml, (GladeXMLConnectFunc)gui_glade_signal_connect_func,
-					  NULL);
-#endif
 #if GTK_CHECK_VERSION(3, 22, 0)
 	gtk_menu_popup_at_pointer((GtkMenu *)menu, NULL);
 #else
@@ -1242,34 +1205,20 @@ GtkWidget *create_menu_prayerlist(void)
 {
 	GtkWidget *menu;
 	gchar *glade_file;
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
 	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-#else
-	GladeXML *gxml;
-	glade_file = gui_general_user_file("xi-menus.glade", FALSE);
-#endif
 	g_return_val_if_fail((glade_file != NULL), NULL);
 
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "menu_prayerlist", NULL);
-#endif
 
 	g_free(glade_file);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_prayerlist");
-#ifdef USE_GTKBUILDER
 	gtk_builder_connect_signals(gxml, NULL);
 /*gtk_builder_connect_signals_full
 	   (gxml, (GtkBuilderConnectFunc)gui_glade_signal_connect_func, NULL); */
-#else
-	glade_xml_signal_autoconnect_full(gxml, (GladeXMLConnectFunc)gui_glade_signal_connect_func,
-					  NULL);
-#endif
 	return menu;
 }
 
@@ -1293,31 +1242,17 @@ create_menu_percomm_mod(void)
 {
 	GtkWidget *menu;
 	gchar *glade_file;
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
 	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-#else
-	GladeXML *gxml;
-	glade_file = gui_general_user_file("xi-menus.glade", FALSE);
-#endif
 	g_return_val_if_fail((glade_file != NULL), NULL);
 
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "menu_percomm_mod", NULL);
-#endif
 	g_free(glade_file);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_percomm_mod");
-#ifdef USE_GTKBUILDER
 	gtk_builder_connect_signals(gxml, NULL);
-#else
-	glade_xml_signal_autoconnect_full(gxml,
-		(GladeXMLConnectFunc)gui_glade_signal_connect_func, NULL);
-#endif
 	return menu;
 }
 
@@ -1325,33 +1260,19 @@ GtkWidget *create_menu_prayerlist_mod(void)
 {
 	GtkWidget *menu;
 	gchar *glade_file;
-#ifdef USE_GTKBUILDER
 	GtkBuilder *gxml;
 	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-#else
-	GladeXML *gxml;
-	glade_file = gui_general_user_file("xi-menus.glade", FALSE);
-#endif
 	g_return_val_if_fail((glade_file != NULL), NULL);
 
-#ifdef USE_GTKBUILDER
 	gxml = gtk_builder_new();
 	gtk_builder_add_from_file(gxml, glade_file, NULL);
-#else
-	gxml = glade_xml_new(glade_file, "menu_prayerlist_mod", NULL);
-#endif
 	g_free(glade_file);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_prayerlist_mod");
-#ifdef USE_GTKBUILDER
 	gtk_builder_connect_signals(gxml, NULL);
 /*gtk_builder_connect_signals_full
 	   (gxml, (GtkBuilderConnectFunc)gui_glade_signal_connect_func, NULL); */
-#else
-	glade_xml_signal_autoconnect_full(gxml, (GladeXMLConnectFunc)gui_glade_signal_connect_func,
-					  NULL);
-#endif
 	return menu;
 }
 
