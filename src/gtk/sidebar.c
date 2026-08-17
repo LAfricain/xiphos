@@ -1715,7 +1715,6 @@ GtkWidget *gui_create_sidebar(GtkWidget *paned)
 			       "button_release_event",
 			       G_CALLBACK(on_modules_list_button_release), NULL);
 
-	// sidebar.menu_modules = create_menu_modules();
 	sidebar.menu_prayerlist = create_menu_prayerlist();
 	sidebar.menu_prayerlist_mod = create_menu_prayerlist_mod();
 

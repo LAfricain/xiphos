@@ -142,8 +142,6 @@ static GtkWidget *button_load_sources;
 static GtkWidget *button_intro;
 static GtkWidget *label_home;
 static GtkWidget *label_system;
-//static GtkWidget *progressbar;
-//static GtkWidget *progressbar1;
 static GtkWidget *progressbar_refresh;
 static GtkWidget *radiobutton_source;
 static GtkWidget *radiobutton2;
@@ -1168,14 +1166,12 @@ add_module_to_language_folder(GtkTreeView *tree,
 {
 	GtkTreeIter iter_iter;
 	GtkTreeIter child_iter;
-	//GtkTreePath *path;
 	gboolean valid;
 	GdkPixbuf *installed;
 	GdkPixbuf *fasticon;
 	GdkPixbuf *locked;
 	GdkPixbuf *refresh;
 	const gchar *description = NULL;
-	//      GtkTooltip *tooltip;
 
 	/* Check language */
 	const gchar *buf = info->language;
@@ -2276,7 +2272,6 @@ on_notebook1_switch_page(GtkNotebook *notebook,
 			    gtk_label_get_text(GTK_LABEL(label_home));
 		} else {
 			destination = settings.path_to_mods;
-			// local = FALSE;
 		}
 		mod_mgr_shut_down();
 		mod_mgr_init(destination, FALSE, TRUE);
@@ -2288,7 +2283,6 @@ on_notebook1_switch_page(GtkNotebook *notebook,
 			    gtk_label_get_text(GTK_LABEL(label_home));
 		} else {
 			destination = settings.path_to_mods;
-			// local = FALSE;
 		}
 		mod_mgr_shut_down();
 		main_update_module_lists();
@@ -2926,7 +2920,6 @@ void on_button_add_local_clicked(GtkButton *button, gpointer user_data)
 
 void on_button_remove_local_clicked(GtkButton *button, gpointer user_data)
 {
-	//      gchar *name_string;
 	GtkTreeSelection *selection;
 	GtkTreeIter selected;
 	gchar *caption = NULL;
@@ -2956,7 +2949,6 @@ void on_button_remove_local_clicked(GtkButton *button, gpointer user_data)
 			   COLUMN_DIRECTORY, &directory,
 			   COLUMN_USER, &user,
 			   COLUMN_PASS, &pass, COLUMN_UID, &uid, -1);
-	//name_string = caption;
 
 	str =
 	    g_strdup_printf("<span weight=\"bold\">%s</span>\n\n%s|%s|%s|%s",
@@ -3172,7 +3164,6 @@ on_button_remove_remote_clicked(GtkButton *button, gpointer user_data)
 {
 	gint test;
 	GS_DIALOG *yes_no_dialog;
-	//gchar *name_string;
 	GtkTreeSelection *selection;
 	GtkTreeIter selected;
 	gchar *caption = NULL;
@@ -3204,7 +3195,6 @@ on_button_remove_remote_clicked(GtkButton *button, gpointer user_data)
 			   COLUMN_DIRECTORY, &directory,
 			   COLUMN_USER, &user,
 			   COLUMN_PASS, &pass, COLUMN_UID, &uid, -1);
-	//name_string = caption;
 
 	yes_no_dialog = gui_new_dialog();
 	yes_no_dialog->stock_icon =

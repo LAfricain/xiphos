@@ -280,7 +280,6 @@ GtkWidget *gui_navbar_book_dialog_new(DIALOG_DATA *d)
 	gtk_widget_show(d->navbar_book.button_list);
 	gtk_box_pack_start(GTK_BOX(hbox1), d->navbar_book.button_list,
 			   FALSE, FALSE, 0);
-//gtk_button_set_relief (GTK_BUTTON (d->navbar_book.button_list), GTK_RELIEF_NONE);
 
 #if GTK_CHECK_VERSION(3, 10, 0)
 	{

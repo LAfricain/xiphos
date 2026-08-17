@@ -540,7 +540,6 @@ void biblesync_update_speaker()
 	// window setup borrowed/modified from sidebar search results creation.
 	//
 
-	// GtkTreeSelection *selection;
 	GtkListStore *model_speakers =
 	    gtk_list_store_new(NUM_COLUMNS,
 			       // listen       user

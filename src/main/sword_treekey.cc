@@ -100,7 +100,6 @@ static void load_treeview(GtkTreeStore *model, GtkTreeIter *parent,
 	tmpbuf = (char *)treeKey.getLocalName();
 	if (atol(buf) == 0)
 		tmpbuf = mod_name;
-	//XI_message(("\nlocal_name: %d\noffset: %s",strlen(tmpbuf),buf));
 	if (treeKey.hasChildren()) {
 		add_parent_to_treeview(model, parent);
 	} else {

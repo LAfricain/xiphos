@@ -88,7 +88,6 @@ struct _menu
 	GtkWidget *cut;
 	GtkWidget *copy;
 	GtkWidget *paste;
-	//GtkWidget *;
 };
 typedef struct _menu MENU;
 
@@ -101,8 +100,6 @@ struct _find_dialog
 	GtkWidget *replace_entry;
 	GtkWidget *box_replace;
 	GtkWidget *button_replace;
-	//GtkWidget *;
-	//GtkWidget *;
 };
 typedef struct _find_dialog FIND_DIALOG;
 

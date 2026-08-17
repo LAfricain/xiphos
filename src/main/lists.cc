@@ -106,7 +106,6 @@ void main_init_lists(void)
 	mods.comm_descriptions = NULL;
 	mods.dict_descriptions = NULL;
 	mods.book_descriptions = NULL;
-	//mods.prayer_descriptions = NULL;
 
 	settings.havebible = FALSE;
 	settings.havecomm = FALSE;

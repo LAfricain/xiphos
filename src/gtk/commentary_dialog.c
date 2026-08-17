@@ -128,7 +128,6 @@ static void
 _popupmenu_requested_cb(XiphosHtml *html, gchar *uri, DIALOG_DATA *d)
 {
 	gui_menu_popup(html, cur_d->mod_name, cur_d);
-	//gui_commentary_dialog_create_menu(d);
 }
 
 /******************************************************************************
@@ -163,7 +162,6 @@ void gui_create_commentary_dialog(DIALOG_DATA *d, gboolean do_edit)
 	g_object_set_data(G_OBJECT(d->dialog), "d->dialog", d->dialog);
 	gtk_window_set_title(GTK_WINDOW(d->dialog),
 			     main_get_module_description(d->mod_name));
-	//gtk_window_set_default_size(GTK_WINDOW(d->dialog), 462, 280);
 	gtk_window_set_resizable(GTK_WINDOW(d->dialog), TRUE);
 	if (do_edit)
 		gtk_widget_set_size_request(d->dialog, 590, 380);

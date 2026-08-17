@@ -189,9 +189,7 @@ void gui_create_search_sidebar(void)
 	GtkWidget *scrolledwindow_search;
 	GtkWidget *viewport_search;
 	gchar *header;
-	//GtkListStore *store;
 
-	//ss = &sss;
 
 	scrolledwindow_search = gtk_scrolled_window_new(NULL, NULL);
 	gtk_widget_show(scrolledwindow_search);

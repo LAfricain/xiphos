@@ -217,7 +217,6 @@ static gint open_dialog(EDITOR *e)
 
 		new_filename =
 		    gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(dialog));
-		//gtkhtml_editor_set_filename (e->window, new_filename);
 		_load_file(e, new_filename);
 		g_free(new_filename);
 	}
@@ -827,7 +826,6 @@ static void _save_file(EDITOR *e)
 
 static void _load_file(EDITOR *e, const gchar *filename)
 {
-	//GtkWidget *choser;
 	if (e->filename)
 		g_free(e->filename);
 	e->filename = g_strdup(filename);

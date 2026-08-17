@@ -279,14 +279,12 @@ static gboolean select_book_button_press_callback(GtkWidget *widget,
 	guint32 time_add;
 #endif
 	g_get_current_time(&start_time);
-	//      XI_message(("Start time is: %d sec %d mil", start_time.tv_sec, start_time.tv_usec));
 
 	menu =
 	    main_versekey_drop_down_book_menu(dialog->navbar, NB_DIALOG,
 					      dialog, NULL);
 
 	g_get_current_time(&end_time);
-//      XI_message(("End time is: %d sec %d mil", end_time.tv_sec, end_time.tv_usec));
 #ifdef WIN32
 	time_diff =
 	    ((end_time.tv_sec - start_time.tv_sec) * 1000000) +

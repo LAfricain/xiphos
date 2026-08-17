@@ -936,7 +936,6 @@ G_MODULE_EXPORT void
 on_open_studypad_activate(GtkMenuItem *menuitem, gpointer user_data)
 {
 	editor_create_new(settings.studypadfilename, NULL, FALSE);
-	//create_window ();
 }
 
 G_MODULE_EXPORT void
@@ -1022,7 +1021,6 @@ GtkWidget *gui_create_main_menu(void)
 /*gtk_builder_connect_signals_full
 	   (gxml, (GtkBuilderConnectFunc)gui_glade_signal_connect_func, NULL); */
 	//set up global function to handle all link buttons
-	//      gtk_link_button_set_uri_hook (link_uri_hook, NULL, NULL);
 
 	if (settings.prayerlist)
 		gtk_widget_show(widgets.new_journal_item);

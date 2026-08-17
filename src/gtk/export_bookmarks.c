@@ -45,7 +45,6 @@ enum {
 	PLAIN
 };
 
-//extern GList *list_for_bookmarking;
 
 void dialog_export_bookmarks_response_cb(GtkDialog *dialog,
 					 gint response_id,
@@ -157,7 +156,6 @@ static gboolean _save_verselist_2_xml(BK_EXPORT *data)
 	xmlNodePtr root_node = NULL;
 	xmlNodePtr cur_node = NULL;
 	xmlDocPtr root_doc;
-	//xmlAttrPtr root_attr;
 	gchar *filename;
 	GString *name = g_string_new(NULL);
 	GString *str = g_string_new("");
@@ -414,7 +412,6 @@ static void save_iter_to_xml(GtkTreeIter *iter, BK_EXPORT *data)
 	xmlNodePtr root_node = NULL;
 	xmlNodePtr cur_node = NULL;
 	xmlDocPtr root_doc;
-	//      xmlAttrPtr root_attr;
 	gchar *caption = NULL;
 	gchar *filename;
 	GtkTreeModel *tm;

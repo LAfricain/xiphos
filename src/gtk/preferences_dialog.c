@@ -698,19 +698,6 @@ void
 on_checkbutton1_toggled(GtkToggleButton *togglebutton, gpointer user_data)
 {
 	gui_tabs_on_off(gtk_toggle_button_get_active(togglebutton));
-	/*	if (togglebutton->active) {
-		xml_set_value("Xiphos", "tabs", "browsing", "1");
-		settings.browsing = TRUE;
-		gui_open_tabs();
-		gtk_widget_show(widgets.hboxtb);
-	} else {
-		xml_set_value("Xiphos", "tabs", "browsing", "0");
-		gtk_widget_hide(widgets.hboxtb);
-		settings.browsing = FALSE;
-		gui_close_all_tabs();
-	}
-	settings.browsing = atoi(xml_get_value("tabs", "browsing"));
-	*/
 }
 
 /******************************************************************************

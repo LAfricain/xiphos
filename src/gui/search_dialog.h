@@ -35,7 +35,6 @@ struct _search_dialog1
 	GtkWidget *notebook;
 	GtkWidget *togglebutton_show_main;
 	GtkWidget *combo_list;
-	//      GtkWidget *combo_entry_list;
 	GtkWidget *module_lists;
 	GtkWidget *listview_modules;
 	GtkWidget *entry_list_name;
@@ -49,13 +48,10 @@ struct _search_dialog1
 	GtkWidget *rb_no_scope;
 	GtkToggleButton *which_scope;
 	GtkWidget *combo_range;
-	//      GtkWidget *combo_entry_range;
 	GtkWidget *list_range_name;
 	GtkWidget *list_ranges;
 	GtkWidget *entry_range_name;
 	GtkWidget *entry_range_text;
-	//      GtkWidget *results_html;
-	//      GtkWidget *report_html;
 	GtkWidget *preview_html;
 	GtkWidget *search_entry;
 	GtkWidget *rb_words;
@@ -68,7 +64,6 @@ struct _search_dialog1
 	GtkWidget *rb_strongs;
 	GtkWidget *rb_morphs;
 	GtkWidget *rb_footnotes;
-	//GtkWidget *rb_indexed_word;
 	GtkWidget *cb_case_sensitive;
 	GtkWidget *ctree;
 	GtkWidget *treeview;
@@ -80,8 +75,6 @@ struct _search_dialog1
 	GtkWidget *listview_results;
 	GtkWidget *listview_verses;
 	GtkWidget *menu_item_send_search;
-	//      GtkWidget *textview_preview;
-	//      GtkTextBuffer *text_buffer;
 	GSList *_201_group;
 
 	gint text_group;

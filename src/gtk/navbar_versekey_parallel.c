@@ -749,26 +749,6 @@ static void _connect_signals(NAVBAR_VERSEKEY navbar)
 			 G_CALLBACK(on_down_leave_notify_event),
 			 GINT_TO_POINTER(VERSE_BUTTON));
 
-	/*
-	   g_signal_connect((gpointer) navbar.button_book_up,
-	   "clicked", G_CALLBACK(on_book_button_up_clicked),
-	   NULL);
-	   g_signal_connect((gpointer) navbar.button_book_down,
-	   "clicked", G_CALLBACK(on_book_button_down_clicked),
-	   NULL);
-	   g_signal_connect((gpointer) navbar.button_chapter_up,
-	   "clicked", G_CALLBACK(on_chapter_button_up_clicked),
-	   NULL);
-	   g_signal_connect((gpointer) navbar.button_chapter_down,
-	   "clicked", G_CALLBACK(on_chapter_button_down_clicked),
-	   NULL);
-	   g_signal_connect((gpointer) navbar.button_verse_up,
-	   "clicked", G_CALLBACK(on_verse_button_up_clicked),
-	   NULL);
-	   g_signal_connect((gpointer) navbar.button_verse_down,
-	   "clicked", G_CALLBACK(on_verse_button_down_clicked),
-	   NULL); */
-
 	g_signal_connect((gpointer)navbar.button_sync,
 			 "toggled", G_CALLBACK(G_CALLBACK(sync_with_main)),
 			 NULL);

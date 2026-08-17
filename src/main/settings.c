@@ -324,7 +324,6 @@ int settings_init(int argc, char **argv, int new_configs,
 
 int init_bookmarks(int new_bookmarks)
 {
-	//GNode *bookmark_tree = NULL;
 	char *file_buf = NULL;
 
 	settings.load_xml_bookmarks = FALSE;

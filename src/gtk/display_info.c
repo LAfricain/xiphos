@@ -143,7 +143,6 @@ GtkWidget *gui_create_display_informtion_dialog(void)
 	g_object_set_data(G_OBJECT(dialog_display_info),
 			  "dialog_display_info", dialog_display_info);
 	gtk_window_set_title(GTK_WINDOW(dialog_display_info), " ");
-	//GTK_WINDOW(dialog_display_info)->type = GTK_WINDOW_TOPLEVEL;
 	gtk_window_set_default_size(GTK_WINDOW(dialog_display_info), 350, 200);
 	gtk_window_set_resizable(GTK_WINDOW(dialog_display_info), TRUE);
 
@@ -178,7 +177,6 @@ GtkWidget *gui_create_display_informtion_dialog(void)
 	html_widget = GTK_WIDGET(XIPHOS_HTML_NEW(NULL, FALSE, 30)); //gtk_html_new();
 	gtk_widget_show(html_widget);
 	gtk_box_pack_start(GTK_BOX(hbox), html_widget, TRUE, TRUE, 0);
-	//gtk_container_add(GTK_CONTAINER(scrolledwindow70), html_widget);
 
 	dialog_action_area23 =
 #if GTK_CHECK_VERSION(3, 12, 0)

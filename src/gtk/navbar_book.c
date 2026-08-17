@@ -107,27 +107,6 @@ static gboolean lookup_entry_press_callback(GtkWidget *widget,
 {
 	if (!settings.havebook)
 		return FALSE;
-	/* this does not work on my system - hope I'm not messing things up
-	   for others - 104 is the enter key on the number pad
-	   switch (event->hardware_keycode) {
-	   case 98:
-	   gtk_button_clicked(GTK_BUTTON(navbar_book.button_up));
-	   return TRUE;
-	   break;
-	   case 104:
-	   gtk_button_clicked(GTK_BUTTON(navbar_book.button_down));
-	   return TRUE;
-	   break;
-	   case 100:
-	   gtk_button_clicked(GTK_BUTTON(navbar_book.button_left));
-	   return TRUE;
-	   break;
-	   case 102:
-	   gtk_button_clicked(GTK_BUTTON(navbar_book.button_right));
-	   return TRUE;
-	   break;
-	   }
-	 */
 	XI_message(("lookup_entry_press_callback\nkeycode: %d",
 		    event->hardware_keycode));
 	return FALSE;

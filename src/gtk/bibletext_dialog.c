@@ -188,7 +188,6 @@ void gui_create_bibletext_dialog(DIALOG_DATA *vt)
 {
 	GtkWidget *vbox33;
 	GtkWidget *paned;
-	//GtkWidget *frame;
 	GtkWidget *swVText;
 
 	vt->dialog = gtk_window_new(GTK_WINDOW_TOPLEVEL);
@@ -230,7 +229,6 @@ void gui_create_bibletext_dialog(DIALOG_DATA *vt)
 
 	swVText = gtk_scrolled_window_new(NULL, NULL);
 	gtk_widget_show(swVText);
-	//gtk_container_add(GTK_CONTAINER(frame), swVText);
 	gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(swVText),
 				       GTK_POLICY_NEVER,
 				       GTK_POLICY_ALWAYS);

@@ -829,26 +829,6 @@ static void _connect_signals(NAVBAR_VERSEKEY navbar, EDITOR *editor)
 			 G_CALLBACK(on_verse_down_leave_notify_event),
 			 editor);
 
-	/*
-	g_signal_connect((gpointer) navbar.button_book_up,
-			 "clicked", G_CALLBACK(on_book_button_up_clicked),
-			 editor);
-	g_signal_connect((gpointer) navbar.button_book_down,
-			 "clicked", G_CALLBACK(on_book_button_down_clicked),
-			 editor);
-	g_signal_connect((gpointer) navbar.button_chapter_up,
-			 "clicked", G_CALLBACK(on_chapter_button_up_clicked),
-			 editor);
-	g_signal_connect((gpointer) navbar.button_chapter_down,
-			 "clicked", G_CALLBACK(on_chapter_button_down_clicked),
-			 editor);
-	g_signal_connect((gpointer) navbar.button_verse_up,
-			 "clicked", G_CALLBACK(on_verse_button_up_clicked),
-			 editor);
-	g_signal_connect((gpointer) navbar.button_verse_down,
-			 "clicked", G_CALLBACK(on_verse_button_down_clicked),
-			 editor);
-			 */
 	g_signal_connect((gpointer)navbar.button_book_menu,
 			 "button_press_event",
 			 G_CALLBACK(select_book_button_press_callback),

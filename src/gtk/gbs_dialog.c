@@ -52,11 +52,8 @@ enum {
 /******************************************************************************
  * static - global to this file only
  */
-//static GList *dialog_list;
 static DIALOG_DATA *cur_dlg;
-//static GtkCTreeNode *rootnode;
 static GtkTreeModel *model;
-//static gint tree_level;
 
 /******************************************************************************
  * Name
@@ -80,71 +77,6 @@ static void dialog_destroy(GObject *object, DIALOG_DATA *dlg)
 		main_free_on_destroy(dlg);
 	dialog_freed = FALSE;
 }
-
-/******************************************************************************
- * Name
- *   dialog_url
- *
- * Synopsis
- *   #include "gbs_dialog.h"
- *
- *   void dialog_url(GtkHTML * html, const gchar * url, DL_DATA * d)
- *
- * Description
- *
- *
- * Return value
- *   void
- */
-/*
-static void dialog_url(GtkHTML * html, const gchar * url,
-		       DIALOG_DATA * dlg)
-{
-	gchar buf[255];
-	gint context_id2;
-
-	cur_dlg = dlg;
-
-	context_id2 =
-	    gtk_statusbar_get_context_id(GTK_STATUSBAR(dlg->statusbar),
-					 "Xiphos");
-	gtk_statusbar_pop(GTK_STATUSBAR(dlg->statusbar), context_id2);
-
-
-	if (url == NULL) {
-		gtk_statusbar_push(GTK_STATUSBAR(dlg->statusbar),
-				   context_id2, "");
-	}
-
-	else {
-		if (*url == '@') {
-			++url;
-			sprintf(buf, _("Show %s in main window"), url);
-		}
-
-		else if (*url == '[') {
-			++url;
-			while (*url != ']') {
-				++url;
-			}
-			++url;
-			sprintf(buf, "%s", url);
-		}
-
-		else if (*url == '*') {
-			++url;
-			sprintf(buf, "%s", url);
-		}
-
-		else
-			sprintf(buf, _("Go to %s"), url);
-
-		gtk_statusbar_push(GTK_STATUSBAR(dlg->statusbar),
-				   context_id2, buf);
-	}
-
-}
-*/
 
 /******************************************************************************
  * Name
@@ -188,7 +120,6 @@ static GtkTreeModel *create_model(void)
 static void add_columns(GtkTreeView *tree)
 {
 	GtkTreeViewColumn *column;
-	//      GtkTreeViewColumn *column2;
 	GtkCellRenderer *renderer;
 
 	column = gtk_tree_view_column_new();
@@ -274,11 +205,8 @@ void gui_create_gbs_dialog(DIALOG_DATA *dlg)
 	hpaned = UI_HPANE();
 	gtk_widget_show(hpaned);
 	gtk_box_pack_start(GTK_BOX(vbox_dialog), hpaned, TRUE, TRUE, 0);
-	//gtk_container_add(GTK_CONTAINER(frame_gbs), hpaned);
-	//gtk_paned_set_position(GTK_PANED(hpaned), 190);
 
 	scrolledwindow_ctree = gtk_scrolled_window_new(NULL, NULL);
-	//gtk_widget_show(scrolledwindow_ctree);
 	gtk_paned_pack1(GTK_PANED(hpaned), scrolledwindow_ctree, FALSE,
 			TRUE);
 	gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(scrolledwindow_ctree),

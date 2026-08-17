@@ -119,7 +119,6 @@ static void set_global_option(char *option, gboolean choice)
 	SWMgr *mgr = backend_p->get_mgr();
 	char *buf = g_strdup(option);
 
-	//	XI_message (("option://%s\n\n",option));
 
 	mgr->setGlobalOption(buf, on_off);
 
@@ -132,7 +131,6 @@ static void set_global_option(char *option, gboolean choice)
 
 static void set_global_textual_reading(const char *option, int choice)
 {
-	//gboolean primary = 0, secondary = 0, all = 0;
 	char *buf = g_strdup(option);
 	SWMgr *mgr = backend_p->get_mgr();
 
@@ -141,22 +139,6 @@ static void set_global_textual_reading(const char *option, int choice)
 		      (char *)g_strdelimit(buf, "' ", '_'),
 		      (char *)(choice ? "1" : "0"));
 
-	/*switch (choice)
-	{
-	case 0:
-		primary = TRUE;  secondary = FALSE; all = FALSE;
-		break;
-	case 1:
-		primary = FALSE; secondary = TRUE;  all = FALSE;
-		break;
-	case 2:
-		primary = FALSE; secondary = FALSE; all = TRUE;
-		break;
-	default:
-		g_message("invalid variant %d\n", choice);
-		gui_generic_warning((char*)"Xiphos: invalid internal variant");
-		break;
-	}*/
 	XI_message(("set_global_textual_reading\noption://%s", option));
 
 	mgr->setGlobalOption("Textual Variants", option);
@@ -315,7 +297,6 @@ void main_set_parallel_options_at_start(void)
 	while (tmp) {
 		char *option = g_strdup((char *)tmp->data);
 		g_strdelimit(option, "' ", '_');
-		//XI_message(("\n\n%s\n%s\n", (char*)tmp->data, option));
 		value = xml_get_value("parallel", option);
 		int choice = (value ? atoi(value) : 0);
 		if (!strcmp((char *)tmp->data, "Textual Variants")) {
@@ -503,7 +484,6 @@ void main_load_g_ops_parallel(GtkWidget *menu)
 			 (char *)"Secondary Reading");
 
 	item = gtk_radio_menu_item_new_with_mnemonic(group, _("All Readings"));
-	//group = gtk_radio_menu_item_get_group(GTK_RADIO_MENU_ITEM(item));
 	gtk_widget_show(item);
 	gtk_container_add(GTK_CONTAINER(variants_menu), item);
 	gtk_check_menu_item_set_active(GTK_CHECK_MENU_ITEM(item), settings.parallel_variants_all);

@@ -197,26 +197,7 @@ void frontend_display(const char *tabs)
 	sync_windows();
 
 	// setup passage notebook
-	//      if (settings.browsing) {
 	gui_notebook_main_setup(settings.browsing, tabs);
-	/*	} else {
-		url = g_strdup_printf("sword://%s/%s",settings.DictWindowModule,
-						      settings.dictkey);
-		main_url_handler(url);
-		g_free(url);
-
-		gtk_widget_realize(widgets.html_book);
-		url = g_strdup_printf("sword://%s/%d",settings.book_mod,
-						      settings.book_offset);
-		main_url_handler(url);
-		g_free(url);
-
-		settings.addhistoryitem = FALSE;
-		url = g_strdup_printf("sword://%s/%s",settings.MainWindowModule,
-						      settings.currentverse);
-		main_url_handler(url);
-		g_free(url);
-	} */
 	/* must be set after tab stuff is done */
 
 	gtk_check_menu_item_set_active(GTK_CHECK_MENU_ITEM(widgets.parallel_tab_item),

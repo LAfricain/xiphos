@@ -898,7 +898,6 @@ static gboolean button_release_event(GtkWidget *widget,
 			gtk_widget_set_sensitive(menu.delete, FALSE);
 			gtk_widget_set_sensitive(menu.bibletime, TRUE);
 			gtk_widget_set_sensitive(menu.remove, FALSE);
-			//gtk_widget_set_sensitive(menu.remove, FALSE);
 			return TRUE;
 		} else {
 			gtk_widget_set_sensitive(menu.bibletime, TRUE);

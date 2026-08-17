@@ -58,7 +58,6 @@ static GtkWidget *dialog_parallel;
 static GtkWidget *parallel_UnDock_Dialog;
 static GtkWidget *vboxInt;
 static gboolean ApplyChangeBook;
-//static NAVBAR navbar;
 extern NAVBAR_VERSEKEY navbar_parallel;
 
 static GtkWidget *create_parallel_dialog(void);
@@ -100,8 +99,6 @@ void gui_undock_parallel_page(void)
 				      0);
 
 	gtk_widget_show(parallel_UnDock_Dialog);
-	//main_update_parallel_page_detached();
-	//g_free(settings.cvparallel);
 	settings.dockedInt = FALSE;
 	ApplyChangeBook = TRUE;
 	sync_with_main();

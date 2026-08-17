@@ -24,6 +24,5 @@
 #include "main/navbar_versekey.h"
 
 GtkWidget *gui_navbar_versekey_new(void);
-//GtkWidget *gui_navbar_versekey_parallel_new(void);
 
 #endif

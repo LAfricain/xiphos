@@ -55,7 +55,6 @@ BUTTONS_STATE buttons_state;
 glong mouse_x;
 glong mouse_y;
 
-//WebKitDOMElement * current_element;
 
 /******************************************************************************
  * Name
@@ -237,7 +236,6 @@ gchar *editor_get_selected_text(EDITOR *e)
 				error->message);
 			g_error_free(error);
 			error = NULL;
-			//return;
 		}
 		text = webkit_dom_range_to_string(range, &error);
 		if (error) {
@@ -410,16 +408,11 @@ void editor_insert_link_ok (void)
 	const gchar *verse_str = NULL;
 	const gchar *text_str = NULL;
 	const gchar *uri_str = NULL;
-	//const gchar *encoded_mod = NULL;
-	//const gchar *encoded_verse = NULL;
 	gchar *str = NULL;
-	//gint type = -1;
 	if(sword_link) {
-		//XI_message(("%s","sword_link"));
 		mod_str = gtk_entry_get_text (GTK_ENTRY (entry_module));
 		verse_str = gtk_entry_get_text (GTK_ENTRY (entry_verse));
 		text_str = gtk_entry_get_text (GTK_ENTRY (entry_text));
-		//type = main_get_mod_type((gchar*)mod_str);
 		str = g_strdup_printf(" <a href=\"sword://%s/%s\">%s</a>",
 				mod_str ,verse_str,text_str);
 	} else {
@@ -471,9 +464,6 @@ gboolean editor_insert_sword_link(void)
 gboolean editor_insert_link(void)
 {
      	GtkBuilder * builder;
-	//GtkWidget * entry_module;
-	//GtkWidget * entry_verse;
-	//GtkWidget * entry_text;
 	GtkWidget * window;
 	 GtkWidget * hbox_url_link;
 	sword_link = FALSE;
@@ -487,9 +477,6 @@ gboolean editor_insert_link(void)
 	gtk_widget_show (hbox_url_link);  
 
 	uri_entry = GTK_WIDGET (gtk_builder_get_object (builder, "entry4"));
-	//entry_verse        = GTK_WIDGET (gtk_builder_get_object (builder, "entry1"));
-	//entry_text         = GTK_WIDGET (gtk_builder_get_object (builder, "entry3"));
-	//linkage_verse_list = GTK_WIDGET (gtk_builder_get_object (builder, "radiobutton2"));
 
         g_object_unref (G_OBJECT (builder));
         gtk_widget_show (window);
@@ -648,7 +635,6 @@ static gint _has_element(gchar *name, gchar *class, EDITOR *e)
 		buttons_state.style = 9;
 		return 1;
 	} else if (!g_strcmp0("FONT", name)) {
-		//buttons_state.style = 9;
 		return 1;
 	}
 	if (!g_strcmp0("LI", name)) {
@@ -1033,7 +1019,6 @@ static gboolean button_handler(GtkWidget *widget, GdkEvent *event, EDITOR *e)
 	gchar *color = NULL;
 	gint i = 1;
 
-	//current_element = NULL;
 	e->toolitems.outline_level = 0;
 	mouse_x = event->button.x;
 	mouse_y = event->button.y;

@@ -78,7 +78,6 @@ void editor_load_book(EDITOR *e) {}
 #include "gui/utilities.h"
 
 #include "gui/debug_glib_null.h"
-//TOOL_ITEMS toolitems;
 MENU popup;
 FIND_DIALOG find_dialog;
 
@@ -184,7 +183,6 @@ action_insert_emoticon_activate_cb(GtkWidget *widget, EDITOR *e)
 	// This is stupid, if we don't have emoticons working, then we sould
 	// remove the button users see.
 
-	//script = g_strdup ("document.execCommand('', null, \"\");");
 }
 
 G_MODULE_EXPORT void
@@ -259,7 +257,6 @@ action_bold_activate_cb(GtkWidget *widget, EDITOR *e)
 G_MODULE_EXPORT void
 action_italic_activate_cb(GtkWidget *widget, EDITOR *e)
 {
-	//extern BUTTONS_STATE buttons_state;
 	if (buttons_state.nochange)
 		return;
 
@@ -281,7 +278,6 @@ action_redo_activate_cb(GtkWidget *widget, EDITOR *e)
 G_MODULE_EXPORT void
 action_underline_activate_cb(GtkWidget *widget, EDITOR *e)
 {
-	//extern BUTTONS_STATE buttons_state;
 	if (buttons_state.nochange)
 		return;
 
@@ -291,7 +287,6 @@ action_underline_activate_cb(GtkWidget *widget, EDITOR *e)
 G_MODULE_EXPORT void
 action_strikethrough_activate_cb(GtkWidget *widget, EDITOR *e)
 {
-	//extern BUTTONS_STATE buttons_state;
 	if (buttons_state.nochange)
 		return;
 
@@ -588,7 +583,6 @@ static void recent_item_cb(GtkRecentChooser *chooser, EDITOR *e)
 		g_free(e->filename);
 	e->filename = g_strdup(file_uri);
 
-	//editor_open_recent (file_uri, e);
 	_load_file(e, file_uri);
 	xml_set_value("Xiphos", "studypad", "lastfile", e->filename);
 	settings.studypadfilename = xml_get_value("studypad", "lastfile");
@@ -742,7 +736,6 @@ G_MODULE_EXPORT void combo_box_changed_cb(GtkComboBox *widget, EDITOR *e)
 	gchar *script = NULL;
 	gint choice = gtk_combo_box_get_active(widget);
 	/* we need the line of text where the cursor is */
-	//extern BUTTONS_STATE buttons_state;
 
 	if (buttons_state.nochange)
 		return;

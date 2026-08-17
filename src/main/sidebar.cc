@@ -567,19 +567,12 @@ static void add_books_to_bible(GtkTreeModel *model, GtkTreeIter iter,
 #ifdef USE_TREEVIEW_PATH
 gboolean main_expand_treeview_to_path(GtkTreeModel *model, GtkTreeIter iter)
 {
-	//gchar *cap = NULL;
 	gchar *mod = NULL;
 	gchar *key = NULL;
-	//GtkTreePath *path;
-	//gchar *path_str = NULL;
 
-	//static int old_page = 0;
 
 	gtk_tree_model_get(GTK_TREE_MODEL(model), &iter, 3, &mod, 4, &key, -1);
 
-	//backend->set_module(mod);
-	//backend->set_treekey(key ? atoi(key) : 0);
-	//path = gtk_tree_model_get_path(model, &iter);
 	if (!gtk_tree_model_iter_has_child(GTK_TREE_MODEL(model), &iter) && !key) {
 		add_children_to_tree(model,
 				     iter,
@@ -594,7 +587,6 @@ gboolean main_expand_treeview_to_path(GtkTreeModel *model, GtkTreeIter iter)
 	/*gtk_tree_view_expand_row(GTK_TREE_VIEW
 				 (sidebar.module_list), path,
 				 FALSE);*/
-	//gtk_tree_path_free(path);
 	main_display_book(mod, (key ? key : (gchar *)"0"));
 	main_setup_navbar_book(mod, (key ? atoi(key) : 0));
 	return 1;

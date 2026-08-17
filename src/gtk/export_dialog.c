@@ -174,8 +174,6 @@ static void _save_state_buttons(void)
 			gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(d.cb_reference_last)));
 		xml_export_set_value("Copy_Export", "dialog",
 				     "reference_last", value);
-		//sprintf(value, "%d", gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(d.)));
-		//xml_export_set_value("Copy_Export", "dialog", "",value );
 		sprintf(value, "%d",
 			gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(d.cb_version)));
 		xml_export_set_value("Copy_Export", "dialog", "version",

@@ -90,17 +90,12 @@ static gboolean on_enter_notify_event(GtkWidget *widget,
 				      GdkEventCrossing *event,
 				      gpointer user_data)
 {
-	//shift_key_pressed = FALSE;
-	//gtk_widget_grab_focus (widgets.html_comm);
-	//settings.whichwindow = COMMENTARY_WINDOW;
-	//gui_change_window_title(settings.CommWindowModule);
 	return FALSE;
 }
 
 static void
 _popupmenu_requested_cb(XiphosHtml *html, gchar *uri, gpointer user_data)
 {
-	//g_print ("in comm _popupmenu_requested_cb\n");
 	gui_menu_popup(html, settings.CommWindowModule, NULL);
 }
 

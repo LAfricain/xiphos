@@ -146,7 +146,6 @@ void dict_key_entry_changed(GtkEntry *entry, gpointer data)
 		return;
 
 	main_display_dictionary(settings.DictWindowModule, buf);
-	//gtk_widget_grab_focus(widgets.entry_dict);
 }
 
 void button_back_clicked(GtkButton *button, gpointer user_data)
@@ -332,7 +331,6 @@ static void
 _popupmenu_requested_cb(XiphosHtml *html, gchar *uri, gpointer user_data)
 {
 	gui_menu_popup(html, settings.DictWindowModule, NULL);
-	//gui_create_pm_dictionary();
 }
 
 GtkWidget *gui_create_dictionary_pane(void)
