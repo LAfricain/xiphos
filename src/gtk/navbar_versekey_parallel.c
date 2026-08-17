@@ -892,20 +892,14 @@ static void on_parallel_sets_button_clicked(GtkWidget *widget,
  
 GtkWidget *gui_navbar_versekey_parallel_new(void)
 {
-	gchar *glade_file;
 	GtkBuilder *gxml;
 #if GTK_CHECK_VERSION(3, 4, 0)
 	GtkWidget *eventbox;
 #endif
 
-	glade_file =
-	    gui_general_user_file("navbar_versekey" UI_SUFFIX, FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-	XI_message(("%s", glade_file));
-
 /* build the widget */
 	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/navbar_versekey.gtkbuilder", NULL);
 	navbar_parallel.dialog = TRUE;
 	navbar_parallel.module_name =
 	    g_string_new(settings.MainWindowModule);

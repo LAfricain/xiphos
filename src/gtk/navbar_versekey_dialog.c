@@ -868,14 +868,9 @@ GtkWidget *gui_navbar_versekey_dialog_new(DIALOG_DATA *dialog)
 	GtkWidget *eventbox;
 #endif
 
-	gchar *glade_file =
-	    gui_general_user_file("navbar_versekey" UI_SUFFIX, FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-	XI_message(("%s", glade_file));
-
 /* build the widget */
 	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/navbar_versekey.gtkbuilder", NULL);
 	dialog->navbar.dialog = TRUE;
 	dialog->navbar.module_name =
 	    g_string_new(settings.MainWindowModule);

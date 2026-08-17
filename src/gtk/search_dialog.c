@@ -1227,15 +1227,8 @@ on_send_list_via_biblesync_advsearch_activate(GtkMenuItem *menuitem,
 GtkWidget *create_results_menu_advsearch(void)
 {
 	GtkWidget *menu;
-	gchar *glade_file;
-	GtkBuilder *gxml;
-	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-
-	g_free(glade_file);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus-popup.gtkbuilder", NULL);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_verselist_advsearch");
@@ -1669,7 +1662,6 @@ void _on_dialog_response(GtkDialog *dialog, gint response_id,
 
 static void _create_search_dialog(void)
 {
-	gchar *glade_file;
 	GtkBuilder *gxml;
 	GtkWidget *toolbutton1;
 	GtkWidget *toolbutton2;
@@ -1687,14 +1679,9 @@ static void _create_search_dialog(void)
 	verse_selected = NULL;
 	_preview_on = TRUE;
 
-	glade_file =
-	    gui_general_user_file("search-dialog" UI_SUFFIX, FALSE);
-	g_return_if_fail(glade_file != NULL);
-	XI_message(("%s", glade_file));
-
 /* build the widget */
 	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/search-dialog.gtkbuilder", NULL);
 	g_return_if_fail(gxml != NULL);
 
 	/* lookup the root widget */

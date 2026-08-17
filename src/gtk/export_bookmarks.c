@@ -658,7 +658,6 @@ gboolean dialog_vbox1_key_press_event_cb(GtkWidget *widget,
 void gui_export_bookmarks_dialog(gint export_type, GList *verses)
 {
 	GtkBuilder *builder;
-	gchar *gbuilder_file;
 	GtkWidget *dialog;
 	GString *name = g_string_new(NULL);
 
@@ -678,9 +677,7 @@ void gui_export_bookmarks_dialog(gint export_type, GList *verses)
 	}
 
 	builder = gtk_builder_new();
-	gbuilder_file =
-	    gui_general_user_file("xi-export-bookmarks" UI_SUFFIX, FALSE);
-	gtk_builder_add_from_file(builder, gbuilder_file, NULL);
+	gtk_builder_add_from_resource(builder, "/org/xiphos/ui/xi-export-bookmarks.gtkbuilder", NULL);
 
 	dialog =
 	    GTK_WIDGET(gtk_builder_get_object(builder, "dialog_export_bookmarks"));

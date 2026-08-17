@@ -810,17 +810,15 @@ static GtkWidget *editor_new(const gchar *title, EDITOR *e)
 	GtkWidget *scrollwindow;
 	GtkWidget *statusbar;
 	GtkBuilder *builder;
-	gchar *gbuilder_file;
 	GError *error = NULL;
 	GtkMenuItem *item;
 	GtkWidget *recent_item;
 
 	buttons_state.nochange = 1;
 
-	gbuilder_file = gui_general_user_file("gtk_webedit.ui", FALSE);
 	builder = gtk_builder_new();
 
-	if (!gtk_builder_add_from_file(builder, gbuilder_file, &error)) {
+	if (!gtk_builder_add_from_resource(builder, "/org/xiphos/ui/gtk_webedit.ui", &error)) {
 		g_warning("Couldn't load builder file: %s",
 			  error->message);
 		g_error_free(error);

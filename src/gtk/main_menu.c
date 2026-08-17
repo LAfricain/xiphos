@@ -959,14 +959,8 @@ on_sidebar_showhide_activate(GtkMenuItem *menuitem, gpointer user_data)
 
 GtkWidget *gui_create_main_menu(void)
 {
-	GtkBuilder *gxml;
-	gchar *glade_file =
-	    gui_general_user_file("xi-menus" UI_SUFFIX, FALSE);
-	g_return_val_if_fail(glade_file != NULL, NULL);
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus.gtkbuilder", NULL);
 	g_return_val_if_fail(gxml != NULL, NULL);
 
 	GtkWidget *menu = UI_GET_ITEM(gxml, "menu_main");

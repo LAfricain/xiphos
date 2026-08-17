@@ -1264,7 +1264,6 @@ editor_new(const gchar *title, EDITOR *e)
 	GtkWidget *window;
 	GtkWidget *scrollwindow;
 	GtkBuilder *builder;
-	gchar *gbuilder_file;
 	GError *error = NULL;
 	GtkMenuItem *item;
 	GtkWidget *recent_item;
@@ -1274,10 +1273,9 @@ editor_new(const gchar *title, EDITOR *e)
 	/* reuse the existing webkit editor .ui file for now;
 	 * html_widget references will need renaming once a dedicated
 	 * gtk_tvedit.ui is created */
-	gbuilder_file = gui_general_user_file("gtk_webedit.ui", FALSE);
 	builder = gtk_builder_new();
 
-	if (!gtk_builder_add_from_file(builder, gbuilder_file, &error)) {
+	if (!gtk_builder_add_from_resource(builder, "/org/xiphos/ui/gtk_webedit.ui", &error)) {
 		g_warning("Couldn't load builder file: %s", error->message);
 		g_error_free(error);
 	}

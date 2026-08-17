@@ -600,10 +600,8 @@ G_MODULE_EXPORT void on_edit_item_activate(GtkMenuItem *menuitem,
 	if (!key || !*key) {
 
 		/* --- Folder: use the dedicated folder dialog --- */
-		gchar *glade_file = gui_general_user_file("folder" UI_SUFFIX, TRUE);
-		if (!glade_file) goto cleanup;
 		GtkBuilder *gxml = gtk_builder_new();
-		gtk_builder_add_from_file(gxml, glade_file, NULL);
+		gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/folder.gtkbuilder", NULL);
 		GtkWidget *dialog  = GTK_WIDGET(UI_GET_ITEM(gxml, "dialog_folder"));
 		GtkWidget *entry   = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_entry_name"));
 		GtkWidget *colorbtn = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_color_button"));
@@ -1018,11 +1016,8 @@ G_MODULE_EXPORT void on_new_folder_activate(GtkMenuItem *menuitem,
 	if (!gtk_tree_selection_get_selected(current_selection, NULL, &selected))
 		return;
 
-	gchar *glade_file = gui_general_user_file("folder" UI_SUFFIX, TRUE);
-	g_return_if_fail(glade_file != NULL);
 	GtkBuilder *gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/folder.gtkbuilder", NULL);
 
 	GtkWidget *dialog     = GTK_WIDGET(UI_GET_ITEM(gxml, "dialog_folder"));
 	GtkWidget *entry      = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_entry_name"));
@@ -1184,14 +1179,8 @@ G_MODULE_EXPORT void on_set_tag_color_activate(GtkMenuItem *menuitem,
 
 void gui_create_bookmark_menu(void)
 {
-	gchar *glade_file;
-	GtkBuilder *gxml;
-	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-	g_return_if_fail((glade_file != NULL));
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus-popup.gtkbuilder", NULL);
 	g_return_if_fail((gxml != NULL));
 
 	menu.menu = UI_GET_ITEM(gxml, "menu_bookmark");

@@ -311,15 +311,8 @@ on_edit_activate2(GtkMenuItem *menuitem, gpointer user_data)
 GtkWidget *create_edit_tree_menu(EDITOR *editor)
 {
 	GtkWidget *menu;
-	gchar *glade_file;
-	GtkBuilder *gxml;
-	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-
-	g_free(glade_file);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus-popup.gtkbuilder", NULL);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_edit_tree");

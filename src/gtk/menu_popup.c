@@ -1986,19 +1986,14 @@ static void _lookup_selection(GtkMenuItem *menuitem,
 static GtkWidget *_create_popup_menu(XiphosHtml *html, const gchar *mod_name,
 				     DIALOG_DATA *d)
 {
-	gchar *glade_file;
 	GtkBuilder *gxml;
 	const gchar *mname = (is_dialog ? d->mod_name : mod_name);
 	XI_message(("_create_popup_menu mod_name:%s", mod_name));
 	if (!mname || !*mname)
 		return NULL;
 
-	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-
 	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus-popup.gtkbuilder", NULL);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	GtkWidget *menu = UI_GET_ITEM(gxml, "menu_popup");

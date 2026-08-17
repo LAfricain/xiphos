@@ -3497,15 +3497,9 @@ on_comboboxentry_remote_changed(GtkComboBox *combobox, gpointer user_data)
 
 static GtkWidget *create_module_manager_dialog(gboolean first_run)
 {
-	gchar *glade_file =
-	    gui_general_user_file("module-manager" UI_SUFFIX, FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-	XI_message(("%s", glade_file));
-
 	gchar *ids[] = {"dialog", NULL};
 	gxml = gtk_builder_new();
-	gtk_builder_add_objects_from_file(gxml, glade_file, ids, NULL);
-	g_free(glade_file);
+	gtk_builder_add_objects_from_resource(gxml, "/org/xiphos/ui/module-manager.gtkbuilder", ids, NULL);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	dialog_modmgr = UI_GET_ITEM(gxml, "dialog");
