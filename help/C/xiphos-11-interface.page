@@ -8,6 +8,7 @@
 
     <revision pkgversion="4.1.0" date="2018-04-24" status="draft"/>
     <revision pkgversion="4.1.0" date="2018-05-28" status="candidate"/>
+    <revision pkgversion="4.5.0" date="2026-08-10" status="draft"/>
 
     <title type='link' role="trail"></title>
     <title type='text'>Xiphos</title>
@@ -130,6 +131,35 @@
     <p>To switch between all Sidebar functions, buttons have been placed at the
     top of the Sidebar.</p>
     <media style="image" mime="image/png" src="figures/interface_shortcut.png" />
+
+    <!-- TODO: confirm exact menu labels for Favorites/Hide/Group By against
+    source (added by commit 4d90d55a, #1349). -->
+    <section id="xiphos-module-tree-organize">
+      <title>Organizing The Module Tree</title>
+      <p>Right-clicking anywhere in the Modules listing brings up a context
+      menu with options for organizing a long list of installed modules:</p>
+      <list>
+	<item>
+	  <p><gui>Add to Favorites</gui> / <gui>Remove from Favorites</gui> -
+	  marks a module so that it also appears under a dedicated
+	  <gui>Favorites</gui> entry at the top of the module tree, for quick
+	  access to the modules you use most.</p>
+	</item>
+	<item>
+	  <p><gui>Hide</gui> / <gui>Show Hidden Modules</gui> - removes a
+	  rarely-used module from the visible tree without uninstalling it.
+	  Hidden modules can be shown again, and un-hidden, from the same
+	  context menu.</p>
+	</item>
+	<item>
+	  <p><gui>Group By</gui> - chooses how the tree is organized:
+	  by <gui>Category</gui> (Biblical Texts, Commentaries, Dictionaries,
+	  General Books, etc.), by <gui>Language</gui>, or by <gui>Both</gui>
+	  (language within category). This is useful once many modules in
+	  several languages are installed.</p>
+	</item>
+      </list>
+    </section>
   </section>
 
 
@@ -174,7 +204,18 @@
       dialog, choose Modules, then Parallel. You can add or subtract from the
       list of modules that will be shown in the parallel view. The toolbar gives
       you a selector tool to erase the list, delete a module from the list, and
-      add modules to the list.</p>
+      add modules to the list. Up to 8 modules can be shown side by side.</p>
+
+      <!-- TODO: confirm exact UI wording/location for named parallel Sets
+      against source (added by commits 4f13191e/5a0a49c1/62e96f43, #1348). -->
+      <p>Instead of rebuilding this list every time you want to switch between
+      different combinations of translations (for example, one set for
+      original-language study and another for a reading group), you can save
+      the current list of parallel modules as a named <gui>Set</gui>. Once you
+      have several sets saved, a drop-down selector lets you switch between
+      them instantly, and the parallel view is rebuilt with the modules
+      belonging to the chosen set. Sets can be renamed or deleted from the same
+      selector.</p>
 
       <p>The <gui>Parallel View</gui> shows just one verse at a time. You can
       change the verse by selecting another verse, chapter, or book at the
@@ -301,9 +342,12 @@
 	</item>
 	<item>
 	  <p>Read Aloud - If you enable this, then <app>Xiphos</app> will funnel
-	  all selected verses through the <app>festival</app> text-to-speech
-	  system. <app>Festival</app> is a widely-available TTS, often installed
-	  by default in Linux distributions.</p>
+	  all selected verses through a text-to-speech system. On Linux,
+	  <app>Xiphos</app> uses the <app>festival</app> TTS, often installed
+	  by default in Linux distributions. On Windows, and on Linux systems
+	  that provide it, <app>Xiphos</app> can instead use the operating
+	  system's own text-to-speech ("System TTS"), so no separate speech
+	  engine needs to be installed.</p>
 
 	  <p>Also, mouse-selected text may be read aloud from Bibles,
 	  commentaries, and general books, using the right-click menu,
@@ -365,6 +409,18 @@
       Google Maps interface.</p>
     </section>
 
+    <!-- TODO: confirm exact menu wording/label against src/gui/menu_popup.c or
+    equivalent for "Translate Selection" (added by commit 63524ed8, #1355). -->
+    <section id="xiphos-translate-selection">
+      <title>Translate Selection</title>
+      <p>To get a quick machine translation of a word or phrase, mouse-select
+      the text anywhere it can be selected (Bible, commentary, general book,
+      or dictionary panes) and use the right-click context menu to choose
+      <guiseq><gui>Lookup Selection</gui><gui>Translate Selection</gui>
+      </guiseq>. A web browser will open with the selection submitted to an
+      online translation service.</p>
+    </section>
+
     <section id="xiphos-bible-dictionary">
       <title>Specific Word Meanings</title>
       <p>In order to check the meaning of a specific word, double-click on the
@@ -410,7 +466,10 @@
     List</gui> in the <gui>Sidebar</gui>, where you can click them individually
     for reading in the Previewer. Alternately, a Preferences selector is
     available, so that cross-reference lists are sent to the verse list
-    instead.</p>
+    instead. When a cross-reference resolves to more than one verse, a popup
+    menu also lets you jump straight to any one of the listed references
+    without first sending the whole set to the verse list; this also works for
+    references given only as partial verse ranges.</p>
 
     <p>Any verses shown in reverse-highlight have personal annotation associated
     with them, and such verses will include <gui>*u</gui> at the beginning of
@@ -479,6 +538,28 @@
     <p>The Dictionary Pane's content is driven by its up/down selectors, typing
     in its navbar text, or double-clicks in the Bible, Commentary, or Book
     Panes.</p>
+  </section>
+
+  <!-- TODO: confirm exact tab label, and whether the calendar popover is also
+  available (not just Windows) against source before publishing; commits
+  9894ccb5 and 5e2bd333 (#1312) reference a "Devotional tab" already existing,
+  so this pane predates this help revision and was simply undocumented. -->
+  <section id="xiphos-devotional">
+    <title>Daily Devotional Tab</title>
+	<media style="image" mime="image/png" src="figures/interface_devotional.png" />
+    <p>If a <gui>Daily Devotional</gui> module is installed and selected as
+    your preferred devotional (see <link xref="xiphos-50-preferences-general-settings"/>
+    and the <gui>Special</gui> tab in
+    <link xref="xiphos-53-preferences-modules"/>), a dedicated <gui>Devotional
+    </gui> tab is available alongside the <gui>Book View</gui> tab below the
+    <gui>Commentary Pane</gui>. It shows the reading for the current date by
+    default.</p>
+
+    <p>To read a devotional for a different day, click the date shown at the
+    top of the tab; a calendar popover lets you pick the day directly, or you
+    may type a date in manually. This is in addition to, and independent of,
+    the day's devotional reference optionally shown in the Previewer at
+    <app>Xiphos</app> startup (see above).</p>
   </section>
 
 </page>

@@ -1,0 +1,84 @@
+<page id="xiphos-43-bookmarks" type="topic" xmlns="http://projectmallard.org/1.0/"
+       xmlns:its="http://www.w3.org/2005/11/its">
+
+  <info>
+    <desc>Bookmark verses, organize them with colored tags, and import bookmarks from other applications.</desc>
+
+    <link type="guide" xref="index#personal-comments"/>
+
+    <revision pkgversion="4.5.0" date="2026-08-10" status="draft"/>
+
+    <title type='link' role="trail"></title>
+    <title type='text'>Xiphos</title>
+
+    <credit type="author" its:translate="no">
+      <name>Andy Piper</name>
+    </credit>
+    <credit type="author" its:translate="no">
+      <name>Pierre Benz</name>
+    </credit>
+    <credit type="author" its:translate="no">
+      <name>Dr Peter von Kaehne</name>
+    </credit>
+    <credit type="author" its:translate="no">
+      <name>Karl Kleinpaste</name>
+    </credit>
+    <credit type="author" its:translate="no">
+      <name>Matthew Talbert</name>
+    </credit>
+
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+
+  </info>
+
+  <title>Bookmarks and Tags</title>
+
+  <p>Bookmarks let you mark individual verses for quick return later. Press
+  <keyseq><key>Alt</key><key>B</key></keyseq>, or use the right-click context
+  menu in the <gui>Bible Text Pane</gui>, to open the bookmark dialog on the
+  current verse. Bookmarks are listed in the <gui>Sidebar</gui>, where they can
+  be organized into folders.</p>
+
+  <!-- TODO: confirm exact dialog/menu wording for tag folder colors against
+  source (added by commits ff96e592 #1317, a9dd210f #1336, ecbb544d #1368). -->
+  <section id="xiphos-bookmark-tag-colors">
+    <title>Coloring Tag Folders</title>
+    <media style="image" mime="image/png" src="figures/bookmarks.png" />
+    <p>Bookmark folders (also called tag folders) can now be given a color.
+    Right-click a folder in the bookmark list and choose a color for it. Every
+    verse bookmarked into that folder is then highlighted in the chosen color
+    directly in the <gui>Bible Text Pane</gui>, giving you an at-a-glance
+    picture of how your tags are distributed through a passage, similar to
+    highlighting a paper Bible with different colored pens for different
+    themes.</p>
+    <p>A verse that belongs to more than one colored tag folder, or that also
+    carries a personal annotation, is resolved consistently so that only one
+    color is shown; the bookmark dialog always shows you exactly which
+    folder(s) a verse belongs to.</p>
+  </section>
+
+  <section id="xiphos-bookmark-crossref-popup">
+    <title>Navigating Multi-Verse References</title>
+    <p>Bookmarks and cross-references that point to more than one verse (for
+    example, a reference spanning several verses, or several distinct
+    references bundled together) can be navigated one at a time from a popup
+    menu, without first sending the whole list to the sidebar's verse list.
+    Partial verse references are also resolved correctly when building this
+    popup, instead of only whole-verse or whole-chapter references.</p>
+  </section>
+
+  <!-- TODO: confirm exact menu path for AndBible import against source
+  (added by commit 7bc9f2ee/7a13856d area's neighbor 7b1994c8... actually see
+  b807de15/7b4ee98d, #1351). Likely under a bookmark-list context menu or
+  File > Import; verify before publishing. -->
+  <section id="xiphos-bookmark-andbible-import">
+    <title>Importing Bookmarks From AndBible</title>
+    <p>If you also use <app>AndBible</app> (a Sword-compatible Bible app for
+    Android) and want to bring its bookmarks into <app>Xiphos</app>, use the
+    bookmark import function to read an AndBible bookmarks database file and
+    convert it into <app>Xiphos</app> bookmarks. Locate the AndBible database
+    file (copied from your Android device) when prompted, and the bookmarks it
+    contains will be added to your existing <app>Xiphos</app> bookmarks.</p>
+  </section>
+
+</page>

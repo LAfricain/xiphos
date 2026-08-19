@@ -9,6 +9,7 @@
 
     <revision pkgversion="4.1.0" date="2018-04-24" status="draft"/>
     <revision pkgversion="4.1.0" date="2018-05-28" status="candidate"/>
+    <revision pkgversion="4.5.0" date="2026-08-10" status="draft"/>
 
     <title type='link' role="trail"></title>
     <title type='text'>Xiphos</title>
@@ -56,4 +57,16 @@
 
   <p>Notice the <gui>View Intro</gui> button above. You may see an introductory
   explanation of Module Manager operation at any time.</p>
+
+  <note style="tip">
+    <p>Once the module tree has focus, the <key>Left</key> and <key>Right</key>
+    arrow keys collapse and expand a module group, which is convenient when
+    many languages and categories are installed. The list of languages offered
+    by the Module Manager has also been substantially extended, so modules in
+    less common languages are now easier to find and select.</p>
+  </note>
+
+  <p>See <link xref="xiphos-11-interface#xiphos-module-tree-organize"/> for
+  ways to organize a long module list, including <gui>Favorites</gui>, hiding
+  rarely-used modules, and grouping by category and/or language.</p>
 </page>

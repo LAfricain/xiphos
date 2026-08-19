@@ -8,6 +8,7 @@
 
     <revision pkgversion="4.1.0" date="2018-04-24" status="draft"/>
     <revision pkgversion="4.1.0" date="2018-05-29" status="candidate"/>
+    <revision pkgversion="4.5.0" date="2026-08-10" status="draft"/>
 
     <title type='link' role="trail"></title>
     <title type='text'>Xiphos</title>
@@ -73,11 +74,12 @@
   subwindow for general books.</p>
 
   <p>Editing a journal or prayer list is done by right-clicking the module name
-  to get its context menu, whose middle item is <gui>Open in Editor</gui>.  The
-  sections and subsections will be listed in the left margin.  Click one, and
-  the editor navigates to that section.  The context menu on right-click of
-  section keys provides for adding, deleting, and editing the names of sections
-  and subsections.</p>
+  to get its context menu, whose middle item is <gui>Open in Editor</gui> (also
+  offered as a dedicated <gui>Edit</gui> item on the same context menu, for
+  quicker access).  The sections and subsections will be listed in the left
+  margin.  Click one, and the editor navigates to that section.  The context
+  menu on right-click of section keys provides for adding, deleting, and
+  editing the names of sections and subsections.</p>
 
   <p>If the general book subwindow is currently displaying the journal or prayer
   list being edited, it will synchronize with new content when <gui>Save</gui>
