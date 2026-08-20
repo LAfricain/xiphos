@@ -15,8 +15,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -101,7 +100,6 @@ static void load_treeview(GtkTreeStore *model, GtkTreeIter *parent,
 	tmpbuf = (char *)treeKey.getLocalName();
 	if (atol(buf) == 0)
 		tmpbuf = mod_name;
-	//XI_message(("\nlocal_name: %d\noffset: %s",strlen(tmpbuf),buf));
 	if (treeKey.hasChildren()) {
 		add_parent_to_treeview(model, parent);
 	} else {

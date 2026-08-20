@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -46,7 +45,6 @@ enum {
 	PLAIN
 };
 
-//extern GList *list_for_bookmarking;
 
 void dialog_export_bookmarks_response_cb(GtkDialog *dialog,
 					 gint response_id,
@@ -158,7 +156,6 @@ static gboolean _save_verselist_2_xml(BK_EXPORT *data)
 	xmlNodePtr root_node = NULL;
 	xmlNodePtr cur_node = NULL;
 	xmlDocPtr root_doc;
-	//xmlAttrPtr root_attr;
 	gchar *filename;
 	GString *name = g_string_new(NULL);
 	GString *str = g_string_new("");
@@ -415,7 +412,6 @@ static void save_iter_to_xml(GtkTreeIter *iter, BK_EXPORT *data)
 	xmlNodePtr root_node = NULL;
 	xmlNodePtr cur_node = NULL;
 	xmlDocPtr root_doc;
-	//      xmlAttrPtr root_attr;
 	gchar *caption = NULL;
 	gchar *filename;
 	GtkTreeModel *tm;
@@ -662,7 +658,6 @@ gboolean dialog_vbox1_key_press_event_cb(GtkWidget *widget,
 void gui_export_bookmarks_dialog(gint export_type, GList *verses)
 {
 	GtkBuilder *builder;
-	gchar *gbuilder_file;
 	GtkWidget *dialog;
 	GString *name = g_string_new(NULL);
 
@@ -682,9 +677,7 @@ void gui_export_bookmarks_dialog(gint export_type, GList *verses)
 	}
 
 	builder = gtk_builder_new();
-	gbuilder_file =
-	    gui_general_user_file("xi-export-bookmarks" UI_SUFFIX, FALSE);
-	gtk_builder_add_from_file(builder, gbuilder_file, NULL);
+	gtk_builder_add_from_resource(builder, "/org/xiphos/ui/xi-export-bookmarks.gtkbuilder", NULL);
 
 	dialog =
 	    GTK_WIDGET(gtk_builder_get_object(builder, "dialog_export_bookmarks"));

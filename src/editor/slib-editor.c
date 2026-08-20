@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #include <config.h>
@@ -218,7 +217,6 @@ static gint open_dialog(EDITOR *e)
 
 		new_filename =
 		    gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(dialog));
-		//gtkhtml_editor_set_filename (e->window, new_filename);
 		_load_file(e, new_filename);
 		g_free(new_filename);
 	}
@@ -828,7 +826,6 @@ static void _save_file(EDITOR *e)
 
 static void _load_file(EDITOR *e, const gchar *filename)
 {
-	//GtkWidget *choser;
 	if (e->filename)
 		g_free(e->filename);
 	e->filename = g_strdup(filename);

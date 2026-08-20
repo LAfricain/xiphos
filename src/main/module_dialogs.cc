@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -160,7 +159,6 @@ void main_dialogs_chapter_heading(DIALOG_DATA *d)
 	vkey->setIntros(1);
 	vkey->setAutoNormalize(0);
 	vkey->setVerse(0);
-	//vkey->Chapter(0);
 	be->display_mod->display();
 }
 
@@ -570,7 +568,6 @@ void main_dialogs_tree_selection_changed(GtkTreeModel *model,
 
 	if (gtk_tree_selection_get_selected(selection, NULL, &selected)) {
 		GtkTreePath *path = gtk_tree_model_get_path(model, &selected);
-		//tree_level = gtk_tree_path_get_depth(path);
 		gtk_tree_model_get(GTK_TREE_MODEL(model), &selected,
 				   2, &name,
 				   3, &book,
@@ -589,7 +586,6 @@ void main_dialogs_tree_selection_changed(GtkTreeModel *model,
 				main_dialogs_add_children_to_tree(model, selected,
 								  l_offset, is_dialog, g);
 			}
-			//is_leaf = gtk_tree_model_iter_has_child(model, &selected);
 			be->display_mod->display();
 			g_free(name);
 			g_free(book);
@@ -629,12 +625,9 @@ void main_dialogs_dictionary_entry_changed(DIALOG_DATA *d)
 	if (!backend->is_module(mod_name))
 		return;
 
-	//key = (gchar*)gtk_entry_get_text(GTK_ENTRY(d->entry));
 	be->set_module_key(mod_name, d->key);
 	key = be->get_module_key();
 
-	//	xml_set_value("Xiphos", "keys", "dictionary", key);
-	//	settings.dictkey = xml_get_value("keys", "dictionary");
 
 	be->set_module_key(mod_name, key);
 	be->display_mod->display();
@@ -695,7 +688,6 @@ void main_dialogs_dictionary_entry_changed(DIALOG_DATA *d)
 void main_free_on_destroy(DIALOG_DATA *d)
 {
 	list_dialogs = g_list_remove(list_dialogs, (DIALOG_DATA *)d);
-	//	g_free(d->ops);
 	g_free(d->key);
 	g_free(d->mod_name);
 

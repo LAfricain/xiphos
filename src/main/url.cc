@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -324,12 +323,10 @@ static gint show_morph(const char *module_name,
 		}
 	}
 
-	//XI_message(("modbuf = %s", modbuf));
 	if (clicked) {
 		main_display_dictionary(modbuf, (gchar *)svalue);
 	} else {
 		gchar *mybuf = main_get_rendered_text(modbuf, (gchar *)svalue);
-		//XI_message(("mybuf = %s", mybuf));
 		if (mybuf) {
 			main_information_viewer(modbuf,
 						mybuf,
@@ -1002,7 +999,6 @@ gint main_url_handler(const gchar *url, gboolean clicked)
 		// this is technically a Sword bug: Sword should encode it.
 		// we work around it here: replace '&' with '+'.  *sigh*
 		//if (svalue = strstr(, " & "))
-		//	*(svalue+1) = '-';
 
 		XI_message(("action = %s", action));
 		XI_message(("morph = %s", morph));

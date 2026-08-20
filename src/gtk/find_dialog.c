@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -164,9 +163,7 @@ static void create_find_dialog(GtkWidget *htmlwidget)
 	GtkWidget *dialog_action_area29;
 	GtkWidget *hbuttonbox8;
 	GtkWidget *image;
-	//gchar title[80];
 
-	//sprintf(title, "%s - %s", settings.program_title, _("Find"));
 
 	dialog = g_new(FIND_DIALOG, 1); /* must be freed */
 	dialog->regular = FALSE;
@@ -176,7 +173,6 @@ static void create_find_dialog(GtkWidget *htmlwidget)
 	g_object_set_data(G_OBJECT(dialog->dialog),
 			  "dialog->dialog", dialog->dialog);
 	gtk_window_set_title(GTK_WINDOW(dialog->dialog), _("Find"));
-	//GTK_WINDOW(dialog->dialog)->type = GTK_WINDOW_TOPLEVEL;
 	/*gtk_window_set_policy(GTK_WINDOW(dialog->dialog), TRUE, TRUE,
 	   FALSE); */
 	gtk_container_set_border_width(GTK_CONTAINER(dialog->dialog), 6);
@@ -266,7 +262,6 @@ static void create_find_dialog(GtkWidget *htmlwidget)
 #endif
 	gtk_widget_show(dialog->close);
 	gtk_container_add(GTK_CONTAINER(hbuttonbox8), dialog->close);
-	//GTK_WIDGET_SET_FLAGS(dialog->close, GTK_CAN_DEFAULT);
 	gtk_widget_set_can_default(dialog->find, 1);
 
 	g_signal_connect(G_OBJECT(dialog->dialog), "destroy",
@@ -298,13 +293,11 @@ static void create_find_dialog(GtkWidget *htmlwidget)
 static void find_dialog(GtkWidget *htmlwidget, const gchar *title)
 {
 	if (dialog) {
-		//gtk_window_set_title(GTK_WINDOW(dialog->dialog), title);
 		dialog->htmlwidget = htmlwidget;
 		gtk_widget_show(GTK_WIDGET(dialog->dialog));
 		gdk_window_raise(gtk_widget_get_window(GTK_WIDGET(dialog->dialog)));
 	} else {
 		create_find_dialog(htmlwidget);
-		//gtk_window_set_title(GTK_WINDOW(dialog->dialog), title);
 		gtk_widget_show(GTK_WIDGET(dialog->dialog));
 	}
 }

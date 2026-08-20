@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -338,11 +337,9 @@ void main_save_modlist(void)
 	gchar *text1 = NULL;
 	gchar *text2 = NULL;
 	GtkTreeModel *model;
-	//GtkListStore *list_store;
 	GtkTreeIter iter;
 
 	model = gtk_tree_view_get_model(GTK_TREE_VIEW(search1.module_lists));
-	//list_store = GTK_LIST_STORE(model);
 
 	if (!gtk_tree_model_get_iter_first(model, &iter))
 		return;
@@ -378,12 +375,10 @@ void main_save_range(void)
 	gchar *text1 = NULL;
 	gchar *text2 = NULL;
 	GtkTreeModel *model;
-	//GtkListStore *list_store;
 	GtkTreeIter iter;
 
 	model =
 	    gtk_tree_view_get_model(GTK_TREE_VIEW(search1.list_range_name));
-	//list_store = GTK_LIST_STORE(model);
 
 	if (!gtk_tree_model_get_iter_first(model, &iter))
 		return;
@@ -910,8 +905,6 @@ void main_finds_verselist_selection_changed(GtkTreeSelection *selection,
 {
 	gchar *text, *buf, *module, *key;
 	GString *text_str;
-	//gint textlen;
-	//GtkTreeModel *model;
 	GtkTreeIter selected;
 
 	if (!gtk_tree_selection_get_selected(selection, &model, &selected))
@@ -930,7 +923,6 @@ void main_finds_verselist_selection_changed(GtkTreeSelection *selection,
 	}
 
 	XI_message(("\ntext: %s", text));
-	//textlen = strlen(text);
 	module = text;
 
 	// first `:' finds end of module name.
@@ -1209,7 +1201,6 @@ static GList *get_custom_list_from_name(const gchar *label)
 
 static void set_up_dialog_search(GList *modlist)
 {
-	//gui_begin_html(search1.results_html, TRUE);
 	backendSearch->clear_scope();
 	if (gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(search1.rb_custom_range))) {
 		// if any non-bible, non-commentary modules are in use,

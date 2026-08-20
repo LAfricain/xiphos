@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -175,8 +174,6 @@ static void _save_state_buttons(void)
 			gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(d.cb_reference_last)));
 		xml_export_set_value("Copy_Export", "dialog",
 				     "reference_last", value);
-		//sprintf(value, "%d", gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(d.)));
-		//xml_export_set_value("Copy_Export", "dialog", "",value );
 		sprintf(value, "%d",
 			gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(d.cb_version)));
 		xml_export_set_value("Copy_Export", "dialog", "version",
@@ -481,17 +478,12 @@ void gui_export_dialog(void)
 	gdouble max;
 	char *ref;
 
-	gchar *glade_file =
-	    gui_general_user_file("export-dialog" UI_SUFFIX, FALSE);
-	g_return_if_fail(glade_file != NULL);
-	XI_message(("%s", glade_file));
-
 	dist_license =
 	    _check_for_distribution_license(settings.MainWindowModule);
 
 /* build the widget */
 	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/export-dialog.gtkbuilder", NULL);
 
 	dialog = UI_GET_ITEM(gxml, "dialog_export_passage");
 

@@ -13,13 +13,51 @@
 # GNU Library General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+# along with this program; if not, see <https://www.gnu.org/licenses/>.
 #
 
 # building xiphos
 
 message (STATUS "Configuring xiphos target")
+
+# compile ui/xiphos.gresource.xml (embedded GtkBuilder UI files) into
+# a C source linked directly into the xiphos binary. See issue #894
+# item 4 - avoids looking up .gtkbuilder files on disk at runtime.
+find_program (GLIB_COMPILE_RESOURCES NAMES glib-compile-resources REQUIRED)
+
+set (xiphos_gresource_xml ${PROJECT_SOURCE_DIR}/ui/xiphos.gresource.xml)
+set (xiphos_resources_c ${CMAKE_CURRENT_BINARY_DIR}/xiphos_resources.c)
+set (xiphos_resources_dep ${CMAKE_CURRENT_BINARY_DIR}/xiphos_resources.c.d)
+
+# ask glib-compile-resources for the list of files the manifest
+# references, so the custom command re-runs whenever any of the
+# embedded .gtkbuilder/.ui files change, not just the manifest itself.
+execute_process (
+  COMMAND ${GLIB_COMPILE_RESOURCES}
+          --sourcedir=${PROJECT_SOURCE_DIR}/ui
+          --generate-dependencies
+          ${xiphos_gresource_xml}
+  OUTPUT_VARIABLE xiphos_gresource_deps_raw
+  RESULT_VARIABLE xiphos_gresource_deps_result
+  )
+if (NOT xiphos_gresource_deps_result EQUAL 0)
+  message (FATAL_ERROR "Failed to list dependencies of ${xiphos_gresource_xml}")
+endif ()
+string (STRIP "${xiphos_gresource_deps_raw}" xiphos_gresource_deps_raw)
+string (REPLACE "\n" ";" xiphos_gresource_deps "${xiphos_gresource_deps_raw}")
+
+add_custom_command (
+  OUTPUT ${xiphos_resources_c}
+  COMMAND ${GLIB_COMPILE_RESOURCES}
+          --sourcedir=${PROJECT_SOURCE_DIR}/ui
+          --target=${xiphos_resources_c}
+          --generate-source
+          ${xiphos_gresource_xml}
+  DEPENDS ${xiphos_gresource_xml} ${xiphos_gresource_deps}
+  COMMENT "Generating xiphos_resources.c from xiphos.gresource.xml"
+  VERBATIM
+  )
+set_source_files_properties(${xiphos_resources_c} PROPERTIES GENERATED 1)
 
 # generate locale_set.c:
 
@@ -135,6 +173,7 @@ add_executable (xiphos
   utilities.c
   xiphos.c
   ${CMAKE_CURRENT_BINARY_DIR}/locale_set.c
+  ${xiphos_resources_c}
   )
 
 if (DBUS)

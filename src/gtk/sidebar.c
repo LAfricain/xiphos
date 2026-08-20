@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -1093,15 +1092,8 @@ on_export_verselist_activate(GtkMenuItem *menuitem, gpointer user_data)
 GtkWidget *create_results_menu(void)
 {
 	GtkWidget *menu;
-	gchar *glade_file;
-	GtkBuilder *gxml;
-	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-
-	g_free(glade_file);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus-popup.gtkbuilder", NULL);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_verselist");
@@ -1130,14 +1122,8 @@ GtkWidget *create_results_menu(void)
  */
 static GtkWidget *create_menu_modules(void)
 {
-	gchar *glade_file;
-	GtkBuilder *gxml;
-	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus-popup.gtkbuilder", NULL);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	GtkWidget *menu = UI_GET_ITEM(gxml, "menu_modules");
@@ -1204,15 +1190,8 @@ on_book_chapter_activate(GtkMenuItem *menuitem, gpointer user_data)
 GtkWidget *create_menu_prayerlist(void)
 {
 	GtkWidget *menu;
-	gchar *glade_file;
-	GtkBuilder *gxml;
-	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-
-	g_free(glade_file);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus-popup.gtkbuilder", NULL);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_prayerlist");
@@ -1241,14 +1220,8 @@ static GtkWidget *
 create_menu_percomm_mod(void)
 {
 	GtkWidget *menu;
-	gchar *glade_file;
-	GtkBuilder *gxml;
-	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus-popup.gtkbuilder", NULL);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_percomm_mod");
@@ -1259,14 +1232,8 @@ create_menu_percomm_mod(void)
 GtkWidget *create_menu_prayerlist_mod(void)
 {
 	GtkWidget *menu;
-	gchar *glade_file;
-	GtkBuilder *gxml;
-	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus-popup.gtkbuilder", NULL);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_prayerlist_mod");
@@ -1716,7 +1683,6 @@ GtkWidget *gui_create_sidebar(GtkWidget *paned)
 			       "button_release_event",
 			       G_CALLBACK(on_modules_list_button_release), NULL);
 
-	// sidebar.menu_modules = create_menu_modules();
 	sidebar.menu_prayerlist = create_menu_prayerlist();
 	sidebar.menu_prayerlist_mod = create_menu_prayerlist_mod();
 

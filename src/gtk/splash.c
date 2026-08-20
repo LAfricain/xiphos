@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  *
  * Contains code from Evolution as written by Ettore Perazzoli.
  */
@@ -627,18 +626,14 @@ void gui_splash_step(gchar *text, gdouble progress, gint step)
 
 void gui_splash_init(void)
 {
-	gchar *builder_file;
 	GtkBuilder *builder;
 	GError *error = NULL;
 
 	if (!settings.showsplash)
 		return;
 
-	builder_file = gui_general_user_file("xi-splash" UI_SUFFIX, FALSE);
-	g_return_if_fail((builder_file != NULL));
-
 	builder = gtk_builder_new();
-	if (!gtk_builder_add_from_file(builder, builder_file, &error)) {
+	if (!gtk_builder_add_from_resource(builder, "/org/xiphos/ui/xi-splash.gtkbuilder", &error)) {
 		g_warning("Couldn't load builder file: %s",
 			  error->message);
 		g_error_free(error);

@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef _NAVBAR_H
@@ -34,11 +33,8 @@ struct _navbar
 	GtkWidget *button_back;
 	GtkWidget *button_forward;
 	GtkWidget *comboboxentry_book;
-	//      SPINBUTTONS book;
 	GtkWidget *comboboxentry_chapter;
-	//      SPINBUTTONS chapter;
 	GtkWidget *comboboxentry_verse;
-	//      SPINBUTTONS verse;
 	GtkWidget *lookup_entry;
 	gchar *key;
 	gchar *module_name;

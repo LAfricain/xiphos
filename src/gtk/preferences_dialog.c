@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -699,19 +698,6 @@ void
 on_checkbutton1_toggled(GtkToggleButton *togglebutton, gpointer user_data)
 {
 	gui_tabs_on_off(gtk_toggle_button_get_active(togglebutton));
-	/*	if (togglebutton->active) {
-		xml_set_value("Xiphos", "tabs", "browsing", "1");
-		settings.browsing = TRUE;
-		gui_open_tabs();
-		gtk_widget_show(widgets.hboxtb);
-	} else {
-		xml_set_value("Xiphos", "tabs", "browsing", "0");
-		gtk_widget_hide(widgets.hboxtb);
-		settings.browsing = FALSE;
-		gui_close_all_tabs();
-	}
-	settings.browsing = atoi(xml_get_value("tabs", "browsing"));
-	*/
 }
 
 /******************************************************************************
@@ -3208,13 +3194,8 @@ void ps_button_cut(GtkButton *button, gpointer user_data)
  */
 void ps_button_add(GtkButton *button, gpointer user_data)
 {
-	GtkBuilder *gxml;
-	gchar *glade_file =
-	    gui_general_user_file("selector-prefs" UI_SUFFIX, FALSE);
-	g_return_if_fail(glade_file != NULL);
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/selector-prefs.gtkbuilder", NULL);
 	parallel_select.mod_sel_dialog =
 	    UI_GET_ITEM(gxml, "mod_sel_dialog");
 	parallel_select.mod_sel_close =
@@ -3233,7 +3214,6 @@ void ps_button_add(GtkButton *button, gpointer user_data)
 	ps_setup_treeview(parallel_select.mod_sel_treeview);
 
 	gtk_widget_show(parallel_select.mod_sel_dialog);
-	g_free(glade_file);
 }
 
 static void on_parallel_sets_combo_changed(GtkComboBox *combo,
@@ -3476,14 +3456,10 @@ static void create_preferences_dialog(void)
 	GObject *selection;
 	GtkWidget *chooser;
 	gint index = 0;
-	gchar *glade_file = gui_general_user_file("prefs" UI_SUFFIX, TRUE);
-
-	g_return_if_fail(glade_file != NULL);
 
 /* build the widget */
 	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/prefs.gtkbuilder", NULL);
 	g_return_if_fail(gxml != NULL);
 
 	/* lookup the root widget */

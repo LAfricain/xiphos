@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -172,7 +171,6 @@ static void _save(EXPORT_DATA data, char *text, int len)
 static void _export_book(EXPORT_DATA data, int type)
 {
 	GString *str = g_string_new(NULL);
-	//gchar *buf;
 	SWMgr *mgr = backend->get_mgr();
 	SWModule *mod = mgr->Modules[settings.MainWindowModule];
 	mod->setKey(settings.currentverse);
@@ -195,7 +193,6 @@ static void _export_book(EXPORT_DATA data, int type)
 		g_string_append_printf(str, data.plain_bookheader,
 				       mod->getDescription(),
 				       1);
-	//g_free(buf);
 	while (key->getBook() == curBook && !mod->popError()) {
 		if (key->getChapter() != curChapter) {
 			++mychapter;
@@ -365,7 +362,6 @@ static void _export_verse_range(EXPORT_DATA data, int type)
 	int curChapter = key->getChapter();
 	int curBook = key->getBook();
 	char *modstr = g_strdup_printf(" [%s]", settings.MainWindowModule);
-	//int myverse = 1;
 
 	// special case: one verse range => single verse export.
 	if (data.start_verse == data.end_verse) {

@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef ___NAVBAR_VERSEKEY_H_
@@ -25,6 +24,5 @@
 #include "main/navbar_versekey.h"
 
 GtkWidget *gui_navbar_versekey_new(void);
-//GtkWidget *gui_navbar_versekey_parallel_new(void);
 
 #endif

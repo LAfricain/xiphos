@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -190,9 +189,7 @@ void gui_create_search_sidebar(void)
 	GtkWidget *scrolledwindow_search;
 	GtkWidget *viewport_search;
 	gchar *header;
-	//GtkListStore *store;
 
-	//ss = &sss;
 
 	scrolledwindow_search = gtk_scrolled_window_new(NULL, NULL);
 	gtk_widget_show(scrolledwindow_search);

@@ -15,8 +15,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -312,15 +311,8 @@ on_edit_activate2(GtkMenuItem *menuitem, gpointer user_data)
 GtkWidget *create_edit_tree_menu(EDITOR *editor)
 {
 	GtkWidget *menu;
-	gchar *glade_file;
-	GtkBuilder *gxml;
-	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-
-	g_free(glade_file);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus-popup.gtkbuilder", NULL);
 	g_return_val_if_fail((gxml != NULL), NULL);
 
 	menu = UI_GET_ITEM(gxml, "menu_edit_tree");

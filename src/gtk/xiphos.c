@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -198,26 +197,7 @@ void frontend_display(const char *tabs)
 	sync_windows();
 
 	// setup passage notebook
-	//      if (settings.browsing) {
 	gui_notebook_main_setup(settings.browsing, tabs);
-	/*	} else {
-		url = g_strdup_printf("sword://%s/%s",settings.DictWindowModule,
-						      settings.dictkey);
-		main_url_handler(url);
-		g_free(url);
-
-		gtk_widget_realize(widgets.html_book);
-		url = g_strdup_printf("sword://%s/%d",settings.book_mod,
-						      settings.book_offset);
-		main_url_handler(url);
-		g_free(url);
-
-		settings.addhistoryitem = FALSE;
-		url = g_strdup_printf("sword://%s/%s",settings.MainWindowModule,
-						      settings.currentverse);
-		main_url_handler(url);
-		g_free(url);
-	} */
 	/* must be set after tab stuff is done */
 
 	gtk_check_menu_item_set_active(GTK_CHECK_MENU_ITEM(widgets.parallel_tab_item),

@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -2036,7 +2035,6 @@ const char *AnalyzeForImageSize(const char *origtext, int columns, GdkWindow *wi
 			if (!warned_once) {
 				gui_generic_warning(_("An image file's size could not be determined.\n"
 						      "Xiphos cannot resize images to fit window."));
-				// settings.imageresize = 0;
 				warned_once = TRUE;
 			}
 			continue;

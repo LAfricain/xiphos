@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #include <config.h>
@@ -180,7 +179,6 @@ void button_cancel_clicked_cb(GObject *object, gpointer user_data)
 void editor_link_dialog(EDITOR *e)
 {
 	GtkBuilder *builder;
-	gchar *gbuilder_file;
 
 #ifndef USE_WEBKIT_EDITOR
 #ifndef USE_GTKTVeditor
@@ -190,15 +188,7 @@ void editor_link_dialog(EDITOR *e)
 #endif
 #endif
 
-	gbuilder_file =
-	    gui_general_user_file("editor_link_dialog" UI_SUFFIX, FALSE);
-
-#if GTK_CHECK_VERSION(3, 10, 0)
-	builder = gtk_builder_new_from_file(gbuilder_file);
-#else
-	builder = gtk_builder_new();
-	gtk_builder_add_from_file(builder, gbuilder_file, NULL);
-#endif
+	builder = gtk_builder_new_from_resource("/org/xiphos/ui/editor_link_dialog.gtkbuilder");
 
 	window = GTK_WIDGET(gtk_builder_get_object(builder, "dialog1"));
 	set_window_icon(GTK_WINDOW(window));
