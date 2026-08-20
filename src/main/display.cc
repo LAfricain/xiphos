@@ -1538,7 +1538,16 @@ GTKChapDisp::RenderOneChapter(SWModule &imodule,
 	GString *intro;
 	const char *ModuleName = imodule.getName();
 
-	swbuf.appendFormatted("<a name=\"%d\">", (thisChapter * 1000));
+	/* Issue #921: this anchor must stay self-closed and must NOT wrap
+	 * the chapter title / intro material below, since that content
+	 * legitimately contains block-level elements (<div>, <h2> from
+	 * introMaterial()). An <a> is an inline "formatting element" in
+	 * the HTML5 spec; wrapping block content inside it forces the
+	 * parser's adoption agency algorithm to silently fragment/
+	 * duplicate the <a> in the resulting DOM, which breaks WebKit's
+	 * keyboard caret navigation (Down/Page_Down) and can also leak
+	 * inline styles (e.g. italics) past their intended scope. */
+	swbuf.appendFormatted("<a name=\"%d\"></a>", (thisChapter * 1000));
 
 	if (ops->display_chapter_N) {
 		num = main_format_number(thisChapter);
@@ -1552,8 +1561,6 @@ GTKChapDisp::RenderOneChapter(SWModule &imodule,
 		swbuf.append(intro->str);
 		g_string_free(intro, TRUE);
 	}
-
-	swbuf.append("</a>", thisChapter * 1000);
 
 	key->setTestament(curTest);
 	key->setBook(curBook);
