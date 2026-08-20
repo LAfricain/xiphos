@@ -800,6 +800,7 @@ gint sword_uri(const gchar *url, gboolean clicked)
 				g_free((gchar *)key);
 			break;
 		case COMMENTARY_TYPE:
+		case PERCOM_TYPE:
 			if (gtk_notebook_get_current_page(GTK_NOTEBOOK(widgets.notebook_comm_book)) != 0) {
 				gchar *save = settings.special_anchor;
 				gtk_notebook_set_current_page(
@@ -818,6 +819,7 @@ gint sword_uri(const gchar *url, gboolean clicked)
 			main_display_dictionary(mod, tmpkey);
 			break;
 		case BOOK_TYPE:
+		case PRAYERLIST_TYPE:
 			if (gtk_notebook_get_current_page(GTK_NOTEBOOK(widgets.notebook_comm_book)) != 1) {
 				gchar *save = settings.special_anchor;
 				gtk_notebook_set_current_page(
