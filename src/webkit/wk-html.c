@@ -37,6 +37,9 @@
 #include "wk-html.h"
 #include "marshal.h"
 
+#include <libxml/HTMLparser.h>
+#include <libxml/HTMLtree.h>
+
 #include "gui/dictlex.h"
 #include "main/sword.h"
 
@@ -317,6 +320,58 @@ void wk_html_printf(WkHtml *html, char *format, ...)
 	g_free(string);
 }
 
+/* Issue #921: balance/repair the final HTML before handing it to
+ * WebKit. Several code paths in src/main/display.cc can produce
+ * mismatched or overlapping tags (e.g. a verse's rendered text
+ * closing a structural <div> from a multi-chapter OSIS section, or
+ * closing tags emitted out of nesting order). Left as-is, WebKit's
+ * own HTML5 parser "adoption agency algorithm" silently fragments
+ * affected elements to recover, which was found to break keyboard
+ * caret navigation (Down/Page_Down) and let inline styles such as
+ * italics leak past their intended scope in some chapters.
+ *
+ * Parsing with HTML_PARSE_RECOVER and re-serializing gives WebKit a
+ * document that is already well-formed, so it never has to guess.
+ * On parse failure (should not normally happen even for badly
+ * malformed input, since RECOVER mode is deliberately permissive),
+ * the original content is returned unchanged rather than losing the
+ * user's text. */
+static gchar *
+wk_html_sanitize(const gchar *raw, const gchar *mime)
+{
+	if (!raw)
+		return NULL;
+
+	/* only HTML/XHTML content benefits from this; anything else
+	 * (should not currently occur, but be defensive) passes through. */
+	if (!mime || !(strstr(mime, "html") != NULL))
+		return g_strdup(raw);
+
+	htmlDocPtr doc = htmlReadMemory(raw, (int)strlen(raw), NULL, "UTF-8",
+					HTML_PARSE_RECOVER |
+					    HTML_PARSE_NOERROR |
+					    HTML_PARSE_NOWARNING |
+					    HTML_PARSE_NONET);
+	if (!doc)
+		return g_strdup(raw);
+
+	xmlChar *out = NULL;
+	int out_len = 0;
+	htmlDocDumpMemory(doc, &out, &out_len);
+
+	gchar *result;
+	if (out && out_len > 0)
+		result = g_strndup((const gchar *)out, (gsize)out_len);
+	else
+		result = g_strdup(raw);
+
+	if (out)
+		xmlFree(out);
+	xmlFreeDoc(doc);
+
+	return result;
+}
+
 void wk_html_close(WkHtml *html)
 {
 	if (!html->priv->initialised) {
@@ -326,9 +381,31 @@ void wk_html_close(WkHtml *html)
 #endif
 	}
 
+	gchar *clean_content = wk_html_sanitize(html->priv->content, html->priv->mime);
+
+	/* Issue #921 DEBUG ONLY: dump the SANITIZED HTML actually sent to
+	 * WebKit, to inspect what libxml2's cleanup produced. Remove once
+	 * the fix is confirmed - see git diff. */
+	if (clean_content) {
+		gchar *dbg_path =
+		    g_strdup_printf("/tmp/xiphos_caret_debug_pane%d.html",
+				    html->priv->pane);
+		GError *dbg_err = NULL;
+		if (!g_file_set_contents(dbg_path, clean_content, -1, &dbg_err)) {
+			XI_message(("CARET_DEBUG: dump failed: %s",
+				    dbg_err ? dbg_err->message : "?"));
+			if (dbg_err)
+				g_error_free(dbg_err);
+		} else {
+			XI_message(("CARET_DEBUG: dumped SANITIZED %d bytes to %s",
+				    (int)strlen(clean_content), dbg_path));
+		}
+		g_free(dbg_path);
+	}
+
 #ifdef USE_WEBKIT2
 	GBytes *html_bytes;
-	html_bytes = g_bytes_new(html->priv->content, strlen(html->priv->content));
+	html_bytes = g_bytes_new(clean_content, strlen(clean_content));
 
 	webkit_web_view_load_bytes(WEBKIT_WEB_VIEW(html),
 				   html_bytes,
@@ -339,10 +416,12 @@ void wk_html_close(WkHtml *html)
 	g_bytes_unref(html_bytes);
 #else
 	webkit_web_view_load_string(WEBKIT_WEB_VIEW(html),
-				    html->priv->content,
+				    clean_content,
 				    html->priv->mime,
 				    NULL, html->priv->base_uri);
 #endif
+
+	g_free(clean_content);
 
 	g_free(html->priv->content);
 	html->priv->content = NULL;
