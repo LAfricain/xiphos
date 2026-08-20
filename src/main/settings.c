@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -325,7 +324,6 @@ int settings_init(int argc, char **argv, int new_configs,
 
 int init_bookmarks(int new_bookmarks)
 {
-	//GNode *bookmark_tree = NULL;
 	char *file_buf = NULL;
 
 	settings.load_xml_bookmarks = FALSE;

@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -59,7 +58,6 @@ static GtkWidget *dialog_parallel;
 static GtkWidget *parallel_UnDock_Dialog;
 static GtkWidget *vboxInt;
 static gboolean ApplyChangeBook;
-//static NAVBAR navbar;
 extern NAVBAR_VERSEKEY navbar_parallel;
 
 static GtkWidget *create_parallel_dialog(void);
@@ -101,8 +99,6 @@ void gui_undock_parallel_page(void)
 				      0);
 
 	gtk_widget_show(parallel_UnDock_Dialog);
-	//main_update_parallel_page_detached();
-	//g_free(settings.cvparallel);
 	settings.dockedInt = FALSE;
 	ApplyChangeBook = TRUE;
 	sync_with_main();

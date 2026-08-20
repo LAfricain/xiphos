@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -281,7 +280,6 @@ GtkWidget *gui_navbar_book_dialog_new(DIALOG_DATA *d)
 	gtk_widget_show(d->navbar_book.button_list);
 	gtk_box_pack_start(GTK_BOX(hbox1), d->navbar_book.button_list,
 			   FALSE, FALSE, 0);
-//gtk_button_set_relief (GTK_BUTTON (d->navbar_book.button_list), GTK_RELIEF_NONE);
 
 #if GTK_CHECK_VERSION(3, 10, 0)
 	{

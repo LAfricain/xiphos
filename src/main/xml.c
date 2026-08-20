@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -221,7 +220,6 @@ void xml_add_bookmark_to_parent(xmlNodePtr parent,
 				gchar *module, const gchar *mod_desc)
 {
 	xmlNodePtr xml_node;
-	//gchar *mod_desc = NULL;
 
 	/*if (module) {
 	   if (strlen(module) > 2)
@@ -454,7 +452,6 @@ int xml_load_copy_export_file(const xmlChar *file)
 		xmlFreeDoc(xml_export_doc);
 		return 0;
 	}
-	//cur = cur->xmlChildrenNode;
 	return 1;
 }
 
@@ -1223,7 +1220,6 @@ char *xml_get_list_from_label(const char *section, const char *item,
 
 		while (cur != NULL) {
 
-			//g_warning("cur->name = %s", cur->name);
 			if (!xmlStrcmp(cur->name, (const xmlChar *)item)) {
 				xmlChar *prop_label =
 				    xmlGetProp(cur,

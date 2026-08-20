@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -43,7 +42,6 @@ extern gboolean dialog_freed;
 /******************************************************************************
  * static - global to this file only
  */
-//static GList *dialog_list;
 static DIALOG_DATA *cur_dlg;
 static gint cell_height;
 
@@ -103,7 +101,6 @@ static gint button_press_event(GtkWidget *html,
 			       GdkEventButton *event,
 			       DIALOG_DATA *dlg)
 {
-	//cur_dlg = dlg;
 	return FALSE;
 }
 */
@@ -128,8 +125,6 @@ static gint button_press_event(GtkWidget *html,
 static void dialog_set_focus(GtkWindow *window,
 			     GtkWidget *widget, DIALOG_DATA *dlg)
 {
-	//      cur_dlg = dlg;
-	//      XI_warning(("current module = %s",cur_dlg->mod_name));
 }
 
 /******************************************************************************
@@ -198,7 +193,6 @@ static void add_columns(GtkTreeView *treeview)
 	GtkRequisition size;
 #endif
 
-	//      GtkTreeModel *model = gtk_tree_view_get_model(treeview);
 
 	/* column for fixed toggles */
 	renderer = gtk_cell_renderer_text_new();
@@ -306,13 +300,11 @@ void gui_create_dictlex_dialog(DIALOG_DATA *dlg)
 	GtkWidget *hbox_toolbar;
 	GtkWidget *tmp_toolbar_icon;
 	GtkWidget *btnSyncDL;
-	//      GtkWidget *label205;
 	GtkWidget *frameDictHTML;
 #ifndef USE_WEBKIT2
 	GtkWidget *scrolledwindowDictHTML;
 #endif
 	GtkWidget *scrolledwindow;
-	//      GtkWidget *label;
 	GtkListStore *model;
 
 	dlg->dialog = gtk_window_new(GTK_WINDOW_TOPLEVEL);

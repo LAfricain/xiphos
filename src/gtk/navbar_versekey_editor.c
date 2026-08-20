@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -830,26 +829,6 @@ static void _connect_signals(NAVBAR_VERSEKEY navbar, EDITOR *editor)
 			 G_CALLBACK(on_verse_down_leave_notify_event),
 			 editor);
 
-	/*
-	g_signal_connect((gpointer) navbar.button_book_up,
-			 "clicked", G_CALLBACK(on_book_button_up_clicked),
-			 editor);
-	g_signal_connect((gpointer) navbar.button_book_down,
-			 "clicked", G_CALLBACK(on_book_button_down_clicked),
-			 editor);
-	g_signal_connect((gpointer) navbar.button_chapter_up,
-			 "clicked", G_CALLBACK(on_chapter_button_up_clicked),
-			 editor);
-	g_signal_connect((gpointer) navbar.button_chapter_down,
-			 "clicked", G_CALLBACK(on_chapter_button_down_clicked),
-			 editor);
-	g_signal_connect((gpointer) navbar.button_verse_up,
-			 "clicked", G_CALLBACK(on_verse_button_up_clicked),
-			 editor);
-	g_signal_connect((gpointer) navbar.button_verse_down,
-			 "clicked", G_CALLBACK(on_verse_button_down_clicked),
-			 editor);
-			 */
 	g_signal_connect((gpointer)navbar.button_book_menu,
 			 "button_press_event",
 			 G_CALLBACK(select_book_button_press_callback),
@@ -900,14 +879,9 @@ GtkWidget *gui_navbar_versekey_editor_new(EDITOR *editor)
 	GtkWidget *eventbox;
 #endif
 
-	gchar *glade_file =
-	    gui_general_user_file("navbar_versekey" UI_SUFFIX, FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-	XI_message(("%s", glade_file));
-
 /* build the widget */
 	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/navbar_versekey.gtkbuilder", NULL);
 	editor->navbar.dialog = TRUE;
 	editor->navbar.module_name =
 	    g_string_new(settings.MainWindowModule);

@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -841,7 +840,6 @@ void main_init_backend(void)
 	//#ifndef DEBUG
 	g_chdir(settings.path_to_mods);
 	//#else
-	//	XI_warning(("no chdir(SWORD_PATH) => modmgr 'archive' may not work"));
 	//#endif
 	XI_print(("%s sword-%s\n", "Starting", backend->get_sword_version()));
 	XI_print(("%s\n", "Initiating SWORD"));
@@ -1401,7 +1399,6 @@ void main_display_bible(const char *mod_name,
 	valid_scripture_key = TRUE; // leave nice for future use.
 
 	XI_message(("mod_name = %s", mod_name));
-	//if (settings.browsing) {
 	gui_update_tab_struct(mod_name,
 			      NULL,
 			      NULL,
@@ -1414,7 +1411,6 @@ void main_display_bible(const char *mod_name,
 			      settings.showcomms,
 			      settings.showdicts);
 	gui_set_tab_label(settings.currentverse, FALSE);
-	//}
 
 	gui_change_window_title(settings.MainWindowModule);
 	// (called _after_ tab data updated so not overwritten with old tab)

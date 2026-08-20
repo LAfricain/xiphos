@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -144,12 +143,6 @@ static void save_treeview_to_xml_bookmarks(GtkTreeIter *iter,
 						   description,
 						   key, module, mod_desc);
 		}
-// 		g_free(caption);
-// 		g_free(key);
-// 		g_free(module);
-// 		g_free(mod_desc);
-// 		g_free(description);
-// 		g_free(color);
 	} while (gtk_tree_model_iter_next(GTK_TREE_MODEL(model), iter));
 
 	xmlSaveFormatFile(filename, root_doc, 1);
@@ -557,8 +550,6 @@ G_MODULE_EXPORT void on_dialog_activate(GtkMenuItem *menuitem,
 		if (module && (main_get_mod_type(module) == PERCOM_TYPE)) {
 			editor_create_new(module, key, TRUE);
 			use_dialog = FALSE;
-// 			g_free(module);
-// 			g_free(key);
 			return;
 		}
 
@@ -571,8 +562,6 @@ G_MODULE_EXPORT void on_dialog_activate(GtkMenuItem *menuitem,
 		g_free(url);
 	}
 	use_dialog = FALSE;
-// 	g_free(module);
-// 	g_free(key);
 }
 
 /******************************************************************************
@@ -611,10 +600,8 @@ G_MODULE_EXPORT void on_edit_item_activate(GtkMenuItem *menuitem,
 	if (!key || !*key) {
 
 		/* --- Folder: use the dedicated folder dialog --- */
-		gchar *glade_file = gui_general_user_file("folder" UI_SUFFIX, TRUE);
-		if (!glade_file) goto cleanup;
 		GtkBuilder *gxml = gtk_builder_new();
-		gtk_builder_add_from_file(gxml, glade_file, NULL);
+		gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/folder.gtkbuilder", NULL);
 		GtkWidget *dialog  = GTK_WIDGET(UI_GET_ITEM(gxml, "dialog_folder"));
 		GtkWidget *entry   = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_entry_name"));
 		GtkWidget *colorbtn = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_color_button"));
@@ -676,8 +663,6 @@ G_MODULE_EXPORT void on_edit_item_activate(GtkMenuItem *menuitem,
 					   COL_COLOR, new_color, -1);
 			gui_save_bookmarks(NULL, NULL);
 			main_display_bible(NULL, settings.currentverse);
-// 			g_free(new_caption);
-// 			g_free(new_color);
 		}
 		gtk_widget_destroy(dialog);
 		g_object_unref(gxml);
@@ -726,15 +711,8 @@ G_MODULE_EXPORT void on_edit_item_activate(GtkMenuItem *menuitem,
 			bookmarks_changed = TRUE;
 			gui_save_bookmarks(NULL, NULL);
 		}
-// 		g_free(info->text1);
-// 		if (info->text2) g_free(info->text2);
-// 		if (info->text3) g_free(info->text3);
-// 		g_free(info);
-// 		g_string_free(str, TRUE);
 	}
 cleanup:
-// 	g_free(caption); g_free(key); g_free(module);
-// 	g_free(mod_desc); g_free(description); g_free(current_color);
 (void)0;
 }
 
@@ -783,7 +761,6 @@ G_MODULE_EXPORT void on_delete_item_activate(GtkMenuItem *menuitem,
 	gchar *name_string;
 	GtkTreeSelection *selection;
 	GtkTreeIter selected;
-	//      GtkTreeIter iter;
 	gchar *caption = NULL;
 	gchar *key = NULL;
 	gchar *module = NULL;
@@ -817,10 +794,6 @@ G_MODULE_EXPORT void on_delete_item_activate(GtkMenuItem *menuitem,
 		bookmarks_changed = TRUE;
 		gui_save_bookmarks(NULL, NULL);
 	}
-// 	g_free(caption);
-// 	g_free(key);
-// 	g_free(module);
-// 	g_free(str);
 }
 
 /******************************************************************************
@@ -943,7 +916,6 @@ void on_add_bookmark_activate(GtkMenuItem *menuitem, gpointer user_data)
 {
 	GtkTreeIter selected;
 	GtkTreeIter iter;
-	//      gchar *caption = NULL;
 	gchar *key = NULL;
 	gchar *mod_name = NULL;
 	gint test;
@@ -992,10 +964,6 @@ void on_add_bookmark_activate(GtkMenuItem *menuitem, gpointer user_data)
 		gui_save_bookmarks(NULL, NULL);
 	}
 // 	g_free(info->text1); /* we used g_strdup() */
-// 	g_free(info->text2);
-// 	g_free(info->text3);
-// 	g_free(info);
-// 	g_string_free(str, TRUE);
 }
 
 /******************************************************************************
@@ -1048,11 +1016,8 @@ G_MODULE_EXPORT void on_new_folder_activate(GtkMenuItem *menuitem,
 	if (!gtk_tree_selection_get_selected(current_selection, NULL, &selected))
 		return;
 
-	gchar *glade_file = gui_general_user_file("folder" UI_SUFFIX, TRUE);
-	g_return_if_fail(glade_file != NULL);
 	GtkBuilder *gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/folder.gtkbuilder", NULL);
 
 	GtkWidget *dialog     = GTK_WIDGET(UI_GET_ITEM(gxml, "dialog_folder"));
 	GtkWidget *entry      = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_entry_name"));
@@ -1133,7 +1098,6 @@ G_MODULE_EXPORT void on_open_in_tab_activate(GtkMenuItem *menuitem,
 {
 	GtkTreeSelection *selection;
 	GtkTreeIter selected;
-	//      GtkTreeIter iter;
 	gchar *key = NULL;
 	gchar *module = NULL;
 	gchar *url = NULL;
@@ -1149,9 +1113,6 @@ G_MODULE_EXPORT void on_open_in_tab_activate(GtkMenuItem *menuitem,
 			      main_url_encode(key),
 			      main_url_encode(module));
 	main_url_handler(url, TRUE);
-// 	g_free(key);
-// 	g_free(module);
-// 	g_free(url);
 }
 
 /******************************************************************************
@@ -1197,7 +1158,6 @@ G_MODULE_EXPORT void on_set_tag_color_activate(GtkMenuItem *menuitem,
 		if (gdk_rgba_parse(&rgba, color))
 			gtk_color_chooser_set_rgba(GTK_COLOR_CHOOSER(dialog), &rgba);
 	}
-// 	g_free(color);
 
 	if (gtk_dialog_run(GTK_DIALOG(dialog)) == GTK_RESPONSE_OK) {
 		GdkRGBA rgba;
@@ -1210,7 +1170,6 @@ G_MODULE_EXPORT void on_set_tag_color_activate(GtkMenuItem *menuitem,
 		bookmarks_changed = TRUE;
 		gtk_tree_store_set(GTK_TREE_STORE(model), &selected,
 				   COL_COLOR, hex, -1);
-// 		g_free(hex);
 		gui_save_bookmarks(NULL, NULL);
 		main_display_bible(NULL, settings.currentverse);
 	}
@@ -1220,14 +1179,8 @@ G_MODULE_EXPORT void on_set_tag_color_activate(GtkMenuItem *menuitem,
 
 void gui_create_bookmark_menu(void)
 {
-	gchar *glade_file;
-	GtkBuilder *gxml;
-	glade_file = gui_general_user_file("xi-menus-popup.gtkbuilder", FALSE);
-	g_return_if_fail((glade_file != NULL));
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus-popup.gtkbuilder", NULL);
 	g_return_if_fail((gxml != NULL));
 
 	menu.menu = UI_GET_ITEM(gxml, "menu_bookmark");

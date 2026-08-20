@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -189,7 +188,6 @@ void gui_create_bibletext_dialog(DIALOG_DATA *vt)
 {
 	GtkWidget *vbox33;
 	GtkWidget *paned;
-	//GtkWidget *frame;
 	GtkWidget *swVText;
 
 	vt->dialog = gtk_window_new(GTK_WINDOW_TOPLEVEL);
@@ -231,7 +229,6 @@ void gui_create_bibletext_dialog(DIALOG_DATA *vt)
 
 	swVText = gtk_scrolled_window_new(NULL, NULL);
 	gtk_widget_show(swVText);
-	//gtk_container_add(GTK_CONTAINER(frame), swVText);
 	gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(swVText),
 				       GTK_POLICY_NEVER,
 				       GTK_POLICY_ALWAYS);

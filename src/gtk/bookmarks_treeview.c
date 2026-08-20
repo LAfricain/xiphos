@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -899,7 +898,6 @@ static gboolean button_release_event(GtkWidget *widget,
 			gtk_widget_set_sensitive(menu.delete, FALSE);
 			gtk_widget_set_sensitive(menu.bibletime, TRUE);
 			gtk_widget_set_sensitive(menu.remove, FALSE);
-			//gtk_widget_set_sensitive(menu.remove, FALSE);
 			return TRUE;
 		} else {
 			gtk_widget_set_sensitive(menu.bibletime, TRUE);

@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef __WK_HTML_H__
@@ -88,6 +87,7 @@ gboolean wk_html_find(WkHtml *html, const gchar *find_string);
 gboolean wk_html_find_again(WkHtml *html, gboolean forward);
 void wk_html_jump_to_anchor(WkHtml *html, gchar *anchor);
 void wk_html_copy_selection(WkHtml *html);
+void wk_html_enable_caret_browsing(WkHtml *html);
 
 void wk_html_select_all(WkHtml *html);
 

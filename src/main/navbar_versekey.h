@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef _NAVBAR_VERSEKEY_H_
@@ -80,12 +79,10 @@ struct _navbar_versekey
 
 	GtkWidget *lookup_entry;
 	GtkWidget *button_sets;    /* Sets menu button with current set name */
-	//GtkTooltips *tooltips;
 	GString *key;
 	gchar *book;
 	GString *module_name;
 	gboolean dialog;
-	//gint testaments;
 	gint type;
 
 	gboolean valid_key;

@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -78,7 +77,6 @@ GList *passage_list;
  */
 
 extern gboolean sync_on;
-//extern gboolean gsI_isrunning;
 PASSAGE_TAB_INFO *cur_passage_tab;
 
 /******************************************************************************
@@ -198,7 +196,6 @@ void set_current_tab(PASSAGE_TAB_INFO *pt)
 
 	cur_passage_tab = pt;
 	if (pt != NULL && pt->button_close != NULL) {
-		//main_update_tab_history_menu((PASSAGE_TAB_INFO*)pt);
 
 		/* adopt panel shows from passage tab memory. */
 		settings.showtexts = pt->showtexts;
@@ -329,8 +326,6 @@ void gui_save_tabs(const gchar *filename)
 	xmlNodePtr root_node;
 	xmlNodePtr cur_node;
 	xmlNodePtr section_node;
-	//      xmlAttrPtr xml_attr;
-	//const xmlChar *xml_filename;
 	gchar *file;
 	GList *tmp = NULL;
 
@@ -351,7 +346,6 @@ void gui_save_tabs(const gchar *filename)
 		file = g_strdup_printf("%s%s", tabs_dir, filename);
 		g_free(tabs_dir);
 	}
-	//xml_filename = (const xmlChar *) file;
 
 	xml_doc = xmlNewDoc((const xmlChar *)"1.0");
 
@@ -438,7 +432,6 @@ static void _save_off_tab(const gchar *filename)
 	xmlNodePtr root_node;
 	xmlNodePtr cur_node;
 	xmlNodePtr section_node;
-	//xmlAttrPtr xml_attr;
 	gchar *tabs_dir;
 	gchar *file;
 
@@ -529,7 +522,6 @@ void gui_load_tabs(const gchar *filename)
 {
 	xmlDocPtr xml_doc;
 	xmlNodePtr tmp_node, childnode;
-	//const xmlChar *xml_filename;
 	gboolean error = FALSE;
 	gboolean back_compat_need_save = FALSE;
 	settings.showparatab = FALSE;
@@ -561,7 +553,6 @@ void gui_load_tabs(const gchar *filename)
 		if (!settings.browsing && g_access(file, F_OK) == -1) {
 			_save_off_tab(filename);
 		}
-		//xml_filename = (const xmlChar *) file;
 		xml_doc = xmlParseFile(file);
 		g_free(file);
 		if (xml_doc == NULL) {
@@ -760,7 +751,6 @@ void gui_load_tabs(const gchar *filename)
 			pt->history_items = 0;
 			pt->current_history_item = 0;
 			pt->first_back_click = TRUE;
-			//                      main_add_tab_history_item((PASSAGE_TAB_INFO*)pt);
 			passage_list =
 			    g_list_append(passage_list,
 					  (PASSAGE_TAB_INFO *)pt);
@@ -883,7 +873,6 @@ static GtkWidget *tab_widget_new(PASSAGE_TAB_INFO *tbinf,
 {
 	GtkWidget *box;
 #ifdef USE_GTK_3
-//	GdkRGBA color;
 #else
 	GdkColor color;
 #endif
@@ -1104,7 +1093,6 @@ void gui_notebook_main_switch_page(GtkNotebook *notebook,
 	else
 		pt = (PASSAGE_TAB_INFO *)g_list_nth_data(*tl, page_num);
 	removed_page = 1;
-//cur_passage_tab = pt;
 
 #ifdef USE_TREEVIEW_PATH
 	if (cur_passage_tab && cur_passage_tab->book_mod)
@@ -1406,7 +1394,6 @@ void gui_open_passage_in_new_tab(gchar *verse_key)
 
 	passage_list =
 	    g_list_append(passage_list, (PASSAGE_TAB_INFO *)pt);
-	//set_current_tab(pt);
 	notebook_main_add_page(pt);
 
 	gtk_notebook_set_current_page(GTK_NOTEBOOK(widgets.notebook_main),
@@ -1571,7 +1558,6 @@ void gui_open_module_in_new_tab(gchar *module)
 
 	passage_list =
 	    g_list_append(passage_list, (PASSAGE_TAB_INFO *)pt);
-	//set_current_tab(pt);
 	notebook_main_add_page(pt);
 
 	gtk_notebook_set_current_page(GTK_NOTEBOOK(widgets.notebook_main),
@@ -1623,7 +1609,6 @@ void gui_close_all_tabs(void)
 	g_list_free(passage_list);
 	passage_list = NULL;
 	cur_passage_tab = NULL;
-	//      gui_set_text_frame_label(cur_t);
 }
 
 /******************************************************************************
@@ -1693,7 +1678,6 @@ void gui_close_passage_tab(gint pagenum)
 					       settings.showparatab);
 	}
 	g_free(pt);
-	//cur_passage_tab = NULL;
 	removed_page = pagenum;
 	gtk_notebook_remove_page(GTK_NOTEBOOK(widgets.notebook_main),
 				 pagenum);

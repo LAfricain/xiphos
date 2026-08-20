@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef _SLIB_EDITOR_H
@@ -83,10 +82,6 @@ enum {
 	BOOK_EDITOR
 };
 
-/*
-void button_test_clicked_cb(GtkObject *object, gpointer user_data);
-void button_ok_clicked_cb(GtkObject *object, gpointer user_data);
-void button_cancel_clicked_cb(GtkObject *object, gpointer user_data);*/
 void editor_sync_with_main(void);
 void editor_load_note(EDITOR *e, const gchar *module_name,
 		      const gchar *key);

@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef __SIDEBAR_H_
@@ -72,7 +71,6 @@ gboolean gui_expand_treeview_to_path(GtkTreeView *tree,
 #endif
 void gui_set_sidebar_program_start(void);
 void gui_sidebar_showhide(void);
-//gboolean main_sidebar_display_dictlex(char *mod_name, char *key);
 GtkWidget *gui_create_sidebar(GtkWidget *paned);
 gboolean gui_verselist_button_release_event(GtkWidget *widget,
 					    GdkEventButton *event,

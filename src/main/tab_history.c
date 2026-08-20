@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -89,8 +88,6 @@ void main_clear_tab_history(void)
 	PASSAGE_TAB_INFO *tab = cur_passage_tab;
 
 	//gui_remove_menu_items(_("H_istory/<Separator>"),
-	//                    tab->history_items + 1);
-	//gui_add_separator2menu(widgets.app, _("H_istory/C_lear"));
 
 	/* set sensitivity of history buttons */
 	gtk_widget_set_sensitive(BUTTON_BACK, FALSE);

@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef _EDITOR_H
@@ -43,7 +42,6 @@ gboolean editor_cut(EDITOR *e);
 gboolean editor_copy(EDITOR *e);
 gboolean editor_paste(EDITOR *e);
 void editor_get_document_content(GString *data, EDITOR *e);
-//void editor_open_recent (const gchar * uri, EDITOR * e);
 gboolean editor_insert_link(void);
 gboolean editor_insert_sword_link(void);
 void editor_insert_link_ok(void);

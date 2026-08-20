@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -91,17 +90,12 @@ static gboolean on_enter_notify_event(GtkWidget *widget,
 				      GdkEventCrossing *event,
 				      gpointer user_data)
 {
-	//shift_key_pressed = FALSE;
-	//gtk_widget_grab_focus (widgets.html_comm);
-	//settings.whichwindow = COMMENTARY_WINDOW;
-	//gui_change_window_title(settings.CommWindowModule);
 	return FALSE;
 }
 
 static void
 _popupmenu_requested_cb(XiphosHtml *html, gchar *uri, gpointer user_data)
 {
-	//g_print ("in comm _popupmenu_requested_cb\n");
 	gui_menu_popup(html, settings.CommWindowModule, NULL);
 }
 

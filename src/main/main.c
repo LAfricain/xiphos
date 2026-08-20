@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -133,7 +132,6 @@ int main(int argc, char *argv[])
 	// **** end of LOUD OBNOXIOUS COMMENT TO GET ATTENTION ****
 	// ---------------------------------------------------------
 
-//      g_thread_init(NULL);
 #if !GLIB_CHECK_VERSION(2, 35, 0)
 	g_type_init(); // g_type_init has been deprecated since version 2.36
 		       // Since GLib 2.36, the type system is initialised

@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -191,13 +190,11 @@ static gboolean select_book_button_press_callback(GtkWidget *widget,
 #endif
 
 	g_get_current_time(&start_time);
-	//      XI_message(("Start time is: %d sec %d mil", start_time.tv_sec, start_time.tv_usec));
 
 	menu = main_versekey_drop_down_book_menu(navbar_versekey, NB_MAIN,
 						 NULL, NULL);
 
 	g_get_current_time(&end_time);
-//      XI_message(("End time is: %d sec %d mil", end_time.tv_sec, end_time.tv_usec));
 #ifdef WIN32
 	time_diff =
 	    ((end_time.tv_sec - start_time.tv_sec) * 1000000) +
@@ -731,14 +728,9 @@ GtkWidget *gui_navbar_versekey_new(void)
 	GtkWidget *eventbox;
 #endif
 
-	gchar *glade_file =
-	    gui_general_user_file("navbar_versekey" UI_SUFFIX, FALSE);
-	g_return_val_if_fail((glade_file != NULL), NULL);
-	XI_message(("%s", glade_file));
-
 /* build the widget */
 	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/navbar_versekey.gtkbuilder", NULL);
 	navbar_versekey.dialog = FALSE;
 	navbar_versekey.module_name =
 	    g_string_new(settings.MainWindowModule);

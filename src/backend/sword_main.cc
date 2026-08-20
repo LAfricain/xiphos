@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 #ifdef HAVE_CONFIG_H
 #include <config.h>
@@ -57,16 +56,13 @@ using namespace std;
 BackEnd *backend = NULL;
 
 // rule of thumb for VerseKey usage: you can use
-//    VerseKey k = dynamic_cast<VerseKey *>(mod->getKey());
 // if you intend to do nothing more than setText() once plus
 // some gets (getTestament, getBook, getChapter, getVerse),
 // with no need to garbage collect when you're done.
 //
 // otherwise, if you're going to do more than a single setSomething,
 // you must go the somewhat harder route of
-//    VerseKey *k = (VerseKey *)mod->createKey();
 // and do whatever you like, but remember when you're done to
-//    delete k;
 
 #ifdef CHATTY
 static const char *f_message = "backend/sword_main.cc line #%d \"%s\" = %s";
@@ -549,7 +545,6 @@ char **BackEnd::get_module_language_list(void)
 int BackEnd::is_module(const char *module_name)
 {
 	//	if (module_name == NULL)
-	//		return 0;
 
 	SWModule *mod = get_SWModule(module_name);
 	return ((mod != NULL) ? 1 : 0);
@@ -558,7 +553,6 @@ int BackEnd::is_module(const char *module_name)
 int BackEnd::module_type(const char *mod_name)
 {
 	//	if ((!mod_name) || (strlen(mod_name) < 2))
-	//		return -1;
 
 	SWModule *mod = get_SWModule(mod_name);
 
@@ -820,7 +814,6 @@ unsigned long BackEnd::get_treekey_offset_from_key(const char *module_name, cons
 		TreeKeyIdx *tree_key_idx = (TreeKeyIdx *)mod->createKey();
 		tree_key_idx->setText(key);
 		mod->setKey(tree_key_idx);
-		//(char*)mod;
 		retval = tree_key_idx->getOffset();
 		delete tree_key_idx;
 	}

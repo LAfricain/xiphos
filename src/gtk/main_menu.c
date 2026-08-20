@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -937,7 +936,6 @@ G_MODULE_EXPORT void
 on_open_studypad_activate(GtkMenuItem *menuitem, gpointer user_data)
 {
 	editor_create_new(settings.studypadfilename, NULL, FALSE);
-	//create_window ();
 }
 
 G_MODULE_EXPORT void
@@ -961,14 +959,8 @@ on_sidebar_showhide_activate(GtkMenuItem *menuitem, gpointer user_data)
 
 GtkWidget *gui_create_main_menu(void)
 {
-	GtkBuilder *gxml;
-	gchar *glade_file =
-	    gui_general_user_file("xi-menus" UI_SUFFIX, FALSE);
-	g_return_val_if_fail(glade_file != NULL, NULL);
-
-	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	GtkBuilder *gxml = gtk_builder_new();
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/xi-menus.gtkbuilder", NULL);
 	g_return_val_if_fail(gxml != NULL, NULL);
 
 	GtkWidget *menu = UI_GET_ITEM(gxml, "menu_main");
@@ -1023,7 +1015,6 @@ GtkWidget *gui_create_main_menu(void)
 /*gtk_builder_connect_signals_full
 	   (gxml, (GtkBuilderConnectFunc)gui_glade_signal_connect_func, NULL); */
 	//set up global function to handle all link buttons
-	//      gtk_link_button_set_uri_hook (link_uri_hook, NULL, NULL);
 
 	if (settings.prayerlist)
 		gtk_widget_show(widgets.new_journal_item);

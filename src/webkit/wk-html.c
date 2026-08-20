@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #include <string.h>
@@ -161,6 +160,7 @@ static void link_handler(GtkWidget *widget,
 	}
 }
 
+
 static void html_realize(GtkWidget *widget)
 {
 	GTK_WIDGET_CLASS(parent_class)->realize(widget);
@@ -176,6 +176,7 @@ static void html_realize(GtkWidget *widget)
 			 "hovering-over-link",
 #endif
 			 G_CALLBACK(link_handler), NULL);
+
 }
 
 static void wk_html_init(WkHtml *html)
@@ -191,6 +192,31 @@ static void wk_html_init(WkHtml *html)
 	priv->mime = NULL;
 	priv->initialised = FALSE;
 }
+
+void wk_html_enable_caret_browsing(WkHtml *html)
+{
+	/* Issue #921: enable keyboard caret in the biblical text so users
+	 * can navigate and select text (Shift+arrows) using the keyboard
+	 * only, without relying on the mouse.
+	 *
+	 * This must run after the WebKitWebView parent has finished its
+	 * GObjectClass->constructed(), which happens after every
+	 * instance_init (including wk_html_init) has already returned.
+	 * Calling webkit_web_view_get_settings() too early (e.g. directly
+	 * in wk_html_init) yields a CRITICAL: WEBKIT_IS_SETTINGS assertion
+	 * failure because the settings object does not exist yet.
+	 */
+#ifdef USE_WEBKIT2
+	WebKitSettings *settings =
+	    webkit_web_view_get_settings(WEBKIT_WEB_VIEW(html));
+	webkit_settings_set_enable_caret_browsing(settings, TRUE);
+#else
+	WebKitWebSettings *settings =
+	    webkit_web_view_get_settings(WEBKIT_WEB_VIEW(html));
+	g_object_set(settings, "enable-caret-browsing", TRUE, NULL);
+#endif
+}
+
 
 static void html_dispose(GObject *object)
 {
@@ -381,28 +407,9 @@ void wk_html_close(WkHtml *html)
 #endif
 	}
 
+
 	gchar *clean_content = wk_html_sanitize(html->priv->content, html->priv->mime);
-
-	/* Issue #921 DEBUG ONLY: dump the SANITIZED HTML actually sent to
-	 * WebKit, to inspect what libxml2's cleanup produced. Remove once
-	 * the fix is confirmed - see git diff. */
-	if (clean_content) {
-		gchar *dbg_path =
-		    g_strdup_printf("/tmp/xiphos_caret_debug_pane%d.html",
-				    html->priv->pane);
-		GError *dbg_err = NULL;
-		if (!g_file_set_contents(dbg_path, clean_content, -1, &dbg_err)) {
-			XI_message(("CARET_DEBUG: dump failed: %s",
-				    dbg_err ? dbg_err->message : "?"));
-			if (dbg_err)
-				g_error_free(dbg_err);
-		} else {
-			XI_message(("CARET_DEBUG: dumped SANITIZED %d bytes to %s",
-				    (int)strlen(clean_content), dbg_path));
-		}
-		g_free(dbg_path);
-	}
-
+	
 #ifdef USE_WEBKIT2
 	GBytes *html_bytes;
 	html_bytes = g_bytes_new(clean_content, strlen(clean_content));

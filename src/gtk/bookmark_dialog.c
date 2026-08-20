@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_CONFIG_H
@@ -175,12 +174,8 @@ static void add_folder_button(void)
 	if (!gtk_tree_selection_get_selected(selection, NULL, &selected))
 		return;
 
-	gchar *glade_file = gui_general_user_file("folder" UI_SUFFIX, TRUE);
-	if (!glade_file) return;
-
 	GtkBuilder *gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/folder.gtkbuilder", NULL);
 
 	GtkWidget *entry  = GTK_WIDGET(UI_GET_ITEM(gxml, "folder_entry_name"));
 	GtkWidget *dialog = GTK_WIDGET(UI_GET_ITEM(gxml, "dialog_folder"));
@@ -466,15 +461,10 @@ static GtkWidget *_create_bookmark_dialog(gchar *label,
 					  gchar *module, gchar *key)
 {
 	GtkBuilder *gxml;
-	gchar *glade_file =
-	    gui_general_user_file("bookmarks" UI_SUFFIX, TRUE);
-	g_return_val_if_fail(glade_file != NULL, NULL);
-	XI_message(("%s", glade_file));
 
 /* build the widget */
 	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/bookmarks.gtkbuilder", NULL);
 	g_return_val_if_fail(gxml != NULL, NULL);
 
 	/* lookup the root widget */
@@ -529,11 +519,6 @@ static GtkWidget *_create_mark_verse_dialog(gchar *module, gchar *key)
 	gchar osisreference[100];
 	gchar *old_note = NULL;
 
-	gchar *glade_file =
-	    gui_general_user_file("markverse" UI_SUFFIX, TRUE);
-	g_return_val_if_fail(glade_file != NULL, NULL);
-	XI_message(("%s", glade_file));
-
 	g_snprintf(osisreference, 100, "%s %s", module,
 		   main_get_osisref_from_key((const char *)module,
 					     (const char *)key));
@@ -541,8 +526,7 @@ static GtkWidget *_create_mark_verse_dialog(gchar *module, gchar *key)
 
 /* build the widget */
 	gxml = gtk_builder_new();
-	gtk_builder_add_from_file(gxml, glade_file, NULL);
-	g_free(glade_file);
+	gtk_builder_add_from_resource(gxml, "/org/xiphos/ui/markverse.gtkbuilder", NULL);
 	g_return_val_if_fail(gxml != NULL, NULL);
 
 	/* lookup the root widget */

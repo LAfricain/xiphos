@@ -15,8 +15,7 @@
  * GNU Library General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef _WEBKIT_EDITOR_H
@@ -89,7 +88,6 @@ struct _menu
 	GtkWidget *cut;
 	GtkWidget *copy;
 	GtkWidget *paste;
-	//GtkWidget *;
 };
 typedef struct _menu MENU;
 
@@ -102,8 +100,6 @@ struct _find_dialog
 	GtkWidget *replace_entry;
 	GtkWidget *box_replace;
 	GtkWidget *button_replace;
-	//GtkWidget *;
-	//GtkWidget *;
 };
 typedef struct _find_dialog FIND_DIALOG;
 
