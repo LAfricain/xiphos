@@ -158,6 +158,7 @@ static void link_handler(GtkWidget *widget,
 	}
 }
 
+
 static void html_realize(GtkWidget *widget)
 {
 	GTK_WIDGET_CLASS(parent_class)->realize(widget);
@@ -173,6 +174,7 @@ static void html_realize(GtkWidget *widget)
 			 "hovering-over-link",
 #endif
 			 G_CALLBACK(link_handler), NULL);
+
 }
 
 static void wk_html_init(WkHtml *html)
@@ -188,6 +190,31 @@ static void wk_html_init(WkHtml *html)
 	priv->mime = NULL;
 	priv->initialised = FALSE;
 }
+
+void wk_html_enable_caret_browsing(WkHtml *html)
+{
+	/* Issue #921: enable keyboard caret in the biblical text so users
+	 * can navigate and select text (Shift+arrows) using the keyboard
+	 * only, without relying on the mouse.
+	 *
+	 * This must run after the WebKitWebView parent has finished its
+	 * GObjectClass->constructed(), which happens after every
+	 * instance_init (including wk_html_init) has already returned.
+	 * Calling webkit_web_view_get_settings() too early (e.g. directly
+	 * in wk_html_init) yields a CRITICAL: WEBKIT_IS_SETTINGS assertion
+	 * failure because the settings object does not exist yet.
+	 */
+#ifdef USE_WEBKIT2
+	WebKitSettings *settings =
+	    webkit_web_view_get_settings(WEBKIT_WEB_VIEW(html));
+	webkit_settings_set_enable_caret_browsing(settings, TRUE);
+#else
+	WebKitWebSettings *settings =
+	    webkit_web_view_get_settings(WEBKIT_WEB_VIEW(html));
+	g_object_set(settings, "enable-caret-browsing", TRUE, NULL);
+#endif
+}
+
 
 static void html_dispose(GObject *object)
 {
@@ -325,6 +352,9 @@ void wk_html_close(WkHtml *html)
 		webkit_web_view_set_maintains_back_forward_list(WEBKIT_WEB_VIEW(html), FALSE);
 #endif
 	}
+
+
+
 
 #ifdef USE_WEBKIT2
 	GBytes *html_bytes;

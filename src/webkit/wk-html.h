@@ -88,6 +88,7 @@ gboolean wk_html_find(WkHtml *html, const gchar *find_string);
 gboolean wk_html_find_again(WkHtml *html, gboolean forward);
 void wk_html_jump_to_anchor(WkHtml *html, gchar *anchor);
 void wk_html_copy_selection(WkHtml *html);
+void wk_html_enable_caret_browsing(WkHtml *html);
 
 void wk_html_select_all(WkHtml *html);
 

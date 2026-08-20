@@ -20,6 +20,7 @@
  */
 
 #include "xiphos_html.h"
+#include "main/sword.h"
 
 XiphosHtml *xiphos_html_new(DIALOG_DATA *dialog, gboolean is_dialog,
 			    gint pane)
@@ -31,6 +32,19 @@ XiphosHtml *xiphos_html_new(DIALOG_DATA *dialog, gboolean is_dialog,
 	priv->pane = pane;
 	priv->is_dialog = is_dialog;
 	priv->dialog = dialog;
+
+	/* Issue #921: enable keyboard caret/selection in the biblical text
+	 * so users can navigate and select text (Shift+arrows) with the
+	 * keyboard only. Deliberately restricted to TEXT_TYPE (the main
+	 * Bible reading pane): enabling WebKit caret browsing on several
+	 * WkHtml/WebKitWebView instances at once (e.g. also commentary,
+	 * dictionary, sidebar) was observed to break keyboard caret
+	 * navigation (Down/Page_Down) in the active pane, even though
+	 * that pane keeps receiving every key event normally. Restricting
+	 * to the single pane users actually asked to navigate in this way
+	 * avoids the interference. */
+	if (pane == TEXT_TYPE || pane == COMMENTARY_TYPE)
+		wk_html_enable_caret_browsing(WK_HTML(html));
 
 	return html;
 }
