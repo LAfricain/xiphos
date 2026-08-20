@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xiphos 4.1.0\n"
 "Report-Msgid-Bugs-To: Dominique Corbex <dominique@corbex.org>\n"
-"POT-Creation-Date: 2025-03-07 14:59+0100\n"
-"PO-Revision-Date: 2025-04-08 20:32+0100\n"
+"POT-Creation-Date: 2026-08-15 10:14+0200\n"
+"PO-Revision-Date: 2026-08-15 13:53+0200\n"
 "Last-Translator: Cyrille <lafricain79@gmail.com>\n"
 "Language-Team: emacs + po-mode; French <gnomefr@traduc.org>\n"
 "Language: fr_FR\n"
@@ -21,7 +21,9 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Traduit par"
+msgstr ""
+"Dominique Corbex\n"
+"Cyrille Mattiuzzo"
 
 #. (itstool) path: info/desc
 #: /home/cyrille/Documents/github/build/help/C/index.page:10
@@ -37,8 +39,8 @@ msgstr ""
 #: /home/cyrille/Documents/github/build/help/C/xiphos-01-introduction.page:13
 #: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:16
 #: /home/cyrille/Documents/github/build/help/C/xiphos-10-start.page:13
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:13
-#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:14
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:14
+#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:15
 #: /home/cyrille/Documents/github/build/help/C/xiphos-21-modules-configuration.page:14
 #: /home/cyrille/Documents/github/build/help/C/xiphos-22-modules-install.page:14
 #: /home/cyrille/Documents/github/build/help/C/xiphos-23-modules-maintenance.page:14
@@ -46,14 +48,15 @@ msgstr ""
 #: /home/cyrille/Documents/github/build/help/C/xiphos-30-search.page:13
 #: /home/cyrille/Documents/github/build/help/C/xiphos-31-advanced-search.page:14
 #: /home/cyrille/Documents/github/build/help/C/xiphos-32-search-syntax.page:14
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:14
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:13
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:13
-#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:13
-#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:13
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:15
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:14
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:14
+#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:14
+#: /home/cyrille/Documents/github/build/help/C/xiphos-43-bookmarks.page:12
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:14
 #: /home/cyrille/Documents/github/build/help/C/xiphos-51-preferences-biblesync.page:13
 #: /home/cyrille/Documents/github/build/help/C/xiphos-52-preferences-fonts-colors.page:13
-#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:13
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:14
 #: /home/cyrille/Documents/github/build/help/C/xiphos-60-online-help.page:13
 #: /home/cyrille/Documents/github/build/help/C/xiphos-90-credits.page:16
 msgctxt "text"
@@ -195,9 +198,10 @@ msgstr ""
 #. whatever you like once you have updated your copy of the file.
 #: /home/cyrille/Documents/github/build/help/C/xiphos-01-introduction.page:64
 #: /home/cyrille/Documents/github/build/help/C/xiphos-10-start.page:91
+#, fuzzy
 msgctxt "_"
 msgid ""
-"external ref='figures/interface.png' md5='87110fb5a2a686a1f9ba07bffd222bc4'"
+"external ref='figures/interface.png' md5='2689bc36ff7849d61f3c97cc8767e854'"
 msgstr "interface_biblepane.png"
 
 #. (itstool) path: page/media
@@ -271,18 +275,18 @@ msgstr "Sélection/ouverture de fenêtre et de la barre de navigation"
 #. (itstool) path: td/p
 #: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:48
 #: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:118
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:204
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:292
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:322
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:216
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:304
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:334
 msgid "Action"
 msgstr "Action"
 
 #. (itstool) path: td/p
 #: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:49
 #: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:119
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:205
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:293
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:323
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:217
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:305
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:335
 msgid "Keyboard shortcut"
 msgstr "Raccourci clavier"
 
@@ -422,54 +426,54 @@ msgid "Toggle transliteration."
 msgstr "Basculer l’affichage de la translitération."
 
 #. (itstool) path: table/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:201
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:213
 msgid "Opening special windows"
 msgstr "Ouvrir des fenêtres spécifiques"
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:210
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:222
 msgid "Open this manual."
 msgstr "Ouvrir ce manuel."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:216
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:228
 msgid "Open the <gui>Preferences</gui> dialog."
 msgstr "Ouvrir la fenêtre des <gui>Préférences</gui>."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:222
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:234
 msgid "Open <gui>Advanced Search</gui>."
 msgstr "Ouvrir la <gui>Recherche avancée</gui>."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:228
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:240
 msgid "Bring forward the simple sidebar search."
 msgstr "Mettre en avant la recherche rapide du volet latéral."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:234
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:246
 msgid "Open the <gui>Module Manager</gui>."
 msgstr "Ouvrir le <gui>Gestionnaire de modules</gui>."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:240
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:252
 msgid "Open the current Bible as a separate window."
 msgstr "Ouvrir la Bible actuelle dans une fenêtre séparée."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:246
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:258
 msgid "Open an annotation dialog on the current verse."
 msgstr "Ouvrir la boîte d’annotation du verset en cours."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:252
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:264
 msgid "Open a bookmark dialog on the current verse."
 msgstr ""
 "Ouvrir la boîte de dialogue <gui>Ajouter un signet</gui> sur le verset en "
 "cours."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:258
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:270
 msgid ""
 "Open the \"Find\" dialog. The subwindow to which it applies depends on which "
 "of them are visible: The Bible is first preference, then the commentary or "
@@ -484,12 +488,12 @@ msgstr ""
 "ainsi toute la recherche initiée ne sera effectuée que dans ce volet livre."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:268
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:280
 msgid "Detach/re-attach the parallel view dialog."
 msgstr "Détacher / Rattacher la fenêtre de la vue parallèle."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:274
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:286
 msgid "Open editor on the personal commentary named Personal."
 msgstr ""
 "Ouvrir l’éditeur du commentaire personnel, nommé Personal "
@@ -497,57 +501,57 @@ msgstr ""
 "gui><gui>Personal</gui></guiseq>)."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:280
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:292
 msgid "Toggle visibility of the side panel."
 msgstr "Permet d’activer ou de désactiver la visibilité du panneau latéral."
 
 #. (itstool) path: table/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:289
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:301
 msgid "Font size control"
 msgstr "Réglage de la taille de police"
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:298
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:310
 msgid "Increase the base font size."
 msgstr "Augmenter la taille de la police de base."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:304
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:316
 msgid "Decrease the base font size."
 msgstr "Diminuer la taille de la police de base."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:310
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:322
 msgid "Set the base font size to zero."
 msgstr "Remettre la taille de police de base à zéro."
 
 #. (itstool) path: table/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:319
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:331
 msgid "BibleSync"
 msgstr "BibleSync"
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:328
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:340
 msgid "Put BibleSync into Personal mode."
 msgstr "Placer BibleSync en mode Personnel."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:335
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:347
 msgid "Put BibleSync into Speaker mode."
 msgstr "Placer BibleSync en mode Orateur."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:342
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:354
 msgid "Put BibleSync into Audience mode."
 msgstr "Placer BibleSync en mode Audience."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:349
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:361
 msgid "Turn off BibleSync."
 msgstr "Arrêter BibleSync."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:356
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:368
 msgid ""
 "Cause BibleSync to navigate your current point as a one-shot event. "
 "BibleSync must be transmit-ready, that is, in Personal or Speaker mode. Use "
@@ -558,7 +562,7 @@ msgstr ""
 "Biblesync est configuré en mode « Clavier seulement »."
 
 #. (itstool) path: td/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:366
+#: /home/cyrille/Documents/github/build/help/C/xiphos-02-shortcut-keys.page:378
 msgid "Provide for sending chat messages to others."
 msgstr "Configurer BibleSync pour envoyer des messages à d’autres."
 
@@ -685,7 +689,7 @@ msgstr "L’interface de <app>Xiphos</app> contient les éléments suivants :"
 #. (itstool) path: item/title
 #. (itstool) path: section/title
 #: /home/cyrille/Documents/github/build/help/C/xiphos-10-start.page:96
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:40
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:41
 msgid "Menubar"
 msgstr "Barre de menu"
 
@@ -748,7 +752,7 @@ msgstr ""
 #. (itstool) path: item/title
 #. (itstool) path: section/title
 #: /home/cyrille/Documents/github/build/help/C/xiphos-10-start.page:119
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:393
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:449
 msgid "Previewer"
 msgstr "Aperçu"
 
@@ -832,12 +836,12 @@ msgstr ""
 "Une description des différentes zones de la fenêtre principale de Xiphos."
 
 #. (itstool) path: page/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:35
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:36
 msgid "Xiphos Main Window"
 msgstr "Fenêtre principale de Xiphos"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:41
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:42
 msgid ""
 "At the top of the <app>Xiphos</app> main window is the menubar. Almost all "
 "of the functions are available by activating the appropriate menu item. The "
@@ -855,20 +859,21 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:45
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:46
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_menubar.png' "
-"md5='cba7b33d2c0dae1ef4e78c7d620df4c0'"
+"md5='c42df339dbdea68d5e5915bbb9e6cdde'"
 msgstr "interface_menubar.png"
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:51
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:52
 msgid "Toolbars"
 msgstr "Barres d’outils"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:52
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:53
 msgid ""
 "The function of the Toolbar is to provide control over the Bible and "
 "Commentary Panes. Activation of the Toolbar option is done by moving the "
@@ -887,63 +892,64 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:57
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:58
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_toolbar.png' "
-"md5='52cab52c7dc5957b5aeaf4b78e2d5bd5'"
+"md5='3ab14988344fd6bbef9cfa43c53dd064'"
 msgstr "interface_toolbar.png"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:59
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:60
 msgid "The <gui>Toolbar</gui> consists of the following functions:"
 msgstr "La <gui>Barre d’outils</gui> présente les fonctions suivantes :"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:62
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:63
 msgid "History View Toggle and drop-down menu"
 msgstr "Boutons de déplacement dans l’historique des versets consultés"
 
 #. (itstool) path: item/p
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:65
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:84
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:66
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:85
 msgid "Bible Book Selector"
 msgstr "Sélecteur de livre de la Bible"
 
 #. (itstool) path: item/p
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:68
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:90
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:69
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:91
 msgid "Bible Chapter Selector"
 msgstr "Sélecteur de chapitre de la Bible"
 
 #. (itstool) path: item/p
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:71
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:97
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:72
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:98
 msgid "Bible Verse Selector"
 msgstr "Sélecteur de verset de la Bible"
 
 #. (itstool) path: item/p
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:74
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:104
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:75
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:105
 msgid "Bible Passage Summary"
 msgstr "Zone de saisie d’une référence biblique"
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:79
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:80
 msgid "History Forward/Backward Selector"
 msgstr "Boutons de déplacement avant/arrière dans l’historique"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:80
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:81
 msgid "Switches between current and previous passage selections."
 msgstr "Permettent de se déplacer dans l’historique des passages consultés."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:85
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:86
 msgid ""
 "Selects the Biblical book to be displayed in the <gui>Bible Text Pane </gui> "
 "and <gui>Commentary Pane</gui>. Changes take immediate effect."
@@ -953,7 +959,7 @@ msgstr ""
 "effet immédiatement."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:91
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:92
 msgid ""
 "Selects the Biblical chapter of current book to be displayed in the "
 "<gui>Bible Text Pane</gui> and <gui>Commentary Pane</gui>. Changes take "
@@ -964,7 +970,7 @@ msgstr ""
 "Le changement prend effet immédiatement."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:98
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:99
 msgid ""
 "Selects the Biblical verse of current chapter to be displayed in the "
 "<gui>Bible Text Pane</gui> and <gui>Commentary Pane</gui>. Changes take "
@@ -975,7 +981,7 @@ msgstr ""
 "changement prend effet immédiatement."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:105
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:106
 msgid ""
 "Allows manual editing of passages which are displayed in the <gui>Bible Text "
 "Pane</gui> and <gui>Commentary Pane</gui>. Changes take effect once Enter is "
@@ -987,7 +993,7 @@ msgstr ""
 "key>."
 
 #. (itstool) path: note/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:109
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:110
 msgid ""
 "Ensure that edited book,chapter and verse naming is correct, otherwise the "
 "wrong or no information will be displayed."
@@ -996,7 +1002,7 @@ msgstr ""
 "sans quoi le résultat obtenu sera erroné voire simplement absent."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:119
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:120
 msgid "The Sidebar"
 msgstr "La barre d’outils"
 
@@ -1005,15 +1011,16 @@ msgstr "La barre d’outils"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:120
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:121
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_sidepane.png' "
-"md5='c6213020499b11181b3f699cab489e70'"
+"md5='2b583406033dea06d706d2967f9e4b38'"
 msgstr "interface_sidepane.png"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:122
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:123
 msgid ""
 "On the left hand side of <app>Xiphos</app> there is the Sidebar. Here the "
 "user can switch between the different Sword modules, view bookmarks, do "
@@ -1034,7 +1041,7 @@ msgstr ""
 "l’information «_À propos » du module."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:130
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:131
 msgid ""
 "To switch between all Sidebar functions, buttons have been placed at the top "
 "of the Sidebar."
@@ -1047,15 +1054,69 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:132
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:133
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_shortcut.png' "
-"md5='f5a4af12cd1204c4be2a7f99caf1ca63'"
+"md5='33d63d1883d66e57bdfdc11d77e5e8d7'"
 msgstr "interface_shortcut.png"
 
 #. (itstool) path: section/title
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:138
+msgid "Organizing The Module Tree"
+msgstr "Organisez l'arbre des modules"
+
+#. (itstool) path: section/p
 #: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:139
+msgid ""
+"Right-clicking anywhere in the Modules listing brings up a context menu with "
+"options for organizing a long list of installed modules:"
+msgstr ""
+"Un clic droit n'importe où dans la liste des modules fait apparaître un menu "
+"contextuel proposant des options permettant d'organiser une longue liste de "
+"modules installés :"
+
+#. (itstool) path: item/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:143
+msgid ""
+"<gui>Add to Favorites</gui> / <gui>Remove from Favorites</gui> - marks a "
+"module so that it also appears under a dedicated <gui>Favorites</gui> entry "
+"at the top of the module tree, for quick access to the modules you use most."
+msgstr ""
+"<gui>Ajouter aux favoris</gui> / <gui>Supprimer des favoris</gui> : permet "
+"de marquer un module afin qu'il apparaisse également sous une rubrique "
+"dédiée intitulée <gui>Favoris</gui> en haut de l'arborescence des modules, "
+"pour un accès rapide aux modules que vous utilisez le plus souvent."
+
+#. (itstool) path: item/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:149
+msgid ""
+"<gui>Hide</gui> / <gui>Show Hidden Modules</gui> - removes a rarely-used "
+"module from the visible tree without uninstalling it. Hidden modules can be "
+"shown again, and un-hidden, from the same context menu."
+msgstr ""
+"<gui>Masquer</gui> / <gui>Afficher les modules masqués</gui> : permet de "
+"retirer un module rarement utilisé de l'arborescence visible sans le "
+"désinstaller. Les modules masqués peuvent être réaffichés et démasqués à "
+"partir du même menu contextuel."
+
+#. (itstool) path: item/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:155
+msgid ""
+"<gui>Group By</gui> - chooses how the tree is organized: by <gui>Category</"
+"gui> (Biblical Texts, Commentaries, Dictionaries, General Books, etc.), by "
+"<gui>Language</gui>, or by <gui>Both</gui> (language within category). This "
+"is useful once many modules in several languages are installed."
+msgstr ""
+"<gui>Regrouper par</gui> : permet de choisir le mode d'organisation de "
+"l'arborescence : par <gui>Catégorie</gui> (textes bibliques, commentaires, "
+"dictionnaires, ouvrages généraux, etc.), par <gui>Langue</gui> ou par "
+"<gui>Les deux</gui> (langue au sein d'une catégorie). Cette option est utile "
+"lorsque de nombreux modules dans plusieurs langues sont installés."
+
+#. (itstool) path: section/title
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:169
 msgid "The Bible Text Pane"
 msgstr "Le volet des textes bibliques"
 
@@ -1064,15 +1125,16 @@ msgstr "Le volet des textes bibliques"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:140
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:170
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_biblepane.png' "
-"md5='831b18b306e9dc42f18d3eafe0b41bd2'"
+"md5='f15efb9a54db053efeac7966f4a8e89d'"
 msgstr "interface_biblepane.png"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:141
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:171
 msgid ""
 "Positioned to the right of the Shortcut bar is the Bible text pane. All "
 "translations are displayed here. When starting <app>Xiphos</app>, the "
@@ -1084,12 +1146,12 @@ msgstr ""
 "précédemment le plus à gauche est affichée par défaut."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:146
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:176
 msgid "Opening A Specific Bible Translation"
 msgstr "Ouvrir une version différente de la Bible"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:147
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:177
 msgid ""
 "In order to change the current Bible translation to another of your choice:"
 msgstr ""
@@ -1097,35 +1159,35 @@ msgstr ""
 "version :"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:151
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:181
 msgid ""
 "right-click in the <gui>Bible Text Pane</gui>. In the popup menu choose "
 "<guiseq><gui>File</gui><gui>Open Module</gui></guiseq> and select your "
 "specific translation that you want to view."
 msgstr ""
-"Un clic du bouton droit de la souris dans le volet d’affichage des "
-"<gui>textes bibliques</gui> ouvre le menu contextuel. Dans ce menu, choisir "
-"<guiseq><gui>Fichier</gui><gui>Ouvrir le module</gui></guiseq> et ensuite "
-"vous pouvez sélectionner la version que vous souhaitez étudier."
+"un clic du bouton droit de la souris dans le volet d’affichage des "
+"<gui>textes bibliques</gui> ouvre le menu contextuel. Dans ce menu, "
+"choisissez <guiseq><gui>Fichier</gui><gui>Ouvrir le module</gui></guiseq> et "
+"ensuite vous pouvez sélectionner la version que vous souhaitez étudier."
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:156
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:186
 msgid ""
 "under the <gui>Modules</gui> option in the <gui>Sidebar</gui>, choose "
 "<guiseq><gui>Biblical Texts</gui><gui>language choice</gui> </guiseq> and "
 "select your specific translation."
 msgstr ""
-"Ou après avoir activé l’option <gui>Modules</gui> du <gui>volet latéral</"
-"gui>, choisir <guiseq><gui>Textes bibliques</gui><gui>langue de votre choix "
-"</gui></guiseq> et vous pouvez ensuite sélectionner la version désirée."
+"ou après avoir activé l’option <gui>Modules</gui> du <gui>volet latéral</"
+"gui>, choisissez <guiseq><gui>Textes bibliques</gui><gui>langue de votre "
+"choix </gui></guiseq> et vous pouvez ensuite sélectionner la version désirée."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:164
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:194
 msgid "Using the Parallel View Mode"
 msgstr "Utilisation du mode Vue parallèle"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:166
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:196
 msgid ""
 "A nice function in <app>Xiphos</app> is the ability to view your specified "
 "bible text in several parallel translations of your choice. The Parallel "
@@ -1139,25 +1201,47 @@ msgstr ""
 "<gui>Vue simple</gui>."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:172
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:202
 msgid ""
 "You must choose which modules to display in parallel with the <gui> "
 "Preferences</gui> dialog found under the <gui>Edit</gui> menu. In the "
 "dialog, choose Modules, then Parallel. You can add or subtract from the list "
 "of modules that will be shown in the parallel view. The toolbar gives you a "
 "selector tool to erase the list, delete a module from the list, and add "
-"modules to the list."
+"modules to the list. Up to 8 modules can be shown side by side."
 msgstr ""
 "Vous devez choisir au préalable quels modules afficher en parallèle dans la "
 "boîte de dialogue <gui>Préférences</gui>, à ouvrir depuis le menu "
-"<gui>Édition</gui>. Dans la boîte de dialogue, sélectionner Modules, puis en "
-"parallèle. Il est possible d’ajouter ou de soustraire de la liste les "
+"<gui>Édition</gui>. Dans la boîte de dialogue, sélectionner Modules, puis "
+"Parallèle. Il est possible d’ajouter ou de soustraire de la liste les "
 "modules qui seront ensuite affichés dans la vue parallèle. La barre d’outils "
 "est munie des outils de sélection pour effacer la liste, supprimer un module "
-"de la liste, et ajouter des modules à cette liste."
+"de la liste, et ajouter des modules à cette liste. Jusqu’à 8 modules peuvent "
+"être affichés côte à côte."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:179
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:211
+msgid ""
+"Instead of rebuilding this list every time you want to switch between "
+"different combinations of translations (for example, one set for original-"
+"language study and another for a reading group), you can save the current "
+"list of parallel modules as a named <gui>Set</gui>. Once you have several "
+"sets saved, a drop-down selector lets you switch between them instantly, and "
+"the parallel view is rebuilt with the modules belonging to the chosen set. "
+"Sets can be renamed or deleted from the same selector."
+msgstr ""
+"Au lieu de recréer cette liste à chaque fois que vous souhaitez passer d’une "
+"combinaison de traductions à une autre (par exemple, un ensemble pour "
+"l’étude en langue originale et un autre pour un groupe de lecture), vous "
+"pouvez enregistrer la liste actuelle des modules parallèles sous le nom d’un "
+"<gui>Groupe</gui>. Une fois que vous avez enregistré plusieurs ensembles, un "
+"menu déroulant vous permet de passer instantanément de l’un à l’autre, et la "
+"vue parallèle est recréée avec les modules appartenant à l’ensemble choisi. "
+"Les ensembles peuvent être renommés ou supprimés à partir de ce même menu "
+"déroulant."
+
+#. (itstool) path: section/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:220
 msgid ""
 "The <gui>Parallel View</gui> shows just one verse at a time. You can change "
 "the verse by selecting another verse, chapter, or book at the toolbar. Also "
@@ -1177,15 +1261,16 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:184
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:225
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_parallel.png' "
-"md5='33d218a70d36b38d6957a0d30e83d552'"
+"md5='4901130512d4cb5864620b960a3252ad'"
 msgstr "interface_parallel.png"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:186
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:227
 msgid ""
 "Additionally, a separate Parallel View window can be selected from the right "
 "click menu with <gui>Detach/Attach</gui>. Your Bible pane will return to its "
@@ -1204,15 +1289,16 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:190
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:231
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_parallel-separate.png' "
-"md5='b2c31dcdbd918b0ad972f6b030500ac6'"
+"md5='31f905c62b5676dd39583150eee9bbfa'"
 msgstr "interface_parallel-separate.png"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:192
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:233
 msgid ""
 "Be aware that Bibles have different versification schemes. That is, most "
 "obviously some Bibles have only Old or New Testament. Beyond that, there are "
@@ -1237,12 +1323,12 @@ msgstr ""
 "verset."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:204
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:245
 msgid "Opening A Separate Bible Translation"
 msgstr "Ouvrir le texte biblique dans une fenêtre distincte"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:205
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:246
 msgid ""
 "In order to view a Bible translation separate from the <app>Xiphos </app> "
 "main window interface, under the <gui>Modules</gui> option in the "
@@ -1260,7 +1346,7 @@ msgstr ""
 "fenêtre séparée."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:212
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:253
 msgid ""
 "Detached Bible and commentary windows have a synchronization button in the "
 "upper-left position beside the navigation bar. When this button is "
@@ -1282,28 +1368,28 @@ msgstr ""
 "fenêtres distinctes dont le bouton de synchronisation est activé."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:223
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:264
 msgid "Finding Out About The Current Translation"
 msgstr "Rechercher les informations à propos de la version courante"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:224
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:265
 msgid "To find out about the Bible translation currently being displayed:"
 msgstr ""
 "Pour obtenir des informations à propos de la version de la Bible en cours :"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:227
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:268
 msgid ""
 "right-click in the <gui>Bible Text pane</gui>. In the popup menu choose "
 "<gui>About </gui> module name."
 msgstr ""
-"Cliquer du bouton droit de la souris dans le volet des <gui>textes "
-"bibliques</gui>. Dans le menu contextuel qui s’affiche, sélectionner <gui>À "
+"cliquez sur le bouton droit de la souris dans le volet des <gui>textes "
+"bibliques</gui>. Dans le menu contextuel qui s’affiche, sélectionnez <gui>À "
 "propos</gui>."
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:231
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:272
 msgid ""
 "Under the <gui>Modules</gui> option in the <gui>Sidebar</gui>, choose "
 "<guiseq><gui>Biblical Texts</gui><gui>language choice</gui> </guiseq>. Then "
@@ -1315,12 +1401,12 @@ msgstr ""
 "dans le menu contextuel qui s’affiche, choisir l’option <gui>À propos</gui>."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:240
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:281
 msgid "Module Options"
 msgstr "Options des modules"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:241
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:282
 msgid ""
 "Most Bible translations have additional options which the user can select."
 msgstr ""
@@ -1328,42 +1414,42 @@ msgstr ""
 "que vous pouvez activer suivant vos besoins."
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:245
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:286
 msgid "Words Of Christ In Red"
 msgstr "Paroles de Christ en rouge"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:248
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:289
 msgid "Strong's Numbers"
 msgstr "Nombres de Strong"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:251
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:292
 msgid "Morphological Tags"
 msgstr "Étiquettes morphologiques"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:254
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:295
 msgid "Footnotes"
 msgstr "Notes de bas de page"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:257
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:298
 msgid "Scripture Cross-Reference"
 msgstr "Références croisées de l’Écriture"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:260
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:301
 msgid "Headings"
 msgstr "Entêtes"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:263
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:304
 msgid "Image Content"
 msgstr "Afficher les images"
 
 #. (itstool) path: note/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:267
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:308
 msgid ""
 "Translations in other languages such as Greek or Hebrew have specific "
 "options which deal only with the specific language."
@@ -1372,39 +1458,41 @@ msgstr ""
 "particulières qui ne s’appliquent qu’à ces langues."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:270
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:311
 msgid "In order to access these options:"
 msgstr "Pour accéder à ces options :"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:273
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:314
 msgid ""
 "right-click in the <gui>Bible Text pane</gui>. In the popup menu (example "
 "shown), choose <gui>Module Options</gui> and select the specific option."
 msgstr ""
-"Cliquer du bouton droit de la souris dans le volet des <gui>textes "
-"bibliques</gui>. Dans le menu contextuel qui s’affiche, choisir <gui>Options "
-"du module</gui>, et vous pouvez ensuite sélectionner l’option désirée."
+"cliiquez sur le bouton droit de la souris dans le volet des <gui>textes "
+"bibliques</gui>. Dans le menu contextuel qui s’affiche, choisissez "
+"<gui>Options du module</gui>, et vous pouvez ensuite sélectionner l’option "
+"désirée."
 
 #. (itstool) path: section/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:278
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:319
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_biblepane-options.png' "
-"md5='fa15074c128f9646e1a540eab3a881b1'"
+"md5='2d0e96f726a466a77aa6291fd44f5ffb'"
 msgstr "interface_biblepane-options.png"
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:282
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:323
 msgid "View Options"
 msgstr "Options d’affichage"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:283
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:324
 msgid ""
 "There are several additional modes that can be selected from the menubar's "
 "<gui>View</gui> pulldown."
@@ -1417,15 +1505,16 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:285
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:326
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_menubar-view.png' "
-"md5='f813f0a888e8ee9373e7e81ac14b26c0'"
+"md5='98bf0107ad7034d727425f4f188fc3ef'"
 msgstr "interface_menubar-view.png"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:287
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:328
 msgid ""
 "The first 4 checkboxes control whether each named subwindow is displayed. "
 "The viewable state of the subwindows is remembered on a per-tab basis. This "
@@ -1441,12 +1530,12 @@ msgstr ""
 "et <gui>Aperçu</gui>."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:294
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:335
 msgid "The remaining checkboxes control these other display features:"
 msgstr "Les options restantes commandent les autres options d’affichage :"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:297
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:338
 msgid ""
 "Link Tabs - When more than one tab is open, each one's verse is navigated "
 "separately in the disabled case. If tab linking is enabled, then all tabs "
@@ -1458,22 +1547,26 @@ msgstr ""
 "ensemble, et affichent le même verset."
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:303
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:344
 msgid ""
 "Read Aloud - If you enable this, then <app>Xiphos</app> will funnel all "
-"selected verses through the <app>festival</app> text-to-speech system. "
-"<app>Festival</app> is a widely-available TTS, often installed by default in "
-"Linux distributions."
+"selected verses through a text-to-speech system. On Linux, <app>Xiphos</app> "
+"uses the <app>festival</app> TTS, often installed by default in Linux "
+"distributions. On Windows, and on Linux systems that provide it, "
+"<app>Xiphos</app> can instead use the operating system's own text-to-speech "
+"(\"System TTS\"), so no separate speech engine needs to be installed."
 msgstr ""
-"<gui>Synthèse vocale</gui> - Quand cette option est activée, <app>Xiphos</"
-"app> lit à voix haute les versets sélectionnés à l’aide du logiciel de "
-"synthèse vocale <app>Festival</app>. Le moteur de synthèse vocale "
-"<app>Festival</app> est largement utilisé et souvent installé par défaut "
-"dans les distributions Linux. (NDT: En général, les résultats sont meilleurs "
-"en anglais )."
+"Lecture à voix haute - Si vous activez cette option, <app>Xiphos</app> fera "
+"passer tous les versets sélectionnés par un système de synthèse vocale. Sous "
+"Linux, <app>Xiphos</app> utilise le moteur de synthèse vocale <app>festival</"
+"app>, souvent installé par défaut dans les distributions Linux. Sous "
+"Windows, ainsi que sur les systèmes Linux qui le prennent en charge, "
+"<app>Xiphos</app> peut utiliser le moteur de synthèse vocale intégré au "
+"système d'exploitation (« System TTS »), ce qui évite d'avoir à installer un "
+"moteur de synthèse vocale supplémentaire."
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:308
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:352
 msgid ""
 "Also, mouse-selected text may be read aloud from Bibles, commentaries, and "
 "general books, using the right-click menu, regardless of whether Read Aloud "
@@ -1486,7 +1579,7 @@ msgstr ""
 "indépendamment de l’option <gui>Synthèse vocale</gui>."
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:313
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:357
 msgid ""
 "Show Verse Numbers - Normally enabled, this toggle can be disabled to "
 "prevent display of verse numbers within the text."
@@ -1496,7 +1589,7 @@ msgstr ""
 "le texte."
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:317
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:361
 msgid ""
 "Highlight Current Verse - Initially disabled, this toggle replaces mere "
 "alternate colorization of the current verse with a substitute high-contrast "
@@ -1508,12 +1601,12 @@ msgstr ""
 "préférences."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:326
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:370
 msgid "Display Control with CSS"
 msgstr "Contrôle de l’affichage avec les CSS"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:327
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:371
 msgid ""
 "Users familiar with CSS (cascading style sheets) may wish to create the file "
 "\"default-style.css\" in the .xiphos directory to contain whatever CSS "
@@ -1529,12 +1622,12 @@ msgstr ""
 "fournir les capacités que les utilisateurs avancés pourraient souhaiter."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:335
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:379
 msgid "User Annotation"
 msgstr "Annotation personnelle"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:336
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:380
 msgid ""
 "Many users wish to make personal annotations on individual verses, without "
 "the need to put a full \"personal commentary\" module to use. <app>Xiphos</"
@@ -1561,7 +1654,7 @@ msgstr ""
 "personnelles dans la marge."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:347
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:391
 msgid ""
 "Selecting an already-annotated verse will (in the usual case) bring up the "
 "existing content for re-editing. An already-annotated verse can be unmarked; "
@@ -1572,7 +1665,7 @@ msgstr ""
 "être retirée; le verset cesse alors d’être affiché en surbrillance."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:351
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:395
 msgid ""
 "If the user deletes the module name from the reference at the top of the "
 "dialog, then the annotation will apply to any Bible module at the selected "
@@ -1587,12 +1680,12 @@ msgstr ""
 "contenu est lié à la référence du module original."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:359
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:403
 msgid "Geography Support"
 msgstr "Support de la géographie"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:360
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:404
 msgid ""
 "A connection to browsing BibleMap.org is available by mouse-selecting a "
 "place name in any text. Use the right-click context menu to select "
@@ -1610,12 +1703,35 @@ msgstr ""
 "bibliques superposés sur une carte Google Maps."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:369
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:415
+msgid "Translate Selection"
+msgstr "Traduire la sélection"
+
+#. (itstool) path: section/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:416
+msgid ""
+"To get a quick machine translation of a word or phrase, mouse-select the "
+"text anywhere it can be selected (Bible, commentary, general book, or "
+"dictionary panes) and use the right-click context menu to choose "
+"<guiseq><gui>Lookup Selection</gui><gui>Translate Selection</gui> </guiseq>. "
+"A web browser will open with the selection submitted to an online "
+"translation service."
+msgstr ""
+"Pour obtenir une traduction automatique rapide d'un mot ou d'une expression, "
+"sélectionnez le texte à l'aide de la souris à n'importe quel endroit où il "
+"est possible de le sélectionner (volets « Bible », « Commentaire », « Livre "
+"général » ou « Dictionnaire ») et utilisez le menu contextuel accessible par "
+"un clic droit pour choisir <guiseq><gui>Rechercher la sélection</"
+"gui><gui>Traduire la sélection</gui> </guiseq>. Un navigateur Web s'ouvrira "
+"et la sélection sera transmise à un service de traduction en ligne."
+
+#. (itstool) path: section/title
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:425
 msgid "Specific Word Meanings"
 msgstr "Définition d’un mot particulier"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:370
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:426
 msgid ""
 "In order to check the meaning of a specific word, double-click on the word "
 "you wish to lookup. The word should then highlight itself and the "
@@ -1628,36 +1744,36 @@ msgstr ""
 "le volet <gui>dictionnaire</gui>."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:377
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:433
 msgid "Finding A Specific Word"
 msgstr "Rechercher un mot spécifique"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:378
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:434
 msgid "To find a specific word within a passage:"
 msgstr "Pour rechercher un mot spécifique dans un passage :"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:381
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:437
 msgid ""
 "right-click in the <gui>Bible Text Pane</gui>. In the popup menu, choose "
 "<guiseq><gui>Edit</gui><gui>Find</gui></guiseq>. A dialog will appear, which "
 "provides text searches. Fill out dialog and click the <gui>Find</gui> and "
 "<gui>Find Next</gui> buttons."
 msgstr ""
-"Faire un clic droit à l’aide de la souris dans le volet des <gui>textes "
-"bibliques</gui>. Dans le menu contextuel qui s’affiche, choisir "
-"<guiseq><gui>Éditer</gui><gui>Rechercher</gui></guiseq>. Une fenêtre s’ouvre "
-"ensuite, permettant la recherche d’un ou plusieurs mots. Saisir le texte à "
-"rechercher, puis ensuite valider à l’aide de <gui>Rechercher</gui> et "
-"<gui>Rechercher suivant</gui>."
+"faites un clic droit à l’aide de la souris dans le volet des <gui>textes "
+"bibliques</gui>. Dans le menu contextuel qui s’affiche, choisissez "
+"<guiseq><gui>Édition</gui><gui>Rechercher</gui></guiseq>. Une fenêtre "
+"s’ouvre ensuite, permettant la recherche d’un ou de plusieurs mots. Saisssez "
+"le texte à rechercher, puis ensuite validez à l’aide de <gui>Rechercher</"
+"gui> et <gui>Rechercher suivant</gui>."
 
 #. (itstool) path: section/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:394
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:450
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_viewer.png' "
@@ -1665,7 +1781,7 @@ msgid ""
 msgstr "interface_viewer.png"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:396
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:452
 msgid ""
 "The Previewer is where the user sees Strong's numbers, morphological tags, "
 "footnotes, and cross-references that the <gui>Bible Text Pane</gui> provides."
@@ -1675,7 +1791,7 @@ msgstr ""
 "volet des <gui>textes bibliques</gui>."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:400
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:456
 msgid ""
 "Footnote content is displayed in the Previewer when you hover over the "
 "indicator <gui>*n</gui> in the Bible text; it remains visible until your "
@@ -1697,13 +1813,17 @@ msgstr ""
 "gui>."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:408
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:464
 msgid ""
 "Cross-reference indicators <gui>*x</gui> work much the same way. Clicking "
 "the indicator will send the set of references to the <gui>Verse List</gui> "
 "in the <gui>Sidebar</gui>, where you can click them individually for reading "
 "in the Previewer. Alternately, a Preferences selector is available, so that "
-"cross-reference lists are sent to the verse list instead."
+"cross-reference lists are sent to the verse list instead. When a cross-"
+"reference resolves to more than one verse, a popup menu also lets you jump "
+"straight to any one of the listed references without first sending the whole "
+"set to the verse list; this also works for references given only as partial "
+"verse ranges."
 msgstr ""
 "Les références croisées <gui>*x</gui> fonctionnent sensiblement de la même "
 "façon. Un clic à l’aide du bouton de la souris sur l’indicateur <gui>*x</"
@@ -1714,7 +1834,7 @@ msgstr ""
 "références croisées soit envoyée directement dans le volet <gui>Aperçu</gui>."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:415
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:474
 msgid ""
 "Any verses shown in reverse-highlight have personal annotation associated "
 "with them, and such verses will include <gui>*u</gui> at the beginning of "
@@ -1727,7 +1847,7 @@ msgstr ""
 "volet Aperçu, de la même façon que pour les notes de bas de page."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:420
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:479
 msgid ""
 "If a devotional has been set via the Preferences dialog, then the day's "
 "devotional reference will also appear in the previewer, either on program "
@@ -1739,7 +1859,7 @@ msgstr ""
 "<gui>Affichage</gui>."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:428
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:487
 msgid "The Commentary Pane"
 msgstr "Le volet des commentaires"
 
@@ -1748,15 +1868,16 @@ msgstr "Le volet des commentaires"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:429
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:488
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_commentarypane.png' "
-"md5='ecc5a233e4d12e0900f3aea5f2cb3fb7'"
+"md5='6c760646a244785dff155beeb6e3ba8f'"
 msgstr "interface_commentarypane.png"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:431
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:490
 msgid ""
 "The <gui>Commentary pane</gui> is where the commentary modules are "
 "displayed. This provides easy reading, reference, and access to different "
@@ -1774,7 +1895,7 @@ msgstr ""
 "l’aide de la <gui>Barre d’outils</gui>."
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:438
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:497
 msgid ""
 "If there are images that are part of a commentary, general book, or "
 "dictionary/lexicon, they may be clicked to invoke a viewer on that single "
@@ -1789,7 +1910,7 @@ msgstr ""
 "pour résultat de donner des images très rétrécies dans les petites fenêtres."
 
 #. (itstool) path: note/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:444
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:503
 msgid ""
 "By changing to passage settings on the <gui>Toolbar</gui>, the contents in "
 "the <gui>Bible Text pane</gui> and the <gui>Commentary Pane</gui> will be "
@@ -1800,31 +1921,32 @@ msgstr ""
 "gui> changent simultanément."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:450
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:509
 msgid "Finding Out About The Commentary Module"
 msgstr "Rechercher les informations à propos du module de commentaires"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:451
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:510
 msgid "To find out about the commentary currently being displayed:"
 msgstr "À propos du commentaire actuellement affiché :"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:454
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:513
 msgid ""
 "right-click in the <gui>Commentary Pane</gui>. In the popup menu choose "
 "<gui>About </gui> module name."
 msgstr ""
-"Cliquer du bouton droit de la souris dans le volet <gui>Commentaire</gui>. "
-"Dans le menu contextuel qui se présente, sélectionner <gui>À propos de</gui>."
+"cliquez sur le bouton droit de la souris dans le volet <gui>Commentaire</"
+"gui>. Dans le menu contextuel qui se présente, sélectionnez <gui>À propos "
+"de</gui>."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:461
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:520
 msgid "Commentary Headings"
 msgstr "Titres des commentaires"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:462
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:521
 msgid ""
 "Many commentaries have additional headings which enable introductory "
 "information about the book and chapter currently being displayed in the "
@@ -1835,17 +1957,17 @@ msgstr ""
 "biblique</gui>. Pour obtenir l’affichage de cet entête :"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:467
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:526
 msgid ""
 "right-click in the <gui>Commentary Pane</gui>. In the popup menu choose "
 "<gui>Display Book Heading</gui> or <gui>Display Chapter Heading</gui>."
 msgstr ""
-"Cliquer du bouton droit de la souris dans le volet <gui>Commentaire</gui>. "
-"Dans le menu contextuel qui se présente, choisir <gui>Afficher l’entête du "
-"livre</gui> ou <gui>Afficher l’entête du chapitre</gui>."
+"cliquez sur le bouton droit de la souris dans le volet <gui>Commentaire</"
+"gui>. Dans le menu contextuel qui se présente, choisissez <gui>Afficher "
+"l’entête du livre</gui> ou <gui>Afficher l’entête du chapitre</gui>."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:476
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:535
 msgid "Dictionary Pane"
 msgstr "Volet dictionnaire"
 
@@ -1854,15 +1976,16 @@ msgstr "Volet dictionnaire"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:477
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:536
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_dictionary.png' "
-"md5='09b3108582dc12c711b2903835511130'"
+"md5='d702fcc80d3183099cbe8374c5a8cb3b'"
 msgstr "interface_dictionary.png"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:479
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:538
 msgid ""
 "The Dictionary Pane's content is driven by its up/down selectors, typing in "
 "its navbar text, or double-clicks in the Bible, Commentary, or Book Panes."
@@ -1872,18 +1995,70 @@ msgstr ""
 "mots dans les volets <gui>Textes bibliques</gui>, <gui>Commentaires</gui>, "
 "<gui>Livre</gui>."
 
+#. (itstool) path: section/title
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:548
+msgid "Daily Devotional Tab"
+msgstr "Onglet calendrier biblique"
+
+#. (itstool) path: section/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:549
+#, fuzzy
+msgctxt "_"
+msgid ""
+"external ref='figures/interface_devotional.png' "
+"md5='1c2272f9e2abe1d3c2f967ca047425db'"
+msgstr "interface_toolbar.png"
+
+#. (itstool) path: section/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:550
+msgid ""
+"If a <gui>Daily Devotional</gui> module is installed and selected as your "
+"preferred devotional (see <link xref=\"xiphos-50-preferences-general-"
+"settings\"/> and the <gui>Special</gui> tab in <link xref=\"xiphos-53-"
+"preferences-modules\"/>), a dedicated <gui>Devotional </gui> tab is "
+"available alongside the <gui>Book View</gui> tab below the <gui>Commentary "
+"Pane</gui>. It shows the reading for the current date by default."
+msgstr ""
+"Si le module <gui>Calendrier biblique</gui> est installé et sélectionné "
+"comme méditation par défaut (voir <link xref=\"xiphos-50-preferences-general-"
+"settings\"/> et l'onglet <gui>Spécial</gui> dans <link xref=\"xiphos-53-"
+"preferences-modules\"/>), un onglet dédié <gui>Méditation</gui> est "
+"disponible à côté de l'onglet <gui>Affichage du livre</gui>, sous le "
+"<gui>volet de commentaire</gui>. Il affiche par défaut la lecture "
+"correspondant à la date du jour."
+
+#. (itstool) path: section/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-11-interface.page:558
+msgid ""
+"To read a devotional for a different day, click the date shown at the top of "
+"the tab; a calendar popover lets you pick the day directly, or you may type "
+"a date in manually. This is in addition to, and independent of, the day's "
+"devotional reference optionally shown in the Previewer at <app>Xiphos</app> "
+"startup (see above)."
+msgstr ""
+"Pour lire une méditation correspondant à un autre jour, cliquez sur la date "
+"affichée en haut de l'onglet ; une fenêtre contextuelle de calendrier vous "
+"permet de sélectionner directement le jour souhaité, ou vous pouvez saisir "
+"une date manuellement. Cette fonctionnalité s'ajoute à la référence du texte "
+"du jour affichée (en option) dans l'aperçu au démarrage de <app>Xiphos</app> "
+"(voir ci-dessus) et est indépendante de celle-ci."
+
 #. (itstool) path: info/desc
 #: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:6
 msgid "How to manage modules."
 msgstr "Comment gérer les modules."
 
 #. (itstool) path: page/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:38
+#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:39
 msgid "Introduction To The Module Manager"
 msgstr "Introduction à la gestion des modules"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:40
+#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:41
 msgid ""
 "The \"module\" is the unit of content in <app>Xiphos</app>, and Sword "
 "generally; a Sword module is a resource available for viewing in Sword "
@@ -1913,7 +2088,7 @@ msgstr ""
 "<app>Xiphos</app>."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:53
+#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:54
 msgid ""
 "If you have other Sword applications installed, they will all share the same "
 "set of Sword modules that you install through the Module Manager."
@@ -1927,20 +2102,50 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:55
+#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:56
+#, fuzzy
 msgctxt "_"
 msgid ""
-"external ref='figures/module.png' md5='8246c23467c9ea773a6f43feda2ab090'"
+"external ref='figures/module.png' md5='8fc6a3c1630aa4274328ed54b9dd866c'"
 msgstr "module.png"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:57
+#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:58
 msgid ""
 "Notice the <gui>View Intro</gui> button above. You may see an introductory "
 "explanation of Module Manager operation at any time."
 msgstr ""
 "Notez le bouton <gui>Voir l’intro</gui> ci-dessus. Il affiche une note "
 "d’introduction sur le fonctionnement du Gestionnaire de module."
+
+#. (itstool) path: note/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:62
+msgid ""
+"Once the module tree has focus, the <key>Left</key> and <key>Right</key> "
+"arrow keys collapse and expand a module group, which is convenient when many "
+"languages and categories are installed. The list of languages offered by the "
+"Module Manager has also been substantially extended, so modules in less "
+"common languages are now easier to find and select."
+msgstr ""
+"Une fois que l'arborescence des modules est sélectionnée, les touches "
+"fléchées <key>Gauche</key> et <key>Droite</key> permettent de réduire et "
+"d'agrandir un groupe de modules, ce qui s'avère pratique lorsque de "
+"nombreuses langues et catégories sont installées. La liste des langues "
+"proposées par le Gestionnaire de modules a également été considérablement "
+"élargie, ce qui facilite désormais la recherche et la sélection de modules "
+"dans des langues moins courantes."
+
+#. (itstool) path: page/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-20-modules-introduction.page:69
+msgid ""
+"See <link xref=\"xiphos-11-interface#xiphos-module-tree-organize\"/> for "
+"ways to organize a long module list, including <gui>Favorites</gui>, hiding "
+"rarely-used modules, and grouping by category and/or language."
+msgstr ""
+"Consultez <link xref=\"xiphos-11-interface#xiphos-module-tree-organize\"/> "
+"pour découvrir comment organiser une longue liste de modules, notamment "
+"grâce à la fonction <gui>Favoris</gui>, en masquant les modules rarement "
+"utilisés et en les regroupant par catégorie et/ou par langue."
 
 #. (itstool) path: info/desc
 #: /home/cyrille/Documents/github/build/help/C/xiphos-21-modules-configuration.page:6
@@ -1963,10 +2168,11 @@ msgstr "Configurer les dépots de modules"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: /home/cyrille/Documents/github/build/help/C/xiphos-21-modules-configuration.page:42
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/sword_sources.png' "
-"md5='71ff9c116f0d040e1cf5eadf3f9018be'"
+"md5='4ff51ecb87737d8d611cdbfd8c0be02b'"
 msgstr "sword_sources.png"
 
 #. (itstool) path: section/p
@@ -2014,10 +2220,11 @@ msgstr "Destination des modules Sword"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: /home/cyrille/Documents/github/build/help/C/xiphos-21-modules-configuration.page:61
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/sword_config.png' "
-"md5='66b413f7914f1551bf4eccf2af445e69'"
+"md5='cb36ea840290530b4912feef4f2c5079'"
 msgstr "sword_config.png"
 
 #. (itstool) path: section/p
@@ -2139,10 +2346,11 @@ msgstr "Installation des modules Sword"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: /home/cyrille/Documents/github/build/help/C/xiphos-22-modules-install.page:40
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/sword_install.png' "
-"md5='b713ba642e4d8291152cdce371614d63'"
+"md5='4df85591fd8121255b1bbc498960f9f9'"
 msgstr "sword_install.png"
 
 #. (itstool) path: page/p
@@ -2230,10 +2438,11 @@ msgstr "Maintenance des modules Sword"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: /home/cyrille/Documents/github/build/help/C/xiphos-23-modules-maintenance.page:40
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/sword_remove.png' "
-"md5='142b9bfbf44ca85e9b28578a5e4fbc8e'"
+"md5='4f113313748744fc55817623327eabc6'"
 msgstr "sword_remove.png"
 
 #. (itstool) path: page/p
@@ -2373,10 +2582,11 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: /home/cyrille/Documents/github/build/help/C/xiphos-30-search.page:44
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/interface_searchpane.png' "
-"md5='d3362fef39bcafeb51013b290a40ba70'"
+"md5='e053538e93543df454b3e9889630f6f2'"
 msgstr "interface_searchpane.png"
 
 #. (itstool) path: page/p
@@ -2710,10 +2920,11 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: /home/cyrille/Documents/github/build/help/C/xiphos-31-advanced-search.page:44
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/search_search.png' "
-"md5='684284bc1674c92a287ce6604da37a28'"
+"md5='0b59e6b35a7b8cac184fc8207780f489'"
 msgstr "search_search.png"
 
 #. (itstool) path: page/p
@@ -3195,25 +3406,23 @@ msgid ""
 "uppercase letter. [.;:?!] matches ., ;, :, ?, or ! but not a comma. [ ]^-] "
 "matches ] or ^ or -"
 msgstr ""
-"Les crochets « [...] » entourent un ensemble de caractères pour réaliser une "
-"correspondance dans une seule expression rationnelle. Les caractères « . », "
-"« * », « + », « ? » perdent leur caractère spécial quand ils sont placés "
-"entre crochets. Un signe « - » indique une plage de caractères. Si vous "
-"voulez qu’un caret « ^ » fasse partie de l’ensemble, ne le placez pas en "
-"premier après le crochet de gauche, sinon il sera un caractère spécial. Pour "
-"inclure un « ] » dans l’ensemble, faites en sorte qu’il soit le premier "
-"caractère (ou le deuxième après un « ^ » spécial) de l’ensemble. Pour "
-"inclure un signe « - » dans le jeu, il faut qu’il soit le premier (ou le "
-"deuxième après un « ^ » spécial) ou le dernier caractère du jeu. « [xyz] » "
-"correspond aux caractères x, y ou z. « [c-n] » correspond à tout caractère "
-"compris entre c et n. « [B-Pk-y] » correspond à tout caractère compris entre "
-"B et P et entre k et y. « [a-z0-9] » correspond à toute lettre en minuscule "
-"et à tout chiffre. « [^b-d] » correspond à tous les caractères sauf ceux "
-"compris entre b et d. Ceci est un exemple de l’inversion de la signification "
-"de l’expression rationnelle suivante grâce à l’opérateur « ^ » (prenant le "
-"même rôle que « ! » dans un contexte différent). Les séquences combinées de "
-"caractères entre crochets correspondent à des modèles de mots communs. « [Oo]"
-"[Uu][Ii] » correspond à oui, Oui, OUI, oUi et ainsi de suite."
+"Les crochets « [] » délimitent un ensemble de caractères pouvant "
+"correspondre. Le point, l’astérisque, le signe plus et le point "
+"d’interrogation ne sont pas des caractères spéciaux à l’intérieur des "
+"crochets. Un signe moins peut être utilisé pour indiquer un intervalle. Si "
+"vous voulez qu’un accent circonflexe « ^ » fasse partie de l’intervalle, ne "
+"le placez pas juste après le crochet gauche, sinon il sera interprété comme "
+"un caractère spécial. Pour inclure un « ] » dans l’ensemble, placez-le en "
+"première position (ou en seconde position après un « ^ » spécial) dans "
+"l’ensemble. Pour inclure un signe « - » dans l’ensemble, placez-le en "
+"première position (ou en seconde position après un « ^ » spécial) ou en "
+"dernière position dans l’ensemble.<em>m[eia]s</em> correspond à <em>mes</"
+"em>, <em>mis</em>, et <em>mas</em>, mais pas à <em>m</em>o<em>s</em>. "
+"<em>m[eia]+s </em>correspond aux mêmes cas que ci-dessus, mais aussi à "
+"<em>meas, mees, mies</em>, etc. <em>[a-d]</em> correspond à <em>a, b, c,</"
+"em> ou <em>d</em>. <em>[A-Z]</em> correspond à n’importe quelle lettre "
+"majuscule. [.;:?!] correspond à ., ;, :, ?, ou ! mais pas à une virgule. "
+"[ ]^-] correspond à ] ou ^ ou -"
 
 #. (itstool) path: section/title
 #: /home/cyrille/Documents/github/build/help/C/xiphos-32-search-syntax.page:200
@@ -3405,17 +3614,17 @@ msgid "Study the original Greek and Hebrew Texts."
 msgstr "Étudier les textes originaux Grecs et Hébreux."
 
 #. (itstool) path: page/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:38
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:39
 msgid "Original Language Research"
 msgstr "Étude des textes originaux"
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:42
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:43
 msgid "Installing Needed Modules"
 msgstr "Installer les modules nécessaires"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:44
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:45
 msgid ""
 "<app>Xiphos</app> is ideally suited for studying the original Greek and "
 "Hebrew. To get started, you will want the following modules:"
@@ -3424,42 +3633,42 @@ msgstr ""
 "hébreu. Pour commencer, il est recommandé d’installer les modules suivants :"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:47
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:48
 msgid "From Crosswire Repository:"
 msgstr "Dépôt Crosswire :"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:50
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:51
 msgid ""
 "StrongsHebrew Dictionary (or get StrongsRealHebrew from the Xiphos "
 "Repository)"
 msgstr "Dictionnaire FreStrongsHebrew (avec caractères hébreux)"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:54
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:55
 msgid ""
 "StrongsGreek Dictionary (or get StrongsRealGreek from the Xiphos Repository)"
 msgstr "Dictionnaire FreStrongsGreek (avec caractères grecs)"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:58
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:59
 msgid "Robinson Dictionary"
 msgstr ""
 "Dictionnaire Robinson (codes morphologiques), [NDT : équivalent français "
 "FreRobinson]"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:61
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:62
 msgid "KJV Bible"
 msgstr "Bible Louis Segond 1910 avec codes Strong et étiquettes morphologiques"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:65
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:66
 msgid "From Xiphos Repository:"
 msgstr "Dépot de Xiphos :"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:68
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:69
 msgid ""
 "StrongsRealGreek Dictionary (same as StrongsGreek, but with Greek "
 "characters, B-Greek transliteration, and self-referencing links)"
@@ -3468,7 +3677,7 @@ msgstr ""
 "Greek, et liens de renvois)"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:72
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:73
 msgid ""
 "StrongsRealHebrew Dictionary (same as StrongsHebrew, but with Hebrew "
 "characters and self-referencing links)"
@@ -3476,7 +3685,7 @@ msgstr ""
 "Dictionnaire FreStrongsHebrew (avec caractères hébreu et liens de renvois)"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:76
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:77
 msgid ""
 "InvertedStrongsRealGreek (key in or copy actual Greek word, rather than "
 "number)"
@@ -3485,55 +3694,59 @@ msgstr ""
 "dictionnaire est en anglais]"
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:84
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:85
 msgid "Setting Up"
 msgstr "Configurer"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:86
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:87
 msgid ""
 "While still in the module manager, create indexes for all of the modules you "
 "just installed. Then close the module manager and open <guiseq><gui>Edit </"
 "gui><gui> Preferences</gui></guiseq> and go to <guiseq><gui>Modules</gui> "
-"<gui>Misc</gui></guiseq>. Set your Hebrew and Greek lexicons according to "
-"what you installed. Close preferences and open the KJV module. Turn on the "
-"module options <guiseq><gui>Right Click</gui><gui>Module Options</"
-"gui><gui>Show Strongs </gui></guiseq> and <guiseq><gui>Right Click</"
-"gui><gui>Module Options </gui><gui>Show Morphology</gui></guiseq>. You "
-"should see the Bible text change to show Strongs numbers underneath the "
-"appropriate English words. Hover over the numbers (or letters for "
-"morphology) with the mouse and you will see the definition displayed in the "
-"previewer pane. Click on the link and the definition will show in the "
-"dictionary pane. If you are using StrongsRealGreek or StrongsRealHebrew, you "
-"can click on any other number referenced in the definition and you will be "
-"taken to that entry."
+"<gui>Special</gui></guiseq> (see <link xref=\"xiphos-53-preferences-"
+"modules#xiphos-modules-special\"/>). Set your Hebrew and Greek lexicons "
+"according to what you installed, and while there, also set <gui>Default "
+"Hebrew Old Testament Morphology</gui> and <gui>Default Greek New Testament "
+"Morphology</gui> so that morphological codes resolve to their meaning even "
+"in modules without their own morphology dictionary link. Close preferences "
+"and open the KJV module. Turn on the module options <guiseq><gui>Right "
+"Click</gui><gui>Module Options</gui><gui>Show Strongs </gui></guiseq> and "
+"<guiseq><gui>Right Click</gui><gui>Module Options </gui><gui>Show "
+"Morphology</gui></guiseq>. You should see the Bible text change to show "
+"Strongs numbers underneath the appropriate English words. Hover over the "
+"numbers (or letters for morphology) with the mouse and you will see the "
+"definition displayed in the previewer pane. Click on the link and the "
+"definition will show in the dictionary pane. If you are using "
+"StrongsRealGreek or StrongsRealHebrew, you can click on any other number "
+"referenced in the definition and you will be taken to that entry."
 msgstr ""
 "En restant dans le gestionnaire de modules, créez un index pour tous les "
-"modulesque vous venez d’installer. Ensuite fermez le gestionnaire de modules "
-"et ouvrez la fenêtre des préférences comme suit : <guiseq><gui>Éditer</"
-"gui><gui>·Préférences</gui></guiseq>·et allez dans·<guiseq><gui>Modules</"
-"gui><gui>Spécial</gui></guiseq>. Définissez ensuite les lexiques hébreu et "
-"grec en fonction de ceux que vous avez installés. Fermez la fenêtre des "
-"préférences. Dans la fenêtre principale, choisissez la Bible Louis Segond "
-"1910, affichez le menu contextuel par un clic droit de la souris et "
-"sélectionnez <guiseq><gui>Options du module</gui><gui>Nombres de ·Strong</"
-"gui></guiseq>·et·<guiseq><gui>Options du module</gui><gui>Étiquettes "
-"morphologiques</gui></guiseq>. Vous devriez voir l’affichage du texte "
-"biblique changer de façon à afficher les nombres de Strong sous les mots "
-"apparentés. Un survol des nombres de Strong (ou des étiquettes "
-"morphologiques) à l’aide de la souris fait apparaître la définition dans le "
-"volet <gui>Aperçu</gui>. Un clic sur le lien affichera la définition dans le "
-"volet <gui>Dictionnaire</gui>. Si vous utilisez StrongsRealGreek ou "
-"StrongsRealHebrew, vous pouvez cliquer sur n’importe quel nombre référencé "
-"dans la définition et vous serez conduits à cette index."
+"modules que vous venez d’installer. Ensuite fermez le gestionnaire de "
+"modules et ouvrez la fenêtre des préférences comme suit : "
+"<guiseq><gui>Édition</gui><gui>·Préférences</gui></guiseq>·et allez "
+"dans·<guiseq><gui>Modules</gui><gui>Spécial</gui></guiseq>. Définissez "
+"ensuite les lexiques hébreu et grec en fonction de ceux que vous avez "
+"installés. Fermez la fenêtre des préférences. Dans la fenêtre principale, "
+"choisissez la Bible Louis Segond 1910, affichez le menu contextuel par un "
+"clic droit de la souris et sélectionnez <guiseq><gui>Options du module</"
+"gui><gui>Nombres de Strong</gui></guiseq>·et·<guiseq><gui>Options du module</"
+"gui><gui>Étiquettes morphologiques</gui></guiseq>. Vous devriez voir "
+"l’affichage du texte biblique changer de façon à afficher les nombres de "
+"Strong sous les mots apparentés. Un survol des nombres de Strong (ou des "
+"étiquettes morphologiques) à l’aide de la souris fait apparaître la "
+"définition dans le volet <gui>Aperçu</gui>. Un clic sur le lien affichera la "
+"définition dans le volet <gui>Dictionnaire</gui>. Si vous utilisez "
+"FreStrongGreek ou FreStrongHebrew, vous pouvez cliquer sur n’importe quel "
+"nombre référencé dans la définition et vous serez conduits à cette index."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:105
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:111
 msgid "Searching for Strongs Numbers"
 msgstr "Rechercher des Nombres de Strong"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:107
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:113
 msgid ""
 "Choose <guiseq><gui>Edit</gui><gui>Advanced Search</gui></guiseq> or press "
 "<key>F3</key>. Under <gui>Search Type</gui>, select <gui>Optimized "
@@ -3564,19 +3777,19 @@ msgstr ""
 "la fenêtre principale."
 
 #. (itstool) path: section/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:122
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:128
 msgid "Additional Modules"
 msgstr "Modules additionnels"
 
 #. (itstool) path: section/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:124
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:130
 msgid "For more advanced research, the following modules are also available:"
 msgstr ""
 "Pour des recherches approfondies, les modules suivants sont aussi "
 "disponibles :"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:128
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:134
 msgid ""
 "2TGreek (Xiphos Repository) : This module contains the entire Bible in "
 "Greek. It combines the LXX and Tischendorf8 NT into one easy-to-use module. "
@@ -3592,7 +3805,7 @@ msgstr ""
 "format interlinéaire."
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:136
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:142
 msgid ""
 "Elzevir Textus Receptus (Crosswire Repository) : 1624 edition with Strongs "
 "and Morphology"
@@ -3601,7 +3814,7 @@ msgstr ""
 "Strongs et étiquettes morphologiques"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:139
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:145
 msgid ""
 "LXX (Crosswire Repository) : the Septuagint with Strongs, Morphology, and "
 "footnotes"
@@ -3610,7 +3823,7 @@ msgstr ""
 "morphologiques et notes de bas de page"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:143
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:149
 msgid ""
 "MorphGNT (Crosswire Repository) : This is derived from the morphologically "
 "parsed GNT provided by UPenn's CCAT. It was reformatted and error-corrected "
@@ -3622,7 +3835,7 @@ msgstr ""
 "accents grecs et les codes morphologiques."
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:149
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:155
 msgid ""
 "TR (Crosswire Repository) : This is the Textus Receptus with Strongs and "
 "Morphology"
@@ -3631,7 +3844,7 @@ msgstr ""
 "morphologiques"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:153
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:159
 msgid ""
 "TischMorph (Xiphos Repository) : As described above, this has Strongs, "
 "Morphology, accents, and alternate readings."
@@ -3640,7 +3853,7 @@ msgstr ""
 "morphologiques, les accents grecs et les variantes du texte."
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:157
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:163
 msgid ""
 "WHNU (Crosswire Repository) : Westcott-Hort of 1881 with Strongs and "
 "Morphology"
@@ -3649,7 +3862,7 @@ msgstr ""
 "étiquettes morphologiques"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:161
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:167
 msgid ""
 "GreekHebrew (Crosswire Repository) : This is a dictionary keyed to Strongs. "
 "It contains words in the LXX that are also found in the New Testament. In "
@@ -3661,7 +3874,7 @@ msgstr ""
 "de Strong associés."
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:167
+#: /home/cyrille/Documents/github/build/help/C/xiphos-33-original-language.page:173
 msgid ""
 "Didache (Crosswire Repository) : This is an early Christian treatise in "
 "Greek dated to the late first or early second century. It includes Strongs, "
@@ -3677,12 +3890,12 @@ msgid "Build up a personal commentary."
 msgstr "Se construire un commentaire personnel."
 
 #. (itstool) path: page/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:35
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:36
 msgid "Personal Commentary Editor"
 msgstr "Éditeur de commentaires personnels"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:39
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:40
 msgid ""
 "To build up a personal commentary you will need to install the editable "
 "'Personal' sword module from the English Commentaries section. Right click "
@@ -3697,7 +3910,7 @@ msgstr ""
 "guiseq>."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:44
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:45
 msgid ""
 "An editor window similar to the <gui>Study Pad</gui> will appear. Edit your "
 "comment and save it; in the future it will appear as your comment to the "
@@ -3712,34 +3925,35 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:48
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:49
+#, fuzzy
 msgctxt "_"
 msgid ""
-"external ref='figures/personal.png' md5='8e113d15df0d8fc9b8c17e6189d0d40a'"
+"external ref='figures/personal.png' md5='7de9e0ebcd82fc0c2440242f768db906'"
 msgstr "personal.png"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:50
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:55
 msgid "Locationbar"
 msgstr "Barre d’emplacement"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:53
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:58
 msgid "Synchronise Button"
 msgstr "Bouton de synchronisation"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:56
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:61
 msgid "Bible Book, Chapter and Verse Selectors"
 msgstr "Sélecteurs de livres, chapitres et versets de la Bible"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:58
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:63
 msgid "Location Summary"
 msgstr "Référence de l’emplacement"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:62
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:67
 msgid ""
 "Use the <gui>Synchronise Button</gui> to quickly change location of your "
 "editor to that of the underlying Bibletext or use the <gui>Book</gui>, "
@@ -3753,79 +3967,75 @@ msgstr ""
 "d’un verset particulier."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:67
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:50
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:72
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:51
 msgid "Toolbar 1"
 msgstr "Barre d’outils 1"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:70
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:53
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:75
 msgid "Font Size and Environment"
 msgstr "Taille de police"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:73
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:56
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:78
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:60
 msgid "Font Type"
 msgstr "Type de plice"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:76
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:59
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:81
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:57
 msgid "Bold, Italics, Underscored, Crossed Out"
 msgstr "Gras, italique, souligné, barré"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:79
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:62
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:84
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:79
 msgid "Left, Centre and Right Bound"
 msgstr "Aligné à gauche, au centre et àdroite"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:82
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:65
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:87
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:82
 msgid "Shift Paragraph Right or Left"
 msgstr "Décalage d’un paragraphe à droite ou à gauche"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:85
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:68
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:90
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:63
 msgid "Colour Selector"
 msgstr "Choix des couleurs"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:89
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:72
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:94
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:67
 msgid "Toolbar 2"
 msgstr "Barre d’outils 2"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:92
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:97
 msgid "Save, Delete and Print"
 msgstr "Enregistre, supprime et imprime"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:95
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:78
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:100
 msgid "Cut, Copy, Paste and Undo"
 msgstr "Couper, copier, coller et défaire"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:98
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:81
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:103
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:76
 msgid "Find and 'Find and Replace'"
 msgstr "Chercher et remplacer"
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:101
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:84
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:106
 msgid "Spellcheck"
 msgstr "Vérification de l’orthographe"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:105
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:88
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:110
 msgid ""
 "In order for spellcheck to be available, one of the languages under "
 "<guiseq><gui>Edit</gui><gui>Current languages</gui></guiseq> must be set."
@@ -3835,7 +4045,7 @@ msgstr ""
 "sélectionnée."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:108
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:113
 msgid ""
 "To create a link to other verses right click the text and choose <gui>Link.."
 "</gui>. In the pop-up window enter the link location and the module linked "
@@ -3846,7 +4056,7 @@ msgstr ""
 "saisissez ensuite la référence du lien et le nom du module à lier."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:112
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:117
 msgid ""
 "It is possible to rename a personal commentary to suit a particular subject "
 "of study for that commentary. Thus, multiple personal commentaries may be "
@@ -3867,7 +4077,7 @@ msgstr ""
 "renommer le commentaire personnel."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:119
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:124
 msgid ""
 "If the study embodied in a particular personal commentary is no longer "
 "needed, archival is available in the module manager, prior to removal, for "
@@ -3882,7 +4092,7 @@ msgstr ""
 "être archivé, l’archivage n’est pas réservé aux  commentaires personnels."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:124
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:129
 msgid ""
 "Although there are 31,102 verses in standard versification, it is unlikely "
 "that more than a tiny fraction of all verses will have personal commentary "
@@ -3898,7 +4108,7 @@ msgstr ""
 "souris."
 
 #. (itstool) path: note/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:131
+#: /home/cyrille/Documents/github/build/help/C/xiphos-40-personal-commentary.page:136
 msgid ""
 "The created commentary page will be attached to an individual verse only. To "
 "write commentary pages from within <app>Xiphos</app>, attached to longer "
@@ -3918,12 +4128,12 @@ msgstr ""
 "Xiphos vers d’autres programmes."
 
 #. (itstool) path: page/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:37
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:38
 msgid "The Studypad"
 msgstr "Bloc-notes"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:39
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:40
 msgid ""
 "The Studypad can be opened by choosing <guiseq><gui>File</gui><gui>Open "
 "StudyPad</gui></guiseq>"
@@ -3932,7 +4142,7 @@ msgstr ""
 "gui><gui>Ouvrir le bloc-notes</gui></guiseq>"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:42
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:43
 msgid "This is what the Studypad typically looks like:"
 msgstr "Présentation du bloc-notes :"
 
@@ -3941,14 +4151,15 @@ msgstr "Présentation du bloc-notes :"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:44
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:45
+#, fuzzy
 msgctxt "_"
 msgid ""
-"external ref='figures/studypad.png' md5='4e12bccca903cf700e1799d509f995e6'"
+"external ref='figures/studypad.png' md5='7a5daab71e5e7f830fab8edbaf3a2f11'"
 msgstr "studypad.png"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:46
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:47
 msgid ""
 "The Studypad will save into your working directory, making it useful for "
 "collecting and exporting information and Bible study material from "
@@ -3959,9 +4170,19 @@ msgstr ""
 "biblique de <app>Xiphos</app> vers d’autres applications."
 
 #. (itstool) path: item/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:75
-msgid "New, Save, Delete and Print"
-msgstr "Nouveau, enregistrer, supprimer et imprimer"
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:54
+msgid "Font Size and Level"
+msgstr "Taille de police et niveau"
+
+#. (itstool) path: item/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:70
+msgid "New, Open, Save, Undo and Redo"
+msgstr "Nouveau, Ouvrir, Enregistrer, Annuler, Rétablir"
+
+#. (itstool) path: item/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-41-studypad.page:73
+msgid "Cut, Copy, Paste"
+msgstr "Couper, copier, coller"
 
 #. (itstool) path: info/desc
 #: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:5
@@ -3969,12 +4190,12 @@ msgid "Creating a journal or prayer list."
 msgstr "Créer une note ou une liste de prières."
 
 #. (itstool) path: page/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:37
+#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:38
 msgid "Journals and Prayer Lists"
 msgstr "Listes de prières et Journaux"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:39
+#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:40
 msgid ""
 "<app>Xiphos</app> supports user-created and -editable modules to contain "
 "general content. Initially conceived as simple prayer lists, they have "
@@ -3990,7 +4211,7 @@ msgstr ""
 "structuré."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:45
+#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:46
 msgid ""
 "To enable prayer list and journal support, see the Preferences dialog as "
 "previously described. There, in <guiseq><gui>General</gui><gui> Options </"
@@ -4006,7 +4227,7 @@ msgstr ""
 "<gui>volet latéral</gui>."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:51
+#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:52
 msgid ""
 "Right-click on this entry, and you will be offered a context menu to create "
 "new modules. All the offered options are of the same type, but what is "
@@ -4023,14 +4244,15 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:56
+#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:57
+#, fuzzy
 msgctxt "_"
 msgid ""
-"external ref='figures/journal.png' md5='658993f44714b0be5b2a40a4f4a2bcd2'"
+"external ref='figures/journal.png' md5='a30886d47f4f7ea3ac190ccfe005904f'"
 msgstr "journal.png"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:58
+#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:59
 msgid ""
 "Their structure is the same, but the offered templates provide a variety of "
 "hints regarding ways to organize content. <gui>Simple</gui> is trivial, and "
@@ -4055,7 +4277,7 @@ msgstr ""
 "Genèse jusqu’à l’Apocalypse."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:71
+#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:72
 msgid ""
 "Journals and prayer lists have the structure of a general book: If simply "
 "selected for display from the module list, they will appear in the usual "
@@ -4066,14 +4288,15 @@ msgstr ""
 "trouvent donc affichés dans le volet <gui>Livre</gui>."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:75
+#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:76
 msgid ""
 "Editing a journal or prayer list is done by right-clicking the module name "
-"to get its context menu, whose middle item is <gui>Open in Editor</gui>. The "
-"sections and subsections will be listed in the left margin. Click one, and "
-"the editor navigates to that section. The context menu on right-click of "
-"section keys provides for adding, deleting, and editing the names of "
-"sections and subsections."
+"to get its context menu, whose middle item is <gui>Open in Editor</gui> "
+"(also offered as a dedicated <gui>Edit</gui> item on the same context menu, "
+"for quicker access). The sections and subsections will be listed in the left "
+"margin. Click one, and the editor navigates to that section. The context "
+"menu on right-click of section keys provides for adding, deleting, and "
+"editing the names of sections and subsections."
 msgstr ""
 "Éditer un journal ou une liste de prières se fait à l’aide de la souris en "
 "cliquant du bouton droit sur le module choisi pour faire apparaître le menu "
@@ -4084,7 +4307,7 @@ msgstr ""
 "supprimer et modifier les noms des sections et sous-sections."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:82
+#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:84
 msgid ""
 "If the general book subwindow is currently displaying the journal or prayer "
 "list being edited, it will synchronize with new content when <gui>Save</gui> "
@@ -4095,7 +4318,7 @@ msgstr ""
 "<gui>Enregistrer</gui> est activé."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:86
+#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:88
 msgid ""
 "As mentioned, these user-edited modules are in effect general books. This "
 "means they can be viewed in any Sword Project application. Thus, you can use "
@@ -4119,7 +4342,7 @@ msgstr ""
 "comme des livres ordinaires."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:95
+#: /home/cyrille/Documents/github/build/help/C/xiphos-42-journals.page:97
 msgid ""
 "In the future, it is planned that a module sharing facility will become "
 "available, by which user-edited modules such as these can be uploaded to "
@@ -4138,13 +4361,142 @@ msgstr ""
 "utilisant l’architecture logicielle du Projet SWORD."
 
 #. (itstool) path: info/desc
+#: /home/cyrille/Documents/github/build/help/C/xiphos-43-bookmarks.page:5
+msgid ""
+"Bookmark verses, organize them with colored tags, and import bookmarks from "
+"other applications."
+msgstr ""
+"Ajoutez des versets à vos favoris, classez-les à l'aide d'étiquettes "
+"colorées et importez des favoris depuis d'autres applications."
+
+#. (itstool) path: page/title
+#: /home/cyrille/Documents/github/build/help/C/xiphos-43-bookmarks.page:34
+msgid "Bookmarks and Tags"
+msgstr "Signets et étiquettes"
+
+#. (itstool) path: page/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-43-bookmarks.page:36
+msgid ""
+"Bookmarks let you mark individual verses for quick return later. Press "
+"<keyseq><key>Alt</key><key>B</key></keyseq>, or use the right-click context "
+"menu in the <gui>Bible Text Pane</gui>, to open the bookmark dialog on the "
+"current verse. Bookmarks are listed in the <gui>Sidebar</gui>, where they "
+"can be organized into folders."
+msgstr ""
+"Les signets vous permettent de marquer des versets spécifiques afin d'y "
+"revenir rapidement par la suite. Appuyez sur <keyseq><key>Alt</key><key>B</"
+"key></keyseq>, ou utilisez le menu contextuel accessible par un clic droit "
+"dans le <gui>volet du texte biblique</gui>, pour ouvrir la boîte de dialogue "
+"des signets sur le verset actuel. Les signets sont répertoriés dans la "
+"<gui>barre latérale</gui>, où ils peuvent être classés dans des dossiers."
+
+#. (itstool) path: section/title
+#: /home/cyrille/Documents/github/build/help/C/xiphos-43-bookmarks.page:45
+msgid "Coloring Tag Folders"
+msgstr "Coloriser les dossiers d'étiquettes"
+
+#. (itstool) path: section/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: /home/cyrille/Documents/github/build/help/C/xiphos-43-bookmarks.page:46
+#, fuzzy
+msgctxt "_"
+msgid ""
+"external ref='figures/bookmarks.png' md5='8b89efc549eb95c2f5b50e134316f768'"
+msgstr "sword_remove.png"
+
+#. (itstool) path: section/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-43-bookmarks.page:47
+msgid ""
+"Bookmark folders (also called tag folders) can now be given a color. Right-"
+"click a folder in the bookmark list and choose a color for it. Every verse "
+"bookmarked into that folder is then highlighted in the chosen color directly "
+"in the <gui>Bible Text Pane</gui>, giving you an at-a-glance picture of how "
+"your tags are distributed through a passage, similar to highlighting a paper "
+"Bible with different colored pens for different themes."
+msgstr ""
+"Vous pouvez désormais attribuer une couleur aux dossiers de signets "
+"(également appelés « dossiers d’étiquettes »). Cliquez avec le bouton droit "
+"sur un dossier dans la liste des signets et choisissez une couleur. Chaque "
+"verset ajouté à ce dossier sera alors mis en évidence dans la couleur "
+"choisie directement dans le <gui>volet Texte biblique</gui>, ce qui vous "
+"permettra de visualiser d'un seul coup d'œil la répartition de vos "
+"étiquettes dans un passage, un peu comme lorsque l'on surligne une Bible "
+"papier avec des stylos de différentes couleurs pour distinguer les "
+"différents thèmes."
+
+#. (itstool) path: section/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-43-bookmarks.page:54
+msgid ""
+"A verse that belongs to more than one colored tag folder, or that also "
+"carries a personal annotation, is resolved consistently so that only one "
+"color is shown; the bookmark dialog always shows you exactly which folder(s) "
+"a verse belongs to."
+msgstr ""
+"Un verset appartenant à plusieurs dossiers de balises de couleur, ou "
+"comportant également une annotation personnelle, est traité de manière "
+"cohérente afin qu'une seule couleur s'affiche ; la boîte de dialogue des "
+"signets vous indique toujours précisément à quel(s) dossier(s) appartient un "
+"verset."
+
+#. (itstool) path: section/title
+#: /home/cyrille/Documents/github/build/help/C/xiphos-43-bookmarks.page:61
+msgid "Navigating Multi-Verse References"
+msgstr "Navigation dans les références à versets multiples"
+
+#. (itstool) path: section/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-43-bookmarks.page:62
+msgid ""
+"Bookmarks and cross-references that point to more than one verse (for "
+"example, a reference spanning several verses, or several distinct references "
+"bundled together) can be navigated one at a time from a popup menu, without "
+"first sending the whole list to the sidebar's verse list. Partial verse "
+"references are also resolved correctly when building this popup, instead of "
+"only whole-verse or whole-chapter references."
+msgstr ""
+"Les signets et les références croisées qui renvoient à plusieurs versets "
+"(par exemple, une référence couvrant plusieurs versets ou plusieurs "
+"références distinctes regroupées) peuvent être parcourus un par un à partir "
+"d’un menu contextuel, sans avoir à envoyer au préalable la liste complète "
+"vers la liste des versets de la barre latérale. Les références à des parties "
+"de versets sont également traitées correctement lors de la création de ce "
+"menu contextuel, et non plus uniquement les références à des versets ou "
+"chapitres entiers."
+
+#. (itstool) path: section/title
+#: /home/cyrille/Documents/github/build/help/C/xiphos-43-bookmarks.page:75
+msgid "Importing Bookmarks From AndBible"
+msgstr "Importation de Signet depuis AndBible"
+
+#. (itstool) path: section/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-43-bookmarks.page:76
+msgid ""
+"If you also use <app>AndBible</app> (a Sword-compatible Bible app for "
+"Android) and want to bring its bookmarks into <app>Xiphos</app>, use the "
+"bookmark import function to read an AndBible bookmarks database file and "
+"convert it into <app>Xiphos</app> bookmarks. Locate the AndBible database "
+"file (copied from your Android device) when prompted, and the bookmarks it "
+"contains will be added to your existing <app>Xiphos</app> bookmarks."
+msgstr ""
+"Si vous utilisez également <app>AndBible</app> (une application biblique "
+"compatible avec Sword pour Android) et que vous souhaitez importer ses "
+"signets dans <app>Xiphos</app>, utilisez la fonction d'importation de "
+"signets pour lire un fichier de base de données de signets AndBible et le "
+"convertir en signets <app>Xiphos</app>. Lorsque vous y êtes invité, "
+"localisez le fichier de base de données AndBible (copié depuis votre "
+"appareil Android) ; les signets qu’il contient seront alors ajoutés à vos "
+"signets <app>Xiphos</app> existants."
+
+#. (itstool) path: info/desc
 #: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:5
 msgid "Locale, General Preferences and StudyPad directory."
 msgstr ""
 "Préférences générales, configuration de langue, répertoire du bloc-notes."
 
 #. (itstool) path: page/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:37
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:38
 msgid "General Settings"
 msgstr "Préférences générales"
 
@@ -4153,15 +4505,16 @@ msgstr "Préférences générales"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:40
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:41
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/preferences_general-misc.png' "
-"md5='dc15a126161c1a523f77013ee887ab3f'"
+"md5='55e7add8363577553e1f6f9a7740595c'"
 msgstr "preferences_general-misc.png"
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:42
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:43
 msgid ""
 "If you wish <app>Xiphos</app> to display its interface in a language other "
 "than the default, you may select one here. A restart will be required, so "
@@ -4173,23 +4526,26 @@ msgstr ""
 "en compte."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:46
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:47
 msgid ""
-"If you enable <gui>Default Dictionary</gui>, then that named dictionary (see "
-"<gui>Special</gui> below) module will always be used when double-clicking a "
-"word anywhere in <app>Xiphos</app>."
+"If you enable <gui>Default Dictionary</gui>, then that named dictionary "
+"(chosen on the <gui>Special</gui> tab, see <link xref=\"xiphos-53-"
+"preferences-modules#xiphos-modules-special\"/>) module will always be used "
+"when double-clicking a word anywhere in <app>Xiphos</app>."
 msgstr ""
 "Si un <gui>Dictionaire par défaut</gui> est activé, ce dictionnaire (voir "
-"<gui>Spécial</gui> ci-dessous) sera toujours utilisé lorsqu’un double-click "
+"<gui>Spécial</gui> ci-dessous) sera toujours utilisé lorsqu’un double-clic "
 "sera exécuté sur un mot, n’importe où dans <app>Xiphos</app>."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:50
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:52
 msgid ""
 "Certain dictionary-style modules are <gui>Daily Devotionals</gui> whose keys "
 "are numerically in the form \"Month.Day\". If you have such a module "
-"installed and it has been selected as your preferred devotional, then you "
-"can ask that <app>Xiphos</app> display today's selection during startup."
+"installed and it has been selected as your preferred devotional (also on the "
+"<gui>Special</gui> tab), then you can ask that <app>Xiphos</app> display "
+"today's selection during startup, and it also populates the <link "
+"xref=\"xiphos-11-interface#xiphos-devotional\">Devotional tab</link>."
 msgstr ""
 "Certains modules de type dictionnaire sont des <gui>Calendriers bibliques</"
 "gui> dont les entrées sont de la forme numérique \"Mois:Jour\" (ex : 12:25). "
@@ -4198,7 +4554,7 @@ msgstr ""
 "présenter le texte du jour lors du démarrage."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:55
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:59
 msgid ""
 "If you enable <gui>Resize images</gui>, <app>Xiphos</app> will automatically "
 "resize image content in commentaries, general books, and dictionaries so as "
@@ -4210,7 +4566,7 @@ msgstr ""
 "sont affichées."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:59
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:63
 msgid ""
 "<gui>Highlight current verse</gui>, if enabled, will cause <app>Xiphos </"
 "app> to substitute mere current verse colorization with a high-contrast "
@@ -4223,7 +4579,7 @@ msgstr ""
 "panneau de sélection de couleurs (voir ci-dessous)."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:64
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:68
 msgid ""
 "<gui>Highlight user annotations</gui> uses inverted highlight color choices "
 "when marking user-annotated verses."
@@ -4232,7 +4588,7 @@ msgstr ""
 "du surlignement pour marquer les versets annotés par l’utilisateur."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:67
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:71
 msgid ""
 "By default, <gui>Cross-references</gui> go into the Previewer. Selecting "
 "this checkbox puts them into the verse list instead."
@@ -4242,12 +4598,33 @@ msgstr ""
 "liste de versets."
 
 #. (itstool) path: page/p
-#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:70
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:74
 msgid ""
 "Verse number display can be offset in several ways provided by the "
 "checkboxes."
 msgstr ""
 "L’affichage du numéro de verset peut être agrémenté de différentes façons."
+
+#. (itstool) path: section/title
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:80
+msgid "Viewing A Whole Book"
+msgstr "Afficher un livre entier"
+
+#. (itstool) path: section/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-50-preferences-general-settings.page:81
+msgid ""
+"Normally the <gui>Bible Text Pane</gui> shows one chapter at a time. For "
+"continuous reading, or for searching visually through a book enable "
+"<gui>Display Whole Bible books</gui>, which renders every chapter of the "
+"current book in the pane at once. Unselect the option again to return to "
+"normal chapter-at-a-time display."
+msgstr ""
+"En règle générale, le <gui>volet « Texte biblique »</gui> affiche un "
+"chapitre à la fois. Pour une lecture en continu ou pour effectuer une "
+"recherche visuelle dans un livre, activez l'option <gui>Afficher l’entièreté "
+"des livres bibliques</gui>, qui affiche d'un seul coup tous les chapitres du "
+"livre en cours dans le volet. Désactivez à nouveau cette option pour revenir "
+"à l'affichage normal, chapitre par chapitre."
 
 #. (itstool) path: info/desc
 #: /home/cyrille/Documents/github/build/help/C/xiphos-51-preferences-biblesync.page:5
@@ -4404,10 +4781,11 @@ msgstr "Configurer la couleur des polices"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: /home/cyrille/Documents/github/build/help/C/xiphos-52-preferences-fonts-colors.page:44
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/preferences_fonts-color.png' "
-"md5='a42df6a82b1bcb9b87d1531a602dd94a'"
+"md5='e0c49f18ad2977c89911ccc8bd69dcdd'"
 msgstr "preferences_fonts-color.png"
 
 #. (itstool) path: section/p
@@ -4432,10 +4810,11 @@ msgstr "Configuration diverses des polices"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: /home/cyrille/Documents/github/build/help/C/xiphos-52-preferences-fonts-colors.page:57
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/preferences_fonts-misc.png' "
-"md5='a4a6d557931ba88db2cf7d7df6827a52'"
+"md5='d4e558a85bae2fd4010deaba6a838680'"
 msgstr "preferences_fonts-misc.png"
 
 #. (itstool) path: section/p
@@ -4500,33 +4879,158 @@ msgid "Modules preferences."
 msgstr "Préférences des modules."
 
 #. (itstool) path: page/title
-#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:37
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:38
 msgid "Module Settings"
 msgstr "Configuration des modules"
 
-#. (itstool) path: page/media
+#. (itstool) path: section/title
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:41
+msgid "Parallel"
+msgstr "Parallèle"
+
+#. (itstool) path: section/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:40
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:44
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/preferences_modules-parallel.png' "
-"md5='60287f9ccebbdf3644c3624158a571a3'"
+"md5='e5c9696ed867f1ce56cc73f438495348'"
 msgstr "preferences_modules-parallel.png"
 
-#. (itstool) path: page/media
+#. (itstool) path: section/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:45
+msgid ""
+"The <gui>Parallel</gui> tab lets you create sets of Bible books that you "
+"want to view side by side."
+msgstr ""
+"L'onglet <gui>Parallèle</gui> vous permet de créer des groupes de livres de "
+"la Bible que vous souhaitez afficher côte à côte."
+
+#. (itstool) path: section/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:43
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:48
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='figures/preferences_modules-misc.png' "
-"md5='49b51e0a3a5121e52471379d3da58e7e'"
+"md5='cd4f698c54f54e511360d511a85ccdce'"
 msgstr "preferences_modules-misc.png"
+
+#. (itstool) path: section/title
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:52
+msgid "Special"
+msgstr "Spécial"
+
+#. (itstool) path: section/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:54
+msgid ""
+"The <gui>Special</gui> tab gathers the default modules <app>Xiphos</app> "
+"falls back on for particular kinds of lookups, so you do not have to choose "
+"a source module every time:"
+msgstr ""
+"L'onglet <gui>Spécial</gui> regroupe les modules par défaut auxquels "
+"<app>Xiphos</app> a recours pour certains types de recherches, ce qui vous "
+"évite d'avoir à choisir un module source à chaque fois :"
+
+#. (itstool) path: item/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:60
+msgid ""
+"<gui>Daily Devotional</gui> - the Daily Devotional module used to populate "
+"the <link xref=\"xiphos-11-interface#xiphos-devotional\">Devotional tab</"
+"link>."
+msgstr ""
+"<gui>Calendrier biblique</gui> - le module « Calendrier biblique » utilisé "
+"pour alimenter l'onglet <link xref=\"xiphos-11-interface#xiphos-"
+"devotional\">Calendrier</link>."
+
+#. (itstool) path: item/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:65
+msgid ""
+"<gui>Hebrew Lexicon</gui> - the module consulted when you hover over a "
+"Strong number, so that Hebrew strong codes are shown."
+msgstr ""
+"<gui>Lexique hébreu</gui> - module qui s’affiche lorsque vous passez la "
+"souris sur un numéro Strong, afin d’afficher les codes Strong en hébreu."
+
+#. (itstool) path: item/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:70
+msgid ""
+"<gui>Greek Lexicon</gui> - the module consulted when you hover over a Strong "
+"number, so that Greek strong codes are shown."
+msgstr ""
+"<gui>Lexique grec</gui> - module qui s’affiche lorsque vous passez la souris "
+"sur un numéro Strong, afin d’afficher les codes Strong en grec."
+
+#. (itstool) path: item/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:77
+msgid ""
+"<gui>Hebrew Morphology Lexicon</gui> - the module consulted when you hover "
+"over an Old Testament in Hebrew morphology tag, so that Hebrew morphological "
+"codes resolve to their meaning even in Bible modules that do not carry their "
+"own morphology dictionary link."
+msgstr ""
+"<gui>Lexique morphologique hébreu</gui> - module consulté lorsque vous "
+"passez la souris sur une balise morphologique de l’Ancien Testament en "
+"hébreu, afin que les codes morphologiques hébreux soient associés à leur "
+"signification, même dans les modules bibliques qui ne disposent pas de leur "
+"propre lien vers un dictionnaire morphologique."
+
+#. (itstool) path: item/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:83
+msgid ""
+"<gui>OT Greek Morphology Lexicon</gui> - the equivalent setting for Old "
+"Testament morphology tags, resolving Greek morphological codes (parts of "
+"speech, tense, case, etc.)."
+msgstr ""
+"<gui>Lexique morphologique grec de l’AT</gui> - le paramètre correspondant "
+"aux balises morphologiques de l’Ancien Testament, permettant de déchiffrer "
+"les codes morphologiques grecs (catégories grammaticales, temps, cas, etc.)."
+
+#. (itstool) path: item/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:88
+msgid ""
+"<gui>NT Greek Morphology Lexicon</gui> - the equivalent setting for New "
+"Testament morphology tags, resolving Greek morphological codes (parts of "
+"speech, tense, case, etc.)."
+msgstr ""
+"<gui>Lexique morphologique du grec du NT</gui> - le paramètre correspondant "
+"aux balises morphologiques du Nouveau Testament, permettant de déchiffrer "
+"les codes morphologiques grecs (catégories grammaticales, temps, cas, etc.)."
+
+#. (itstool) path: item/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:93
+msgid ""
+"<gui>Default Dictionary</gui> - the dictionary module used when you double-"
+"click a word anywhere in <app>Xiphos</app>, if the <gui>Default Dictionary</"
+"gui> option is enabled in <link xref=\"xiphos-50-preferences-general-"
+"settings\"/>."
+msgstr ""
+"<gui>Dictionnaire par défaut</gui> : module de dictionnaire utilisé lorsque "
+"vous double-cliquez sur un mot n’importe où dans <app>Xiphos</app>, si "
+"l’option <gui>Dictionnaire par défaut</gui> est activée dans <link "
+"xref=\"xiphos-50-preferences-general-settings\"/>."
+
+#. (itstool) path: section/p
+#: /home/cyrille/Documents/github/build/help/C/xiphos-53-preferences-modules.page:100
+msgid ""
+"These selectors are populated from whatever suitable dictionary and "
+"devotional modules you already have installed; install one first from the "
+"Module Manager if the list is empty. See also <link xref=\"xiphos-33-"
+"original-language\"/> for setting these up as part of original-language "
+"study."
+msgstr ""
+"Ces sélecteurs sont alimentés à partir des modules de dictionnaires et de "
+"calendrier appropriés que vous avez déjà installés ; si la liste est vide, "
+"installez-en d'abord un via le Gestionnaire de modules. Voir également <link "
+"xref=\"xiphos-33-original-language\"/> pour savoir comment les configurer "
+"dans le cadre de l’étude de la langue originale."
 
 #. (itstool) path: info/desc
 #: /home/cyrille/Documents/github/build/help/C/xiphos-60-online-help.page:5
@@ -4629,6 +5133,22 @@ msgstr "Manuel de <app>Xiphos</app> :"
 #: /home/cyrille/Documents/github/build/help/C/xiphos-90-credits.page:104
 msgid "The SWORD Project:"
 msgstr "Le Projet SWORD :"
+
+#~ msgid ""
+#~ "Read Aloud - If you enable this, then <app>Xiphos</app> will funnel all "
+#~ "selected verses through the <app>festival</app> text-to-speech system. "
+#~ "<app>Festival</app> is a widely-available TTS, often installed by default "
+#~ "in Linux distributions."
+#~ msgstr ""
+#~ "<gui>Synthèse vocale</gui> - Quand cette option est activée, <app>Xiphos</"
+#~ "app> lit à voix haute les versets sélectionnés à l’aide du logiciel de "
+#~ "synthèse vocale <app>Festival</app>. Le moteur de synthèse vocale "
+#~ "<app>Festival</app> est largement utilisé et souvent installé par défaut "
+#~ "dans les distributions Linux. (NDT: En général, les résultats sont "
+#~ "meilleurs en anglais )."
+
+#~ msgid "New, Save, Delete and Print"
+#~ msgstr "Nouveau, enregistrer, supprimer et imprimer"
 
 #~ msgid ""
 #~ "Permission is granted to copy, distribute and/or modify this document "

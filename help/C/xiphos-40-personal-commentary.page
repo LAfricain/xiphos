@@ -8,6 +8,7 @@
 
     <revision pkgversion="4.1.0" date="2018-04-24" status="draft"/>
     <revision pkgversion="4.1.0" date="2018-05-29" status="candidate"/>
+    <revision pkgversion="4.5.0" date="2026-08-10" status="draft"/>
 
     <title type='link' role="trail"></title>
     <title type='text'>Xiphos</title>
@@ -47,6 +48,10 @@
 
   <media style="image" mime="image/png" src="figures/personal.png" />
 
+  <!-- TODO: this editor was rewritten on top of GtkTextView (commits 715f9aea,
+  5dea13c7 and follow-ups, #1283/#1289). Re-check the toolbar list, screenshot,
+  and any renamed/removed buttons below against the current build before
+  publishing. -->
   <p>Locationbar</p>
   <list>
     <item>
