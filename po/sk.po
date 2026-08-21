@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xiphos-3.1.sk.po\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-20 09:16-0500\n"
-"PO-Revision-Date: 2025-02-28 17:28+0100\n"
+"POT-Creation-Date: 2026-08-15 15:34+0200\n"
+"PO-Revision-Date: 2026-08-21 21:40+0200\n"
 "Last-Translator: Zdenko Podobny <zdposter@gmail.com>\n"
 "Language-Team: \n"
 "Language: sk\n"
@@ -18,30 +18,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2010-03-21 04:50+0000\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.9\n"
 
-#: ../src/backend/sword_main.cc:792
+#: ../src/backend/sword_main.cc:796
 msgid ""
-"Xiphos failure: \"can't happen\", display_mod: null\n"
-"Please report this. sword_main.cc:set_treekey\n"
-"What were you doing when this occurred?"
+"There is no module associated here.\n"
+"Select a module from general books."
 msgstr ""
-"Zlyhanie Xiphos: \"nemôže sa stať\", display_mod: null\n"
-"Prosím toto nahláste. sword_main.cc:set_treekey\n"
-"Čo ste robili, keď sa toto stalo?"
+"Nie je tu priradený žiadny modul.\n"
+"Vyberte modul zo všeobecných kníh."
 
-#: ../src/backend/sword_main.cc:1149
+#: ../src/backend/sword_main.cc:1172
 msgid "Configuration not found"
 msgstr "Konfigurácia nebola nájdená"
 
-#: ../src/editor/slib-editor.c:198 ../src/editor/webkit_editor.c:625
+#: ../src/editor/slib-editor.c:198 ../src/editor/webkit_editor.c:629
 #: ../ui/editor_studypad.xml.h:9 ../ui/gtk2_webedit.ui.h:58
 #: ../ui/gtk_webedit.ui.h:58
 msgid "Open"
 msgstr "Otvoriť"
 
 #: ../src/editor/slib-editor.c:201 ../src/editor/slib-editor.c:241
-#: ../src/gtk/dialog.c:268 ../src/gtk/dialog.c:636 ../src/gtk/main_menu.c:773
+#: ../src/gtk/dialog.c:268 ../src/gtk/dialog.c:636 ../src/gtk/main_menu.c:798
 #: ../ui/bookmarks.gtkbuilder.h:5 ../ui/export-dialog.gtkbuilder.h:2
 #: ../ui/gtk_webedit.ui.h:85 ../ui/markverse.gtkbuilder.h:7
 #: ../ui/module-manager.gtkbuilder.h:18
@@ -49,7 +47,7 @@ msgid "_Cancel"
 msgstr "_Zrušiť"
 
 #: ../src/editor/slib-editor.c:202 ../src/editor/slib-editor.c:242
-#: ../src/editor/slib-editor.c:538 ../src/gtk/main_menu.c:774
+#: ../src/editor/slib-editor.c:538 ../src/gtk/main_menu.c:799
 msgid "_Open"
 msgstr "_Otvoriť"
 
@@ -59,7 +57,7 @@ msgid "Save As"
 msgstr "Uložiť ako"
 
 #: ../src/editor/slib-editor.c:262 ../src/editor/slib-editor.c:421
-#: ../src/editor/webkit_editor.c:708
+#: ../src/editor/webkit_editor.c:712
 msgid "Untitled document"
 msgstr "Nepomenovaný dokument"
 
@@ -67,7 +65,7 @@ msgstr "Nepomenovaný dokument"
 msgid "_Close"
 msgstr "_Zatvoriť"
 
-#: ../src/editor/slib-editor.c:440 ../src/editor/webkit_editor.c:331
+#: ../src/editor/slib-editor.c:440 ../src/editor/webkit_editor.c:335
 msgid "Are you sure you want to delete the note for"
 msgstr "Ste si istý, že chcete zmazať poznámku pre"
 
@@ -159,36 +157,44 @@ msgid "Insert Link"
 msgstr "Vložiť prepojenie"
 
 #: ../src/editor/slib-editor.c:1031 ../src/editor/slib-editor.c:1072
-#: ../src/editor/webkit_editor.c:1193 ../src/editor/webkit_editor.c:1233
+#: ../src/editor/webkit_editor.c:1197 ../src/editor/webkit_editor.c:1237
 msgid "Save the changes to document"
 msgstr "Uložiť zmeny v dokumente"
 
 #: ../src/editor/slib-editor.c:1032 ../src/editor/slib-editor.c:1073
-#: ../src/editor/webkit_editor.c:1194 ../src/editor/webkit_editor.c:1234
+#: ../src/editor/webkit_editor.c:1198 ../src/editor/webkit_editor.c:1238
 msgid "before closing?"
 msgstr "pred zatvorením?"
 
 #: ../src/editor/slib-editor.c:1037 ../src/editor/slib-editor.c:1078
-#: ../src/editor/webkit_editor.c:1198 ../src/editor/webkit_editor.c:1238
+#: ../src/editor/webkit_editor.c:1202 ../src/editor/webkit_editor.c:1242
 msgid "If you don't save, changes will be permanently lost."
 msgstr "Ak ich neuložíte, zmeny sa natrvalo stratia."
 
-#: ../src/editor/slib-editor.c:1071 ../src/editor/webkit_editor.c:1232
-#: ../ui/xi-menus.glade.h:61 ../ui/xi-menus-popup.gtkbuilder.h:39
+#: ../src/editor/slib-editor.c:1071 ../src/editor/webkit_editor.c:1236
+#: ../ui/xi-menus.glade.h:63 ../ui/xi-menus-popup.gtkbuilder.h:48
 msgid "File"
 msgstr "Súbor"
 
-#: ../src/editor/slib-editor.c:1123 ../src/editor/webkit_editor.c:1275
+#: ../src/editor/slib-editor.c:1123 ../src/editor/webkit_editor.c:1279
 msgid "StudyPad"
 msgstr "Poznámkový blok"
 
-#: ../src/editor/slib-editor.c:1138 ../src/editor/webkit_editor.c:1290
+#: ../src/editor/slib-editor.c:1138 ../src/editor/webkit_editor.c:1294
 msgid "Note Editor"
 msgstr "Editor poznámok"
 
-#: ../src/editor/slib-editor.c:1156 ../src/editor/webkit_editor.c:1307
+#: ../src/editor/slib-editor.c:1156 ../src/editor/webkit_editor.c:1311
 msgid "Prayer List/Journal Editor"
 msgstr "Modlitebný zoznam/Editor zápisník"
+
+#: ../src/editor/webkit_editor.c:40
+msgid ""
+"The editor is disabled on this platform due to missing dependencies.\n"
+"We hope to re-enable it in a future release."
+msgstr ""
+"Editor je na tejto platforme deaktivovaný z dôvodu chýbajúcich závislostí.\n"
+"Dúfame, že ho v budúcej verzii znova povolíme."
 
 #: ../src/gtk/about_modules.c:142
 msgid "About Sword Module"
@@ -200,169 +206,169 @@ msgstr "O Sword module"
 msgid "Close"
 msgstr "Zatvoriť"
 
-#: ../src/gtk/about_modules.c:415
+#: ../src/gtk/about_modules.c:436
 msgid "<b>Module name:</b> "
 msgstr "<b>Názov modulu:</b> "
 
-#: ../src/gtk/about_modules.c:422
+#: ../src/gtk/about_modules.c:443
 msgid "<b>Module abbreviation:</b> "
 msgstr "<b>Skratka modulu</b> "
 
-#: ../src/gtk/about_modules.c:427
+#: ../src/gtk/about_modules.c:448
 msgid "<b>Version:</b> "
 msgstr "<b>Verzia:</b> "
 
-#: ../src/gtk/about_modules.c:430
+#: ../src/gtk/about_modules.c:451
 msgid "No version stamp found"
 msgstr "Nebola nájdená pečiatka verzie"
 
-#: ../src/gtk/about_modules.c:433
+#: ../src/gtk/about_modules.c:454
 msgid "<b>Type:</b> "
 msgstr "<b>Typ:</b> "
 
-#: ../src/gtk/about_modules.c:435
+#: ../src/gtk/about_modules.c:456
 msgid "Daily Devotion"
 msgstr "Denné zamyslenie"
 
-#: ../src/gtk/about_modules.c:437 ../src/gtk/mod_mgr.c:1554
-#: ../src/gtk/utilities.c:609 ../src/main/sidebar.cc:1029
-#: ../src/main/sidebar.cc:1031
+#: ../src/gtk/about_modules.c:458 ../src/gtk/mod_mgr.c:1647
+#: ../src/gtk/utilities.c:621 ../src/main/sidebar.cc:990
+#: ../src/main/sidebar.cc:1383 ../src/main/sidebar.cc:1385
 msgid "Maps"
 msgstr "Mapy"
 
-#: ../src/gtk/about_modules.c:439 ../src/gtk/mod_mgr.c:1558
-#: ../src/gtk/utilities.c:615 ../src/main/sidebar.cc:1038
-#: ../src/main/sidebar.cc:1040
+#: ../src/gtk/about_modules.c:460 ../src/gtk/mod_mgr.c:1653
+#: ../src/gtk/utilities.c:627 ../src/main/sidebar.cc:992
+#: ../src/main/sidebar.cc:1394 ../src/main/sidebar.cc:1396
 msgid "Images"
 msgstr "Obrázky"
 
-#: ../src/gtk/about_modules.c:441
+#: ../src/gtk/about_modules.c:462
 msgid "Glossary"
 msgstr "Glosár"
 
-#: ../src/gtk/about_modules.c:445
+#: ../src/gtk/about_modules.c:466
 msgid "Cult"
 msgstr "Kultické"
 
-#: ../src/gtk/about_modules.c:449 ../src/gtk/search_sidebar.c:287
+#: ../src/gtk/about_modules.c:470 ../src/gtk/search_sidebar.c:287
 msgid "Bible"
 msgstr "Biblia"
 
-#: ../src/gtk/about_modules.c:452 ../src/gtk/search_sidebar.c:295
-#: ../ui/prefs.glade.h:145 ../ui/prefs.gtkbuilder.h:149
+#: ../src/gtk/about_modules.c:473 ../src/gtk/search_sidebar.c:295
+#: ../ui/prefs.glade.h:148 ../ui/prefs.gtkbuilder.h:143
 msgid "Commentary"
 msgstr "Komentár"
 
-#: ../src/gtk/about_modules.c:455 ../ui/prefs.glade.h:147
-#: ../ui/prefs.gtkbuilder.h:151
+#: ../src/gtk/about_modules.c:476 ../src/gtk/main_window.c:1238
+#: ../ui/prefs.glade.h:150 ../ui/prefs.gtkbuilder.h:145
 msgid "Dictionary"
 msgstr "Slovník"
 
-#: ../src/gtk/about_modules.c:458
+#: ../src/gtk/about_modules.c:479
 msgid "General Book"
 msgstr "Všeobecná kniha"
 
-#: ../src/gtk/about_modules.c:463
+#: ../src/gtk/about_modules.c:484
 msgid "Personal Commentary"
 msgstr "Osobný komentár"
 
-#: ../src/gtk/about_modules.c:466
+#: ../src/gtk/about_modules.c:487
 msgid "Journal"
 msgstr "Denník"
 
-#: ../src/gtk/about_modules.c:469
+#: ../src/gtk/about_modules.c:490
 msgid "Unknown type"
 msgstr "Neznámy typ"
 
-#: ../src/gtk/about_modules.c:475
+#: ../src/gtk/about_modules.c:496
 msgid "<b>Language:</b> "
 msgstr "<b>Jazyk:</b> "
 
-#: ../src/gtk/about_modules.c:478
+#: ../src/gtk/about_modules.c:499
 msgid "Not specified"
 msgstr "Nie je určené"
 
-#: ../src/gtk/about_modules.c:487
+#: ../src/gtk/about_modules.c:508
 msgid "<b>Installed size:</b> "
 msgstr "<b>Veľkosť inštalácie:</b> "
 
-#: ../src/gtk/about_modules.c:495
+#: ../src/gtk/about_modules.c:516
 msgid "<b>Companion module(s):</b></br>"
 msgstr "<b>Sprievodný modul(y):</b></br>"
 
-#: ../src/gtk/about_modules.c:505
+#: ../src/gtk/about_modules.c:526
 msgid "<b>Features:</b>"
 msgstr "<b>Vlastnosti:</b>"
 
-#: ../src/gtk/about_modules.c:509
+#: ../src/gtk/about_modules.c:530
 msgid "*&nbsp;Headings"
 msgstr "*&nbsp;Nadpisy"
 
-#: ../src/gtk/about_modules.c:517
+#: ../src/gtk/about_modules.c:538
 msgid "*&nbsp;Footnotes"
 msgstr "*&nbsp;Poznámky pod čiarou"
 
-#: ../src/gtk/about_modules.c:523
+#: ../src/gtk/about_modules.c:544
 msgid "*&nbsp;Cross references"
 msgstr "*&nbsp;Krížové referencie"
 
-#: ../src/gtk/about_modules.c:530
+#: ../src/gtk/about_modules.c:551
 msgid "*&nbsp;Strong's numbers"
 msgstr "*&nbsp;Strongové čísla"
 
-#: ../src/gtk/about_modules.c:538
+#: ../src/gtk/about_modules.c:559
 msgid "*&nbsp;Morphological tags"
 msgstr "*&nbsp;Morfologické značky"
 
-#: ../src/gtk/about_modules.c:544
+#: ../src/gtk/about_modules.c:565
 msgid "*&nbsp;Lemmas"
 msgstr "*&nbsp;Lemy"
 
-#: ../src/gtk/about_modules.c:552
+#: ../src/gtk/about_modules.c:573
 msgid "*&nbsp;Words of Christ in red"
 msgstr "*&nbsp;Kristove slová červenou farbou"
 
-#: ../src/gtk/about_modules.c:557
+#: ../src/gtk/about_modules.c:578
 msgid "*&nbsp;Greek accents"
 msgstr "*&nbsp;Grécke akcenty"
 
-#: ../src/gtk/about_modules.c:563
+#: ../src/gtk/about_modules.c:584
 msgid "*&nbsp;Hebrew Vowel Points"
 msgstr "*&nbsp;Body hebrejských samohlások"
 
-#: ../src/gtk/about_modules.c:569
+#: ../src/gtk/about_modules.c:590
 msgid "*&nbsp;Hebrew Cantillation"
 msgstr "*&nbsp;Hebrejské vokalizácia"
 
-#: ../src/gtk/about_modules.c:575
+#: ../src/gtk/about_modules.c:596
 msgid "*&nbsp;Variant readings"
 msgstr "*&nbsp;Varianty čítania"
 
-#: ../src/gtk/about_modules.c:582
+#: ../src/gtk/about_modules.c:603
 msgid "*&nbsp;Transliteration forms"
 msgstr "*&nbsp;Formy prepisu"
 
-#: ../src/gtk/about_modules.c:587
+#: ../src/gtk/about_modules.c:608
 msgid "*&nbsp;Enumerations"
 msgstr "*&nbsp;Vymenovania"
 
-#: ../src/gtk/about_modules.c:592
+#: ../src/gtk/about_modules.c:613
 msgid "*&nbsp;Glosses"
 msgstr "*&nbsp;Glosáre"
 
-#: ../src/gtk/about_modules.c:599
+#: ../src/gtk/about_modules.c:620
 msgid "*&nbsp;Morpheme Segmentation"
 msgstr "*&nbsp;Segmentácia morfém"
 
-#: ../src/gtk/about_modules.c:606
+#: ../src/gtk/about_modules.c:627
 msgid "*&nbsp;<i>No features found</i>"
 msgstr "*&nbsp;<i>Vlastnosti neboli nájdené</i>"
 
-#: ../src/gtk/about_modules.c:616
+#: ../src/gtk/about_modules.c:637
 msgid "<b>Distribution license:</b>"
 msgstr "<b>Licencia distribúcie:</b>"
 
-#: ../src/gtk/about_modules.c:629
+#: ../src/gtk/about_modules.c:650
 msgid "<b>Promotional:</b> "
 msgstr "<b>Propagačné</b> "
 
@@ -381,7 +387,7 @@ msgstr ""
 "na výskum a štúdium Boha a Jeho Slova. Rámec projektu umožňuje jednoduché "
 "používanie a štúdium biblických textov, komentárov, lexikónov, slovníkov a "
 "iných kníh. Veľa používateľských rozhraní je vytvorených pomocou tohto "
-"rámca. Nainštalovanú sadu kníh možno zdieľať medzi všetkými aplikáciami "
+"rámca. Nainštalovaný súbor kníh možno zdieľať medzi všetkými aplikáciami "
 "pomocou rámca.\n"
 "\n"
 " Knihy si môžete stiahnuť z The SWORD Project."
@@ -461,11 +467,11 @@ msgstr "Pozrite si TRANSLATION-HOWTO v zdrojovom kóde Xiphosu"
 msgid "Xiphos development"
 msgstr "Xiphos vývoj"
 
-#: ../src/gtk/about_xiphos.c:129
+#: ../src/gtk/about_xiphos.c:132
 msgid "Copyright © 2000-2026 Xiphos Development Team"
 msgstr "Copyright © 2000-2026 Xiphos vývojový Tím"
 
-#: ../src/gtk/about_xiphos.c:131
+#: ../src/gtk/about_xiphos.c:134
 msgid ""
 "\n"
 "Powered by The SWORD Project.\n"
@@ -477,80 +483,135 @@ msgstr ""
 "Ďakujeme Troyovi Griffittsovi a všetkým ostatným, ktorý vytvorili pre nás "
 "The SWORD Project."
 
-#. info->stock_icon = GTK_STOCK_OPEN;
-#: ../src/gtk/bookmark_dialog.c:163 ../src/gtk/bookmarks_menu.c:361
-#: ../src/gtk/bookmarks_menu.c:653 ../src/gtk/bookmarks_menu.c:753
-#: ../src/gtk/bookmarks_treeview.c:138 ../ui/editor_studypad.xml.h:15
-#: ../ui/xi-menus.glade.h:58 ../ui/xi-menus-popup.gtkbuilder.h:36
-msgid "Bookmark"
-msgstr "Záložka"
+#. Cette ligne est commune, on la sort du #ifdef
+#: ../src/gtk/bookmark_dialog.c:79 ../src/gtk/bookmark_dialog.c:220
+#: ../src/gtk/bookmarks_menu.c:84 ../src/gtk/bookmarks_menu.c:660
+#: ../src/gtk/bookmarks_menu.c:1109
+msgid "Add color"
+msgstr "Pridať farbu"
 
-#: ../src/gtk/bookmark_dialog.c:165 ../src/gtk/bookmarks_menu.c:755
-#: ../src/gtk/bookmarks_treeview.c:139
-msgid "Enter Folder Name"
-msgstr "Vložiť názov priečinku"
+#. colorbtn clicked — enable "No color"
+#: ../src/gtk/bookmark_dialog.c:79 ../src/gtk/bookmark_dialog.c:230
+#: ../src/gtk/bookmarks_menu.c:77 ../src/gtk/bookmarks_menu.c:82
+#: ../src/gtk/bookmarks_menu.c:84 ../src/gtk/bookmarks_menu.c:672
+#: ../src/gtk/bookmarks_menu.c:1120 ../ui/folder.gtkbuilder.h:5
+msgid "No color"
+msgstr "Bez farby"
 
-#: ../src/gtk/bookmark_dialog.c:167 ../src/gtk/bookmarks_menu.c:757
-msgid "Folder Name"
-msgstr "Názov priečinku"
+#: ../src/gtk/bookmark_dialog.c:115 ../src/gtk/bookmarks_menu.c:726
+msgid "Bookmark labels may not contain \"@:@:@\"."
+msgstr "Štítky záložiek nesmú obsahovať \"@:@:@\"."
 
-#: ../src/gtk/bookmark_dialog.c:168 ../src/gtk/bookmarks_menu.c:758
-#: ../src/gtk/bookmarks_treeview.c:141
-msgid "Folder: "
-msgstr "Priečinok: "
+#: ../src/gtk/bookmark_dialog.c:216
+msgid "New Tag"
+msgstr "Nová značka"
 
-#: ../src/gtk/bookmarks_menu.c:200
+#: ../src/gtk/bookmarks_menu.c:225
 msgid "Specify bookmarks file"
 msgstr "Uveďte súbor so záložkami"
 
-#: ../src/gtk/bookmarks_menu.c:350 ../ui/xi-menus.glade.h:63
-#: ../ui/xi-menus-popup.gtkbuilder.h:29
+#: ../src/gtk/bookmarks_menu.c:278 ../src/gtk/bookmarks_menu.c:323
+#: ../src/gtk/bookmarks_menu.c:407 ../src/gtk/bookmarks_menu.c:434
+msgid "Import AndBible"
+msgstr "Importovať AndBible"
+
+#: ../src/gtk/bookmarks_menu.c:367
+msgid "Select AndBible bookmarks backup (.sqlite3)"
+msgstr "Vybrať zálohu záložiek AndBible (.sqlite3)"
+
+#: ../src/gtk/bookmarks_menu.c:378
+msgid "AndBible backup (*.sqlite3)"
+msgstr "AndBible záloha (.sqlite3)"
+
+#: ../src/gtk/bookmarks_menu.c:394
+msgid ""
+"An 'Import AndBible' folder already exists and will be replaced by this "
+"import. Continue?"
+msgstr ""
+"Priečinok „Importovať AndBible“ už existuje a bude nahradený týmto importom. "
+"Chcete pokračovať?"
+
+#: ../src/gtk/bookmarks_menu.c:413
+msgid "Unknown error"
+msgstr "Neznáma chyba"
+
+#: ../src/gtk/bookmarks_menu.c:442
+#, c-format
+msgid "%d bookmark(s) imported, %d skipped."
+msgstr "%d importovaných, %d preskočených záložiek."
+
+#: ../src/gtk/bookmarks_menu.c:646
+msgid "Edit Tag"
+msgstr "Upraviť značku"
+
+#: ../src/gtk/bookmarks_menu.c:710 ../ui/xi-menus.glade.h:65
+#: ../ui/xi-menus-popup.gtkbuilder.h:35
 msgid "Edit"
 msgstr "Upraviť"
 
-#: ../src/gtk/bookmarks_menu.c:364
-msgid "Folder name: "
-msgstr "Názov priečinku: "
+#: ../src/gtk/bookmarks_menu.c:711 ../src/gtk/bookmarks_menu.c:984
+#: ../src/gtk/bookmarks_treeview.c:139 ../ui/editor_studypad.xml.h:15
+#: ../ui/xi-menus.glade.h:60 ../ui/xi-menus-popup.gtkbuilder.h:45
+msgid "Bookmark"
+msgstr "Záložka"
 
-#: ../src/gtk/bookmarks_menu.c:367
+#: ../src/gtk/bookmarks_menu.c:713
 msgid "Bookmark name: "
 msgstr "Názov záložky: "
 
-#: ../src/gtk/bookmarks_menu.c:370 ../src/gtk/bookmarks_menu.c:661
+#: ../src/gtk/bookmarks_menu.c:717 ../src/gtk/bookmarks_menu.c:992
 msgid "Verse: "
 msgstr "Verš: "
 
-#: ../src/gtk/bookmarks_menu.c:371 ../src/gtk/bookmarks_menu.c:662
+#: ../src/gtk/bookmarks_menu.c:718 ../src/gtk/bookmarks_menu.c:993
 msgid "Module: "
 msgstr "Modul: "
 
-#: ../src/gtk/bookmarks_menu.c:493
+#: ../src/gtk/bookmarks_menu.c:824
 msgid "Remove the selected folder"
 msgstr "Odstrániť označený priečinok"
 
-#: ../src/gtk/bookmarks_menu.c:494
+#: ../src/gtk/bookmarks_menu.c:825
 msgid "(and all its contents)?"
 msgstr "(a všetko, čo obsahuje)?"
 
-#: ../src/gtk/bookmarks_menu.c:498
+#: ../src/gtk/bookmarks_menu.c:829
 msgid "Remove the selected bookmark"
 msgstr "Odstrániť označenú záložku"
 
-#: ../src/gtk/bookmarks_menu.c:654
+#: ../src/gtk/bookmarks_menu.c:985
 msgid "Add"
 msgstr "Pridať"
 
-#: ../src/gtk/bookmarks_menu.c:660
+#: ../src/gtk/bookmarks_menu.c:991
 msgid "Label: "
 msgstr "Menovka: "
 
-#: ../src/gtk/bookmarks_treeview.c:102 ../src/gtk/export_bookmarks.c:172
-#: ../src/gtk/export_bookmarks.c:229
+#: ../src/gtk/bookmarks_menu.c:1107 ../ui/bookmarks.glade.h:4
+#: ../ui/bookmarks.gtkbuilder.h:4 ../ui/xi-menus.glade.h:123
+#: ../ui/xi-menus-popup.gtkbuilder.h:5
+msgid "New Folder"
+msgstr "Nový priečinok"
+
+#: ../src/gtk/bookmarks_menu.c:1231
+msgid "Choose folder color"
+msgstr "Zvoľte farbu priečinka"
+
+#: ../src/gtk/bookmarks_treeview.c:103 ../src/gtk/export_bookmarks.c:182
+#: ../src/gtk/export_bookmarks.c:240
 #, c-format
 msgid "Search result: %s"
 msgstr "Výsledky hľadania: %s"
 
-#: ../src/gtk/bookmarks_treeview.c:747
+#: ../src/gtk/bookmarks_treeview.c:140
+msgid "Enter Folder Name"
+msgstr "Vložiť názov priečinku"
+
+#: ../src/gtk/bookmarks_treeview.c:142
+msgid "Folder: "
+msgstr "Priečinok: "
+
+#: ../src/gtk/bookmarks_treeview.c:875
 msgid ""
 "Opening a multi-reference bookmark in\n"
 "separate tabs is not supported."
@@ -558,8 +619,8 @@ msgstr ""
 "Otvorenie multireferenčnej záložky v\n"
 "samostatnej karte nie sú podporované."
 
-#: ../src/gtk/bookmarks_treeview.c:850 ../src/gtk/sidebar.c:1480
-#: ../src/gtk/sidebar.c:1532
+#: ../src/gtk/bookmarks_treeview.c:1195 ../src/gtk/sidebar.c:1652
+#: ../src/gtk/sidebar.c:1704
 msgid "Bookmarks"
 msgstr "Záložky"
 
@@ -600,21 +661,33 @@ msgstr "Xiphos:"
 msgid "Close _without Saving"
 msgstr "Zavrieť _bez uloženia"
 
-#: ../src/gtk/dictlex.c:374
+#: ../src/gtk/dictlex.c:379
 msgid "Do sidebar search for this Strong's number"
 msgstr "Pre toto Strongovo číslo použite vyhľadávacie v bočnom paneli"
 
-#: ../src/gtk/export_bookmarks.c:175 ../src/gtk/export_bookmarks.c:232
-#: ../src/gtk/sidebar.c:1502 ../src/gtk/sidebar.c:1550
+#: ../src/gtk/dictlex.c:403
+msgid "Go back in history"
+msgstr "Pohyb dozadu v histórií"
+
+#: ../src/gtk/dictlex.c:418
+msgid "Go forward in history"
+msgstr "Pohyb dopredu v histórií"
+
+#: ../src/gtk/dictlex.c:627
+msgid "Click to choose a date"
+msgstr "Kliknutím zvoľte dátum"
+
+#: ../src/gtk/export_bookmarks.c:185 ../src/gtk/export_bookmarks.c:243
+#: ../src/gtk/sidebar.c:1674 ../src/gtk/sidebar.c:1722
 #, c-format
 msgid "Verse List"
 msgstr "Zoznam veršov"
 
-#: ../src/gtk/export_bookmarks.c:659
+#: ../src/gtk/export_bookmarks.c:680
 msgid "VerseList"
 msgstr "ZoznamVeršov"
 
-#: ../src/gtk/export_bookmarks.c:663
+#: ../src/gtk/export_bookmarks.c:684
 msgid "SearchResults"
 msgstr "VýsledkyHľadania"
 
@@ -658,7 +731,6 @@ msgid "Current font: "
 msgstr "Aktuálne písmo: "
 
 #: ../src/gtk/font_dialog.c:376 ../src/gtk/font_dialog.c:391
-#: ../ui/prefs.gtkbuilder.h:3
 msgid "+0"
 msgstr "+0"
 
@@ -666,9 +738,21 @@ msgstr "+0"
 msgid "Display columns"
 msgstr "Zobraziť stĺpce"
 
-#: ../src/gtk/font_dialog.c:427
+#: ../src/gtk/font_dialog.c:414 ../src/gtk/font_dialog.c:429
+msgid "default"
+msgstr "prednastavené"
+
+#: ../src/gtk/font_dialog.c:435
 msgid "Use the default font for this module"
 msgstr "Použiť štandardné písmo pre tento modul"
+
+#: ../src/gtk/font_dialog.c:464 ../src/gtk/preferences_dialog.c:3264
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: ../src/gtk/font_dialog.c:473
+msgid "OK"
+msgstr "OK"
 
 #: ../src/gtk/gui.c:107
 msgid "BUG! Xiphos is about to crash due to a \"STRDUP\" error."
@@ -682,75 +766,79 @@ msgstr "Nahláste túto chybu tímu Xiphos cez:"
 msgid "BUG! Xiphos is about to crash due to a \"STRING\" error."
 msgstr "CHYBA! Xiphos sa čoskoro spadne kvôli chybe „STRING“."
 
-#: ../src/gtk/main_menu.c:653
+#: ../src/gtk/main_menu.c:678
 msgid "Save Session"
 msgstr "Uložiť reláciu"
 
-#: ../src/gtk/main_menu.c:769
+#: ../src/gtk/main_menu.c:794
 msgid "Open Session"
 msgstr "Otvoriť reláciu"
 
-#: ../src/gtk/main_window.c:576
+#: ../src/gtk/main_window.c:577
 #, c-format
 msgid "Module has no support for %s."
 msgstr "Modul nemá podporu pre %s."
 
-#: ../src/gtk/main_window.c:627
+#: ../src/gtk/main_window.c:628
 msgid "BibleSync is not active."
 msgstr "BibleSync nie je aktívny."
 
-#: ../src/gtk/main_window.c:635
+#: ../src/gtk/main_window.c:636
 msgid "BibleSync Chat"
 msgstr "BibleSync čat"
 
-#: ../src/gtk/main_window.c:636
+#: ../src/gtk/main_window.c:637
 msgid "[say this]"
 msgstr "[povedz toto]"
 
-#: ../src/gtk/main_window.c:637
+#: ../src/gtk/main_window.c:638
 msgid "Comment:"
 msgstr "Komentár:"
 
-#: ../src/gtk/main_window.c:677
+#: ../src/gtk/main_window.c:678
 msgid "Xiphos: No windows."
 msgstr "Xiphos: Bez okien."
 
-#: ../src/gtk/main_window.c:733
+#: ../src/gtk/main_window.c:739
 msgid "BibleSync: Current navigation sent."
 msgstr "BibleSync: Aktuálna navigácia odoslaná."
 
-#: ../src/gtk/main_window.c:735
+#: ../src/gtk/main_window.c:741
 msgid "BibleSync: Not speaking."
 msgstr "BibleSync: Nekomunikuje."
 
-#: ../src/gtk/main_window.c:1013
+#: ../src/gtk/main_window.c:1055
 msgid "Xiphos - Bible Study Software"
 msgstr "Xiphos - aplikácia pre štúdium Biblie"
 
-#: ../src/gtk/main_window.c:1077
+#: ../src/gtk/main_window.c:1119
 msgid "Open a new tab"
 msgstr "Otvoriť novú kartu"
 
-#: ../src/gtk/main_window.c:1132 ../src/gtk/sidebar.c:578
-#: ../src/gtk/sidebar.c:583 ../src/main/sidebar.cc:655
-#: ../src/main/sidebar.cc:975 ../src/main/sidebar.cc:976
-#: ../src/main/sidebar.cc:977
+#: ../src/gtk/main_window.c:1174 ../src/gtk/sidebar.c:606
+#: ../src/gtk/sidebar.c:641 ../src/main/sidebar.cc:654
+#: ../src/main/sidebar.cc:1318 ../src/main/sidebar.cc:1319
+#: ../src/main/sidebar.cc:1320
 msgid "Standard View"
 msgstr "Štandardné zobrazenie"
 
-#: ../src/gtk/main_window.c:1172
+#: ../src/gtk/main_window.c:1214
 msgid "Commentary View"
 msgstr "Zobrazenie komentára"
 
-#: ../src/gtk/main_window.c:1180
+#: ../src/gtk/main_window.c:1222
 msgid "Book View"
 msgstr "Zobrazenie knihy"
 
-#: ../src/gtk/main_window.c:1195
+#: ../src/gtk/main_window.c:1247
+msgid "Devotional"
+msgstr "Denné zamyslenie"
+
+#: ../src/gtk/main_window.c:1261
 msgid "Welcome to Xiphos"
 msgstr "Vitajte v Xiphose"
 
-#: ../src/gtk/menu_popup.c:1319
+#: ../src/gtk/menu_popup.c:1382
 msgid ""
 "Renaming is not available in Windows.\n"
 "\n"
@@ -770,33 +858,33 @@ msgstr ""
 " Preto v prostredí Windows nie je dostupné\n"
 "premenovanie osobného komentára."
 
-#: ../src/gtk/menu_popup.c:1338
+#: ../src/gtk/menu_popup.c:1400
 msgid "Rename Commentary"
 msgstr "Premenovať komentár"
 
-#: ../src/gtk/menu_popup.c:1341
+#: ../src/gtk/menu_popup.c:1403
 msgid "Choose Commentary Name"
 msgstr "Vyberte názov pre komentár"
 
-#: ../src/gtk/menu_popup.c:1343
+#: ../src/gtk/menu_popup.c:1405
 msgid "New Name"
 msgstr "Nový názov"
 
-#: ../src/gtk/menu_popup.c:1344 ../src/gtk/treekey-editor.c:138
+#: ../src/gtk/menu_popup.c:1406 ../src/gtk/treekey-editor.c:138
 #: ../src/gtk/treekey-editor.c:195 ../src/gtk/treekey-editor.c:293
 #: ../src/main/prayerlists.cc:235
 msgid "Name: "
 msgstr "Názov: "
 
-#: ../src/gtk/menu_popup.c:1353 ../src/main/prayerlists.cc:248
+#: ../src/gtk/menu_popup.c:1415 ../src/main/prayerlists.cc:248
 msgid "Module names must contain [A-Za-z0-9_] only."
 msgstr "Názvy modulov môžu obsahovať iba znaky [A-Za-z0-9_]."
 
-#: ../src/gtk/menu_popup.c:1359 ../src/main/prayerlists.cc:254
+#: ../src/gtk/menu_popup.c:1421 ../src/main/prayerlists.cc:254
 msgid "Xiphos already knows a module by that name."
 msgstr "Xiphos už poznám modul s takým názvom."
 
-#: ../src/gtk/menu_popup.c:1401
+#: ../src/gtk/menu_popup.c:1476
 #, c-format
 msgid ""
 "Failed to create new configuration:\n"
@@ -805,22 +893,25 @@ msgstr ""
 "Neporadilo sa vytvoriť novú konfiguráciu:\n"
 "%s"
 
-#: ../src/gtk/menu_popup.c:1410
+#: ../src/gtk/menu_popup.c:1492
+#, c-format
 msgid ""
 "Configuration build error:\n"
 "\n"
+"%s"
 msgstr ""
-"Chyba vytvorenia konfigurácie:\n"
+"Chyba zostavenia konfigurácie:\n"
 "\n"
+"%s"
 
-#: ../src/gtk/menu_popup.c:2067
+#: ../src/gtk/menu_popup.c:2182
 msgid "No module in this pane."
 msgstr "V table nie je modul."
 
 #. *****************************************************************************
 #. * defines
 #.
-#: ../src/gtk/mod_mgr.c:64
+#: ../src/gtk/mod_mgr.c:65
 msgid ""
 "<b>Overview of the Module Manager.</b>\n"
 "\n"
@@ -867,7 +958,7 @@ msgstr ""
 "požiadajte o pomoc prostredníctvom živého chatu, alebo (ak nikto nereaguje v "
 "chate) pošlite e-mail na zoznam adresátov našich používateľov.\n"
 
-#: ../src/gtk/mod_mgr.c:67
+#: ../src/gtk/mod_mgr.c:68
 msgid ""
 "<b>Welcome to Xiphos.</b>\n"
 "\n"
@@ -947,8 +1038,8 @@ msgstr "Príprava na odstránenie"
 msgid "Removing"
 msgstr "Mazanie"
 
-#: ../src/gtk/mod_mgr.c:194 ../ui/xi-menus.glade.h:158
-#: ../ui/xi-menus-popup.gtkbuilder.h:27
+#: ../src/gtk/mod_mgr.c:194 ../ui/xi-menus.glade.h:172
+#: ../ui/xi-menus-popup.gtkbuilder.h:33
 msgid "Remove"
 msgstr "Odstrániť"
 
@@ -1063,8 +1154,8 @@ msgstr ""
 "ste si kúpili kľúč na odomknutie od vlastníka obsahu"
 
 #: ../src/gtk/mod_mgr.c:664 ../src/main/biblesync_glue.cc:640
-#: ../ui/gtk2_webedit.ui.h:2 ../ui/gtk_webedit.ui.h:2 ../ui/xi-menus.glade.h:57
-#: ../ui/xi-menus-popup.gtkbuilder.h:35
+#: ../ui/gtk2_webedit.ui.h:2 ../ui/gtk_webedit.ui.h:2 ../ui/xi-menus.glade.h:59
+#: ../ui/xi-menus-popup.gtkbuilder.h:41
 msgid "About"
 msgstr "Informácie"
 
@@ -1101,25 +1192,26 @@ msgstr ""
 msgid " archived in: \n"
 msgstr " archivované v: \n"
 
-#: ../src/gtk/mod_mgr.c:1012
+#: ../src/gtk/mod_mgr.c:1015
 #, c-format
 msgid "%s failed"
 msgstr "%s zlyhalo"
 
-#: ../src/gtk/mod_mgr.c:1015 ../src/gtk/mod_mgr.c:1781
+#: ../src/gtk/mod_mgr.c:1018 ../src/gtk/mod_mgr.c:1894
 msgid "Finished"
 msgstr "Dokončené"
 
-#: ../src/gtk/mod_mgr.c:1188 ../src/gtk/mod_mgr.c:1190
-#: ../src/gtk/mod_mgr.c:1300 ../src/gtk/mod_mgr.c:1333
-#: ../src/gtk/mod_mgr.c:1335 ../src/gtk/utilities.c:429
-#: ../src/gtk/utilities.c:492 ../src/gtk/utilities.c:494
-#: ../src/gtk/utilities.c:985 ../src/main/sidebar.cc:807
-#: ../src/main/sidebar.cc:878 ../src/main/sidebar.cc:880
+#: ../src/gtk/mod_mgr.c:1191 ../src/gtk/mod_mgr.c:1193
+#: ../src/gtk/mod_mgr.c:1303 ../src/gtk/mod_mgr.c:1336
+#: ../src/gtk/mod_mgr.c:1338 ../src/gtk/utilities.c:441
+#: ../src/gtk/utilities.c:504 ../src/gtk/utilities.c:506
+#: ../src/gtk/utilities.c:997 ../src/main/sidebar.cc:806
+#: ../src/main/sidebar.cc:877 ../src/main/sidebar.cc:879
+#: ../src/main/sidebar.cc:1008 ../src/main/sidebar.cc:1010
 msgid "Unknown"
 msgstr "Neznáme"
 
-#: ../src/gtk/mod_mgr.c:1511
+#: ../src/gtk/mod_mgr.c:1590
 #, c-format
 msgid ""
 "Repository:\n"
@@ -1128,7 +1220,7 @@ msgstr ""
 "Úložisko:\n"
 "%s"
 
-#: ../src/gtk/mod_mgr.c:1524
+#: ../src/gtk/mod_mgr.c:1603
 msgid ""
 "Categorized by\n"
 "Module Type"
@@ -1136,44 +1228,49 @@ msgstr ""
 "Kategorizované podľa\n"
 "typu modulu"
 
-#: ../src/gtk/mod_mgr.c:1529 ../src/gtk/utilities.c:571
-#: ../src/main/sidebar.cc:959 ../src/main/sidebar.cc:961
+#: ../src/gtk/mod_mgr.c:1611 ../src/gtk/utilities.c:583
+#: ../src/main/sidebar.cc:986 ../src/main/sidebar.cc:1302
+#: ../src/main/sidebar.cc:1304
 msgid "Biblical Texts"
 msgstr "Biblické texty"
 
-#: ../src/gtk/mod_mgr.c:1533 ../src/gtk/utilities.c:577
-#: ../src/main/sidebar.cc:666 ../src/main/sidebar.cc:984
-#: ../src/main/sidebar.cc:986
+#: ../src/gtk/mod_mgr.c:1617 ../src/gtk/utilities.c:589
+#: ../src/main/sidebar.cc:665 ../src/main/sidebar.cc:988
+#: ../src/main/sidebar.cc:1328 ../src/main/sidebar.cc:1330
 msgid "Commentaries"
 msgstr "Komentáre"
 
-#: ../src/gtk/mod_mgr.c:1537 ../src/gtk/utilities.c:584
-#: ../src/main/sidebar.cc:993 ../src/main/sidebar.cc:995
+#: ../src/gtk/mod_mgr.c:1623 ../src/gtk/utilities.c:596
+#: ../src/main/sidebar.cc:998 ../src/main/sidebar.cc:1339
+#: ../src/main/sidebar.cc:1341
 msgid "Dictionaries"
 msgstr "Slovníky"
 
-#: ../src/gtk/mod_mgr.c:1541 ../src/gtk/utilities.c:590
-#: ../src/main/sidebar.cc:1002 ../src/main/sidebar.cc:1004
+#: ../src/gtk/mod_mgr.c:1629 ../src/gtk/utilities.c:602
+#: ../src/main/sidebar.cc:996 ../src/main/sidebar.cc:1350
+#: ../src/main/sidebar.cc:1352
 msgid "Glossaries"
 msgstr "Glosáre"
 
-#: ../src/gtk/mod_mgr.c:1545 ../src/gtk/utilities.c:597
-#: ../src/main/sidebar.cc:1011 ../src/main/sidebar.cc:1013
+#: ../src/gtk/mod_mgr.c:1635 ../src/gtk/utilities.c:609
+#: ../src/main/sidebar.cc:994 ../src/main/sidebar.cc:1361
+#: ../src/main/sidebar.cc:1363
 msgid "Daily Devotionals"
 msgstr "Denné zamyslenia"
 
-#: ../src/gtk/mod_mgr.c:1550 ../src/gtk/utilities.c:603
-#: ../src/main/sidebar.cc:674 ../src/main/sidebar.cc:1020
-#: ../src/main/sidebar.cc:1022
+#: ../src/gtk/mod_mgr.c:1641 ../src/gtk/utilities.c:615
+#: ../src/main/sidebar.cc:673 ../src/main/sidebar.cc:1000
+#: ../src/main/sidebar.cc:1372 ../src/main/sidebar.cc:1374
 msgid "General Books"
 msgstr "Všeobecné knihy"
 
-#: ../src/gtk/mod_mgr.c:1562 ../src/gtk/utilities.c:621
-#: ../src/main/sidebar.cc:1047 ../src/main/sidebar.cc:1049
+#: ../src/gtk/mod_mgr.c:1659 ../src/gtk/utilities.c:633
+#: ../src/main/sidebar.cc:984 ../src/main/sidebar.cc:1405
+#: ../src/main/sidebar.cc:1407
 msgid "Cult/Unorthodox"
 msgstr "Kultické/Neortodoxné"
 
-#: ../src/gtk/mod_mgr.c:1571
+#: ../src/gtk/mod_mgr.c:1669
 msgid ""
 "Categorized by\n"
 "Availability"
@@ -1181,95 +1278,99 @@ msgstr ""
 "Kategorizované podľa\n"
 "dostupnosti"
 
-#: ../src/gtk/mod_mgr.c:1575
+#: ../src/gtk/mod_mgr.c:1673
 msgid "Updates"
 msgstr "Aktualizácie"
 
-#: ../src/gtk/mod_mgr.c:1580
+#: ../src/gtk/mod_mgr.c:1678
 msgid "Uninstalled"
 msgstr "Nenainštalované"
 
-#: ../src/gtk/mod_mgr.c:1585 ../src/gtk/sidebar.c:594
-#: ../src/gtk/utilities.c:629 ../src/main/prayerlists.cc:233
-#: ../src/main/sidebar.cc:1057 ../src/main/sidebar.cc:1059
+#: ../src/gtk/mod_mgr.c:1684 ../src/gtk/sidebar.c:652
+#: ../src/gtk/utilities.c:641 ../src/main/prayerlists.cc:233
+#: ../src/main/sidebar.cc:1416 ../src/main/sidebar.cc:1418
 msgid "Prayer List/Journal"
 msgstr "Modlitebný zoznam/Zápisník"
 
-#: ../src/gtk/mod_mgr.c:1764
+#: ../src/gtk/mod_mgr.c:1773
+msgid "Unindexed Modules"
+msgstr "Nezindexované moduly"
+
+#: ../src/gtk/mod_mgr.c:1877
 msgid "Refreshing from remote source"
 msgstr "Obnovovanie vzdialeného zdroja"
 
-#: ../src/gtk/mod_mgr.c:1776
+#: ../src/gtk/mod_mgr.c:1889
 msgid "Remote source not found"
 msgstr "Vzdialený zdroj nebol nájdený"
 
-#: ../src/gtk/mod_mgr.c:1847
+#: ../src/gtk/mod_mgr.c:1960
 msgid "Configure"
 msgstr "Konfigurácia"
 
-#: ../src/gtk/mod_mgr.c:1876
+#: ../src/gtk/mod_mgr.c:1989
 msgid "Type"
 msgstr "Typ"
 
-#: ../src/gtk/mod_mgr.c:1883
+#: ../src/gtk/mod_mgr.c:1996
 msgid "Caption"
 msgstr "Meno"
 
-#: ../src/gtk/mod_mgr.c:1890
+#: ../src/gtk/mod_mgr.c:2003
 msgid "Source"
 msgstr "Zdroj"
 
-#: ../src/gtk/mod_mgr.c:1897
+#: ../src/gtk/mod_mgr.c:2010
 msgid "Directory"
 msgstr "Priečinok"
 
-#: ../src/gtk/mod_mgr.c:1905
+#: ../src/gtk/mod_mgr.c:2018
 msgid "User"
 msgstr "Používateľ"
 
-#: ../src/gtk/mod_mgr.c:1912
+#: ../src/gtk/mod_mgr.c:2025
 msgid "Password"
 msgstr "Heslo"
 
-#: ../src/gtk/mod_mgr.c:1919
+#: ../src/gtk/mod_mgr.c:2032
 msgid "UID"
 msgstr "UID"
 
-#: ../src/gtk/mod_mgr.c:1934
+#: ../src/gtk/mod_mgr.c:2047
 msgid "Module Sources"
 msgstr "Zdroje modulov"
 
-#: ../src/gtk/mod_mgr.c:1937
+#: ../src/gtk/mod_mgr.c:2050
 msgid "Add/Remove"
 msgstr "Pridať/Odstrániť"
 
-#: ../src/gtk/mod_mgr.c:1940
+#: ../src/gtk/mod_mgr.c:2053
 msgid "Choose"
 msgstr "Vybrať"
 
-#: ../src/gtk/mod_mgr.c:1943 ../src/gtk/preferences_dialog.c:2187
-#: ../src/gtk/sidebar.c:1512 ../src/gtk/sidebar.c:1558
+#: ../src/gtk/mod_mgr.c:2056 ../src/gtk/preferences_dialog.c:2303
+#: ../src/gtk/sidebar.c:1684 ../src/gtk/sidebar.c:1730
 msgid "Modules"
 msgstr "Moduly"
 
-#: ../src/gtk/mod_mgr.c:1945
+#: ../src/gtk/mod_mgr.c:2058
 msgid "Install/Update"
 msgstr "Inštalácia/Aktualizácia"
 
-#: ../src/gtk/mod_mgr.c:1948
+#: ../src/gtk/mod_mgr.c:2061
 msgid "Maintenance"
 msgstr "Údržba"
 
-#: ../src/gtk/mod_mgr.c:2164
+#: ../src/gtk/mod_mgr.c:2277
 msgid "Please Refresh"
 msgstr "Prosím obnoviť"
 
-#: ../src/gtk/mod_mgr.c:2165
+#: ../src/gtk/mod_mgr.c:2278
 msgid "Your module list is not up to date!"
 msgstr "Váš zoznam modulov nie je aktuálny!"
 
 #. Zero Bibles is just not workable in Xiphos.
-#: ../src/gtk/mod_mgr.c:2482
+#: ../src/gtk/mod_mgr.c:2592
 msgid ""
 "You have uninstalled your last Bible.\n"
 "Xiphos requires at least one."
@@ -1277,7 +1378,7 @@ msgstr ""
 "Odinštalovali ste svoju poslednú Bibliu.\n"
 "Xiphos vyžaduje aspoň jednu."
 
-#: ../src/gtk/mod_mgr.c:2488
+#: ../src/gtk/mod_mgr.c:2598
 msgid ""
 "There are still no Bibles installed.\n"
 "Xiphos cannot continue without one."
@@ -1285,7 +1386,7 @@ msgstr ""
 "Žiadna Biblia nie je nainštalovaná.\n"
 "Xiphos nemôže kvôli tomu pokračovať."
 
-#: ../src/gtk/mod_mgr.c:2613
+#: ../src/gtk/mod_mgr.c:2723
 #, c-format
 msgid ""
 "%s obsoletes %s.\n"
@@ -1296,60 +1397,60 @@ msgstr ""
 "Chcete odstrániť %s?\n"
 "Pozor: Toto sa nedá vrátiť späť."
 
-#: ../src/gtk/mod_mgr.c:2679
+#: ../src/gtk/mod_mgr.c:2789
 msgid "No obsolete modules were found."
 msgstr "Nenašli sa žiadne zastarané moduly."
 
-#: ../src/gtk/mod_mgr.c:2701
+#: ../src/gtk/mod_mgr.c:2811
 msgid "Standard remote sources have been loaded."
 msgstr "Štandardné vzdialené zdroje boli načítané."
 
-#: ../src/gtk/mod_mgr.c:2710
+#: ../src/gtk/mod_mgr.c:2820
 msgid "Could not load standard sources from CrossWire."
 msgstr "Nie je možné načítať štandardné zdroje z CrossWire."
 
-#: ../src/gtk/mod_mgr.c:2861 ../src/gtk/mod_mgr.c:3117
+#: ../src/gtk/mod_mgr.c:2971 ../src/gtk/mod_mgr.c:3227
 msgid "Remove the selected source"
 msgstr "Odstrániť označený zdroj"
 
-#: ../src/gtk/mod_mgr.c:2927
+#: ../src/gtk/mod_mgr.c:3037
 msgid "Enter a remote source"
 msgstr "Vložiť vzdialený zdroj"
 
-#: ../src/gtk/mod_mgr.c:2936
+#: ../src/gtk/mod_mgr.c:3046
 msgid "Caption:"
 msgstr "Titulok:"
 
-#: ../src/gtk/mod_mgr.c:2937
+#: ../src/gtk/mod_mgr.c:3047
 msgid "Type:"
 msgstr "Typ:"
 
-#: ../src/gtk/mod_mgr.c:2938
+#: ../src/gtk/mod_mgr.c:3048
 msgid "Host:"
 msgstr "Hostiteľ:"
 
-#: ../src/gtk/mod_mgr.c:2939
+#: ../src/gtk/mod_mgr.c:3049
 msgid "Directory:"
 msgstr "Priečinok:"
 
-#: ../src/gtk/mod_mgr.c:2940
+#: ../src/gtk/mod_mgr.c:3050
 msgid "User (optional):"
 msgstr "Používateľ (voliteľné):"
 
-#: ../src/gtk/mod_mgr.c:2941
+#: ../src/gtk/mod_mgr.c:3051
 msgid "Password (optional):"
 msgstr "Heslo (voliteľné):"
 
 #. this can happen at most once
-#: ../src/gtk/mod_mgr.c:2967
+#: ../src/gtk/mod_mgr.c:3077
 msgid "A source by that name already exists."
 msgstr "Zdroj s týmto názvom už existuje."
 
-#: ../src/gtk/mod_mgr.c:3114
+#: ../src/gtk/mod_mgr.c:3224
 msgid "Delete a remote source"
 msgstr "Odstrániť vzdialený zdroj"
 
-#: ../src/gtk/mod_mgr.c:3633
+#: ../src/gtk/mod_mgr.c:3748
 msgid "[no module]"
 msgstr "[bez modulu]"
 
@@ -1371,40 +1472,56 @@ msgstr "Ísť dovnútra na prvú podsekciu"
 
 #: ../src/gtk/navbar_versekey_dialog.c:910
 #: ../src/gtk/navbar_versekey_editor.c:939
-#: ../src/gtk/navbar_versekey_parallel.c:859
+#: ../src/gtk/navbar_versekey_parallel.c:960
 msgid "Synchronize this window's scrolling with the main window"
 msgstr "Synchronizovať rolovanie tohto okna s hlavným oknom"
 
-#: ../src/gtk/parallel_dialog.c:326 ../src/gtk/preferences_dialog.c:2194
+#: ../src/gtk/navbar_versekey_parallel.c:825
+#: ../src/gtk/navbar_versekey_parallel.c:1029
+#: ../src/gtk/navbar_versekey_parallel.c:1032
+#, c-format
+msgid "Set: %s"
+msgstr "Set: %s"
+
+#: ../src/gtk/navbar_versekey_parallel.c:884
+msgid "Manage..."
+msgstr "Spravovať…"
+
+#: ../src/gtk/navbar_versekey_parallel.c:1040
+msgid "Switch parallel module set"
+msgstr "Prepnúť set paralelných modulov"
+
+#: ../src/gtk/parallel_dialog.c:326 ../src/gtk/preferences_dialog.c:2310
 msgid "Parallel"
 msgstr "Paralelné"
 
 #: ../src/gtk/parallel_view.c:112
 msgid "Detach/Attach"
-msgstr "Pripojiť/Odobrať"
+msgstr "Odobrať/Pripojiť"
 
-#: ../src/gtk/parallel_view.c:117 ../ui/xi-menus.glade.h:66
-#: ../ui/xi-menus-popup.gtkbuilder.h:43
+#: ../src/gtk/parallel_view.c:117 ../ui/xi-menus.glade.h:68
+#: ../ui/xi-menus-popup.gtkbuilder.h:52
 msgid "Module Options"
 msgstr "Nastavenia modulov"
 
-#: ../src/gtk/parallel_view.c:216 ../src/gtk/sidebar.c:578
-#: ../src/gtk/sidebar.c:583 ../src/gtk/tabbed_browser.c:240
-#: ../src/main/sidebar.cc:638 ../src/main/sidebar.cc:967
-#: ../src/main/sidebar.cc:968 ../src/main/sidebar.cc:969
+#: ../src/gtk/parallel_view.c:216 ../src/gtk/sidebar.c:606
+#: ../src/gtk/sidebar.c:610 ../src/gtk/sidebar.c:641
+#: ../src/gtk/tabbed_browser.c:240 ../src/main/sidebar.cc:637
+#: ../src/main/sidebar.cc:1310 ../src/main/sidebar.cc:1311
+#: ../src/main/sidebar.cc:1312
 msgid "Parallel View"
 msgstr "Paralelné zobrazenie"
 
-#: ../src/gtk/preferences_dialog.c:868
+#: ../src/gtk/preferences_dialog.c:877
 msgid "BibleSync session passphrase"
 msgstr "Prístupové heslo k BibleSync relácií"
 
-#: ../src/gtk/preferences_dialog.c:870
+#: ../src/gtk/preferences_dialog.c:879
 msgid "Phrase:"
 msgstr "Fráza:"
 
 #. mode selection failed? probably dead interface
-#: ../src/gtk/preferences_dialog.c:942
+#: ../src/gtk/preferences_dialog.c:951
 msgid ""
 "Mode selection failed.\n"
 "Set \"Debug\" and try again to see why."
@@ -1412,93 +1529,125 @@ msgstr ""
 "Výber režimu zlyhal.\n"
 "Nastavte „Hľadať chyby“ a skúste znova zistiť prečo."
 
-#: ../src/gtk/preferences_dialog.c:994
+#: ../src/gtk/preferences_dialog.c:1003
 msgid "Mode selection failed.\n"
 msgstr "Výber modulu zlyhal.\n"
 
-#: ../src/gtk/preferences_dialog.c:997
+#: ../src/gtk/preferences_dialog.c:1006
 #, c-format
 msgid "BibleSync: %s (passphrase \"%s\")."
 msgstr "BibleSync: %s (prístupová fráza\"%s\")."
 
-#: ../src/gtk/preferences_dialog.c:999
+#: ../src/gtk/preferences_dialog.c:1008
 msgid "Disabled"
 msgstr "Nepovolené"
 
-#: ../src/gtk/preferences_dialog.c:1001 ../src/main/xml.c:96
+#: ../src/gtk/preferences_dialog.c:1010 ../src/main/xml.c:97
 msgid "Personal"
 msgstr "Osobné"
 
-#: ../src/gtk/preferences_dialog.c:1003
+#: ../src/gtk/preferences_dialog.c:1012
 msgid "Speaker"
 msgstr "Rečník"
 
-#: ../src/gtk/preferences_dialog.c:1004
+#: ../src/gtk/preferences_dialog.c:1013
 msgid "Audience"
 msgstr "Obecenstvo"
 
-#: ../src/gtk/preferences_dialog.c:1719 ../src/gtk/preferences_dialog.c:1753
-#: ../src/gtk/preferences_dialog.c:1786 ../src/gtk/preferences_dialog.c:1818
-#: ../src/gtk/preferences_dialog.c:1849 ../src/gtk/preferences_dialog.c:1880
-#: ../src/gtk/preferences_dialog.c:1911 ../src/gtk/preferences_dialog.c:1943
-#: ../src/gtk/preferences_dialog.c:1976 ../src/gtk/preferences_dialog.c:2027
-#: ../src/gtk/preferences_dialog.c:2520
+#: ../src/gtk/preferences_dialog.c:1726 ../src/gtk/preferences_dialog.c:1760
+#: ../src/gtk/preferences_dialog.c:1793 ../src/gtk/preferences_dialog.c:1825
+#: ../src/gtk/preferences_dialog.c:1856 ../src/gtk/preferences_dialog.c:1887
+#: ../src/gtk/preferences_dialog.c:1918 ../src/gtk/preferences_dialog.c:1948
+#: ../src/gtk/preferences_dialog.c:1981 ../src/gtk/preferences_dialog.c:2014
+#: ../src/gtk/preferences_dialog.c:2049 ../src/gtk/preferences_dialog.c:2082
+#: ../src/gtk/preferences_dialog.c:2133 ../src/gtk/preferences_dialog.c:2641
 msgid "-- Select --"
 msgstr "-- Výber --"
 
-#: ../src/gtk/preferences_dialog.c:1990
+#: ../src/gtk/preferences_dialog.c:2096
 msgid "Locale will take effect after restart."
 msgstr "Locale bude aplikované po reštarte."
 
-#: ../src/gtk/preferences_dialog.c:2060 ../ui/prefs.glade.h:1
-#: ../ui/prefs.gtkbuilder.h:13
+#: ../src/gtk/preferences_dialog.c:2167 ../ui/prefs.glade.h:1
+#: ../ui/prefs.gtkbuilder.h:4
 msgid "Preferences"
 msgstr "Nastavenia"
 
-#: ../src/gtk/preferences_dialog.c:2167
+#: ../src/gtk/preferences_dialog.c:2283
 msgid "General"
 msgstr "Všeobecné"
 
-#: ../src/gtk/preferences_dialog.c:2170
+#: ../src/gtk/preferences_dialog.c:2286
 msgid "Options"
 msgstr "Možnosti"
 
-#: ../src/gtk/preferences_dialog.c:2173 ../ui/prefs.glade.h:92
-#: ../ui/prefs.gtkbuilder.h:96
+#: ../src/gtk/preferences_dialog.c:2289 ../ui/prefs.glade.h:92
+#: ../ui/prefs.gtkbuilder.h:87
 msgid "BibleSync"
 msgstr "BibleSync"
 
-#: ../src/gtk/preferences_dialog.c:2177
+#: ../src/gtk/preferences_dialog.c:2293
 msgid "Fonts"
 msgstr "Písma"
 
-#: ../src/gtk/preferences_dialog.c:2180
+#: ../src/gtk/preferences_dialog.c:2296
 msgid "Color"
 msgstr "Farby"
 
-#: ../src/gtk/preferences_dialog.c:2183
+#: ../src/gtk/preferences_dialog.c:2299
 msgid "Sizes and Faces"
 msgstr "Veľkosti a tvary"
 
-#: ../src/gtk/preferences_dialog.c:2197
+#: ../src/gtk/preferences_dialog.c:2313
 msgid "Special"
 msgstr "Špeciálne"
 
-#: ../src/gtk/preferences_dialog.c:2901 ../src/gtk/search_dialog.c:519
+#: ../src/gtk/preferences_dialog.c:3108 ../src/gtk/search_dialog.c:519
 msgid "Clear List?"
 msgstr "Vyčistiť zoznam?"
 
-#: ../src/gtk/preferences_dialog.c:2902 ../src/gtk/search_dialog.c:520
+#: ../src/gtk/preferences_dialog.c:3109 ../src/gtk/search_dialog.c:520
 msgid "Are you sure you want to clear the module list?"
 msgstr "Ste si istý, že chcete vyčistiť zoznam modulov?"
 
-#: ../src/gtk/preferences_dialog.c:2953 ../src/main/search_dialog.cc:692
+#: ../src/gtk/preferences_dialog.c:3160 ../src/main/search_dialog.cc:691
 msgid "Remove Module?"
 msgstr "Odstrániť modul?"
 
-#: ../src/gtk/preferences_dialog.c:2954 ../src/main/search_dialog.cc:693
+#: ../src/gtk/preferences_dialog.c:3161 ../src/main/search_dialog.cc:692
 msgid "Are you sure you want to remove the selected module?"
 msgstr "Ste si istý, že chcete odstrániť zvolený modul?"
+
+#. add "New set..." entry
+#: ../src/gtk/preferences_dialog.c:3258 ../src/gtk/preferences_dialog.c:3337
+#: ../src/gtk/preferences_dialog.c:3392 ../src/gtk/preferences_dialog.c:3449
+#: ../src/gtk/preferences_dialog.c:3744
+msgid "New set..."
+msgstr "Nový set…"
+
+#: ../src/gtk/preferences_dialog.c:3261
+msgid "New Parallel Set"
+msgstr "Nový paralelný set"
+
+#: ../src/gtk/preferences_dialog.c:3265
+msgid "Create"
+msgstr "Vytvoriť"
+
+#: ../src/gtk/preferences_dialog.c:3270
+msgid "Set name:"
+msgstr "Názov setu:"
+
+#: ../src/gtk/preferences_dialog.c:3289
+msgid "Please enter a valid set name."
+msgstr "Zadajte platný názov setu."
+
+#: ../src/gtk/preferences_dialog.c:3717
+msgid "Set:"
+msgstr "Set:"
+
+#: ../src/gtk/preferences_dialog.c:3726
+msgid "Delete current set"
+msgstr "Odstrániť aktuálny set"
 
 #: ../src/gtk/search_dialog.c:62 ../src/main/search_dialog.cc:52
 #: ../src/main/search_sidebar.cc:51
@@ -1664,7 +1813,7 @@ msgstr ""
 msgid "Module is neither Bible nor commentary"
 msgstr "Modul nie je ani Biblia, ani komentár"
 
-#: ../src/gtk/search_dialog.c:1212 ../src/gtk/sidebar.c:946
+#: ../src/gtk/search_dialog.c:1212 ../src/gtk/sidebar.c:1054
 msgid "BibleSync is not active for transmit."
 msgstr "BibleSync nie je aktívny na prenos."
 
@@ -1692,17 +1841,17 @@ msgstr "Hľadať v module"
 msgid "Search Type"
 msgstr "Typ hľadania"
 
-#: ../src/gtk/search_sidebar.c:324 ../src/main/search_dialog.cc:120
+#: ../src/gtk/search_sidebar.c:324 ../src/main/search_dialog.cc:119
 #: ../ui/search-dialog.glade.h:37 ../ui/search-dialog.gtkbuilder.h:34
 msgid "Optimized (\"Lucene\")"
 msgstr "Optimalizované („lucene“)"
 
-#: ../src/gtk/search_sidebar.c:333 ../src/main/search_dialog.cc:114
+#: ../src/gtk/search_sidebar.c:333 ../src/main/search_dialog.cc:113
 #: ../ui/search-dialog.glade.h:41 ../ui/search-dialog.gtkbuilder.h:41
 msgid "Regular expression"
 msgstr "Regulárny výraz"
 
-#: ../src/gtk/search_sidebar.c:340 ../src/main/search_dialog.cc:116
+#: ../src/gtk/search_sidebar.c:340 ../src/main/search_dialog.cc:115
 #: ../ui/search-dialog.glade.h:43 ../ui/search-dialog.gtkbuilder.h:43
 msgid "Exact phrase"
 msgstr "Presná fráza"
@@ -1744,23 +1893,61 @@ msgstr "Dolné"
 msgid "Upper"
 msgstr "Horné"
 
-#: ../src/gtk/sidebar.c:806
+#: ../src/gtk/sidebar.c:612
+msgid "Open in Detached Window"
+msgstr "Otvoriť v samostatnom okne"
+
+#: ../src/gtk/sidebar.c:613
+msgid "Open in New Tab"
+msgstr "Otvoriť v novej karte"
+
+#: ../src/gtk/sidebar.c:671 ../ui/prefs.gtkbuilder.h:1
+msgid "Category, then Language"
+msgstr "Kategória, potom Jazyk"
+
+#: ../src/gtk/sidebar.c:673 ../ui/prefs.gtkbuilder.h:2
+msgid "Category only"
+msgstr "Iba Kategória"
+
+#: ../src/gtk/sidebar.c:675 ../ui/prefs.gtkbuilder.h:3
+msgid "Language, then Category"
+msgstr "Jazyk, potom Kategória"
+
+#: ../src/gtk/sidebar.c:898
 msgid "Open module in editor?"
 msgstr "Otvoriť modul v editore?"
 
-#: ../src/gtk/sidebar.c:807
+#: ../src/gtk/sidebar.c:899
 msgid "If no, it will open for display only."
 msgstr "Ak nie, otvorí sa iba na zobrazenie."
 
-#: ../src/gtk/sidebar.c:907
+#: ../src/gtk/sidebar.c:1015
 msgid "Paste verse references"
 msgstr "Vložiť odkazy veršov"
 
-#: ../src/gtk/sidebar.c:909
+#: ../src/gtk/sidebar.c:1017
 msgid "List:"
 msgstr "Zoznam:"
 
-#: ../src/gtk/sidebar.c:1491 ../src/gtk/sidebar.c:1541
+#: ../src/gtk/sidebar.c:1181
+msgid "Remove from Favorites"
+msgstr "Odstrániť z Obľúbených"
+
+#: ../src/gtk/sidebar.c:1182 ../ui/xi-menus.glade.h:149
+#: ../ui/xi-menus-popup.gtkbuilder.h:42
+msgid "Add to Favorites"
+msgstr "Pridať do Obľúbených"
+
+#: ../src/gtk/sidebar.c:1186
+msgid "Show this module"
+msgstr "Zobraziť tento modul"
+
+#: ../src/gtk/sidebar.c:1187 ../ui/xi-menus.glade.h:150
+#: ../ui/xi-menus-popup.gtkbuilder.h:43
+msgid "Hide this module"
+msgstr "Skryť tento modul"
+
+#: ../src/gtk/sidebar.c:1663 ../src/gtk/sidebar.c:1713
 msgid "Search"
 msgstr "Hľadať"
 
@@ -1790,55 +1977,55 @@ msgstr "Nový názov"
 msgid "Remove the selected item"
 msgstr "Odstrániť označenú položku"
 
-#: ../src/gtk/utilities.c:80
+#: ../src/gtk/utilities.c:90
 msgid "January"
 msgstr "Január"
 
-#: ../src/gtk/utilities.c:81
+#: ../src/gtk/utilities.c:91
 msgid "February"
 msgstr "Február"
 
-#: ../src/gtk/utilities.c:82
+#: ../src/gtk/utilities.c:92
 msgid "March"
 msgstr "Marec"
 
-#: ../src/gtk/utilities.c:83
+#: ../src/gtk/utilities.c:93
 msgid "April"
 msgstr "Apríl"
 
-#: ../src/gtk/utilities.c:84
+#: ../src/gtk/utilities.c:94
 msgid "May"
 msgstr "Máj"
 
-#: ../src/gtk/utilities.c:85
+#: ../src/gtk/utilities.c:95
 msgid "June"
 msgstr "Jún"
 
-#: ../src/gtk/utilities.c:86
+#: ../src/gtk/utilities.c:96
 msgid "July"
 msgstr "Júl"
 
-#: ../src/gtk/utilities.c:87
+#: ../src/gtk/utilities.c:97
 msgid "August"
 msgstr "August"
 
-#: ../src/gtk/utilities.c:88
+#: ../src/gtk/utilities.c:98
 msgid "September"
 msgstr "September"
 
-#: ../src/gtk/utilities.c:89
+#: ../src/gtk/utilities.c:99
 msgid "October"
 msgstr "Október"
 
-#: ../src/gtk/utilities.c:90
+#: ../src/gtk/utilities.c:100
 msgid "November"
 msgstr "November"
 
-#: ../src/gtk/utilities.c:91
+#: ../src/gtk/utilities.c:101
 msgid "December"
 msgstr "December"
 
-#: ../src/gtk/utilities.c:2021
+#: ../src/gtk/utilities.c:2037
 msgid ""
 "An image file's size could not be determined.\n"
 "Xiphos cannot resize images to fit window."
@@ -1964,7 +2151,7 @@ msgid ""
 msgstr ""
 "<br/><br/><center><i>Tento module nemá obsah v tomto bode.</i></center>"
 
-#: ../src/main/display.cc:258
+#: ../src/main/display.cc:267
 #, c-format
 msgid ""
 "Improperly encoded personal annotation label:\n"
@@ -1973,33 +2160,32 @@ msgstr ""
 "Nesprávne kódovaná značka osobného komentára:\n"
 "'%s'"
 
-#: ../src/main/display.cc:1132 ../src/main/display.cc:1174
-#: ../src/main/display.cc:1254 ../ui/export-dialog.glade.h:14
-#: ../ui/export-dialog.gtkbuilder.h:14
+#: ../src/main/display.cc:1303 ../src/main/display.cc:1587
+#: ../ui/export-dialog.glade.h:14 ../ui/export-dialog.gtkbuilder.h:14
 msgid "Chapter"
 msgstr "Kapitola"
 
-#: ../src/main/main.c:147
+#: ../src/main/main.c:149
 msgid "Xiphos does not understand more than one argument."
 msgstr "Xiphos nerozozná viac ako jeden argument."
 
-#: ../src/main/main.c:258
+#: ../src/main/main.c:341
 msgid "Initiating HTML"
 msgstr "Inicializujem HTML"
 
-#: ../src/main/main.c:263
+#: ../src/main/main.c:346
 msgid "Building Interface"
 msgstr "Vytváram rozhranie"
 
-#: ../src/main/main.c:266
+#: ../src/main/main.c:349
 msgid "Starting Sword"
 msgstr "Spúšťam Sword"
 
-#: ../src/main/main.c:269
+#: ../src/main/main.c:352
 msgid "Loading Settings"
 msgstr "Načítavam nastavenia"
 
-#: ../src/main/main.c:272
+#: ../src/main/main.c:355
 msgid "Displaying Xiphos"
 msgstr "Zobrazujem Xiphos"
 
@@ -2013,23 +2199,23 @@ msgid "Footnote"
 msgstr "Poznámka pod čiarou"
 
 #: ../src/main/module_dialogs.cc:246 ../src/main/module_dialogs.cc:349
-#: ../src/main/previewer.cc:159
+#: ../src/main/previewer.cc:158
 msgid "Cross Reference"
 msgstr "Krížová referencia"
 
 #: ../src/main/module_dialogs.cc:252 ../src/main/module_dialogs.cc:266
 #: ../src/main/module_dialogs.cc:354 ../src/main/module_dialogs.cc:366
-#: ../src/main/previewer.cc:164 ../src/main/previewer.cc:184
+#: ../src/main/previewer.cc:161 ../src/main/previewer.cc:179
 msgid "Strongs"
 msgstr "Strongove čísla"
 
 #: ../src/main/module_dialogs.cc:258 ../src/main/module_dialogs.cc:277
 #: ../src/main/module_dialogs.cc:359 ../src/main/module_dialogs.cc:376
-#: ../src/main/previewer.cc:169 ../src/main/previewer.cc:190
+#: ../src/main/previewer.cc:164 ../src/main/previewer.cc:185
 msgid "Morphology"
 msgstr "Morfológia"
 
-#: ../src/main/module_dialogs.cc:986 ../src/main/url.cc:516
+#: ../src/main/module_dialogs.cc:986 ../src/main/url.cc:509
 msgid "Back to "
 msgstr "Späť k "
 
@@ -2037,112 +2223,112 @@ msgstr "Späť k "
 msgid "Unknown parallel module: "
 msgstr "Neznámy paralelný modul: "
 
-#: ../src/main/parallel_view.cc:358 ../ui/xi-menus.glade.h:71
-#: ../ui/xi-menus-popup.gtkbuilder.h:48
+#: ../src/main/parallel_view.cc:361 ../ui/xi-menus.glade.h:73
+#: ../ui/xi-menus-popup.gtkbuilder.h:57
 msgid "Strong's Numbers"
 msgstr "Strongové čísla"
 
-#: ../src/main/parallel_view.cc:367 ../ui/search-dialog.glade.h:102
-#: ../ui/search-dialog.gtkbuilder.h:101 ../ui/xi-menus.glade.h:74
-#: ../ui/xi-menus-popup.gtkbuilder.h:51
+#: ../src/main/parallel_view.cc:370 ../ui/search-dialog.glade.h:102
+#: ../ui/search-dialog.gtkbuilder.h:101 ../ui/xi-menus.glade.h:76
+#: ../ui/xi-menus-popup.gtkbuilder.h:60
 msgid "Footnotes"
 msgstr "Poznámky pod čiarou"
 
-#: ../src/main/parallel_view.cc:376 ../ui/search-dialog.glade.h:99
-#: ../ui/search-dialog.gtkbuilder.h:98 ../ui/xi-menus.glade.h:73
-#: ../ui/xi-menus-popup.gtkbuilder.h:50
+#: ../src/main/parallel_view.cc:379 ../ui/search-dialog.glade.h:99
+#: ../ui/search-dialog.gtkbuilder.h:98 ../ui/xi-menus.glade.h:75
+#: ../ui/xi-menus-popup.gtkbuilder.h:59
 msgid "Morphological Tags"
 msgstr "Morfologické značky"
 
-#: ../src/main/parallel_view.cc:385 ../ui/xi-menus.glade.h:79
-#: ../ui/xi-menus-popup.gtkbuilder.h:55
+#: ../src/main/parallel_view.cc:388 ../ui/xi-menus.glade.h:81
+#: ../ui/xi-menus-popup.gtkbuilder.h:64
 msgid "Hebrew Vowel Points"
 msgstr "Body hebrejských samohlások"
 
-#: ../src/main/parallel_view.cc:394 ../ui/xi-menus.glade.h:80
-#: ../ui/xi-menus-popup.gtkbuilder.h:56
+#: ../src/main/parallel_view.cc:397 ../ui/xi-menus.glade.h:82
+#: ../ui/xi-menus-popup.gtkbuilder.h:65
 msgid "Hebrew Cantillation"
 msgstr "Hebrejské vokalizácia"
 
-#: ../src/main/parallel_view.cc:403 ../ui/xi-menus.glade.h:78
-#: ../ui/xi-menus-popup.gtkbuilder.h:54
+#: ../src/main/parallel_view.cc:406 ../ui/xi-menus.glade.h:80
+#: ../ui/xi-menus-popup.gtkbuilder.h:63
 msgid "Greek Accents"
 msgstr "Grécke akcenty"
 
-#: ../src/main/parallel_view.cc:412 ../ui/xi-menus.glade.h:75
-#: ../ui/xi-menus-popup.gtkbuilder.h:52
+#: ../src/main/parallel_view.cc:415 ../ui/xi-menus.glade.h:77
+#: ../ui/xi-menus-popup.gtkbuilder.h:61
 msgid "Cross-references"
 msgstr "Krížové referencie"
 
-#: ../src/main/parallel_view.cc:421 ../ui/xi-menus.glade.h:72
-#: ../ui/xi-menus-popup.gtkbuilder.h:49
+#: ../src/main/parallel_view.cc:424 ../ui/xi-menus.glade.h:74
+#: ../ui/xi-menus-popup.gtkbuilder.h:58
 msgid "Lemmas"
 msgstr "Lemy"
 
-#: ../src/main/parallel_view.cc:430 ../ui/xi-menus.glade.h:68
-#: ../ui/xi-menus-popup.gtkbuilder.h:45
+#: ../src/main/parallel_view.cc:433 ../ui/xi-menus.glade.h:70
+#: ../ui/xi-menus-popup.gtkbuilder.h:54
 msgid "Headings"
 msgstr "Nadpisy"
 
-#: ../src/main/parallel_view.cc:440 ../ui/xi-menus.glade.h:69
-#: ../ui/xi-menus-popup.gtkbuilder.h:46
+#: ../src/main/parallel_view.cc:443 ../ui/xi-menus.glade.h:71
+#: ../ui/xi-menus-popup.gtkbuilder.h:55
 msgid "Italic Headings"
 msgstr "Nadpisy kurzívou"
 
-#: ../src/main/parallel_view.cc:450 ../src/main/parallel_view.cc:539
-#: ../ui/xi-menus.glade.h:89 ../ui/xi-menus-popup.gtkbuilder.h:65
+#: ../src/main/parallel_view.cc:453 ../src/main/parallel_view.cc:542
+#: ../ui/xi-menus.glade.h:91 ../ui/xi-menus-popup.gtkbuilder.h:74
 msgid "Morpheme Segmentation"
 msgstr "Segmentácia morfém"
 
-#: ../src/main/parallel_view.cc:459 ../ui/xi-menus.glade.h:70
-#: ../ui/xi-menus-popup.gtkbuilder.h:47
+#: ../src/main/parallel_view.cc:462 ../ui/xi-menus.glade.h:72
+#: ../ui/xi-menus-popup.gtkbuilder.h:56
 msgid "Words of Christ in Red"
 msgstr "Kristove slová červenou farbou"
 
-#: ../src/main/parallel_view.cc:468 ../ui/xi-menus.glade.h:81
-#: ../ui/xi-menus-popup.gtkbuilder.h:57
+#: ../src/main/parallel_view.cc:471 ../ui/xi-menus.glade.h:83
+#: ../ui/xi-menus-popup.gtkbuilder.h:66
 msgid "Transliteration"
 msgstr "Prepis"
 
-#: ../src/main/parallel_view.cc:477
+#: ../src/main/parallel_view.cc:480
 msgid "Textual Variants"
 msgstr "Textové varianty"
 
-#: ../src/main/parallel_view.cc:485 ../ui/xi-menus.glade.h:83
-#: ../ui/xi-menus-popup.gtkbuilder.h:59
+#: ../src/main/parallel_view.cc:488 ../ui/xi-menus.glade.h:85
+#: ../ui/xi-menus-popup.gtkbuilder.h:68
 msgid "Primary Reading"
 msgstr "Prvoradé čítanie"
 
-#: ../src/main/parallel_view.cc:494 ../ui/xi-menus.glade.h:84
-#: ../ui/xi-menus-popup.gtkbuilder.h:60
+#: ../src/main/parallel_view.cc:497 ../ui/xi-menus.glade.h:86
+#: ../ui/xi-menus-popup.gtkbuilder.h:69
 msgid "Secondary Reading"
 msgstr "Pomocné čítanie"
 
-#: ../src/main/parallel_view.cc:503 ../ui/xi-menus.glade.h:85
-#: ../ui/xi-menus-popup.gtkbuilder.h:61
+#: ../src/main/parallel_view.cc:506 ../ui/xi-menus.glade.h:87
+#: ../ui/xi-menus-popup.gtkbuilder.h:70
 msgid "All Readings"
 msgstr "Všetky čítania"
 
-#: ../src/main/parallel_view.cc:512 ../ui/xi-menus.glade.h:86
-#: ../ui/xi-menus-popup.gtkbuilder.h:62
+#: ../src/main/parallel_view.cc:515 ../ui/xi-menus.glade.h:88
+#: ../ui/xi-menus-popup.gtkbuilder.h:71
 msgid "Transliterated Forms"
 msgstr "Formy prepisu"
 
-#: ../src/main/parallel_view.cc:521 ../ui/xi-menus.glade.h:87
-#: ../ui/xi-menus-popup.gtkbuilder.h:63
+#: ../src/main/parallel_view.cc:524 ../ui/xi-menus.glade.h:89
+#: ../ui/xi-menus-popup.gtkbuilder.h:72
 msgid "Enumerations"
 msgstr "Vymenovania"
 
-#: ../src/main/parallel_view.cc:530 ../ui/xi-menus.glade.h:88
-#: ../ui/xi-menus-popup.gtkbuilder.h:64
+#: ../src/main/parallel_view.cc:533 ../ui/xi-menus.glade.h:90
+#: ../ui/xi-menus-popup.gtkbuilder.h:73
 msgid "Glosses"
 msgstr "Glosáre"
 
-#: ../src/main/parallel_view.cc:727
+#: ../src/main/parallel_view.cc:736
 msgid "view context"
 msgstr "zobraziť kontext"
 
-#: ../src/main/parallel_view.cc:964
+#: ../src/main/parallel_view.cc:979
 msgid "Failed to find 1st parallel module for display control."
 msgstr "Nepodarilo sa nájsť 1. paralelný modul na ovládanie displeja."
 
@@ -2361,39 +2547,43 @@ msgstr ""
 msgid "BookChapter"
 msgstr "KnihyKapitola"
 
-#: ../src/main/previewer.cc:154
+#: ../src/main/previewer.cc:152
 msgid "User Annotation"
 msgstr "Používateľova anotácie"
 
-#: ../src/main/search_dialog.cc:118 ../ui/search-dialog.glade.h:39
+#: ../src/main/previewer.cc:155
+msgid "Bookmark List"
+msgstr "Zoznam záložiek"
+
+#: ../src/main/search_dialog.cc:117 ../ui/search-dialog.glade.h:39
 #: ../ui/search-dialog.gtkbuilder.h:39
 msgid "Multi-word"
 msgstr "Viacslovné"
 
-#: ../src/main/search_dialog.cc:121
+#: ../src/main/search_dialog.cc:120
 msgid "Attribute"
 msgstr "Atribút"
 
-#: ../src/main/search_dialog.cc:222
+#: ../src/main/search_dialog.cc:221
 #, c-format
 msgid "Search result %s: %s"
 msgstr "Výsledky hľadania %s: %s"
 
-#: ../src/main/search_dialog.cc:438
+#: ../src/main/search_dialog.cc:437
 msgid "Delete Range?"
 msgstr "Odstrániť rozsah?"
 
-#: ../src/main/search_dialog.cc:439
+#: ../src/main/search_dialog.cc:438
 msgid "Are you sure you want to delete this range?"
 msgstr "Ste si istý, že chcete zmazať tento rozsah?"
 
-#: ../src/main/search_dialog.cc:652 ../src/main/search_dialog.cc:1069
-#: ../src/main/search_dialog.cc:1072 ../src/main/search_dialog.cc:1092
-#: ../src/main/search_dialog.cc:1095
+#: ../src/main/search_dialog.cc:651 ../src/main/search_dialog.cc:1068
+#: ../src/main/search_dialog.cc:1071 ../src/main/search_dialog.cc:1091
+#: ../src/main/search_dialog.cc:1094
 msgid "Search: "
 msgstr "Prehľadávať: "
 
-#: ../src/main/search_dialog.cc:1436
+#: ../src/main/search_dialog.cc:1435
 #, c-format
 msgid ""
 "%s:\n"
@@ -2404,16 +2594,16 @@ msgstr ""
 "Taký modul nie je nainštalovaný.\n"
 "%s"
 
-#: ../src/main/search_dialog.cc:1438
+#: ../src/main/search_dialog.cc:1437
 msgid "Please adjust the module list."
 msgstr "Upravte prosím zoznam modulov."
 
-#: ../src/main/search_dialog.cc:1454
+#: ../src/main/search_dialog.cc:1453
 #, c-format
 msgid "No fast-search index exists for %s.%s%s"
 msgstr "Neexistuje index rýchleho hľadania pre %s.%s%s"
 
-#: ../src/main/search_dialog.cc:1456
+#: ../src/main/search_dialog.cc:1455
 msgid ""
 "\n"
 "Search on this module is now `multi word'."
@@ -2421,7 +2611,7 @@ msgstr ""
 "\n"
 "Hľadanie v module je teraz 'viacslovné'."
 
-#: ../src/main/search_dialog.cc:1457
+#: ../src/main/search_dialog.cc:1456
 msgid ""
 "\n"
 "See the Module Manager, Maintenance pane."
@@ -2429,7 +2619,7 @@ msgstr ""
 "\n"
 "Pozrite Správcu modulov, časť Údržba."
 
-#: ../src/main/search_dialog.cc:1518
+#: ../src/main/search_dialog.cc:1517
 msgid "Search finished"
 msgstr "Hľadanie skončilo"
 
@@ -2455,7 +2645,7 @@ msgstr "Xiphos nemôže vytvoriť priečinok "
 msgid "can not create "
 msgstr "nemôžem vytvoriť "
 
-#: ../src/main/settings.c:211
+#: ../src/main/settings.c:212
 msgid ""
 "Empty settings file -- backup recovery attempted.\n"
 "Some information may have been lost."
@@ -2463,11 +2653,11 @@ msgstr ""
 "Prázdny súbor nastavení -- pokus o obnovenie zo zálohy.\n"
 "Niektoré informácie môžu byť stratené."
 
-#: ../src/main/settings.c:214
+#: ../src/main/settings.c:215
 msgid "Empty settings file -- no backup?!? Information lost!"
 msgstr "Prázdny súbor nastavení -- žiadna záloha?!? Informácie sa stratili!"
 
-#: ../src/main/settings.c:241
+#: ../src/main/settings.c:242
 msgid ""
 "There are no Bibles installed.\n"
 "Evidently, you declined to install any.\n"
@@ -2483,7 +2673,7 @@ msgstr ""
 "Xiphos nemôže pokračovať,\n"
 "a preto sa ukončí."
 
-#: ../src/main/settings.c:247
+#: ../src/main/settings.c:248
 msgid "Bible module installation complete."
 msgstr "Inštalácia Biblie bola dokončená."
 
@@ -2495,15 +2685,21 @@ msgstr ""
 "Chyba modulu: Nepoužiteľné xref kódovanie.\n"
 "Prosím, tot nahláste spolu s informáciou o module a verši"
 
-#: ../src/main/sidebar.cc:410
+#: ../src/main/sidebar.cc:408
 msgid "verse"
 msgstr "verš"
 
-#: ../src/main/sidebar.cc:470
+#: ../src/main/sidebar.cc:467
 msgid "chapter"
 msgstr "kapitola"
 
-#: ../src/main/sword.cc:634
+#: ../src/main/sidebar.cc:1102 ../src/main/sidebar.cc:1104
+#: ../src/main/sidebar.cc:1179 ../src/main/sidebar.cc:1181
+#: ../src/main/sidebar.cc:1489 ../src/main/sidebar.cc:1491
+msgid "Favorites"
+msgstr "Obľúbené"
+
+#: ../src/main/sword.cc:698
 msgid ""
 "Xiphos's file for language\n"
 "abbreviations is missing."
@@ -2511,7 +2707,7 @@ msgstr ""
 "Chýba súbor jazykových\n"
 "skratiek pre Xiphos."
 
-#: ../src/main/sword.cc:640
+#: ../src/main/sword.cc:704
 msgid ""
 "Xiphos's language abbreviation\n"
 "file cannot be opened."
@@ -2519,7 +2715,7 @@ msgstr ""
 "Nie je možné otvoriť Xiphos\n"
 "súbor so skratkami jazykov."
 
-#: ../src/main/sword.cc:652
+#: ../src/main/sword.cc:716
 msgid ""
 "Xiphos cannot allocate space\n"
 "for language abbreviations."
@@ -2527,7 +2723,7 @@ msgstr ""
 "Xiphos nemôže alokovať miesto\n"
 "Pre jazykové skratky."
 
-#: ../src/main/sword.cc:658
+#: ../src/main/sword.cc:722
 msgid ""
 "Xiphos cannot read the\n"
 "language abbreviation file."
@@ -2536,7 +2732,7 @@ msgstr ""
 "súbor s jazykovými skratkami."
 
 #. either we were given a null sys_locale, or it didn't match anything.
-#: ../src/main/sword.cc:738
+#: ../src/main/sword.cc:802
 #, c-format
 msgid ""
 "No matching locale found for `%s'.\n"
@@ -2545,11 +2741,11 @@ msgstr ""
 "Nebolo nájdete vhodné locale pre `%s'.\n"
 "%s"
 
-#: ../src/main/sword.cc:740
+#: ../src/main/sword.cc:804
 msgid "Book names and menus may not be translated."
 msgstr "Názvy kníh a ponuky nemusia byť preložené."
 
-#: ../src/main/sword.cc:1095 ../src/main/sword.cc:1273
+#: ../src/main/sword.cc:1159 ../src/main/sword.cc:1347
 #, c-format
 msgid ""
 "Module %s has companion modules:\n"
@@ -2560,7 +2756,7 @@ msgstr ""
 "%s.\n"
 "Chcete ich tiež otvoriť?%s"
 
-#: ../src/main/sword.cc:1099 ../src/main/sword.cc:1277
+#: ../src/main/sword.cc:1163 ../src/main/sword.cc:1351
 msgid ""
 "\n"
 "\n"
@@ -2572,11 +2768,11 @@ msgstr ""
 "Prvý bude otvorený v hlavnom okne\n"
 "a ostatné v samostatných oknách."
 
-#: ../src/main/sword.cc:1404
+#: ../src/main/sword.cc:1514
 msgid "Daily devotional was requested, but there are none installed."
 msgstr "Požaduje sa Denné zamyslenie, ale žiadne nebolo nainštalované."
 
-#: ../src/main/sword.cc:1623
+#: ../src/main/sword.cc:1761
 msgid ""
 "<b>Locked Module.</b>\n"
 "\n"
@@ -2612,81 +2808,77 @@ msgstr "História ➛ Zoznam veršov"
 msgid "URL not found:"
 msgstr "URL nebola nájdená:"
 
-#: ../src/main/url.cc:194
+#: ../src/main/url.cc:193
 #, c-format
-msgid "Xiphos could not execute %s"
-msgstr "Xiphos nemôže spustiť %s"
+msgid "Xiphos could not execute %s: %s"
+msgstr "Xiphos nemôže vykonať %s: %s"
 
-#: ../src/main/url.cc:202
-msgid "Viewer error:\n"
-msgstr "Chyba prehliadača:\n"
-
-#: ../src/main/url.cc:273
+#: ../src/main/url.cc:263
 #, c-format
 msgid "Show %s in main window"
 msgstr "Zobraziť %s v hlavnom okne"
 
-#: ../src/main/xml.c:87 ../src/main/xml.c:443 ../src/main/xml.c:574
+#: ../src/main/xml.c:88 ../src/main/xml.c:500 ../src/main/xml.c:631
 #, c-format
 msgid "Document not created successfully. \n"
 msgstr "Dokument nebol úspešne vytvorený. \n"
 
-#: ../src/main/xml.c:99
+#: ../src/main/xml.c:100
 msgid "What must I do to be saved?"
 msgstr "Čo musím robiť, aby som bol spasený?"
 
-#: ../src/main/xml.c:100 ../src/main/xml.c:101
+#: ../src/main/xml.c:101 ../src/main/xml.c:102
 msgid "Acts 16:31"
 msgstr "Skutky 16:31"
 
-#: ../src/main/xml.c:102 ../src/main/xml.c:103
+#: ../src/main/xml.c:103 ../src/main/xml.c:104
 msgid "Eph 2:8,9"
 msgstr "Ef 2:8,9"
 
-#: ../src/main/xml.c:104 ../src/main/xml.c:105
+#: ../src/main/xml.c:105 ../src/main/xml.c:106
 msgid "Romans 1:16"
 msgstr "Rimanom 1:16"
 
-#: ../src/main/xml.c:107
+#: ../src/main/xml.c:108
 msgid "What is the Gospel?"
 msgstr "Čo je evanjelium?"
 
-#: ../src/main/xml.c:108 ../src/main/xml.c:109
+#: ../src/main/xml.c:109 ../src/main/xml.c:110
 msgid "1 Cor 15:1-4"
 msgstr "1 Kor 15:1-4"
 
-#: ../src/main/xml.c:238 ../src/main/xml.c:384 ../src/main/xml.c:1504
+#: ../src/main/xml.c:295 ../src/main/xml.c:441 ../src/main/xml.c:1599
 #, c-format
 msgid "Document not parsed successfully. \n"
 msgstr "Dokument nebol úspešne spracovaný. \n"
 
-#: ../src/main/xml.c:244 ../src/main/xml.c:390 ../src/main/xml.c:410
-#: ../src/main/xml.c:1061 ../src/main/xml.c:1391 ../src/main/xml.c:1587
+#: ../src/main/xml.c:301 ../src/main/xml.c:447 ../src/main/xml.c:467
+#: ../src/main/xml.c:1127 ../src/main/xml.c:1457 ../src/main/xml.c:1682
 #, c-format
 msgid "empty document \n"
 msgstr "prázdny dokument \n"
 
-#: ../src/main/xml.c:250
+#: ../src/main/xml.c:307
 #, c-format
 msgid "wrong type, root node != SwordBookmarks\n"
 msgstr "zlý typ, koreňový uzol != SwordBookmarks\n"
 
-#: ../src/main/xml.c:396
+#: ../src/main/xml.c:453
 #, c-format
 msgid "wrong type, root node != Copy_Export\n"
 msgstr "zlý typ, koreňový uzol != Copy_Export\n"
 
-#: ../src/main/xml.c:473
+#: ../src/main/xml.c:530
 #, c-format
 msgid "%s<center>%s<br>Chapter %d</center><br>"
 msgstr "%s<center>%s<br>Kapitola %d</center><br>"
 
-#: ../src/main/xml.c:477
+#: ../src/main/xml.c:534
 #, c-format
 msgid "<br><center>Chapter %d</center><br>"
 msgstr "<br><center>Kapitola %d</center><br>"
 
-#: ../src/main/xml.c:480
+#: ../src/main/xml.c:537
 #, c-format
 msgid ""
 "%s\n"
@@ -2699,7 +2891,7 @@ msgstr ""
 "Kapitola %d\n"
 "\n"
 
-#: ../src/main/xml.c:483
+#: ../src/main/xml.c:540
 #, c-format
 msgid ""
 "\n"
@@ -2712,12 +2904,12 @@ msgstr ""
 "Kapitola %d\n"
 "\n"
 
-#: ../src/main/xml.c:492
+#: ../src/main/xml.c:549
 #, c-format
 msgid "%s%s: %s Chapter %d<br><br>"
 msgstr "%s%s: %s Kapitola %d<br><br>"
 
-#: ../src/main/xml.c:495
+#: ../src/main/xml.c:552
 #, c-format
 msgid ""
 "%s: %s Chapter %d\n"
@@ -2726,82 +2918,82 @@ msgstr ""
 "%s: %s Kapitola %d\n"
 "\n"
 
-#: ../src/main/xml.c:503
+#: ../src/main/xml.c:560
 #, c-format
 msgid "&nbsp;&nbsp;[%d]"
 msgstr "&nbsp;&nbsp;[%d]"
 
-#: ../src/main/xml.c:506
+#: ../src/main/xml.c:563
 #, c-format
 msgid " [%d]"
 msgstr " [%d]"
 
-#: ../src/main/xml.c:515
+#: ../src/main/xml.c:572
 #, c-format
 msgid "%s%s (%s %d:%d%s)</body></html>"
 msgstr "%s%s (%s %d:%d%s)</body></html>"
 
-#: ../src/main/xml.c:518
+#: ../src/main/xml.c:575
 #, c-format
 msgid "%s(%s %d:%d%s)%s </body></html>"
 msgstr "%s(%s %d:%d%s)%s </body></html>"
 
-#: ../src/main/xml.c:520
+#: ../src/main/xml.c:577
 #, c-format
 msgid "%s (%s %d:%d%s)"
 msgstr "%s (%s %d:%d%s)"
 
-#: ../src/main/xml.c:523
+#: ../src/main/xml.c:580
 #, c-format
 msgid "(%s %d:%d%s) %s"
 msgstr "(%s %d:%d%s) %s"
 
-#: ../src/main/xml.c:531
+#: ../src/main/xml.c:588
 #, c-format
 msgid " %s%s"
 msgstr " %s%s"
 
-#: ../src/main/xml.c:533 ../src/main/xml.c:537
+#: ../src/main/xml.c:590 ../src/main/xml.c:594
 #, c-format
 msgid "%s(%s %d:%d-%d%s)"
 msgstr "%s(%s %d:%d-%d%s)"
 
-#: ../src/main/xml.c:535
+#: ../src/main/xml.c:592
 #, c-format
 msgid "(%s %d:%d-%d%s)<br>"
 msgstr "(%s %d:%d-%d%s)<br>"
 
-#: ../src/main/xml.c:540
+#: ../src/main/xml.c:597
 #, c-format
 msgid "(%s %d:%d-%d%s)\n"
 msgstr "(%s %d:%d-%d%s)\n"
 
-#: ../src/main/xml.c:589
+#: ../src/main/xml.c:646
 msgid "Old Testament"
 msgstr "Starý Zákon"
 
-#: ../src/main/xml.c:591
+#: ../src/main/xml.c:648
 msgid "Gen - Mal"
 msgstr "Gen - Mal"
 
-#: ../src/main/xml.c:597
+#: ../src/main/xml.c:654
 msgid "New Testament"
 msgstr "Nový Zákon"
 
-#: ../src/main/xml.c:599
+#: ../src/main/xml.c:656
 msgid "Mat - Rev"
 msgstr "Mat - Zjv"
 
-#: ../src/main/xml.c:608
+#: ../src/main/xml.c:665
 msgid "Sample Module List"
 msgstr "Ukážka zoznamu modulov"
 
-#: ../src/main/xml.c:1067 ../src/main/xml.c:1397
+#: ../src/main/xml.c:1133 ../src/main/xml.c:1463
 #, c-format
 msgid "wrong type, root node != %s\n"
 msgstr "zlý typ, koreňový uzol != %s\n"
 
-#: ../src/main/xml.c:1549
+#: ../src/main/xml.c:1644
 #, c-format
 msgid ""
 "Save of settings failed! stat %d, size %d\n"
@@ -2810,7 +3002,7 @@ msgstr ""
 "Uloženie nastavení zlyhalo! stat %d, veľkosť %d\n"
 "%s"
 
-#: ../src/main/xml.c:1551
+#: ../src/main/xml.c:1646
 msgid "Attempting to revert to previous save."
 msgstr "Pokus o vrátenie sa k poslednej uloženej verzií."
 
@@ -2825,11 +3017,6 @@ msgstr "Dialog záložiek"
 #: ../ui/bookmarks.glade.h:3 ../ui/bookmarks.gtkbuilder.h:2
 msgid "Create new folder"
 msgstr "Vytvoriť nový priečinok"
-
-#: ../ui/bookmarks.glade.h:4 ../ui/bookmarks.gtkbuilder.h:4
-#: ../ui/xi-menus.glade.h:119 ../ui/xi-menus-popup.gtkbuilder.h:5
-msgid "New Folder"
-msgstr "Nový priečinok"
 
 #: ../ui/bookmarks.glade.h:5 ../ui/bookmarks.gtkbuilder.h:3
 msgid "New ..."
@@ -2977,7 +3164,7 @@ msgid "New Document"
 msgstr "Nový dokument"
 
 #: ../ui/export-dialog.glade.h:1 ../ui/export-dialog.gtkbuilder.h:1
-#: ../ui/xi-menus.glade.h:60 ../ui/xi-menus-popup.gtkbuilder.h:38
+#: ../ui/xi-menus.glade.h:62 ../ui/xi-menus-popup.gtkbuilder.h:47
 msgid "Copy/Export Passage"
 msgstr "Kopírovať/Exportovať pasáž"
 
@@ -3014,7 +3201,7 @@ msgid "Export complete book"
 msgstr "Export celú knihu"
 
 #: ../ui/export-dialog.glade.h:11 ../ui/export-dialog.gtkbuilder.h:11
-#: ../ui/prefs.glade.h:149 ../ui/prefs.gtkbuilder.h:153
+#: ../ui/prefs.glade.h:152 ../ui/prefs.gtkbuilder.h:147
 msgid "Book"
 msgstr "Kniha"
 
@@ -3115,6 +3302,26 @@ msgstr "Označuje, či sa majú v texte zobrazovať čísla veršov."
 msgid "Include version"
 msgstr "Zahrnie verziu"
 
+#: ../ui/folder.gtkbuilder.h:1
+msgid "Folder"
+msgstr "Priečinok"
+
+#: ../ui/folder.gtkbuilder.h:2
+msgid "Name:"
+msgstr "Názov:"
+
+#: ../ui/folder.gtkbuilder.h:3
+msgid "Tag color:"
+msgstr "Farba značky:"
+
+#: ../ui/folder.gtkbuilder.h:4
+msgid "Choose a highlight color for this tag group"
+msgstr "Vyberte farbu zvýraznenia pre túto skupinu značiek"
+
+#: ../ui/folder.gtkbuilder.h:6
+msgid "Remove tag color from this folder"
+msgstr "Odstrániť značku farby z tohto priečinka"
+
 #: ../ui/gtk2_webedit.ui.h:1 ../ui/gtk_webedit.ui.h:1
 msgid "About Studypad"
 msgstr "O poznámkovom bloku"
@@ -3123,8 +3330,8 @@ msgstr "O poznámkovom bloku"
 msgid "Open about dialog"
 msgstr "Otvorí dialóg o programe"
 
-#: ../ui/gtk2_webedit.ui.h:4 ../ui/gtk_webedit.ui.h:4 ../ui/prefs.glade.h:129
-#: ../ui/prefs.gtkbuilder.h:133
+#: ../ui/gtk2_webedit.ui.h:4 ../ui/gtk_webedit.ui.h:4 ../ui/prefs.glade.h:132
+#: ../ui/prefs.gtkbuilder.h:127
 msgid "Bold"
 msgstr "Hrubým"
 
@@ -3169,7 +3376,7 @@ msgid "Remove selection"
 msgstr "Odstrániť označené"
 
 #: ../ui/gtk2_webedit.ui.h:16 ../ui/gtk_webedit.ui.h:16
-#: ../ui/xi-menus.glade.h:125 ../ui/xi-menus-popup.gtkbuilder.h:11
+#: ../ui/xi-menus.glade.h:129 ../ui/xi-menus-popup.gtkbuilder.h:11
 msgid "Delete Item"
 msgstr "Zmazať položku"
 
@@ -3439,7 +3646,7 @@ msgid "_Edit"
 msgstr "_Upraviť"
 
 #: ../ui/gtk2_webedit.ui.h:89 ../ui/gtk_webedit.ui.h:90
-#: ../ui/xi-menus.glade.h:38 ../ui/xi-menus.gtkbuilder.h:24
+#: ../ui/xi-menus.glade.h:40 ../ui/xi-menus.gtkbuilder.h:25
 msgid "_Help"
 msgstr "_Pomocník"
 
@@ -3750,7 +3957,6 @@ msgid "Toggle Chapter Button"
 msgstr "Tlačidlo zmeniť kapitolu"
 
 #: ../ui/navbar_versekey.glade.h:7 ../ui/navbar_versekey.gtkbuilder.h:4
-#: ../ui/prefs.gtkbuilder.h:9
 msgid "1"
 msgstr "1"
 
@@ -3770,75 +3976,83 @@ msgstr "Zadajte odkaz na verš vo formáte Kniha 1:1 (alebo 1.1) a stlačte Ente
 msgid "Reference Entry"
 msgstr "Položka Referencia"
 
-#: ../ui/prefs.glade.h:2 ../ui/prefs.gtkbuilder.h:14
+#: ../ui/prefs.glade.h:2 ../ui/prefs.gtkbuilder.h:5
 msgid "Cover"
 msgstr "Obal"
 
-#: ../ui/prefs.glade.h:3 ../ui/prefs.gtkbuilder.h:15
+#: ../ui/prefs.glade.h:3 ../ui/prefs.gtkbuilder.h:6
 msgid "<b>Font Colors</b>"
 msgstr "<b>Farby písma</b>"
 
-#: ../ui/prefs.glade.h:4 ../ui/prefs.gtkbuilder.h:16
+#: ../ui/prefs.glade.h:4 ../ui/prefs.gtkbuilder.h:7
 msgid "Background"
 msgstr "Pozadie"
 
-#: ../ui/prefs.glade.h:5 ../ui/prefs.gtkbuilder.h:17
+#: ../ui/prefs.glade.h:5 ../ui/prefs.gtkbuilder.h:8
 msgid " "
 msgstr "  "
 
-#: ../ui/prefs.glade.h:6 ../ui/prefs.gtkbuilder.h:18
+#: ../ui/prefs.glade.h:6 ../ui/prefs.gtkbuilder.h:9
 msgid "Foreground"
 msgstr "Popredie"
 
-#: ../ui/prefs.glade.h:7 ../ui/prefs.gtkbuilder.h:19
+#: ../ui/prefs.glade.h:7 ../ui/prefs.gtkbuilder.h:10
 msgid "Current Verse"
 msgstr "Aktuálny Verš"
 
-#: ../ui/prefs.glade.h:8 ../ui/prefs.gtkbuilder.h:20
+#: ../ui/prefs.glade.h:8 ../ui/prefs.gtkbuilder.h:11
 msgid "Verse Number"
 msgstr "Číslo verša"
 
-#: ../ui/prefs.glade.h:9 ../ui/prefs.gtkbuilder.h:21
+#: ../ui/prefs.glade.h:9 ../ui/prefs.gtkbuilder.h:12
 msgid "Links"
 msgstr "Prepojenia"
 
-#: ../ui/prefs.glade.h:10 ../ui/prefs.gtkbuilder.h:22
+#: ../ui/prefs.glade.h:10 ../ui/prefs.gtkbuilder.h:13
 msgid "Highlight Foreground"
 msgstr "Zvýraznenie popredia"
 
-#: ../ui/prefs.glade.h:11 ../ui/prefs.gtkbuilder.h:23
+#: ../ui/prefs.glade.h:11 ../ui/prefs.gtkbuilder.h:14
 msgid "Highlight Background"
 msgstr "Zvýraznenie pozadia"
 
-#: ../ui/prefs.glade.h:12 ../ui/prefs.gtkbuilder.h:24
+#: ../ui/prefs.glade.h:12 ../ui/prefs.gtkbuilder.h:15
 msgid "Invert color pairs"
 msgstr "Invertovať farebné páry"
 
-#: ../ui/prefs.glade.h:13 ../ui/prefs.gtkbuilder.h:25
+#: ../ui/prefs.glade.h:13 ../ui/prefs.gtkbuilder.h:16
 msgid "Normal Text"
 msgstr "Základný text"
 
-#: ../ui/prefs.glade.h:14 ../ui/prefs.gtkbuilder.h:26
+#: ../ui/prefs.glade.h:14 ../ui/prefs.gtkbuilder.h:17
 msgid "Highlight"
 msgstr "Zvýraznenie"
 
-#: ../ui/prefs.glade.h:15 ../ui/prefs.gtkbuilder.h:27
+#: ../ui/prefs.glade.h:15 ../ui/prefs.gtkbuilder.h:18
 msgid "Font Colors"
 msgstr "Farby písma"
 
-#: ../ui/prefs.glade.h:16 ../ui/prefs.gtkbuilder.h:28
+#: ../ui/prefs.glade.h:16 ../ui/prefs.gtkbuilder.h:19
 msgid "<b>Font Sizes</b>"
 msgstr "<b>Veľkosť písma</b>"
 
-#: ../ui/prefs.glade.h:17 ../ui/prefs.gtkbuilder.h:29
+#: ../ui/prefs.glade.h:17 ../ui/prefs.gtkbuilder.h:20
 msgid "All displayed font sizes are relative to this choice"
 msgstr "Všetky zobrazené veľkosti písma sa vzťahujú na túto voľbu"
 
-#: ../ui/prefs.glade.h:18 ../ui/prefs.gtkbuilder.h:30
+#: ../ui/prefs.glade.h:18 ../ui/prefs.gtkbuilder.h:21
 msgid "Base font size"
 msgstr "Základná veľkosť textu"
 
-#: ../ui/prefs.glade.h:19
+#: ../ui/prefs.glade.h:19 ../ui/prefs.gtkbuilder.h:22
+msgid "Commonly -1, to make verse numbers less obtrusive"
+msgstr "Zvyčajne -1, aby číslo verša bolo menej vtieravé"
+
+#: ../ui/prefs.glade.h:20 ../ui/prefs.gtkbuilder.h:23
+msgid "Verse number size"
+msgstr "Veľkosť čísla verša"
+
+#: ../ui/prefs.glade.h:21
 msgid ""
 "-2\n"
 "-1\n"
@@ -3858,15 +4072,7 @@ msgstr ""
 "+4\n"
 "+5"
 
-#: ../ui/prefs.glade.h:27 ../ui/prefs.gtkbuilder.h:31
-msgid "Commonly -1, to make verse numbers less obtrusive"
-msgstr "Zvyčajne -1, aby číslo verša bolo menej vtieravé"
-
-#: ../ui/prefs.glade.h:28 ../ui/prefs.gtkbuilder.h:32
-msgid "Verse number size"
-msgstr "Veľkosť čísla verša"
-
-#: ../ui/prefs.glade.h:29 ../ui/prefs.gtkbuilder.h:33
+#: ../ui/prefs.glade.h:29 ../ui/prefs.gtkbuilder.h:24
 msgid ""
 "Name and size choice for any module in a given language; still overridden by "
 "a specific choice on a particular module"
@@ -3874,15 +4080,15 @@ msgstr ""
 "Výber názvu a veľkosti pre ľubovoľný modul v danom jazyku; je prepísaný "
 "prípadnou špecifickou voľbou na konkrétnom module"
 
-#: ../ui/prefs.glade.h:30 ../ui/prefs.gtkbuilder.h:34
+#: ../ui/prefs.glade.h:30 ../ui/prefs.gtkbuilder.h:25
 msgid "Font preferences, per language"
 msgstr "Nastavenie písma pre jazyk"
 
-#: ../ui/prefs.glade.h:31 ../ui/prefs.gtkbuilder.h:35
+#: ../ui/prefs.glade.h:31 ../ui/prefs.gtkbuilder.h:26
 msgid "Language Font Combo"
 msgstr "Roletové menu písma jazykov"
 
-#: ../ui/prefs.glade.h:32 ../ui/prefs.gtkbuilder.h:36
+#: ../ui/prefs.glade.h:32 ../ui/prefs.gtkbuilder.h:27
 msgid ""
 "Number of columns in which to display text; can be set per module in font "
 "dialog"
@@ -3890,27 +4096,27 @@ msgstr ""
 "Počet stĺpcov, v ktorých sa má zobraziť text; možno nastaviť pre modul v "
 "dialógovom okne písma"
 
-#: ../ui/prefs.glade.h:33 ../ui/prefs.gtkbuilder.h:37
+#: ../ui/prefs.glade.h:33 ../ui/prefs.gtkbuilder.h:28
 msgid "Default display columns"
 msgstr "Predvolené stĺpce zobrazenia"
 
-#: ../ui/prefs.glade.h:34 ../ui/prefs.gtkbuilder.h:38
+#: ../ui/prefs.glade.h:34 ../ui/prefs.gtkbuilder.h:29
 msgid "Justify margins"
 msgstr "Zarovnať okraje"
 
-#: ../ui/prefs.glade.h:35 ../ui/prefs.gtkbuilder.h:39
+#: ../ui/prefs.glade.h:35 ../ui/prefs.gtkbuilder.h:30
 msgid "When unset, leave a ragged margin."
 msgstr "Keď nie je nastavené, ponechajte rozstrapkaný okraj."
 
-#: ../ui/prefs.glade.h:36 ../ui/prefs.gtkbuilder.h:40
+#: ../ui/prefs.glade.h:36 ../ui/prefs.gtkbuilder.h:31
 msgid "Font Misc"
 msgstr "Písmo - rôzne"
 
-#: ../ui/prefs.glade.h:37 ../ui/prefs.gtkbuilder.h:41
+#: ../ui/prefs.glade.h:37 ../ui/prefs.gtkbuilder.h:32
 msgid "<b>BibleSync</b>"
 msgstr "<b>BibleSync</b>"
 
-#: ../ui/prefs.glade.h:38 ../ui/prefs.gtkbuilder.h:42
+#: ../ui/prefs.glade.h:38 ../ui/prefs.gtkbuilder.h:33
 msgid ""
 "Xiphos is the first Bible study program to provide an implementation of "
 "BibleSync, a synchronization protocol for Bible programs. If you work with "
@@ -3930,67 +4136,67 @@ msgstr ""
 "tíme; Rečník, riadiť biblické programy poslucháčov prednášok, aby vás "
 "sledovali; Publikum, aby ste dostali navigáciu rečníka."
 
-#: ../ui/prefs.glade.h:39 ../ui/prefs.gtkbuilder.h:44
+#: ../ui/prefs.glade.h:39 ../ui/prefs.gtkbuilder.h:35
 msgid "<i>Mode:</i>"
 msgstr "<i>Režim:</i>"
 
-#: ../ui/prefs.glade.h:40 ../ui/prefs.gtkbuilder.h:43
+#: ../ui/prefs.glade.h:40 ../ui/prefs.gtkbuilder.h:34
 msgid "Select the mode in which BibleSync should operate."
 msgstr "Vyberte režim, v ktorom má BibleSync fungovať."
 
-#: ../ui/prefs.glade.h:41 ../ui/prefs.gtkbuilder.h:45
+#: ../ui/prefs.glade.h:41 ../ui/prefs.gtkbuilder.h:36
 msgid "_Off"
 msgstr "_Vypnuté"
 
-#: ../ui/prefs.glade.h:42 ../ui/prefs.gtkbuilder.h:46
+#: ../ui/prefs.glade.h:42 ../ui/prefs.gtkbuilder.h:37
 msgid "Disable BibleSync."
 msgstr "Nepovoliť BibleSync."
 
-#: ../ui/prefs.glade.h:43 ../ui/prefs.gtkbuilder.h:47
+#: ../ui/prefs.glade.h:43 ../ui/prefs.gtkbuilder.h:38
 msgid "BSP off radio button"
 msgstr "Prepínač BSP vypnúť"
 
-#: ../ui/prefs.glade.h:44 ../ui/prefs.gtkbuilder.h:48
+#: ../ui/prefs.glade.h:44 ../ui/prefs.gtkbuilder.h:39
 msgid "_Speaker"
 msgstr "_Rečník"
 
-#: ../ui/prefs.glade.h:45 ../ui/prefs.gtkbuilder.h:49
+#: ../ui/prefs.glade.h:45 ../ui/prefs.gtkbuilder.h:40
 msgid "Enable BibleSync as the speaker."
 msgstr "Povoliť BibleSync v režime pre rečníka."
 
-#: ../ui/prefs.glade.h:46 ../ui/prefs.gtkbuilder.h:50
+#: ../ui/prefs.glade.h:46 ../ui/prefs.gtkbuilder.h:41
 msgid "BSP speaker radio button"
 msgstr "Prepínač BSP rečník"
 
-#: ../ui/prefs.glade.h:47 ../ui/prefs.gtkbuilder.h:51
+#: ../ui/prefs.glade.h:47 ../ui/prefs.gtkbuilder.h:42
 msgid "_Audience"
 msgstr "_Obecenstvo"
 
-#: ../ui/prefs.glade.h:48 ../ui/prefs.gtkbuilder.h:52
+#: ../ui/prefs.glade.h:48 ../ui/prefs.gtkbuilder.h:43
 msgid "Enable BibleSync as a member of the audience."
 msgstr "Povoliť BibleSync ako člena obecenstva."
 
-#: ../ui/prefs.glade.h:49 ../ui/prefs.gtkbuilder.h:53
+#: ../ui/prefs.glade.h:49 ../ui/prefs.gtkbuilder.h:44
 msgid "BSP audience radio button"
 msgstr "Prepínač BSP publikum"
 
-#: ../ui/prefs.glade.h:50 ../ui/prefs.gtkbuilder.h:54
+#: ../ui/prefs.glade.h:50 ../ui/prefs.gtkbuilder.h:45
 msgid "_Personal"
 msgstr "_Osobné"
 
-#: ../ui/prefs.glade.h:51 ../ui/prefs.gtkbuilder.h:55
+#: ../ui/prefs.glade.h:51 ../ui/prefs.gtkbuilder.h:46
 msgid "Enable BibleSync for personal or team use."
 msgstr "Povoliť BibleSync pre osobné alebo tímové používanie."
 
-#: ../ui/prefs.glade.h:52 ../ui/prefs.gtkbuilder.h:56
+#: ../ui/prefs.glade.h:52 ../ui/prefs.gtkbuilder.h:47
 msgid "BSP personal radio button"
 msgstr "Prepínač BSP osobné"
 
-#: ../ui/prefs.glade.h:53 ../ui/prefs.gtkbuilder.h:57
+#: ../ui/prefs.glade.h:53 ../ui/prefs.gtkbuilder.h:48
 msgid "Private"
 msgstr "Súkromné"
 
-#: ../ui/prefs.glade.h:54 ../ui/prefs.gtkbuilder.h:58
+#: ../ui/prefs.glade.h:54 ../ui/prefs.gtkbuilder.h:49
 msgid ""
 "When in Personal mode, only programs running on this machine will hear your "
 "navigation."
@@ -3998,47 +4204,47 @@ msgstr ""
 "V osobnom režime budú vašu navigáciu počuť iba programy spustené na tomto "
 "zariadení."
 
-#: ../ui/prefs.glade.h:55 ../ui/prefs.gtkbuilder.h:59
+#: ../ui/prefs.glade.h:55 ../ui/prefs.gtkbuilder.h:50
 msgid "BSP privacy button"
 msgstr "Prepínač BSP privátne"
 
-#: ../ui/prefs.glade.h:56 ../ui/prefs.gtkbuilder.h:61
+#: ../ui/prefs.glade.h:56 ../ui/prefs.gtkbuilder.h:52
 msgid "<i>Navigate:</i>"
 msgstr "<i>Navigovať:</i>"
 
-#: ../ui/prefs.glade.h:57 ../ui/prefs.gtkbuilder.h:60
+#: ../ui/prefs.glade.h:57 ../ui/prefs.gtkbuilder.h:51
 msgid "Choose how to accept incoming navigation synchronization."
 msgstr "Vybrať ako chcete prijímať prichádzajúcu synchronizáciu navigácie."
 
-#: ../ui/prefs.glade.h:58 ../ui/prefs.gtkbuilder.h:62
+#: ../ui/prefs.glade.h:58 ../ui/prefs.gtkbuilder.h:53
 msgid "_Direct"
 msgstr "_Priamo"
 
-#: ../ui/prefs.glade.h:59 ../ui/prefs.gtkbuilder.h:63
+#: ../ui/prefs.glade.h:59 ../ui/prefs.gtkbuilder.h:54
 msgid "BibleSync navigation will send Xiphos directly to the verse indicated."
 msgstr "Navigácia BibleSync pošle Xiphos priamo na uvedený verš."
 
-#: ../ui/prefs.glade.h:60 ../ui/prefs.gtkbuilder.h:64
+#: ../ui/prefs.glade.h:60 ../ui/prefs.gtkbuilder.h:55
 msgid "BSP nav direct radio button"
 msgstr "Prepínač BSP priama navigácia"
 
-#: ../ui/prefs.glade.h:61 ../ui/prefs.gtkbuilder.h:65
+#: ../ui/prefs.glade.h:61 ../ui/prefs.gtkbuilder.h:56
 msgid "_Verse list"
 msgstr "Zoznam _veršov"
 
-#: ../ui/prefs.glade.h:62 ../ui/prefs.gtkbuilder.h:66
+#: ../ui/prefs.glade.h:62 ../ui/prefs.gtkbuilder.h:57
 msgid "BibleSync navigation will use Xiphos' sidebar verse list."
 msgstr "BibleSync navigácia bude používať postranný panel zoznamu veršov."
 
-#: ../ui/prefs.glade.h:63 ../ui/prefs.gtkbuilder.h:67
+#: ../ui/prefs.glade.h:63 ../ui/prefs.gtkbuilder.h:58
 msgid "BSP nav verse list radio button"
 msgstr "Prepínač BSP navigačný zoznam veršov"
 
-#: ../ui/prefs.glade.h:64 ../ui/prefs.gtkbuilder.h:68
+#: ../ui/prefs.glade.h:64 ../ui/prefs.gtkbuilder.h:59
 msgid "_Keyboard only"
 msgstr "Iba _klávesnica"
 
-#: ../ui/prefs.glade.h:65 ../ui/prefs.gtkbuilder.h:69
+#: ../ui/prefs.glade.h:65 ../ui/prefs.gtkbuilder.h:60
 msgid ""
 "When checked, do not transmit every time Xiphos navigates; instead, transmit "
 "only using keyboard shortcut (Ctrl-Shift-Alt-N)."
@@ -4046,59 +4252,59 @@ msgstr ""
 "Keď je začiarknuté, nevysielajte zakaždým, keď Xiphos naviguje; namiesto "
 "toho vysielajte iba pomocou klávesovej skratky (Ctrl-Shift-Alt-N)."
 
-#: ../ui/prefs.glade.h:66 ../ui/prefs.gtkbuilder.h:70
+#: ../ui/prefs.glade.h:66 ../ui/prefs.gtkbuilder.h:61
 msgid "BSP keyboard button"
 msgstr "Tlačidlo BSP klávesnica"
 
-#: ../ui/prefs.glade.h:67 ../ui/prefs.gtkbuilder.h:72
+#: ../ui/prefs.glade.h:67 ../ui/prefs.gtkbuilder.h:63
 msgid "<i>Listen:</i>"
 msgstr "<i>Počúvať:</i>"
 
-#: ../ui/prefs.glade.h:68 ../ui/prefs.gtkbuilder.h:71
+#: ../ui/prefs.glade.h:68 ../ui/prefs.gtkbuilder.h:62
 msgid "Xiphos will listen to Speakers according to choice here."
 msgstr "Xiphos bude počúvať rečníkov podľa tejto voľby."
 
-#: ../ui/prefs.glade.h:69 ../ui/prefs.gtkbuilder.h:73
+#: ../ui/prefs.glade.h:69 ../ui/prefs.gtkbuilder.h:64
 msgid "Selective"
 msgstr "Selektívne"
 
-#: ../ui/prefs.glade.h:70 ../ui/prefs.gtkbuilder.h:74
+#: ../ui/prefs.glade.h:70 ../ui/prefs.gtkbuilder.h:65
 msgid "Choose the Speakers to be followed."
 msgstr "Vyberte rečníka pre nasledovanie."
 
-#: ../ui/prefs.glade.h:71 ../ui/prefs.gtkbuilder.h:75
+#: ../ui/prefs.glade.h:71 ../ui/prefs.gtkbuilder.h:66
 msgid "BSP listen some radio button"
 msgstr "Tlačidlo BSP počúvať niečo"
 
-#: ../ui/prefs.glade.h:72 ../ui/prefs.gtkbuilder.h:76
+#: ../ui/prefs.glade.h:72 ../ui/prefs.gtkbuilder.h:67
 msgid "All"
 msgstr "Všetko"
 
-#: ../ui/prefs.glade.h:73 ../ui/prefs.gtkbuilder.h:77
+#: ../ui/prefs.glade.h:73 ../ui/prefs.gtkbuilder.h:68
 msgid "All Speakers will be followed."
 msgstr "Všetci rečníci budú sledovaní."
 
-#: ../ui/prefs.glade.h:74 ../ui/prefs.gtkbuilder.h:78
+#: ../ui/prefs.glade.h:74 ../ui/prefs.gtkbuilder.h:69
 msgid "BSP listen all radio button"
 msgstr "Tlačidlo BSP počúvať všetko"
 
-#: ../ui/prefs.glade.h:75 ../ui/prefs.gtkbuilder.h:79
+#: ../ui/prefs.glade.h:75 ../ui/prefs.gtkbuilder.h:70
 msgid "None"
 msgstr "Nič"
 
-#: ../ui/prefs.glade.h:76 ../ui/prefs.gtkbuilder.h:80
+#: ../ui/prefs.glade.h:76 ../ui/prefs.gtkbuilder.h:71
 msgid "No Speakers will be followed."
 msgstr "Žiadny rečník nebude nasledovný."
 
-#: ../ui/prefs.glade.h:77 ../ui/prefs.gtkbuilder.h:81
+#: ../ui/prefs.glade.h:77 ../ui/prefs.gtkbuilder.h:72
 msgid "BSP listen none radio button"
 msgstr "Tlačidlo BSP nič nepočúvať"
 
-#: ../ui/prefs.glade.h:78 ../ui/prefs.gtkbuilder.h:83
+#: ../ui/prefs.glade.h:78 ../ui/prefs.gtkbuilder.h:74
 msgid "<i>Special:</i>"
 msgstr "<i>Špeciálne:</i>"
 
-#: ../ui/prefs.glade.h:79 ../ui/prefs.gtkbuilder.h:82
+#: ../ui/prefs.glade.h:79 ../ui/prefs.gtkbuilder.h:73
 msgid ""
 "Additional traces can be presented during BibleSync operation by enabling "
 "presence, mismatch, and debug. Beware enabling these, they can be very "
@@ -4109,47 +4315,47 @@ msgstr ""
 "lebo môžu generovať veľa informácií. Tiež sa rozhodnite, či povolíte "
 "skupinový parameter ako číslo karty Xiphos."
 
-#: ../ui/prefs.glade.h:80 ../ui/prefs.gtkbuilder.h:84
+#: ../ui/prefs.glade.h:80 ../ui/prefs.gtkbuilder.h:75
 msgid "Presence"
 msgstr "Prítomnosť"
 
-#: ../ui/prefs.glade.h:81 ../ui/prefs.gtkbuilder.h:85
+#: ../ui/prefs.glade.h:81 ../ui/prefs.gtkbuilder.h:76
 msgid "Presence announcements will be shown in dialogs."
 msgstr "V dialógových oknách sa budú zobrazovať oznámenia o prítomnosti."
 
-#: ../ui/prefs.glade.h:82 ../ui/prefs.gtkbuilder.h:86
+#: ../ui/prefs.glade.h:82 ../ui/prefs.gtkbuilder.h:77
 msgid "BSP presence button"
 msgstr "BSP tlačidlo prítomnosti"
 
-#: ../ui/prefs.glade.h:83 ../ui/prefs.gtkbuilder.h:87
+#: ../ui/prefs.glade.h:83 ../ui/prefs.gtkbuilder.h:78
 msgid "Mismatch"
 msgstr "Nesúlad"
 
-#: ../ui/prefs.glade.h:84 ../ui/prefs.gtkbuilder.h:88
+#: ../ui/prefs.glade.h:84 ../ui/prefs.gtkbuilder.h:79
 msgid "Mismatches from your session will be shown in dialogs."
 msgstr "Nesúlad z vašej relácie sa zobrazí v dialógových oknách."
 
-#: ../ui/prefs.glade.h:85 ../ui/prefs.gtkbuilder.h:89
+#: ../ui/prefs.glade.h:85 ../ui/prefs.gtkbuilder.h:80
 msgid "BSP mismatch button"
 msgstr "BSP tlačidlo nesúladu"
 
-#: ../ui/prefs.glade.h:86 ../ui/prefs.gtkbuilder.h:90
+#: ../ui/prefs.glade.h:86 ../ui/prefs.gtkbuilder.h:81
 msgid "Debug"
 msgstr "Hľadať chyby"
 
-#: ../ui/prefs.glade.h:87 ../ui/prefs.gtkbuilder.h:91
+#: ../ui/prefs.glade.h:87 ../ui/prefs.gtkbuilder.h:82
 msgid "Packet tracing."
 msgstr "Sledovanie paketov."
 
-#: ../ui/prefs.glade.h:88 ../ui/prefs.gtkbuilder.h:92
+#: ../ui/prefs.glade.h:88 ../ui/prefs.gtkbuilder.h:83
 msgid "BSP event debug button"
 msgstr "BSP tlačidlo debug"
 
-#: ../ui/prefs.glade.h:89 ../ui/prefs.gtkbuilder.h:93
+#: ../ui/prefs.glade.h:89 ../ui/prefs.gtkbuilder.h:84
 msgid "_Group as tab"
 msgstr "_Skupina ako karta"
 
-#: ../ui/prefs.glade.h:90 ../ui/prefs.gtkbuilder.h:94
+#: ../ui/prefs.glade.h:90 ../ui/prefs.gtkbuilder.h:85
 msgid ""
 "Interpret the protocol's group number parameter as Xiphos' tab number. "
 "Disabling this may be necessary if some Speakers' use of group number is not "
@@ -4159,15 +4365,15 @@ msgstr ""
 "byť potrebné vypnúť, ak niektorí rečníci nepoužívajú číslo skupiny ako číslo "
 "karty."
 
-#: ../ui/prefs.glade.h:91 ../ui/prefs.gtkbuilder.h:95
+#: ../ui/prefs.glade.h:91 ../ui/prefs.gtkbuilder.h:86
 msgid "BSP event group-as-tab button"
 msgstr "BSP tlačidlo skupina-ako-karta"
 
-#: ../ui/prefs.glade.h:93 ../ui/prefs.gtkbuilder.h:97
+#: ../ui/prefs.glade.h:93 ../ui/prefs.gtkbuilder.h:88
 msgid "<b>General</b>"
 msgstr "<b>Všeobecné</b>"
 
-#: ../ui/prefs.glade.h:94 ../ui/prefs.gtkbuilder.h:98
+#: ../ui/prefs.glade.h:94 ../ui/prefs.gtkbuilder.h:89
 msgid ""
 "Select a particular language for interface display, other than your usual "
 "setting"
@@ -4175,23 +4381,23 @@ msgstr ""
 "Zvoliť konkrétny jazyk pre zobrazenie rozhrania, ktorý nie je bežným "
 "nastavením"
 
-#: ../ui/prefs.glade.h:95 ../ui/prefs.gtkbuilder.h:99
+#: ../ui/prefs.glade.h:95 ../ui/prefs.gtkbuilder.h:90
 msgid "Locale (requires restart)"
 msgstr "Locale (vyžaduje reštart)"
 
-#: ../ui/prefs.glade.h:96 ../ui/prefs.gtkbuilder.h:100
+#: ../ui/prefs.glade.h:96 ../ui/prefs.gtkbuilder.h:91
 msgid "Locale Combo"
 msgstr "Roletové menu Locale"
 
-#: ../ui/prefs.glade.h:97 ../ui/prefs.gtkbuilder.h:101
+#: ../ui/prefs.glade.h:97 ../ui/prefs.gtkbuilder.h:92
 msgid "Show splash screen at start up"
 msgstr "Zobraziť pri spustení úvodný obrázok"
 
-#: ../ui/prefs.glade.h:98 ../ui/prefs.gtkbuilder.h:102
+#: ../ui/prefs.glade.h:98 ../ui/prefs.gtkbuilder.h:93
 msgid "Show Daily Devotion at start up"
 msgstr "Zobraziť pri spustení Denné zamyslenie"
 
-#: ../ui/prefs.glade.h:99 ../ui/prefs.gtkbuilder.h:103
+#: ../ui/prefs.glade.h:99 ../ui/prefs.gtkbuilder.h:94
 msgid ""
 "If you have set a preferred daily devotion module, its entry for today will "
 "be shown at startup."
@@ -4199,11 +4405,11 @@ msgstr ""
 "Ak ste nastavili preferovaný modul denného zamyslenia, pri spustení sa "
 "zobrazí zobrazí položka pre aktuálny."
 
-#: ../ui/prefs.glade.h:100 ../ui/prefs.gtkbuilder.h:104
+#: ../ui/prefs.glade.h:100 ../ui/prefs.gtkbuilder.h:95
 msgid "Use default Dictionary"
 msgstr "Použiť štandardný slovník"
 
-#: ../ui/prefs.glade.h:101 ../ui/prefs.gtkbuilder.h:105
+#: ../ui/prefs.glade.h:101 ../ui/prefs.gtkbuilder.h:96
 msgid ""
 "Make double-click of a word always use default dictionary instead of "
 "dictionary currently displayed"
@@ -4211,87 +4417,87 @@ msgstr ""
 "Pri dvojitom kliknutí na slovo sa vždy použije predvolený slovník namiesto "
 "aktuálne zobrazeného slovníka"
 
-#: ../ui/prefs.glade.h:102 ../ui/prefs.gtkbuilder.h:106
+#: ../ui/prefs.glade.h:102 ../ui/prefs.gtkbuilder.h:97
 msgid "Use default Dictionary Checkbox"
 msgstr "Zaškrtávacie pole Použiť štandardný slovník"
 
-#: ../ui/prefs.glade.h:103 ../ui/prefs.gtkbuilder.h:107
+#: ../ui/prefs.glade.h:103 ../ui/prefs.gtkbuilder.h:98
 msgid "Scroll to Previous/Next Chapter"
 msgstr "Presúvanie do predchádzajúcej/nasledujúcej kapitoly"
 
-#: ../ui/prefs.glade.h:104 ../ui/prefs.gtkbuilder.h:108
+#: ../ui/prefs.glade.h:104 ../ui/prefs.gtkbuilder.h:99
 msgid "Use Bible Text scroll bar to scroll to previous or next chapter"
 msgstr ""
 "Použiť posuvnú lištu v Biblických textoch na presun do predchádzajúcej alebo "
 "nasledujúcej kapitoly"
 
-#: ../ui/prefs.glade.h:105 ../ui/prefs.gtkbuilder.h:109
+#: ../ui/prefs.glade.h:105 ../ui/prefs.gtkbuilder.h:100
 msgid "Scroll to Previous/Next Chapter Checkbox"
 msgstr "Zaškrtávacie pole Presúvanie do predchádzajúcej/nasledujúcej kapitoly"
 
-#: ../ui/prefs.glade.h:106 ../ui/prefs.gtkbuilder.h:110
+#: ../ui/prefs.glade.h:106 ../ui/prefs.gtkbuilder.h:101
 msgid "Resize images"
 msgstr "Meniť veľkosť obrázkov"
 
-#: ../ui/prefs.glade.h:107 ../ui/prefs.gtkbuilder.h:111
+#: ../ui/prefs.glade.h:107 ../ui/prefs.gtkbuilder.h:102
 msgid "Automatically resize image content to fit the pane"
 msgstr "Automaticky zmeniť veľkosť obrázka, aby sa zmestil do výplne"
 
-#: ../ui/prefs.glade.h:108 ../ui/prefs.gtkbuilder.h:112
+#: ../ui/prefs.glade.h:108 ../ui/prefs.gtkbuilder.h:103
 msgid "Resize images checkbox"
 msgstr "Zaškrtávacie pole Meniť veľkosť obrázkov"
 
-#: ../ui/prefs.glade.h:109 ../ui/prefs.gtkbuilder.h:113
+#: ../ui/prefs.glade.h:109 ../ui/prefs.gtkbuilder.h:104
 msgid "Highlight current verse"
 msgstr "Zvýraznenie aktuálneho verša"
 
-#: ../ui/prefs.glade.h:110 ../ui/prefs.gtkbuilder.h:114
+#: ../ui/prefs.glade.h:110 ../ui/prefs.gtkbuilder.h:105
 msgid "Apply high-contrast highlight to current verse - see color pickers"
 msgstr ""
 "Použiť vysoko kontrastné zvýraznenie aktuálneho verša - pozri na farebné "
 "zberače"
 
-#: ../ui/prefs.glade.h:111 ../ui/prefs.gtkbuilder.h:115
+#: ../ui/prefs.glade.h:111 ../ui/prefs.gtkbuilder.h:106
 msgid "Highlight current verse check box"
 msgstr "Zaškrtávacie pole Zvýrazniť aktuálny verš"
 
-#: ../ui/prefs.glade.h:112 ../ui/prefs.gtkbuilder.h:116
+#: ../ui/prefs.glade.h:112 ../ui/prefs.gtkbuilder.h:107
 msgid "Highlight user annotations"
 msgstr "Zvýrazniť používateľove anotácie"
 
-#: ../ui/prefs.glade.h:113 ../ui/prefs.gtkbuilder.h:117
+#: ../ui/prefs.glade.h:113 ../ui/prefs.gtkbuilder.h:108
 msgid "Use inverted highlight on user-annotated verses"
 msgstr "Použiť inverzné zvýraznenie na verše používateľovými anotáciami"
 
-#: ../ui/prefs.glade.h:114 ../ui/prefs.gtkbuilder.h:118
+#: ../ui/prefs.glade.h:114 ../ui/prefs.gtkbuilder.h:109
 msgid "Highlight user annotations check box"
 msgstr "Zaškrtávacie pole Zvýrazniť používateľove anotácie"
 
-#: ../ui/prefs.glade.h:115 ../ui/prefs.gtkbuilder.h:119
+#: ../ui/prefs.glade.h:115 ../ui/prefs.gtkbuilder.h:110
 msgid "Cross-references in verse list"
 msgstr "Krížové referencie v zozname veršov"
 
-#: ../ui/prefs.glade.h:116 ../ui/prefs.gtkbuilder.h:120
+#: ../ui/prefs.glade.h:116 ../ui/prefs.gtkbuilder.h:111
 msgid "Use the verse list for Bible cross-references instead of the previewer"
 msgstr "Použije zoznam veršom pre krížové referencie Biblie namiesto náhľadu"
 
-#: ../ui/prefs.glade.h:117 ../ui/prefs.gtkbuilder.h:121
+#: ../ui/prefs.glade.h:117 ../ui/prefs.gtkbuilder.h:112
 msgid "Xrefs in verse list check box"
 msgstr "Zaškrtávacie pole Xrefs v zozname veršov"
 
-#: ../ui/prefs.glade.h:118 ../ui/prefs.gtkbuilder.h:122
+#: ../ui/prefs.glade.h:118 ../ui/prefs.gtkbuilder.h:113
 msgid "Enable Prayer Lists"
 msgstr "Povoliť Modlitebné zoznamy"
 
-#: ../ui/prefs.glade.h:119 ../ui/prefs.gtkbuilder.h:123
+#: ../ui/prefs.glade.h:119 ../ui/prefs.gtkbuilder.h:114
 msgid "Make journals/prayer lists available"
 msgstr "Dať zápisník/modlitebný zoznam k dispozícií"
 
-#: ../ui/prefs.glade.h:120 ../ui/prefs.gtkbuilder.h:124
+#: ../ui/prefs.glade.h:120 ../ui/prefs.gtkbuilder.h:115
 msgid "Enable Prayer Lists Checkbox"
 msgstr "Voľba pre povolenie Modlitebných zoznamov"
 
-#: ../ui/prefs.glade.h:121 ../ui/prefs.gtkbuilder.h:125
+#: ../ui/prefs.glade.h:121 ../ui/prefs.gtkbuilder.h:116
 msgid "Enable Statusbar"
 msgstr "Povoliť stavový riadok"
 
@@ -4299,236 +4505,264 @@ msgstr "Povoliť stavový riadok"
 msgid "Enable/Disable Statusbar."
 msgstr "Povoliť/Zakázať stavový riadok."
 
-#: ../ui/prefs.glade.h:123 ../ui/prefs.gtkbuilder.h:127
+#: ../ui/prefs.glade.h:123 ../ui/prefs.gtkbuilder.h:118
 msgid "Enable Statusbar Checkbox"
 msgstr "Povoliť začiarkavacie políčko stavového riadka"
 
-#: ../ui/prefs.glade.h:124 ../ui/prefs.gtkbuilder.h:128
+#: ../ui/prefs.glade.h:124 ../ui/prefs.gtkbuilder.h:119
 msgid "Parallel color alternation"
 msgstr "Paralelné striedanie farieb"
 
-#: ../ui/prefs.glade.h:125 ../ui/prefs.gtkbuilder.h:129
+#: ../ui/prefs.glade.h:125 ../ui/prefs.gtkbuilder.h:120
 msgid "Parallel window can use alternating foreground/background."
 msgstr "Paralelné okno môže používať alternujúce popredia/pozadia."
 
-#: ../ui/prefs.glade.h:126 ../ui/prefs.gtkbuilder.h:130
+#: ../ui/prefs.glade.h:126 ../ui/prefs.gtkbuilder.h:121
 msgid "Enable Parallel Alternation Checkbox"
 msgstr "Povoliť začiarkavacie políčko Paraleno Alternácie"
 
-#: ../ui/prefs.glade.h:127 ../ui/prefs.gtkbuilder.h:132
+#: ../ui/prefs.glade.h:127 ../ui/prefs.gtkbuilder.h:122
+msgid "Display whole Bible books"
+msgstr "Zobraziť všetky Biblické knihy"
+
+#: ../ui/prefs.glade.h:128
+msgid "Display entire Bible books, not just single chapters, in main window"
+msgstr ""
+"Zobrazovať v hlavnom okne celé biblické knihy, nielen jednotlivé kapitoly"
+
+#: ../ui/prefs.glade.h:129
+msgid "Display Whole Book Checkbox"
+msgstr "Zaškrtávacie políčko Zobraziť celú knihu"
+
+#: ../ui/prefs.glade.h:130 ../ui/prefs.gtkbuilder.h:126
 msgid "Verse number"
 msgstr "Číslo verša"
 
-#: ../ui/prefs.glade.h:128 ../ui/prefs.gtkbuilder.h:131
+#: ../ui/prefs.glade.h:131 ../ui/prefs.gtkbuilder.h:125
 msgid "Offset the verse number in several ways"
 msgstr "Posun čísla verša niekoľkým smermi"
 
-#: ../ui/prefs.glade.h:130 ../ui/prefs.gtkbuilder.h:134
+#: ../ui/prefs.glade.h:133 ../ui/prefs.gtkbuilder.h:128
 msgid "Show verse number in bold text"
 msgstr "Zobraziť čísla veršov hrubým textom"
 
-#: ../ui/prefs.glade.h:131 ../ui/prefs.gtkbuilder.h:135
+#: ../ui/prefs.glade.h:134 ../ui/prefs.gtkbuilder.h:129
 msgid "Verse number bold checkbox"
 msgstr "Zaškrtávacie pole Čísla veršov hrubým"
 
-#: ../ui/prefs.glade.h:132 ../ui/prefs.gtkbuilder.h:136
+#: ../ui/prefs.glade.h:135 ../ui/prefs.gtkbuilder.h:130
 msgid "Brackets"
 msgstr "Zátvorky"
 
-#: ../ui/prefs.glade.h:133 ../ui/prefs.gtkbuilder.h:137
+#: ../ui/prefs.glade.h:136 ../ui/prefs.gtkbuilder.h:131
 msgid "Show verse number with [surrounding brackets]"
 msgstr "Zobraziť čísla veršov v zátvorkách"
 
-#: ../ui/prefs.glade.h:134 ../ui/prefs.gtkbuilder.h:138
+#: ../ui/prefs.glade.h:137 ../ui/prefs.gtkbuilder.h:132
 msgid "Verse number bracket checkbox"
 msgstr "Zaškrtávacie pole Čísla veršov v zátvorkách"
 
-#: ../ui/prefs.glade.h:135 ../ui/prefs.gtkbuilder.h:139
+#: ../ui/prefs.glade.h:138 ../ui/prefs.gtkbuilder.h:133
 msgid "Superscript"
 msgstr "Horný index"
 
-#: ../ui/prefs.glade.h:136 ../ui/prefs.gtkbuilder.h:140
+#: ../ui/prefs.glade.h:139 ../ui/prefs.gtkbuilder.h:134
 msgid "Show verse number as a superscript"
 msgstr "Zobraziť čísla veršov ako horný index"
 
-#: ../ui/prefs.glade.h:137 ../ui/prefs.gtkbuilder.h:141
+#: ../ui/prefs.glade.h:140 ../ui/prefs.gtkbuilder.h:135
 msgid "Verse number superscript checkbox"
 msgstr "Zaškrtávacie pole Čísla veršov ako horný index"
 
-#: ../ui/prefs.glade.h:138 ../ui/prefs.gtkbuilder.h:142
+#: ../ui/prefs.glade.h:141 ../ui/prefs.gtkbuilder.h:136
 msgid "StudyPad default directory"
 msgstr "Štandardný priečinok pre poznámkový blok"
 
-#: ../ui/prefs.glade.h:139 ../ui/prefs.gtkbuilder.h:143
+#: ../ui/prefs.glade.h:142 ../ui/prefs.gtkbuilder.h:137
 msgid "Select A Directory"
 msgstr "Vybrať priečinok"
 
-#: ../ui/prefs.glade.h:140 ../ui/prefs.gtkbuilder.h:144
+#: ../ui/prefs.glade.h:143 ../ui/prefs.gtkbuilder.h:138
 msgid "StudyPad default directory combo"
 msgstr "Roletové menu Štandardný priečinok pre poznámkový blok"
 
-#: ../ui/prefs.glade.h:141 ../ui/prefs.gtkbuilder.h:145
+#: ../ui/prefs.glade.h:144 ../ui/prefs.gtkbuilder.h:139
 msgid "General Misc"
 msgstr "Rôzne všeobecné"
 
-#: ../ui/prefs.glade.h:142 ../ui/prefs.gtkbuilder.h:146
+#: ../ui/prefs.glade.h:145 ../ui/prefs.gtkbuilder.h:140
 msgid "<b>Main Window Modules</b>"
 msgstr "<b>Okno hlavných modulov</b>"
 
-#: ../ui/prefs.glade.h:143 ../ui/prefs.gtkbuilder.h:147
+#: ../ui/prefs.glade.h:146 ../ui/prefs.gtkbuilder.h:141
 msgid "Biblical Text"
 msgstr "Biblické texty"
 
-#: ../ui/prefs.glade.h:144 ../ui/prefs.gtkbuilder.h:148
+#: ../ui/prefs.glade.h:147 ../ui/prefs.gtkbuilder.h:142
 msgid "Change Biblical Text Combo"
 msgstr "Roletové menu Zmeniť Biblický text"
 
-#: ../ui/prefs.glade.h:146 ../ui/prefs.gtkbuilder.h:150
+#: ../ui/prefs.glade.h:149 ../ui/prefs.gtkbuilder.h:144
 msgid "Change Commentary Combo"
 msgstr "Roletové menu Zmeniť komentár"
 
-#: ../ui/prefs.glade.h:148 ../ui/prefs.gtkbuilder.h:152
+#: ../ui/prefs.glade.h:151 ../ui/prefs.gtkbuilder.h:146
 msgid "Change Dictionary Combo"
 msgstr "Roletové menu Zmeniť slovník"
 
-#: ../ui/prefs.glade.h:150 ../ui/prefs.gtkbuilder.h:154
+#: ../ui/prefs.glade.h:153 ../ui/prefs.gtkbuilder.h:148
 msgid "Change Book Combo"
 msgstr "Roletové menu Zmeniť knihu"
 
-#: ../ui/prefs.glade.h:151 ../ui/prefs.gtkbuilder.h:155
+#: ../ui/prefs.glade.h:154 ../ui/prefs.gtkbuilder.h:149
 #: ../ui/search-dialog.glade.h:22 ../ui/search-dialog.gtkbuilder.h:23
 msgid "<b>Modules</b>"
 msgstr "<b>Moduly</b>"
 
-#: ../ui/prefs.glade.h:152 ../ui/prefs.gtkbuilder.h:156
+#: ../ui/prefs.glade.h:155 ../ui/prefs.gtkbuilder.h:150
 #: ../ui/search-dialog.glade.h:86 ../ui/search-dialog.gtkbuilder.h:86
 msgid "Clear all modules from the list"
 msgstr "Vyčistiť všetky moduly zo zoznamu"
 
-#: ../ui/prefs.glade.h:153 ../ui/prefs.gtkbuilder.h:157
+#: ../ui/prefs.glade.h:156 ../ui/prefs.gtkbuilder.h:151
 #: ../ui/search-dialog.glade.h:87 ../ui/search-dialog.gtkbuilder.h:87
 msgid "Clear Modules from List Button"
 msgstr "Tlačidlo Vyčistiť moduly zo zoznamu"
 
-#: ../ui/prefs.glade.h:154 ../ui/prefs.gtkbuilder.h:158
+#: ../ui/prefs.glade.h:157 ../ui/prefs.gtkbuilder.h:152
 #: ../ui/search-dialog.glade.h:88 ../ui/search-dialog.gtkbuilder.h:88
 msgid "Remove the selected module from the list"
 msgstr "Odstrániť označený modul zo zoznamu"
 
-#: ../ui/prefs.glade.h:155 ../ui/prefs.gtkbuilder.h:159
+#: ../ui/prefs.glade.h:158 ../ui/prefs.gtkbuilder.h:153
 #: ../ui/search-dialog.glade.h:89 ../ui/search-dialog.gtkbuilder.h:89
 msgid "Delete Selected Module From List Button"
 msgstr "Tlačidlo Vymazať zvolený modul zo zoznamu"
 
-#: ../ui/prefs.glade.h:156 ../ui/prefs.gtkbuilder.h:160
+#: ../ui/prefs.glade.h:159 ../ui/prefs.gtkbuilder.h:154
 msgid "Open a dialog to select modules"
 msgstr "Otvorí dialóg pre výber modulov"
 
-#: ../ui/prefs.glade.h:157 ../ui/prefs.gtkbuilder.h:161
+#: ../ui/prefs.glade.h:160 ../ui/prefs.gtkbuilder.h:155
 #: ../ui/search-dialog.glade.h:91 ../ui/search-dialog.gtkbuilder.h:91
 msgid "Add Modules"
 msgstr "Pridať moduly"
 
-#: ../ui/prefs.glade.h:158 ../ui/prefs.gtkbuilder.h:162
+#: ../ui/prefs.glade.h:161 ../ui/prefs.gtkbuilder.h:156
 #: ../ui/search-dialog.glade.h:92 ../ui/search-dialog.gtkbuilder.h:92
 msgid "Open Selection Dialog Button"
 msgstr "Tlačidlo Otvoriť dialóg výberu"
 
-#: ../ui/prefs.glade.h:159 ../ui/prefs.gtkbuilder.h:163
+#: ../ui/prefs.glade.h:162 ../ui/prefs.gtkbuilder.h:157
 msgid "Modules Parallel"
 msgstr "Paralelné moduly"
 
-#: ../ui/prefs.glade.h:160 ../ui/prefs.gtkbuilder.h:164
+#: ../ui/prefs.glade.h:163 ../ui/prefs.gtkbuilder.h:158
 msgid "<b>Special Purpose Modules</b>"
 msgstr "<b>Moduly so špeciálnymi cieľmi</b>"
 
-#: ../ui/prefs.glade.h:161 ../ui/prefs.gtkbuilder.h:165
+#: ../ui/prefs.glade.h:164 ../ui/prefs.gtkbuilder.h:159
 msgid "Daily Devotional"
 msgstr "Denné zamyslenie"
 
-#: ../ui/prefs.glade.h:162 ../ui/prefs.gtkbuilder.h:166
+#: ../ui/prefs.glade.h:165 ../ui/prefs.gtkbuilder.h:160
 msgid "Daily Devotional Combo"
 msgstr "Roletové menu Denné zamyslenie"
 
-#: ../ui/prefs.glade.h:163 ../ui/prefs.gtkbuilder.h:167
+#: ../ui/prefs.glade.h:166 ../ui/prefs.gtkbuilder.h:161
 msgid "Hebrew Lexicon"
 msgstr "Hebrejský lexikón"
 
-#: ../ui/prefs.glade.h:164 ../ui/prefs.gtkbuilder.h:168
+#: ../ui/prefs.glade.h:167 ../ui/prefs.gtkbuilder.h:162
 msgid "Hebrew Lexicon Combo"
 msgstr "Roletové menu Hebrejský Lexikón"
 
-#: ../ui/prefs.glade.h:165 ../ui/prefs.gtkbuilder.h:169
+#: ../ui/prefs.glade.h:168 ../ui/prefs.gtkbuilder.h:163
 msgid "Greek Lexicon"
 msgstr "Grécky lexikón"
 
-#: ../ui/prefs.glade.h:166 ../ui/prefs.gtkbuilder.h:170
+#: ../ui/prefs.glade.h:169 ../ui/prefs.gtkbuilder.h:164
 msgid "Greek Lexicon Combo"
 msgstr "Roletové menu Grécky Lexikón"
 
-#: ../ui/prefs.glade.h:167 ../ui/prefs.gtkbuilder.h:171
+#: ../ui/prefs.glade.h:170 ../ui/prefs.gtkbuilder.h:165
+msgid "Hebrew Morphology Lexicon"
+msgstr "Lexikón hebrejskej morfológie"
+
+#: ../ui/prefs.glade.h:171 ../ui/prefs.gtkbuilder.h:166
+msgid "Hebrew Morphology Lexicon Combo"
+msgstr "Roletové menu Lexikón hebrejskej morfológie"
+
+#: ../ui/prefs.glade.h:172 ../ui/prefs.gtkbuilder.h:167
+msgid "OT Greek Morphology Lexicon"
+msgstr "Lexikón SZ gréckej morfológie"
+
+#: ../ui/prefs.glade.h:173 ../ui/prefs.gtkbuilder.h:168
+msgid "OT Greek Morphology Lexicon Combo"
+msgstr "Roletové menu Lexikón SZ gréckej morfológie"
+
+#: ../ui/prefs.glade.h:174 ../ui/prefs.gtkbuilder.h:169
+msgid "NT Greek Morphology Lexicon"
+msgstr "Lexikón NZ gréckej morfológie"
+
+#: ../ui/prefs.glade.h:175 ../ui/prefs.gtkbuilder.h:170
+msgid "NT Greek Morphology Lexicon Combo"
+msgstr "Roletové menu Lexikón NZ gréckej morfológie"
+
+#: ../ui/prefs.glade.h:176 ../ui/prefs.gtkbuilder.h:171
 msgid "Default Dictionary"
 msgstr "Štandardný slovník"
 
-#: ../ui/prefs.glade.h:168 ../ui/prefs.gtkbuilder.h:172
+#: ../ui/prefs.glade.h:177 ../ui/prefs.gtkbuilder.h:172
 msgid "Change Default Dictionary Combo"
 msgstr "Roletové menu Zmeniť štandardný slovník"
 
-#: ../ui/prefs.glade.h:169 ../ui/prefs.gtkbuilder.h:173
+#: ../ui/prefs.glade.h:178 ../ui/prefs.gtkbuilder.h:173
 msgid "Personal Notes"
 msgstr "Osobné poznámky"
 
-#: ../ui/prefs.glade.h:170 ../ui/prefs.gtkbuilder.h:174
+#: ../ui/prefs.glade.h:179 ../ui/prefs.gtkbuilder.h:174
 msgid "Change Personal Notes Combo"
 msgstr "Roletové menu Osobné poznámky"
 
-#: ../ui/prefs.glade.h:171 ../ui/prefs.gtkbuilder.h:175
+#: ../ui/prefs.glade.h:180 ../ui/prefs.gtkbuilder.h:175
+msgid "Module List Grouping"
+msgstr "Zoznam zoskupenia modulov"
+
+#: ../ui/prefs.glade.h:181
+msgid ""
+"Category, then Language\n"
+"Category only\n"
+"Language, then Category"
+msgstr ""
+"Kategória, potom Jazyk\n"
+"Iba kategória\n"
+"Jazyk, potom Kategória"
+
+#: ../ui/prefs.glade.h:184 ../ui/prefs.gtkbuilder.h:176
+msgid "Module List Grouping Combo"
+msgstr "Roletová ponuka zoznamu zoskupenia modulov"
+
+#: ../ui/prefs.glade.h:185 ../ui/prefs.gtkbuilder.h:177
+msgid "Show hidden modules"
+msgstr "Zobraziť skryté moduly"
+
+#: ../ui/prefs.glade.h:186 ../ui/prefs.gtkbuilder.h:178
 msgid "Modules Misc"
 msgstr "Rôzne moduly"
 
-#: ../ui/prefs.gtkbuilder.h:1
-msgid "-2"
-msgstr "-2"
-
-#: ../ui/prefs.gtkbuilder.h:2
-msgid "-1"
-msgstr "-1"
-
-#: ../ui/prefs.gtkbuilder.h:4
-msgid "+1"
-msgstr "+1"
-
-#: ../ui/prefs.gtkbuilder.h:5
-msgid "+2"
-msgstr "+2"
-
-#: ../ui/prefs.gtkbuilder.h:6
-msgid "+3"
-msgstr "+3"
-
-#: ../ui/prefs.gtkbuilder.h:7
-msgid "+4"
-msgstr "+4"
-
-#: ../ui/prefs.gtkbuilder.h:8
-msgid "+5"
-msgstr "+5"
-
-#: ../ui/prefs.gtkbuilder.h:10
-msgid "2"
-msgstr "2"
-
-#: ../ui/prefs.gtkbuilder.h:11
-msgid "3"
-msgstr "3"
-
-#: ../ui/prefs.gtkbuilder.h:12
-msgid "4"
-msgstr "4"
-
-#: ../ui/prefs.gtkbuilder.h:126
+#: ../ui/prefs.gtkbuilder.h:117
 msgid "Enable/disable the Statusbar"
 msgstr "Povoliť/Zakázať stavový riadok"
+
+#: ../ui/prefs.gtkbuilder.h:123
+msgid "Display entire Bible books in main window, not just single chapters"
+msgstr ""
+"Zobraziť celé biblické knihy v hlavnom okne, nielen jednotlivé kapitoly"
+
+#: ../ui/prefs.gtkbuilder.h:124
+msgid "Render Whole Book Checkbox"
+msgstr "Zaškrtávacie políčko Vykresliť celú knihu"
 
 #: ../ui/search-dialog.glade.h:1 ../ui/search-dialog.gtkbuilder.h:1
 msgid "Advanced Search"
@@ -5055,8 +5289,8 @@ msgid "Make all tabs' Bibles navigate together"
 msgstr "Umožniť navigovanie Biblií všetkých kartách súčasne"
 
 #: ../ui/xi-menus.glade.h:26 ../ui/xi-menus.gtkbuilder.h:18
-msgid "_Read Aloud"
-msgstr "P_rečítať nahlas"
+msgid "_Read Aloud (CTRL+R)"
+msgstr "P_rečítať nahlas (CTRL+R)"
 
 #: ../ui/xi-menus.glade.h:27
 msgid "Turn on text-to-speech reading of Bible verses as they are selected"
@@ -5079,204 +5313,220 @@ msgid "Apply a high-contrast highlight to the current verse"
 msgstr "Použiť vysoko kontrastné zvýraznenie aktuálneho verša"
 
 #: ../ui/xi-menus.glade.h:32 ../ui/xi-menus.gtkbuilder.h:21
+msgid "Highlight _Annotated Verses"
+msgstr "Zvýrazniť _anotované verše"
+
+#: ../ui/xi-menus.glade.h:33
+msgid "Apply inverse highlight to annotated verses"
+msgstr "Použiť inverzné zvýraznenie na anotované verše"
+
+#: ../ui/xi-menus.glade.h:34 ../ui/xi-menus.gtkbuilder.h:22
 msgid "_Show/Hide Attached Sidebar"
 msgstr "Zobraziť/_Skryť pripojený postranný panel"
 
-#: ../ui/xi-menus.glade.h:33
+#: ../ui/xi-menus.glade.h:35
 msgid "Remove the sidebar entirely from view"
 msgstr "Úplne odstrániť postranný panel zo zobrazenia"
 
-#: ../ui/xi-menus.glade.h:34 ../ui/xi-menus.gtkbuilder.h:22
+#: ../ui/xi-menus.glade.h:36 ../ui/xi-menus.gtkbuilder.h:23
 msgid "Show Parallel View in a _Tab"
 msgstr "Zobraziť paralelné zobrazenie v kar_te"
 
-#: ../ui/xi-menus.glade.h:35
+#: ../ui/xi-menus.glade.h:37
 msgid "Provide the full-chapter parallel Bible window as another tab"
 msgstr "Poskytnúť okno celej kapitoly paralelnej Biblie ako ďalšiu kartu"
 
-#: ../ui/xi-menus.glade.h:36 ../ui/xi-menus.gtkbuilder.h:23
+#: ../ui/xi-menus.glade.h:38 ../ui/xi-menus.gtkbuilder.h:24
 msgid "Show Previe_wer in the Sidebar"
 msgstr "Zobraziť náhľad v postrannom panely"
 
-#: ../ui/xi-menus.glade.h:37
+#: ../ui/xi-menus.glade.h:39
 msgid "Select Previewer position between sidebar or beneath Bible"
 msgstr "Vyberte zobrazenie náhľadu v postrannom panely alebo pod Bibliou"
 
-#: ../ui/xi-menus.glade.h:39 ../ui/xi-menus.gtkbuilder.h:25
+#: ../ui/xi-menus.glade.h:41 ../ui/xi-menus.gtkbuilder.h:26
 msgid "_Contents"
 msgstr "_Obsah"
 
-#: ../ui/xi-menus.glade.h:40
+#: ../ui/xi-menus.glade.h:42
 msgid "Open the help viewer on the Xiphos manual"
 msgstr "Otvoriť príručku Xiphos v prehliadači"
 
-#: ../ui/xi-menus.glade.h:41 ../ui/xi-menus.gtkbuilder.h:26
+#: ../ui/xi-menus.glade.h:43 ../ui/xi-menus.gtkbuilder.h:27
 msgid "_Mailing List"
 msgstr "E-mailová konferencia"
 
-#: ../ui/xi-menus.glade.h:42
+#: ../ui/xi-menus.glade.h:44
 msgid "Open a browser on the users' mailing list webpage"
 msgstr "Otvoriť prehliadači webovú stránku e-mailovej komunikácie používateľov"
 
-#: ../ui/xi-menus.glade.h:43 ../ui/xi-menus.gtkbuilder.h:27
+#: ../ui/xi-menus.glade.h:45 ../ui/xi-menus.gtkbuilder.h:28
 msgid "_Live Chat"
 msgstr "On_line komunikácia (chat)"
 
-#: ../ui/xi-menus.glade.h:44
+#: ../ui/xi-menus.glade.h:46
 msgid "Open a browser on an interface to live IRC chat"
 msgstr "Otvoriť prehliadači rozhranie na živý IRC chat"
 
-#: ../ui/xi-menus.glade.h:45 ../ui/xi-menus.gtkbuilder.h:28
+#: ../ui/xi-menus.glade.h:47 ../ui/xi-menus.gtkbuilder.h:29
 msgid "_Report Bug"
 msgstr "_Nahlásiť chybu"
 
-#: ../ui/xi-menus.glade.h:46
+#: ../ui/xi-menus.glade.h:48
 msgid "Open a browser on our bug tracker"
 msgstr "Otvoriť prehliadači našu stránku pre sledovanie chýb"
 
-#: ../ui/xi-menus.glade.h:47 ../ui/xi-menus.gtkbuilder.h:29
+#: ../ui/xi-menus.glade.h:49 ../ui/xi-menus.gtkbuilder.h:30
 msgid "About _Translation"
 msgstr "O p_reklade"
 
-#: ../ui/xi-menus.glade.h:48
+#: ../ui/xi-menus.glade.h:50
 msgid "Learn about translating the Xiphos interface to other languages"
 msgstr "Prečítajte si o preklade rozhrania Xiphos do iných jazykov"
 
-#: ../ui/xi-menus.glade.h:49 ../ui/xi-menus.gtkbuilder.h:30
+#: ../ui/xi-menus.glade.h:51 ../ui/xi-menus.gtkbuilder.h:31
 msgid "_About The SWORD Project"
 msgstr "_O projekt The SWORD Project"
 
-#: ../ui/xi-menus.glade.h:50
+#: ../ui/xi-menus.glade.h:52
 msgid "Learn about The Sword Project, of which Xiphos is one application"
 msgstr ""
 "Prečítajte si o projekte The Sword Project, ktorého jednou z aplikácií je "
 "Xiphos"
 
-#: ../ui/xi-menus.glade.h:51 ../ui/xi-menus.gtkbuilder.h:31
+#: ../ui/xi-menus.glade.h:53 ../ui/xi-menus.gtkbuilder.h:32
 msgid "About _BibleSync"
 msgstr "O _BibleSync"
 
-#: ../ui/xi-menus.glade.h:52
+#: ../ui/xi-menus.glade.h:54
 msgid "Learn about BibleSync, the shared navigation protocol"
 msgstr "Prečítajte si o BibleSync, protokole zdieľanej navigácie"
 
-#: ../ui/xi-menus.glade.h:53 ../ui/xi-menus.gtkbuilder.h:32
+#: ../ui/xi-menus.glade.h:55 ../ui/xi-menus.gtkbuilder.h:33
 msgid "_View Xiphos Releases"
 msgstr "_Zobraziť vydania Xiphos"
 
-#: ../ui/xi-menus.glade.h:54
+#: ../ui/xi-menus.glade.h:56
 msgid "Visit the releases web page. Is your Xiphos current?"
 msgstr "Navštívte webovú stránku vydaní. Je váš Xiphos aktuálny?"
 
-#: ../ui/xi-menus.glade.h:55 ../ui/xi-menus.gtkbuilder.h:33
+#: ../ui/xi-menus.glade.h:57 ../ui/xi-menus.gtkbuilder.h:34
 msgid "About _Xiphos"
 msgstr "O aplikácií _Xiphos"
 
-#: ../ui/xi-menus.glade.h:56
+#: ../ui/xi-menus.glade.h:58
 msgid "Learn about Xiphos"
 msgstr "Ďalšie informácie o Xiphose"
 
-#: ../ui/xi-menus.glade.h:59 ../ui/xi-menus-popup.gtkbuilder.h:37
+#: ../ui/xi-menus.glade.h:61 ../ui/xi-menus-popup.gtkbuilder.h:46
 msgid "Annotate Verse"
 msgstr "Anotovať verš"
 
-#: ../ui/xi-menus.glade.h:62 ../ui/xi-menus-popup.gtkbuilder.h:40
+#: ../ui/xi-menus.glade.h:64 ../ui/xi-menus-popup.gtkbuilder.h:49
 msgid "Open Module"
 msgstr "Otvoriť modul"
 
-#: ../ui/xi-menus.glade.h:64 ../ui/xi-menus-popup.gtkbuilder.h:41
+#: ../ui/xi-menus.glade.h:66 ../ui/xi-menus-popup.gtkbuilder.h:50
 msgid "Note"
 msgstr "Poznámka"
 
-#: ../ui/xi-menus.glade.h:65 ../ui/xi-menus-popup.gtkbuilder.h:42
+#: ../ui/xi-menus.glade.h:67 ../ui/xi-menus-popup.gtkbuilder.h:51
 msgid "Open in editor"
 msgstr "Otvoriť v editore"
 
-#: ../ui/xi-menus.glade.h:67 ../ui/xi-menus-popup.gtkbuilder.h:44
+#: ../ui/xi-menus.glade.h:69 ../ui/xi-menus-popup.gtkbuilder.h:53
 msgid "Verse Per Line"
 msgstr "Verše na samostatných riadkoch"
 
-#: ../ui/xi-menus.glade.h:76 ../ui/xi-menus-popup.gtkbuilder.h:53
+#: ../ui/xi-menus.glade.h:78 ../ui/xi-menus-popup.gtkbuilder.h:62
 msgid "Footnote/Cross-ref Markers"
 msgstr "Poznámky pod čiarou/Krížové značky"
 
-#: ../ui/xi-menus.glade.h:77
+#: ../ui/xi-menus.glade.h:79
 msgid "Show non-anonymous markers e.g. \"*n23\""
 msgstr "Zobraziť neanonymné značky, napr. \"*n23\""
 
-#: ../ui/xi-menus.glade.h:82 ../ui/xi-menus-popup.gtkbuilder.h:58
+#: ../ui/xi-menus.glade.h:84 ../ui/xi-menus-popup.gtkbuilder.h:67
 msgid "Variants"
 msgstr "Varianty"
 
-#: ../ui/xi-menus.glade.h:90 ../ui/xi-menus-popup.gtkbuilder.h:66
+#: ../ui/xi-menus.glade.h:92 ../ui/xi-menus-popup.gtkbuilder.h:75
 msgid "Image Content"
 msgstr "Obsah obrázka"
 
-#: ../ui/xi-menus.glade.h:91 ../ui/xi-menus-popup.gtkbuilder.h:67
+#: ../ui/xi-menus.glade.h:93 ../ui/xi-menus-popup.gtkbuilder.h:76
 msgid "Respect Font Faces"
 msgstr "Rešpektovať písma"
 
-#: ../ui/xi-menus.glade.h:92 ../ui/xi-menus-popup.gtkbuilder.h:68
+#: ../ui/xi-menus.glade.h:94 ../ui/xi-menus-popup.gtkbuilder.h:77
+msgid "Display chapter numbers"
+msgstr "Zobraziť čísla kapitol"
+
+#: ../ui/xi-menus.glade.h:95 ../ui/xi-menus-popup.gtkbuilder.h:78
 msgid "Commentary by Chapter"
 msgstr "Komentár podľa kapitoly"
 
-#: ../ui/xi-menus.glade.h:93 ../ui/xi-menus-popup.gtkbuilder.h:69
+#: ../ui/xi-menus.glade.h:96 ../ui/xi-menus-popup.gtkbuilder.h:79
 msgid "Doublespace"
 msgstr "Dv_ojitá medzera"
 
-#: ../ui/xi-menus.glade.h:94 ../ui/xi-menus-popup.gtkbuilder.h:70
+#: ../ui/xi-menus.glade.h:97 ../ui/xi-menus-popup.gtkbuilder.h:80
 msgid "Lookup Selection"
 msgstr "Hľadať výber"
 
-#: ../ui/xi-menus.glade.h:95 ../ui/xi-menus-popup.gtkbuilder.h:71
-msgid "Use Current Dictionary"
-msgstr "Použiť štandardný slovník"
+#: ../ui/xi-menus.glade.h:98 ../ui/xi-menus-popup.gtkbuilder.h:81
+msgid "_Use Current Dictionary"
+msgstr "Po_užiť aktuálny slovník"
 
-#: ../ui/xi-menus.glade.h:96 ../ui/xi-menus-popup.gtkbuilder.h:72
-msgid "Browse in BibleMap.org"
-msgstr "Prezerať v BibleMap.org"
+#: ../ui/xi-menus.glade.h:99 ../ui/xi-menus-popup.gtkbuilder.h:82
+msgid "_Translate selection"
+msgstr "P_reložiť výber"
 
-#: ../ui/xi-menus.glade.h:97 ../ui/xi-menus-popup.gtkbuilder.h:73
+#: ../ui/xi-menus.glade.h:100 ../ui/xi-menus-popup.gtkbuilder.h:83
+msgid "_Browse in BibleMap.org"
+msgstr "_Prezerať na BibleMap.org"
+
+#: ../ui/xi-menus.glade.h:101 ../ui/xi-menus-popup.gtkbuilder.h:84
 msgid "Unlock This Module"
 msgstr "Odomknúť tento modul"
 
-#: ../ui/xi-menus.glade.h:98 ../ui/xi-menus-popup.gtkbuilder.h:74
+#: ../ui/xi-menus.glade.h:102 ../ui/xi-menus-popup.gtkbuilder.h:85
 msgid "Display Book Heading"
 msgstr "Zobraziť nadpis knihy"
 
-#: ../ui/xi-menus.glade.h:99 ../ui/xi-menus-popup.gtkbuilder.h:75
+#: ../ui/xi-menus.glade.h:103 ../ui/xi-menus-popup.gtkbuilder.h:86
 msgid "Display Chapter Heading"
 msgstr "Zobraziť nadpis kapitoly"
 
-#: ../ui/xi-menus.glade.h:100 ../ui/xi-menus-popup.gtkbuilder.h:76
+#: ../ui/xi-menus.glade.h:104 ../ui/xi-menus-popup.gtkbuilder.h:87
 msgid "Rename Pers.Comm."
 msgstr "Premenovať Osobný kom."
 
-#: ../ui/xi-menus.glade.h:101 ../ui/xi-menus-popup.gtkbuilder.h:77
+#: ../ui/xi-menus.glade.h:105 ../ui/xi-menus-popup.gtkbuilder.h:88
 msgid "Dump Pers.Comm."
 msgstr "Odložiť osobné kom."
 
-#: ../ui/xi-menus.glade.h:102 ../ui/xi-menus-popup.gtkbuilder.h:78
+#: ../ui/xi-menus.glade.h:106 ../ui/xi-menus-popup.gtkbuilder.h:89
 msgid "Read Selection Aloud"
 msgstr "Prečítať nahlas označené"
 
-#: ../ui/xi-menus.glade.h:103 ../ui/xi-menus-popup.gtkbuilder.h:93
+#: ../ui/xi-menus.glade.h:107 ../ui/xi-menus-popup.gtkbuilder.h:105
 msgid "Save these results as a single bookmark"
 msgstr "Uložiť tieto výsledky ako jednu záložku"
 
-#: ../ui/xi-menus.glade.h:104 ../ui/xi-menus-popup.gtkbuilder.h:92
+#: ../ui/xi-menus.glade.h:108 ../ui/xi-menus-popup.gtkbuilder.h:104
 msgid "Save list as a single bookmark"
 msgstr "Uložiť zoznam ako jednu záložku"
 
-#: ../ui/xi-menus.glade.h:105 ../ui/xi-menus-popup.gtkbuilder.h:95
+#: ../ui/xi-menus.glade.h:109 ../ui/xi-menus-popup.gtkbuilder.h:107
 msgid "Save these results as a series of bookmarks in their own folder"
 msgstr "Uložiť tieto výsledky ako sériu záložiek v ich vlastnom priečinku"
 
-#: ../ui/xi-menus.glade.h:106 ../ui/xi-menus-popup.gtkbuilder.h:94
+#: ../ui/xi-menus.glade.h:110 ../ui/xi-menus-popup.gtkbuilder.h:106
 msgid "Save list as a series of bookmarks"
 msgstr "Uložiť zoznam ako sériu záložiek"
 
-#: ../ui/xi-menus.glade.h:107 ../ui/xi-menus-popup.gtkbuilder.h:97
+#: ../ui/xi-menus.glade.h:111 ../ui/xi-menus-popup.gtkbuilder.h:109
 msgid ""
 "Provide a dialog in which to paste a line of verse references, to fill the "
 "verse list."
@@ -5284,19 +5534,19 @@ msgstr ""
 "Poskytuje dialóg, kde môžete vložiť riadok odkazy veršov pre naplnenie "
 "zoznamu veršov."
 
-#: ../ui/xi-menus.glade.h:108 ../ui/xi-menus-popup.gtkbuilder.h:96
+#: ../ui/xi-menus.glade.h:112 ../ui/xi-menus-popup.gtkbuilder.h:108
 msgid "Populate verse list"
 msgstr "Zaplniť zoznam veršov"
 
-#: ../ui/xi-menus.glade.h:109 ../ui/xi-menus-popup.gtkbuilder.h:99
+#: ../ui/xi-menus.glade.h:113 ../ui/xi-menus-popup.gtkbuilder.h:111
 msgid "Push the entire verse list contents directly into the history list."
 msgstr "Presuňte celý obsah zoznamu veršov priamo do zoznamu histórie."
 
-#: ../ui/xi-menus.glade.h:110 ../ui/xi-menus-popup.gtkbuilder.h:98
+#: ../ui/xi-menus.glade.h:114 ../ui/xi-menus-popup.gtkbuilder.h:110
 msgid "Preload history from verse list"
 msgstr "Vopred načítať históriu zo zoznamu veršov"
 
-#: ../ui/xi-menus.glade.h:111 ../ui/xi-menus-popup.gtkbuilder.h:101
+#: ../ui/xi-menus.glade.h:115 ../ui/xi-menus-popup.gtkbuilder.h:113
 msgid ""
 "Send this verse list via BibleSync to others, if you are in Personal or "
 "Speaker mode."
@@ -5304,99 +5554,123 @@ msgstr ""
 "Pošlite tento zoznam veršov cez BibleSync ostatným, ak ste v osobnom režime "
 "alebo v režime rečníka."
 
-#: ../ui/xi-menus.glade.h:112 ../ui/xi-menus-popup.gtkbuilder.h:100
+#: ../ui/xi-menus.glade.h:116 ../ui/xi-menus-popup.gtkbuilder.h:112
 msgid "Send list via BibleSync"
 msgstr "Poslať zoznam cez BibleSync"
 
-#: ../ui/xi-menus.glade.h:113 ../ui/xi-menus-popup.gtkbuilder.h:102
+#: ../ui/xi-menus.glade.h:117 ../ui/xi-menus-popup.gtkbuilder.h:114
 msgid "Export List"
 msgstr "Exportovať zoznam"
 
-#: ../ui/xi-menus.glade.h:114 ../ui/xi-menus-popup.gtkbuilder.h:2
+#: ../ui/xi-menus.glade.h:118 ../ui/xi-menus-popup.gtkbuilder.h:2
 msgid "Open this bookmark in a new tab"
 msgstr "Otvoriť túto záložku v novej karte"
 
-#: ../ui/xi-menus.glade.h:115 ../ui/xi-menus-popup.gtkbuilder.h:1
+#: ../ui/xi-menus.glade.h:119 ../ui/xi-menus-popup.gtkbuilder.h:1
 msgid "Open in new tab"
 msgstr "Otvoriť v novej karte"
 
-#: ../ui/xi-menus.glade.h:116 ../ui/xi-menus-popup.gtkbuilder.h:4
+#: ../ui/xi-menus.glade.h:120 ../ui/xi-menus-popup.gtkbuilder.h:4
 msgid "Open this bookmark in a dialog"
 msgstr "Otvoriť túto záložku v dialógu"
 
-#: ../ui/xi-menus.glade.h:117 ../ui/xi-menus-popup.gtkbuilder.h:3
+#: ../ui/xi-menus.glade.h:121 ../ui/xi-menus-popup.gtkbuilder.h:3
 msgid "Open in a dialog"
 msgstr "Otvoriť v dialógu"
 
-#: ../ui/xi-menus.glade.h:118 ../ui/xi-menus-popup.gtkbuilder.h:6
+#: ../ui/xi-menus.glade.h:122 ../ui/xi-menus-popup.gtkbuilder.h:6
 msgid "Add new folder to selected folder"
 msgstr "Pridať nový priečinok do vybraného priečinku"
 
-#: ../ui/xi-menus.glade.h:120 ../ui/xi-menus-popup.gtkbuilder.h:8
+#: ../ui/xi-menus.glade.h:124 ../ui/xi-menus-popup.gtkbuilder.h:8
 msgid "Insert new bookmark here"
 msgstr "Sem vložiť novú záložku"
 
-#: ../ui/xi-menus.glade.h:121 ../ui/xi-menus-popup.gtkbuilder.h:7
+#: ../ui/xi-menus.glade.h:125 ../ui/xi-menus-popup.gtkbuilder.h:7
 msgid "Insert Bookmark"
 msgstr "Vložiť záložku"
 
-#: ../ui/xi-menus.glade.h:122 ../ui/xi-menus-popup.gtkbuilder.h:10
+#: ../ui/xi-menus.glade.h:126 ../ui/xi-menus-popup.gtkbuilder.h:10
 msgid "Edit bookmark item"
 msgstr "Upraviť položku záložky"
 
-#: ../ui/xi-menus.glade.h:123 ../ui/xi-menus-popup.gtkbuilder.h:9
+#: ../ui/xi-menus.glade.h:127 ../ui/xi-menus-popup.gtkbuilder.h:9
 msgid "_Edit Item"
 msgstr "_Upraviť položku"
 
-#: ../ui/xi-menus.glade.h:124 ../ui/xi-menus-popup.gtkbuilder.h:12
+#: ../ui/xi-menus.glade.h:128 ../ui/xi-menus-popup.gtkbuilder.h:12
 msgid "Delete item"
 msgstr "Zmazať položku"
 
-#: ../ui/xi-menus.glade.h:126 ../ui/xi-menus-popup.gtkbuilder.h:14
+#: ../ui/xi-menus.glade.h:130 ../ui/xi-menus-popup.gtkbuilder.h:14
 msgid "Expand all Bookmarks groups"
 msgstr "Rozbaliť všetky skupiny záložiek"
 
-#: ../ui/xi-menus.glade.h:127 ../ui/xi-menus-popup.gtkbuilder.h:13
+#: ../ui/xi-menus.glade.h:131 ../ui/xi-menus-popup.gtkbuilder.h:13
 msgid "Expand All"
 msgstr "Všetko rozbaliť"
 
-#: ../ui/xi-menus.glade.h:128 ../ui/xi-menus-popup.gtkbuilder.h:16
+#: ../ui/xi-menus.glade.h:132 ../ui/xi-menus-popup.gtkbuilder.h:16
 msgid "Collapse all Bookmarks groups"
 msgstr "Zbaliť všetky skupiny záložiek"
 
-#: ../ui/xi-menus.glade.h:129 ../ui/xi-menus-popup.gtkbuilder.h:15
+#: ../ui/xi-menus.glade.h:133 ../ui/xi-menus-popup.gtkbuilder.h:15
 msgid "Collapse All"
 msgstr "Zbaliť všetko"
 
-#: ../ui/xi-menus.glade.h:130 ../ui/xi-menus-popup.gtkbuilder.h:17
+#: ../ui/xi-menus.glade.h:134 ../ui/xi-menus-popup.gtkbuilder.h:17
 msgid "Allow items to be moved from one folder to another"
 msgstr "Povoliť presun položiek z jedného priečinku do druhého"
 
-#: ../ui/xi-menus.glade.h:131 ../ui/xi-menus-popup.gtkbuilder.h:18
+#: ../ui/xi-menus.glade.h:135 ../ui/xi-menus-popup.gtkbuilder.h:18
 msgid "Allow Reordering"
 msgstr "Povoliť preusporiadanie"
 
-#: ../ui/xi-menus.glade.h:132 ../ui/xi-menus-popup.gtkbuilder.h:20
+#: ../ui/xi-menus.glade.h:136 ../ui/xi-menus-popup.gtkbuilder.h:19
+msgid "Open cross-references in a popup menu"
+msgstr "Otvoriť krížové odkazy v kontextovej ponuke"
+
+#: ../ui/xi-menus.glade.h:137 ../ui/xi-menus-popup.gtkbuilder.h:21
+msgid "Highlight Bible verses using their bookmark folder color"
+msgstr "Zvýraznite biblické verše pomocou farby ich priečinka so záložkami"
+
+#: ../ui/xi-menus.glade.h:138 ../ui/xi-menus-popup.gtkbuilder.h:22
+msgid "Colorize verses by folder color"
+msgstr "Vyfarbenie veršov podľa farby priečinka"
+
+#: ../ui/xi-menus.glade.h:139 ../ui/xi-menus-popup.gtkbuilder.h:24
 msgid "Load other bookmarks file (default: from BibleTime)"
 msgstr "Načítať iný súbor záložiek (štandardne: z Bibletime)"
 
-#: ../ui/xi-menus.glade.h:133 ../ui/xi-menus-popup.gtkbuilder.h:19
+#: ../ui/xi-menus.glade.h:140 ../ui/xi-menus-popup.gtkbuilder.h:23
 msgid "Import Bookmarks"
 msgstr "Importovať záložky"
 
-#: ../ui/xi-menus.glade.h:134 ../ui/xi-menus-popup.gtkbuilder.h:22
+#: ../ui/xi-menus.glade.h:141 ../ui/xi-menus-popup.gtkbuilder.h:26
+msgid ""
+"Import bookmarks from an AndBible sqlite backup file (replaces any previous "
+"AndBible import - don't file things by hand into this folder)"
+msgstr ""
+"Importovať záložky zo záložného súboru AndBible SQLite (nahradí akýkoľvek "
+"predchádzajúci import AndBible - neukladajte veci do tohto priečinka ručne)"
+
+#: ../ui/xi-menus.glade.h:142 ../ui/xi-menus-popup.gtkbuilder.h:25
+msgid "Import AndBible Bookmarks"
+msgstr "Importovať AndBible záložky"
+
+#: ../ui/xi-menus.glade.h:143 ../ui/xi-menus-popup.gtkbuilder.h:28
 msgid "Remove folder and save it"
 msgstr "Odstrániť priečinok a uložiť ho"
 
-#: ../ui/xi-menus.glade.h:135 ../ui/xi-menus-popup.gtkbuilder.h:21
+#: ../ui/xi-menus.glade.h:144 ../ui/xi-menus-popup.gtkbuilder.h:27
 msgid "Export Folder"
 msgstr "Exportovať priečinok"
 
-#: ../ui/xi-menus.glade.h:136 ../ui/xi-menus-popup.gtkbuilder.h:31
+#: ../ui/xi-menus.glade.h:145 ../ui/xi-menus-popup.gtkbuilder.h:37
 msgid "Open selected module in a new tab"
 msgstr "Otvorí označený modul v novej karte"
 
-#: ../ui/xi-menus.glade.h:137 ../ui/xi-menus-popup.gtkbuilder.h:33
+#: ../ui/xi-menus.glade.h:146 ../ui/xi-menus-popup.gtkbuilder.h:39
 msgid ""
 "Open selected module in a\n"
 "\tseparate ['dialog'] window"
@@ -5404,91 +5678,155 @@ msgstr ""
 "Otvoriť vybraný modul\n"
 " \t v samostatnom ['dialógovom'] okne"
 
-#: ../ui/xi-menus.glade.h:139 ../ui/xi-menus-popup.gtkbuilder.h:32
+#: ../ui/xi-menus.glade.h:148 ../ui/xi-menus-popup.gtkbuilder.h:38
 msgid "Open in a separate window"
 msgstr "Otvoriť v samostatnom okne"
 
-#: ../ui/xi-menus.glade.h:140 ../ui/xi-menus-popup.gtkbuilder.h:80
+#: ../ui/xi-menus.glade.h:151 ../ui/xi-menus-popup.gtkbuilder.h:91
 msgid "Create a new simple prayer list"
 msgstr "Vytvoriť nový jednoduchý modlitebný zoznam"
 
-#: ../ui/xi-menus.glade.h:141 ../ui/xi-menus-popup.gtkbuilder.h:79
+#: ../ui/xi-menus.glade.h:152 ../ui/xi-menus-popup.gtkbuilder.h:90
 msgid "Simple"
 msgstr "Jednoduchý zoznam"
 
-#: ../ui/xi-menus.glade.h:142 ../ui/xi-menus-popup.gtkbuilder.h:82
+#: ../ui/xi-menus.glade.h:153 ../ui/xi-menus-popup.gtkbuilder.h:93
 msgid "Create a new subject prayer list"
 msgstr "Vytvoriť nový predmet modlitebného zoznamu"
 
-#: ../ui/xi-menus.glade.h:143 ../ui/xi-menus-popup.gtkbuilder.h:81
+#: ../ui/xi-menus.glade.h:154 ../ui/xi-menus-popup.gtkbuilder.h:92
 msgid "Subject"
 msgstr "Predmet"
 
-#: ../ui/xi-menus.glade.h:144 ../ui/xi-menus-popup.gtkbuilder.h:84
+#: ../ui/xi-menus.glade.h:155 ../ui/xi-menus-popup.gtkbuilder.h:95
 msgid "Create a new monthly journal"
 msgstr "Vytvorí nový mesačný zápisník"
 
-#: ../ui/xi-menus.glade.h:145 ../ui/xi-menus-popup.gtkbuilder.h:83
+#: ../ui/xi-menus.glade.h:156 ../ui/xi-menus-popup.gtkbuilder.h:94
 msgid "Monthly"
 msgstr "Mesačný denník"
 
-#: ../ui/xi-menus.glade.h:146 ../ui/xi-menus-popup.gtkbuilder.h:86
+#: ../ui/xi-menus.glade.h:157 ../ui/xi-menus-popup.gtkbuilder.h:97
 msgid "Create a new daily journal"
 msgstr "Vytvorí nový denník"
 
-#: ../ui/xi-menus.glade.h:147 ../ui/xi-menus-popup.gtkbuilder.h:85
+#: ../ui/xi-menus.glade.h:158 ../ui/xi-menus-popup.gtkbuilder.h:96
 msgid "Daily"
 msgstr "Denne"
 
-#: ../ui/xi-menus.glade.h:148 ../ui/xi-menus-popup.gtkbuilder.h:88
+#: ../ui/xi-menus.glade.h:159 ../ui/xi-menus-popup.gtkbuilder.h:99
 msgid "Create a new outlined topic"
 msgstr "Vytvorí novú osnovu témy"
 
-#: ../ui/xi-menus.glade.h:149 ../ui/xi-menus-popup.gtkbuilder.h:87
+#: ../ui/xi-menus.glade.h:160 ../ui/xi-menus-popup.gtkbuilder.h:98
 msgid "Outlined"
 msgstr "Osnova"
 
-#: ../ui/xi-menus.glade.h:150 ../ui/xi-menus-popup.gtkbuilder.h:90
+#: ../ui/xi-menus.glade.h:161 ../ui/xi-menus-popup.gtkbuilder.h:101
 msgid "Create a new book/chapter outline"
 msgstr "Vytvoriť osnovu novej knihy/kapitoly"
 
-#: ../ui/xi-menus.glade.h:151 ../ui/xi-menus-popup.gtkbuilder.h:89
+#: ../ui/xi-menus.glade.h:162 ../ui/xi-menus-popup.gtkbuilder.h:100
 msgid "Book/Chapter"
 msgstr "Kniha/Kapitola"
 
-#: ../ui/xi-menus.glade.h:152 ../ui/xi-menus-popup.gtkbuilder.h:91
+#: ../ui/xi-menus.glade.h:163 ../ui/xi-menus-popup.gtkbuilder.h:102
 msgid "Open module in editor or plain display window"
 msgstr "Otvorte modul v editore alebo v obyčajnom okne"
 
-#: ../ui/xi-menus.glade.h:153 ../ui/xi-menus-popup.gtkbuilder.h:24
+#: ../ui/xi-menus.glade.h:164 ../ui/xi-menus-popup.gtkbuilder.h:103
+msgid "Open this prayer list in the editor"
+msgstr "Otvoriť tento modlitebný zoznam v editore"
+
+#: ../ui/xi-menus.glade.h:165
+msgid "Open selected module in a separate window"
+msgstr "Otvorí zvolený modul v samostatnom okne"
+
+#: ../ui/xi-menus.glade.h:166 ../ui/xi-menus-popup.gtkbuilder.h:44
+msgid "Open this personal commentary in the editor"
+msgstr "Otvorte tento osobný komentár v editore"
+
+#: ../ui/xi-menus.glade.h:167 ../ui/xi-menus-popup.gtkbuilder.h:30
 msgid "Add a sub-item"
 msgstr "Pridať pod-položku"
 
-#: ../ui/xi-menus.glade.h:154 ../ui/xi-menus-popup.gtkbuilder.h:23
+#: ../ui/xi-menus.glade.h:168 ../ui/xi-menus-popup.gtkbuilder.h:29
 msgid "Add Sub-Item"
 msgstr "Pridať pod-položku"
 
-#: ../ui/xi-menus.glade.h:155 ../ui/xi-menus-popup.gtkbuilder.h:26
+#: ../ui/xi-menus.glade.h:169 ../ui/xi-menus-popup.gtkbuilder.h:32
 msgid "Add an item"
 msgstr "Pridať položku"
 
-#: ../ui/xi-menus.glade.h:156 ../ui/xi-menus-popup.gtkbuilder.h:25
+#: ../ui/xi-menus.glade.h:170 ../ui/xi-menus-popup.gtkbuilder.h:31
 msgid "Add Item"
 msgstr "Pridať položku"
 
-#: ../ui/xi-menus.glade.h:157 ../ui/xi-menus-popup.gtkbuilder.h:28
+#: ../ui/xi-menus.glade.h:171 ../ui/xi-menus-popup.gtkbuilder.h:34
 msgid "Remove this item"
 msgstr "Odstrániť túto položku"
 
-#: ../ui/xi-menus.glade.h:159 ../ui/xi-menus-popup.gtkbuilder.h:30
+#: ../ui/xi-menus.glade.h:173 ../ui/xi-menus-popup.gtkbuilder.h:36
 msgid "Edit this item"
 msgstr "Upraviť túto položku"
 
-msgid "Yes"
-msgstr "Áno"
+#: ../ui/xi-menus-popup.gtkbuilder.h:20
+msgid "Popup menu for cross-references"
+msgstr "Kontextové menu pre krížové odkazy"
 
-msgid "_Remove"
-msgstr "O_dstrániť"
+#~ msgid ""
+#~ "Xiphos failure: \"can't happen\", display_mod: null\n"
+#~ "Please report this. sword_main.cc:set_treekey\n"
+#~ "What were you doing when this occurred?"
+#~ msgstr ""
+#~ "Zlyhanie Xiphos: \"nemôže sa stať\", display_mod: null\n"
+#~ "Prosím toto nahláste. sword_main.cc:set_treekey\n"
+#~ "Čo ste robili, keď sa toto stalo?"
+
+#~ msgid "Folder Name"
+#~ msgstr "Názov priečinku"
+
+#~ msgid "Folder name: "
+#~ msgstr "Názov priečinku: "
+
+#~ msgid "Viewer error:\n"
+#~ msgstr "Chyba prehliadača:\n"
+
+#~ msgid "-2"
+#~ msgstr "-2"
+
+#~ msgid "-1"
+#~ msgstr "-1"
+
+#~ msgid "+1"
+#~ msgstr "+1"
+
+#~ msgid "+2"
+#~ msgstr "+2"
+
+#~ msgid "+3"
+#~ msgstr "+3"
+
+#~ msgid "+4"
+#~ msgstr "+4"
+
+#~ msgid "+5"
+#~ msgstr "+5"
+
+#~ msgid "2"
+#~ msgstr "2"
+
+#~ msgid "3"
+#~ msgstr "3"
+
+#~ msgid "4"
+#~ msgstr "4"
+
+#~ msgid "Yes"
+#~ msgstr "Áno"
+
+#~ msgid "_Remove"
+#~ msgstr "O_dstrániť"
 
 #, c-format
 #~ msgid "Page %d of %d"
@@ -5518,9 +5856,6 @@ msgstr "O_dstrániť"
 
 #~ msgid "Plain text"
 #~ msgstr "Obyčajný Text"
-
-#~ msgid "Open in separate window"
-#~ msgstr "Otvoriť v samostatnom okne"
 
 #~ msgid "Xiphos Bible Guide"
 #~ msgstr "Xiphos biblická príručka"
@@ -5613,9 +5948,6 @@ msgstr "O_dstrániť"
 
 #~ msgid "Tabs and Panes"
 #~ msgstr "Karty a výplne"
-
-#~ msgid "Scripture Cross-references"
-#~ msgstr "Krížové referencie Písma"
 
 #~ msgid "<b>StudyPad default directory</b>"
 #~ msgstr "<b>Štandardný priečinok poznámkového bloku</b>"
@@ -5741,9 +6073,6 @@ msgstr "O_dstrániť"
 #~ msgid "<b>Parallel View</b>"
 #~ msgstr "<b>Paralelné zobrazenie</b>"
 
-#~ msgid "Parallel 1"
-#~ msgstr "Paralela 1"
-
 #~ msgid "Parallel 1 Combo"
 #~ msgstr "Roletová ponuka Paralela 1"
 
@@ -5773,9 +6102,6 @@ msgstr "O_dstrániť"
 
 #~ msgid "Use Verse Per Line"
 #~ msgstr "Zobraziť verš v samostatnom riadku"
-
-#~ msgid "Import Bibletime Bookmarks"
-#~ msgstr "Importovať Bibletime záložky"
 
 #~ msgid "Restore Folder"
 #~ msgstr "Obnoviť priečinok"
@@ -5823,9 +6149,6 @@ msgstr "O_dstrániť"
 
 #~ msgid "Open in a new tab"
 #~ msgstr "Otvoriť v novej karte"
-
-#~ msgid "Open selected module in a separate ['dialog'] window"
-#~ msgstr "Otvorí zvolený modul v samostatnom ['dialógovom'] okne"
 
 #~ msgid "View information about the selected dialog"
 #~ msgstr "Zobraziť informácie o zvolenom dialógu"
@@ -5876,12 +6199,6 @@ msgstr "O_dstrániť"
 
 #~ msgid "_Show/Hide Sidebar"
 #~ msgstr "Zobraziť/Skryť bočný panel"
-
-#~ msgid "Move backwards through history"
-#~ msgstr "Pohyb dozadu v histórií"
-
-#~ msgid "Move foward through history"
-#~ msgstr "Pohyb dopredu v histórií"
 
 #~ msgid "Select a Book of the Bible"
 #~ msgstr "Vyberte knihu Biblie"
