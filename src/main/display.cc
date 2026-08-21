@@ -95,6 +95,7 @@ A { text-decoration:none } \
 body { background-color:%s; color:%s; -webkit-column-count: %d ; margin-top: 0.1cm ; %s } \
 td { %s } \
 .introMaterial { font-style: italic; } \
+.introMaterial h2.chapterHeader { font-style: normal; } \
 a:link{ color:%s } %s %s \
 .tagcolor a:link{ color:inherit !important } \
 h3 { font-style: %s } --> \
@@ -1221,8 +1222,33 @@ GTKChapDisp::introMaterial(SWModule &imodule, int thisChapter)
 		}
 	}
 
-	if (started_intro)
+	if (started_intro) {
+		/* Issue #921: SWORD's OSIS filter can emit an opening
+		 * <div type="subSection" ...> for a section heading
+		 * without a matching closing </div> anywhere in the
+		 * fetched "verse 0" text (the section's eID/closing tag
+		 * apparently falls elsewhere, outside what we retrieve
+		 * here). Left unbalanced, our own closing </div> below
+		 * only closes the innermost open <div>, leaving
+		 * class="introMaterial" (and its CSS font-style: italic)
+		 * open around the rest of the chapter. Force-balance
+		 * before closing our own wrapper. */
+		gint div_opens = 0, div_closes = 0;
+		const gchar *scan = intro->str;
+		while ((scan = strstr(scan, "<div"))) {
+			div_opens++;
+			scan += 4;
+		}
+		scan = intro->str;
+		while ((scan = strstr(scan, "</div>"))) {
+			div_closes++;
+			scan += 6;
+		}
+		for (; div_closes < div_opens; div_closes++)
+			g_string_append(intro, "</div>");
+
 		g_string_append(intro, "</div>");		// finish what we started.
+	}
 
 	key->setAutoNormalize(oldAutoNorm);
 
