@@ -1725,10 +1725,14 @@ GTKChapDisp::RenderOneChapter(SWModule &imodule,
 			swbuf.appendFormatted("<font color=\"%s\">", color_chosen_fg);
 		}
 
+		/* Issue #921: defensively reset font-style to normal around
+		 * each verse's own text. Applied via script. */
+		swbuf.append("<span style=\"font-style: normal;\">");
 		swbuf.append(settings.imageresize
 				 ? AnalyzeForImageSize(rework->str, CURRENT_COLUMNS,
 						       GDK_WINDOW(gtk_widget_get_window(gtkText)))
 				 : rework->str /* left as-is */);
+		swbuf.append("</span>");
 
 		if (color_choices != COLOR_NONE) {
 			swbuf.append("</font>");
@@ -2329,10 +2333,14 @@ DialogChapDisp::display(SWModule &imodule)
 			swbuf.appendFormatted("<font color=\"%s\">", color_chosen_fg);
 		}
 
+		/* Issue #921: defensively reset font-style to normal around
+		 * each verse's own text. Applied via script. */
+		swbuf.append("<span style=\"font-style: normal;\">");
 		swbuf.append(settings.imageresize
 				 ? AnalyzeForImageSize(rework->str, CURRENT_COLUMNS,
 						       GDK_WINDOW(gtk_widget_get_window(gtkText)))
 				 : rework->str /* left as-is */);
+		swbuf.append("</span>");
 
 		if (color_choices != COLOR_NONE) {
 			swbuf.append("</font>");
