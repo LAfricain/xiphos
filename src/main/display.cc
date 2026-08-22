@@ -1212,26 +1212,46 @@ GTKChapDisp::introMaterial(SWModule &imodule, int thisChapter)
 				started_intro = true;
 			}
 
-			g_string_append(intro,
-					(settings.imageresize
-					 ? AnalyzeForImageSize(buf, CURRENT_COLUMNS,
-							       GDK_WINDOW(gtk_widget_get_window(gtkText)))
-					 : buf));
+			/* Issue #921: SWORD's OSIS filter can emit an opening
+			 * <div type="subSection" ...> in this fragment with no
+			 * matching closing </div> here (its eID apparently falls
+			 * outside what we fetch for the chapter-0/thisChapter
+			 * "verse 0" text). Balance THIS fragment individually,
+			 * right where it is fetched -- rather than counting the
+			 * whole accumulated intro string and stacking corrections
+			 * at the very end, which was found to shift block-level
+			 * boundaries enough to break WebKit's column-break and
+			 * anchor-scroll positioning in multi-column, whole-book
+			 * rendering. Closing right next to this fragment's own
+			 * content keeps the correction local and minimal. */
+			{
+				gint div_opens = 0, div_closes = 0;
+				const gchar *scan = buf;
+				while ((scan = strstr(scan, "<div"))) {
+					div_opens++;
+					scan += 4;
+				}
+				scan = buf;
+				while ((scan = strstr(scan, "</div>"))) {
+					div_closes++;
+					scan += 6;
+				}
+
+				g_string_append(intro,
+						(settings.imageresize
+						 ? AnalyzeForImageSize(buf, CURRENT_COLUMNS,
+								       GDK_WINDOW(gtk_widget_get_window(gtkText)))
+						 : buf));
+
+				for (; div_closes < div_opens; div_closes++)
+					g_string_append(intro, "</div>");
+			}
+
 			g_string_append(intro, "<br />");
 			g_free(buf);
 		}
 	}
 
-	/* Issue #921: an earlier attempt balanced unclosed <div> tags
-	 * here by force-closing them before our own wrapper. That fixed
-	 * italics leaking past chapter intro material, but shifting
-	 * block-level closing boundaries at this exact spot was found to
-	 * break WebKit's column-break and anchor-scroll positioning in
-	 * multi-column layouts + whole-book rendering (reported by Karl,
-	 * reproducible with 4 columns). Reverted; italics leaking onto
-	 * verse text is instead handled defensively at the verse-text
-	 * level in RenderOneChapter(), which doesn't touch block
-	 * boundaries at all. */
 	if (started_intro)
 		g_string_append(intro, "</div>");		// finish what we started.
 
