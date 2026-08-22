@@ -1222,33 +1222,18 @@ GTKChapDisp::introMaterial(SWModule &imodule, int thisChapter)
 		}
 	}
 
-	if (started_intro) {
-		/* Issue #921: SWORD's OSIS filter can emit an opening
-		 * <div type="subSection" ...> for a section heading
-		 * without a matching closing </div> anywhere in the
-		 * fetched "verse 0" text (the section's eID/closing tag
-		 * apparently falls elsewhere, outside what we retrieve
-		 * here). Left unbalanced, our own closing </div> below
-		 * only closes the innermost open <div>, leaving
-		 * class="introMaterial" (and its CSS font-style: italic)
-		 * open around the rest of the chapter. Force-balance
-		 * before closing our own wrapper. */
-		gint div_opens = 0, div_closes = 0;
-		const gchar *scan = intro->str;
-		while ((scan = strstr(scan, "<div"))) {
-			div_opens++;
-			scan += 4;
-		}
-		scan = intro->str;
-		while ((scan = strstr(scan, "</div>"))) {
-			div_closes++;
-			scan += 6;
-		}
-		for (; div_closes < div_opens; div_closes++)
-			g_string_append(intro, "</div>");
-
+	/* Issue #921: an earlier attempt balanced unclosed <div> tags
+	 * here by force-closing them before our own wrapper. That fixed
+	 * italics leaking past chapter intro material, but shifting
+	 * block-level closing boundaries at this exact spot was found to
+	 * break WebKit's column-break and anchor-scroll positioning in
+	 * multi-column layouts + whole-book rendering (reported by Karl,
+	 * reproducible with 4 columns). Reverted; italics leaking onto
+	 * verse text is instead handled defensively at the verse-text
+	 * level in RenderOneChapter(), which doesn't touch block
+	 * boundaries at all. */
+	if (started_intro)
 		g_string_append(intro, "</div>");		// finish what we started.
-	}
 
 	key->setAutoNormalize(oldAutoNorm);
 
