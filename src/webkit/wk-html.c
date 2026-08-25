@@ -36,9 +36,6 @@
 #include "wk-html.h"
 #include "marshal.h"
 
-#include <libxml/HTMLparser.h>
-#include <libxml/HTMLtree.h>
-
 #include "gui/dictlex.h"
 #include "main/sword.h"
 
@@ -346,52 +343,6 @@ void wk_html_printf(WkHtml *html, char *format, ...)
 	g_free(string);
 }
 
-/* Issue #921: balance/repair the final HTML before handing it to
- * WebKit. Several code paths in src/main/display.cc can produce
- * mismatched or overlapping tags (e.g. multi-chapter OSIS sections,
- * or chapter intro material). Left as-is, WebKit's own HTML5 parser
- * "adoption agency algorithm" silently fragments affected elements
- * to recover, which was found to break keyboard caret navigation
- * (Down/Page_Down) and let inline styles (e.g. italics) leak past
- * their intended scope in some chapters.
- *
- * Parsing with HTML_PARSE_RECOVER and re-serializing gives WebKit a
- * document that is already well-formed. On parse failure, the
- * original content is returned unchanged. */
-static gchar *
-wk_html_sanitize(const gchar *raw, const gchar *mime)
-{
-	if (!raw)
-		return NULL;
-
-	if (!mime || !(strstr(mime, "html") != NULL))
-		return g_strdup(raw);
-
-	htmlDocPtr doc = htmlReadMemory(raw, (int)strlen(raw), NULL, "UTF-8",
-					HTML_PARSE_RECOVER |
-					    HTML_PARSE_NOERROR |
-					    HTML_PARSE_NOWARNING |
-					    HTML_PARSE_NONET);
-	if (!doc)
-		return g_strdup(raw);
-
-	xmlChar *out = NULL;
-	int out_len = 0;
-	htmlDocDumpMemory(doc, &out, &out_len);
-
-	gchar *result;
-	if (out && out_len > 0)
-		result = g_strndup((const gchar *)out, (gsize)out_len);
-	else
-		result = g_strdup(raw);
-
-	if (out)
-		xmlFree(out);
-	xmlFreeDoc(doc);
-
-	return result;
-}
-
 void wk_html_close(WkHtml *html)
 {
 	if (!html->priv->initialised) {
@@ -401,11 +352,12 @@ void wk_html_close(WkHtml *html)
 #endif
 	}
 
-	gchar *clean_content = wk_html_sanitize(html->priv->content, html->priv->mime);
+
+
 
 #ifdef USE_WEBKIT2
 	GBytes *html_bytes;
-	html_bytes = g_bytes_new(clean_content, strlen(clean_content));
+	html_bytes = g_bytes_new(html->priv->content, strlen(html->priv->content));
 
 	webkit_web_view_load_bytes(WEBKIT_WEB_VIEW(html),
 				   html_bytes,
@@ -416,12 +368,11 @@ void wk_html_close(WkHtml *html)
 	g_bytes_unref(html_bytes);
 #else
 	webkit_web_view_load_string(WEBKIT_WEB_VIEW(html),
-				    clean_content,
+				    html->priv->content,
 				    html->priv->mime,
 				    NULL, html->priv->base_uri);
 #endif
 
-	g_free(clean_content);
 	g_free(html->priv->content);
 	html->priv->content = NULL;
 	g_free(html->priv->mime);
