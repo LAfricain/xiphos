@@ -1268,14 +1268,15 @@ GTKChapDisp::getVerseBefore(SWModule &imodule)
 				      PRETTYPRINT(num));
 		g_free(num);
 
-		swbuf.appendFormatted("<font color=\"%s\">%s</font>%s%s<br/><a name=\"TOP\"></a><hr/>",
+		swbuf.appendFormatted("<font color=\"%s\">%s</font>%s%s<br/><a name=\"TOP\"></a>%s",
 				      settings.bible_text_color,
 				      (strongs_or_morph
 				       ? block_render(imodule.renderText().c_str())
 				       : imodule.renderText().c_str()),
 				      (settings.showversenum ? "</a>" : ""),
 				      // extra break when excess strongs/morph space.
-				      (strongs_or_morph ? "<br/>" : ""));
+				      (strongs_or_morph ? "<br/>" : ""),
+				      (ops->headings ? "<hr/>" : ""));
 
 		imodule++;	// restore position after getting "before" verse
 	}
@@ -1296,9 +1297,10 @@ GTKChapDisp::getVerseAfter(SWModule &imodule)
 		char *num = main_format_number(key->getChapter());
 
 		swbuf.appendFormatted((ops->display_chapter_N
-				       ? "%s<hr/><div style=\"text-align: center\"><b>%s %s</b></div>"
-				       : "%s<hr/>" ),
+				       ? "%s%s<div style=\"text-align: center\"><b>%s %s</b></div>"
+				       : "%s%s" ),
 				      (strongs_or_morph ? "<br/><br/>" : ""),
+				      (ops->headings ? "<hr/>" : ""),
 				      _("Chapter"), num);
 		g_free(num);
 
@@ -1761,9 +1763,10 @@ GTKChapDisp::RenderWholeBook(SWModule &imodule)
 	// work through chapters until we're no longer in the same book.
 	for (thisChapter = 1; thisChapter <= key->getChapterMax(); ++thisChapter) {
 		RenderOneChapter(imodule, thisChapter);
-		swbuf.appendFormatted("%s<hr/>",
+		swbuf.appendFormatted("%s%s",
 				      // extra break when excess strongs/morph space.
-				      (strongs_or_morph ? "<br/><br/>" : ""));
+				      (strongs_or_morph ? "<br/><br/>" : ""),
+				      (ops->headings ? "<hr/>" : ""));
 	}
 
 	// post-Revelation, name the Bible.
